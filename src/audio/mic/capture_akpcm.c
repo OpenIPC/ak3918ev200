@@ -1,6 +1,10 @@
-// capture_akpcm_v3.c // ffplay -ar 16000 -f s16le capture.raw
-// reversing of yoosee ipcam; mic recording
-// by shiva
+/*
+ * capture_akpcm_v3.c
+ * Autor: Abel Romero
+ * Licencia: MIT
+ *
+ * ffplay -ar 16000 -f s16le capture.raw
+ */
 #define _GNU_SOURCE
 #include <stdio.h>
 #include <stdlib.h>

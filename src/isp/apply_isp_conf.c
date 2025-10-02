@@ -1,4 +1,7 @@
-/* apply_isp_conf.c — Parser simple + aplicador de secciones ISP con switch por ID (hex)
+/*
+ * apply_isp_conf.c — Parser simple + aplicador de secciones ISP con switch por ID (hex)
+ * Autor: Abel Romero
+ * Licencia: MIT
  *
  * Formato de fichero .conf (real):
  *   - magic LE32 = 3 en offset 0x00

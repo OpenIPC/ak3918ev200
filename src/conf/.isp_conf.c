@@ -1,3 +1,8 @@
+/*
+ * .isp_conf.c old code when only had 1 config file
+ * Autor: Abel Romero
+ * License: MIT
+ */
 #include <stdio.h>
 #include <stdint.h>
 #include <stdlib.h>

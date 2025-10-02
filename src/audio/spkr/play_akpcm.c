@@ -1,5 +1,7 @@
 /*
  * play_akpcm_v4.c — Reproduce PCM S16LE en /dev/akpcm_cdev0 replicando tu log.
+ * Autor: Abel Romero
+ * License: MIT
  *
  * Compilar:
  *   gcc -O2 -o play_akpcm_v4 play_akpcm_v4.c
