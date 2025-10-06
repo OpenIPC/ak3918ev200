@@ -1,0 +1,1736 @@
+516   00:05:08.686019 +++ exited with 0 +++
+515   00:05:08.688913 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=516, si_uid=0, si_status=0, ...} ---
+517   00:05:10.688755 +++ exited with 0 +++
+520   00:05:11.652777 +++ exited with 0 +++
+519   00:05:11.654143 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=520, si_uid=0, si_status=0, ...} ---
+519   00:05:11.656435 +++ exited with 0 +++
+518   00:05:11.657356 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=519, si_uid=0, si_status=0, ...} ---
+515   00:05:11.791026 open("/dev/ion", O_RDONLY) = 5</dev/ion> <0.000309>
+515   00:05:11.804533 ioctl(5</dev/ion>, ION_IOC_ALLOC, 0x69c134) = 0 <0.000363>
+515   00:05:11.807723 ioctl(5</dev/ion>, ION_IOC_MAP, 0x69c148) = 0 <0.000311>
+515   00:05:11.817687 open("/dev/uio0", O_RDWR) = 8</dev/uio0> <0.000406>
+515   00:05:11.822880 open("/dev/isp_char", O_RDWR) = 10</dev/isp_char> <0.000708>
+515   00:05:11.826707 open("/dev/video0", O_RDWR|O_NONBLOCK) = 11</dev/video0> <0.066463>
+515   00:05:11.895280 ioctl(10</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x02, 0x04), 0x6b8754) = 0 <0.000329>
+515   00:05:11.897216 ioctl(10</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x04, 0x04), 0x6b880e) = 0 <0.000314>
+515   00:05:11.898947 ioctl(10</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x0a, 0x04), 0x6b88ce) = 0 <0.000460>
+515   00:05:11.900821 ioctl(10</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x0c, 0x04), 0x6b8c3a) = 0 <0.000327>
+515   00:05:11.902554 ioctl(10</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x2b, 0x04), 0x6b9330) = 0 <0.000297>
+515   00:05:11.904282 ioctl(10</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x2f, 0x04), 0x6b9516) = 0 <0.000307>
+515   00:05:11.906006 ioctl(10</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x06, 0x04), 0x6b9956) = 0 <0.000289>
+515   00:05:11.907711 ioctl(10</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x0e, 0x04), 0x6b99ac) = 0 <0.000293>
+515   00:05:11.909422 ioctl(10</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x1a, 0x04), 0x6b99c2) = 0 <0.000278>
+515   00:05:11.911271 ioctl(10</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x12, 0x04), 0x6b9d2e) = 0 <0.000289>
+515   00:05:11.913002 ioctl(10</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x36, 0x04), 0x6b9db6) = 0 <0.000288>
+515   00:05:11.914700 ioctl(10</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x1b, 0x04), 0x6b9e20) = 0 <0.000535>
+515   00:05:11.916879 ioctl(10</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x25, 0x04), 0x6bc50e) = 0 <0.000530>
+515   00:05:11.918823 ioctl(10</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x27, 0x04), 0x6bf044) = 0 <0.000291>
+515   00:05:11.920654 ioctl(10</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x3b, 0x04), 0x6bf066) = 0 <0.000293>
+515   00:05:11.922394 ioctl(10</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x39, 0x04), 0x6bf134) = 0 <0.000290>
+515   00:05:11.924098 ioctl(10</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x3f, 0x04), 0x6bf174) = 0 <0.000286>
+515   00:05:11.925795 ioctl(10</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x41, 0x04), 0x6bf17a) = 0 <0.000292>
+515   00:05:11.927502 ioctl(10</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x10, 0x04), 0x6bf188) = 0 <0.000290>
+515   00:05:11.929218 ioctl(10</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x5e, 0x04), 0x6c01e4) = 0 <0.000425>
+515   00:05:11.931079 ioctl(10</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x60, 0x04), 0x6c02e8) = 0 <0.000291>
+515   00:05:11.932783 ioctl(10</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x53, 0x04), 0x6c0316) = 0 <0.000286>
+515   00:05:11.934484 ioctl(10</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x63, 0x04), 0x6c0318) = 0 <0.000286>
+515   00:05:11.936184 ioctl(10</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x55, 0x04), 0x6c0324) = 0 <0.000288>
+515   00:05:11.937909 ioctl(10</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x73, 0x04), 0x6c03de) = 0 <0.000292>
+515   00:05:11.939607 ioctl(10</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x43, 0x04), 0x6c0526) = 0 <0.000226>
+515   00:05:11.941447 ioctl(10</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x46, 0x04), 0x6c0528) = 0 <0.000283>
+515   00:05:11.943137 ioctl(10</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x49, 0x04), 0x6c052a) = 0 <0.000282>
+515   00:05:11.944835 ioctl(10</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x4c, 0x04), 0x6c052c) = 0 <0.000288>
+515   00:05:11.946613 ioctl(10</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x4e, 0x04), 0x6c052e) = 0 <0.000285>
+515   00:05:11.948315 ioctl(10</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x50, 0x04), 0x6c0546) = 0 <0.000294>
+515   00:05:11.950161 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x4f, 0x04), 0xbe975940) = 0 <0.000284>
+515   00:05:11.980612 ioctl(10</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x7a, 0x04), 0xbe975914) = 0 <0.006980>
+515   00:05:11.996890 ioctl(10</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x6e, 0x04), 0x6c0616) = 0 <0.000277>
+515   00:05:11.998613 ioctl(10</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x75, 0x04), 0x6c0634) = 0 <0.000301>
+515   00:05:12.000461 ioctl(10</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x77, 0x04), 0x6c0766) = 0 <0.000306>
+515   00:05:12.002182 ioctl(10</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x69, 0x04), 0xbe975998) = 0 <0.035934>
+515   00:05:12.061940 ioctl(11</dev/video0>, VIDIOC_CROPCAP, type=V4L2_BUF_TYPE_VIDEO_CAPTURE, bounds={left=0, top=0, width=1280, height=720}, defrect={left=0, top=0, width=1280, height=720}, pixelaspect=1/1) = 0 <0.000298>
+515   00:05:12.069179 ioctl(10</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x67, 0x04), 0xbe9759a8) = 0 <0.000442>
+515   00:05:12.071047 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x56, 0x04), 0xbe975900) = 0 <0.000286>
+515   00:05:12.079221 ioctl(10</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x55, 0x04), 0xbe975900) = 0 <0.000401>
+515   00:05:12.082957 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x4f, 0x04), 0xbe975990) = 0 <0.000286>
+515   00:05:12.121461 ioctl(10</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x7a, 0x04), 0xbe975964) = 0 <0.003839>
+515   00:05:12.134532 ioctl(11</dev/video0>, VIDIOC_QUERYCAP, {driver="ak_camera", card="AK_Camera", bus_info="", version=3.4.35, capabilities=V4L2_CAP_VIDEO_CAPTURE|V4L2_CAP_STREAMING, device_caps=0}) = 0 <0.000292>
+515   00:05:12.136529 ioctl(11</dev/video0>, VIDIOC_CROPCAP, type=V4L2_BUF_TYPE_VIDEO_CAPTURE, bounds={left=0, top=0, width=1280, height=720}, defrect={left=0, top=0, width=1280, height=720}, pixelaspect=1/1) = 0 <0.000296>
+515   00:05:12.138325 ioctl(11</dev/video0>, VIDIOC_S_CROP, 0xbe975934) = 0 <0.000319>
+515   00:05:12.146658 ioctl(11</dev/video0>, VIDIOC_S_FMT, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, fmt.pix={width=1280, height=720, pixelformat=v4l2_fourcc('Y', 'U', 'Y', 'V'), field=V4L2_FIELD_INTERLACED, bytesperline=0, sizeimage=0, colorspace=0 /* V4L2_COLORSPACE_??? */} => fmt.pix={width=1280, height=720, pixelformat=v4l2_fourcc('Y', 'U', 'Y', 'V'), field=V4L2_FIELD_INTERLACED, bytesperline=2560, sizeimage=1843200, colorspace=0 /* V4L2_COLORSPACE_??? */}}) = 0 <0.000328>
+515   00:05:12.148725 ioctl(11</dev/video0>, VIDIOC_S_PARM, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, {capability=0x1 /* V4L2_CAP_??? */, capturemode=0x280 /* V4L2_MODE_??? */, timeperframe=360/0, extendedmode=0, readbuffers=0} => {capability=0x1 /* V4L2_CAP_??? */, capturemode=0x280 /* V4L2_MODE_??? */, timeperframe=360/0, extendedmode=0, readbuffers=0}}) = 0 <0.007759>
+515   00:05:12.167076 ioctl(10</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x7a, 0x04), 0xbe9759e4) = 0 <0.001823>
+515   00:05:12.170447 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04), 0xbe9759dc) = 0 <0.000278>
+515   00:05:12.206691 ioctl(10</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x6d, 0x04), 0xbe975954) = 0 <0.000305>
+515   00:05:12.232809 open("/dev/akpcm_cdev1", O_RDONLY) = 12</dev/akpcm_cdev1> <0.000511>
+515   00:05:12.251897 ioctl(12</dev/akpcm_cdev1>, SNDCTL_DSP_SETTRIGGER, 0xbe9759cc) = 0 <0.000426>
+515   00:05:12.253770 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_WRITE, 0x50, 0x70, 0x04), 0xbe9759cc) = 0 <0.000336>
+515   00:05:12.271779 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_WRITE, 0x50, 0x30, 0x04), 0xbe9759dc) = 0 <0.000334>
+515   00:05:12.663787 ioctl(12</dev/akpcm_cdev1>, _IOC(0, 0x50, 0xe3, 0x00), 0xbe9759dc) = 0 <0.000362>
+515   00:05:12.757933 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_WRITE, 0x50, 0x88, 0x04), 0xbe9758f8) = 0 <0.025420>
+521   00:05:15.097971 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x56, 0x04), 0xb45dba10) = 0 <0.000300>
+521   00:05:15.322176 ioctl(10</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x55, 0x04), 0xb45dba10) = 0 <0.002060>
+521   00:05:15.331087 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.002786>
+521   00:05:15.438173 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000283>
+521   00:05:15.540640 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000291>
+521   00:05:15.643062 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000282>
+521   00:05:15.745576 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000317>
+521   00:05:15.847975 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000318>
+521   00:05:15.950441 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000317>
+521   00:05:16.052796 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000289>
+521   00:05:16.155138 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000292>
+521   00:05:16.257462 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000285>
+521   00:05:16.649774 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000281>
+521   00:05:16.755489 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000289>
+521   00:05:16.858058 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000321>
+521   00:05:16.962365 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000638>
+521   00:05:17.065402 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000284>
+521   00:05:17.167663 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000284>
+521   00:05:17.269996 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000287>
+521   00:05:17.372457 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000288>
+521   00:05:17.474794 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000287>
+521   00:05:17.577137 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000284>
+521   00:05:17.679487 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000282>
+521   00:05:17.781967 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000283>
+521   00:05:17.884275 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000284>
+521   00:05:17.986623 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000284>
+521   00:05:18.088941 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000284>
+521   00:05:18.191374 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000285>
+521   00:05:18.293722 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000288>
+521   00:05:18.396066 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000283>
+521   00:05:18.498382 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000286>
+521   00:05:18.600750 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000284>
+521   00:05:18.703730 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000328>
+521   00:05:18.806219 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000290>
+521   00:05:18.908504 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000293>
+521   00:05:19.010966 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000291>
+521   00:05:19.113268 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000289>
+521   00:05:19.215559 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000289>
+521   00:05:19.317880 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000292>
+521   00:05:19.420395 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000288>
+521   00:05:19.522707 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000289>
+521   00:05:19.625258 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000287>
+521   00:05:19.745645 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000293>
+529   00:05:19.751188 close(5</dev/ion>) = 0 <0.000265>
+529   00:05:19.755519 close(8</dev/uio0>) = 0 <0.000271>
+529   00:05:19.758655 close(10</dev/isp_char>) = 0 <0.000270>
+529   00:05:19.760829 close(11</dev/video0>) = 0 <0.000269>
+529   00:05:19.762883 close(12</dev/akpcm_cdev1>) = 0 <0.000270>
+521   00:05:20.893767 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.002839>
+530   00:05:20.921493 close(5</dev/ion>) = 0 <0.000415>
+530   00:05:20.936217 close(8</dev/uio0>) = 0 <0.000282>
+530   00:05:20.939311 close(10</dev/isp_char>) = 0 <0.000534>
+530   00:05:20.950186 close(11</dev/video0>) = 0 <0.000618>
+530   00:05:20.954782 close(12</dev/akpcm_cdev1>) = 0 <0.000212>
+531   00:05:21.493996 +++ exited with 0 +++
+529   00:05:22.449567 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=531, si_uid=0, si_status=0, ...} ---
+529   00:05:22.452105 +++ exited with 0 +++
+528   00:05:22.453033 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=529, si_uid=0, si_status=0, ...} ---
+521   00:05:22.496300 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000614>
+534   00:05:22.800864 +++ exited with 0 +++
+533   00:05:22.804331 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=534, si_uid=0, si_status=0, ...} ---
+533   00:05:22.823867 +++ exited with 0 +++
+525   00:05:22.824812 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=533, si_uid=0, si_status=0, si_utime=1, si_stime=5} ---
+521   00:05:22.834690 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000301>
+532   00:05:22.980255 +++ exited with 0 +++
+530   00:05:22.981431 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=532, si_uid=0, si_status=0, ...} ---
+530   00:05:23.003857 +++ exited with 0 +++
+522   00:05:23.028246 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=530, si_uid=0, si_status=0, ...} ---
+521   00:05:23.033696 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.006124>
+521   00:05:23.213755 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000298>
+521   00:05:23.316080 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000599>
+521   00:05:23.420698 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000336>
+521   00:05:23.523902 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000794>
+521   00:05:23.673174 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.022614>
+521   00:05:23.799281 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000297>
+521   00:05:23.902570 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000745>
+521   00:05:24.007147 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000682>
+521   00:05:24.113354 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000298>
+521   00:05:24.224209 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000767>
+521   00:05:24.328022 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000294>
+521   00:05:24.430508 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000341>
+521   00:05:24.532891 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000295>
+521   00:05:24.635286 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000293>
+521   00:05:24.742040 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.003635>
+538   00:05:24.823345 +++ exited with 0 +++
+535   00:05:24.824749 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=538, si_uid=0, si_status=0, ...} ---
+535   00:05:24.836443 +++ exited with 0 +++
+524   00:05:24.837705 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=535, si_uid=0, si_status=0, ...} ---
+521   00:05:24.900364 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.002487>
+521   00:05:25.063535 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000309>
+521   00:05:25.185847 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000304>
+521   00:05:25.288750 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000301>
+521   00:05:25.398382 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.011907>
+521   00:05:25.512600 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000303>
+521   00:05:25.640855 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000300>
+521   00:05:25.758888 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.001326>
+521   00:05:25.872239 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000305>
+521   00:05:25.984002 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000315>
+515   00:05:26.028471 ioctl(11</dev/video0>, VIDIOC_REQBUFS, {count=4, type=V4L2_BUF_TYPE_VIDEO_CAPTURE, memory=V4L2_MEMORY_USERPTR}) = 0 ({count=4}) <0.003289>
+521   00:05:26.099831 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000312>
+515   00:05:26.194861 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4961000, length=2306048, bytesused=0, flags=0, ...}) = 0 <0.000415>
+515   00:05:26.196920 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=1, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4b94000, length=2306048, bytesused=0, flags=0, ...}) = 0 <0.000415>
+521   00:05:26.212527 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.000313>
+515   00:05:26.225647 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=2, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4dc7000, length=2306048, bytesused=0, flags=0, ...}) = 0 <0.000414>
+515   00:05:26.227704 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=3, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4ffa000, length=2306048, bytesused=0, flags=0, ...}) = 0 <0.000456>
+515   00:05:26.229767 ioctl(11</dev/video0>, VIDIOC_STREAMON, V4L2_BUF_TYPE_VIDEO_CAPTURE) = 0 <0.012539>
+515   00:05:26.257978 select(12, [11</dev/video0>], NULL, NULL, {4, 0}) = 1 (in [11], left {3, 939985}) <0.060340>
+515   00:05:26.325246 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE <unfinished ...>
+521   00:05:26.327204 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.007293>
+515   00:05:26.336031 <... ioctl resumed> , index=0, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4961000, length=1382400, bytesused=1382400, flags=0, timestamp = {326.300000}, ...}) = 0 <0.009573>
+515   00:05:26.346455 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4961000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000342>
+515   00:05:26.348479 select(12, [11</dev/video0>], NULL, NULL, {4, 0} <unfinished ...>
+543   00:05:26.364071 +++ exited with 0 +++
+542   00:05:26.365294 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=543, si_uid=0, si_status=0, ...} ---
+542   00:05:26.368259 +++ exited with 0 +++
+539   00:05:26.369499 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=542, si_uid=0, si_status=0, ...} ---
+515   00:05:26.396509 <... select resumed> ) = 1 (in [11], left {3, 963882}) <0.046943>
+515   00:05:26.397955 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=1, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4b94000, length=1382400, bytesused=1382400, flags=0, timestamp = {326.370000}, ...}) = 0 <0.000425>
+572   00:05:26.403462 close(5</dev/ion>) = 0 <0.000321>
+572   00:05:26.407829 close(8</dev/uio0>) = 0 <0.000477>
+572   00:05:26.411460 close(10</dev/isp_char>) = 0 <0.000275>
+572   00:05:26.413646 close(11</dev/video0>) = 0 <0.000212>
+572   00:05:26.415982 close(12</dev/akpcm_cdev1>) = 0 <0.000279>
+572   17:45:19.934280 +++ exited with 0 +++
+568   17:45:19.936783 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=572, si_uid=0, si_status=0, ...} ---
+521   17:45:20.222342 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04), 0xb45dba10) = 0 <0.051247>
+521   17:45:20.349885 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x71, 0x04), 0x69b5a4) = 0 <0.000978>
+521   17:45:20.443414 ioctl(10</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x7a, 0x04), 0xb45db9dc) = 0 <0.033774>
+521   17:45:20.547845 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x51, 0x04), 0xb45db92c) = 0 <0.002834>
+521   17:45:20.553972 ioctl(10</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x50, 0x04), 0xb45db92c) = 0 <0.001386>
+515   17:45:20.671684 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=1, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4b94000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.006944>
+515   17:45:20.688579 select(12, [11</dev/video0>], NULL, NULL, {4, 0}) = 1 (in [11], left {3, 999954}) <0.503726>
+515   17:45:21.194868 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=2, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4dc7000, length=1382400, bytesused=1382400, flags=0, timestamp = {0.000000}, ...}) = 0 <0.207838>
+576   17:45:21.419834 +++ exited with 0 +++
+575   17:45:21.421032 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=576, si_uid=0, si_status=0, ...} ---
+575   17:45:21.425437 +++ exited with 0 +++
+574   17:45:21.426482 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=575, si_uid=0, si_status=0, ...} ---
+515   17:45:22.112451 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=2, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4dc7000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.002366>
+515   17:45:22.164311 select(12, [11</dev/video0>], NULL, NULL, {4, 0}) = 1 (in [11], left {3, 999953}) <0.004896>
+515   17:45:22.178299 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=3, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4ffa000, length=1382400, bytesused=1382400, flags=0, timestamp = {0.000000}, ...}) = 0 <0.010683>
+515   17:45:22.245117 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=3, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4ffa000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.010774>
+579   17:45:22.315616 +++ exited with 0 +++
+578   17:45:22.316385 +++ exited with 0 +++
+577   17:45:22.322880 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=579, si_uid=0, si_status=0, ...} ---
+577   17:45:22.331678 +++ exited with 0 +++
+565   17:45:22.345148 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=577, si_uid=0, si_status=0, ...} ---
+574   17:45:22.402844 --- SIGTERM {si_signo=SIGTERM, si_code=SI_USER, si_pid=515, si_uid=0} ---
+574   17:45:22.456805 +++ exited with 0 +++
+580   17:45:22.480258 close(5</dev/ion>) = 0 <0.000263>
+580   17:45:22.485504 close(8</dev/uio0>) = 0 <0.000275>
+580   17:45:22.489002 close(10</dev/isp_char>) = 0 <0.000270>
+580   17:45:22.491187 close(11</dev/video0>) = 0 <0.000271>
+580   17:45:22.493306 close(12</dev/akpcm_cdev1>) = 0 <0.000260>
+580   17:45:23.749426 +++ exited with 0 +++
+569   17:45:23.750537 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=580, si_uid=0, si_status=0, ...} ---
+515   17:45:23.996920 ioctl(10</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x79, 0x04), 0xbe975a68) = 0 <0.003041>
+585   17:45:24.097492 +++ exited with 0 +++
+584   17:45:24.098430 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=585, si_uid=0, si_status=0, ...} ---
+584   17:45:24.102427 +++ exited with 0 +++
+583   17:45:24.103543 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=584, si_uid=0, si_status=0, ...} ---
+582   17:45:24.147329 ioctl(8</dev/uio0>, _IOC(_IOC_WRITE, 0x55, 0x64, 0x0c), 0xae4a278c) = 0 <0.000319>
+582   17:45:24.149046 ioctl(8</dev/uio0>, _IOC(_IOC_WRITE, 0x55, 0x64, 0x0c), 0xae4a278c) = 0 <0.000280>
+582   17:45:24.150913 ioctl(8</dev/uio0>, _IOC(_IOC_WRITE, 0x55, 0x64, 0x0c), 0xae4a278c) = 0 <0.000278>
+582   17:45:24.152927 ioctl(8</dev/uio0>, _IOC(_IOC_WRITE, 0x55, 0x64, 0x0c), 0xae4a278c) = 0 <0.000223>
+582   17:45:24.161177 mmap2(NULL, 1280, PROT_READ|PROT_WRITE, MAP_SHARED, 8</dev/uio0>, 0) = 0xae483000 <0.000331>
+586   17:45:24.290265 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04), 0x676d34) = 0 <0.000316>
+586   17:45:24.303345 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04), 0x676d34) = 0 <0.000860>
+586   17:45:24.319019 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04), 0x676d34) = 0 <0.000414>
+586   17:45:24.332546 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04), 0x676d34) = 0 <0.000349>
+586   17:45:24.345062 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04), 0x676d34) = 0 <0.000744>
+582   17:45:24.358029 ioctl(10</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x6d, 0x04) <unfinished ...>
+586   17:45:24.360311 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04), 0x676d34) = 0 <0.000293>
+582   17:45:24.363345 <... ioctl resumed> , 0xae4a286c) = 0 <0.004442>
+586   17:45:24.373997 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04), 0x676d34) = 0 <0.000308>
+582   17:45:24.383763 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04), 0xae4a290c) = 0 <0.000292>
+586   17:45:24.386449 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04), 0x676d34) = 0 <0.000309>
+586   17:45:24.398959 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04), 0x676d34) = 0 <0.000992>
+586   17:45:24.412363 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04), 0x676d34) = 0 <0.000351>
+586   17:45:24.425336 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04), 0x676d34) = 0 <0.000351>
+586   17:45:24.447202 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04), 0x676d34) = 0 <0.000312>
+586   17:45:24.459776 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04), 0x676d34) = 0 <0.000248>
+586   17:45:24.474995 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04), 0x676d34) = 0 <0.000315>
+588   17:45:24.500203 select(12, [11</dev/video0>], NULL, NULL, {4, 0}) = 1 (in [11], left {3, 999959}) <0.000326>
+588   17:45:24.502520 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4961000, length=1382400, bytesused=1382400, flags=0, timestamp = {328.640000}, ...}) = 0 <0.000315>
+588   17:45:24.521221 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4961000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000374>
+586   17:45:24.536457 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04), 0x676d34) = 0 <0.000352>
+588   17:45:24.546817 select(12, [11</dev/video0>], NULL, NULL, {4, 0}) = 1 (in [11], left {3, 999959}) <0.000329>
+588   17:45:24.549247 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=1, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4b94000, length=1382400, bytesused=1382400, flags=0, timestamp = {330.040000}, ...}) = 0 <0.000316>
+586   17:45:24.557067 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04), 0x676d34) = 0 <0.000314>
+588   17:45:24.570550 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=1, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4b94000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000367>
+586   17:45:24.584227 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04), 0x676d34) = 0 <0.000315>
+588   17:45:24.594237 select(12, [11</dev/video0>], NULL, NULL, {4, 0}) = 1 (in [11], left {3, 999959}) <0.000304>
+588   17:45:24.596984 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=2, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4dc7000, length=1382400, bytesused=1382400, flags=0, timestamp = {330.240000}, ...}) = 0 <0.000317>
+586   17:45:24.604831 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04), 0x676d34) = 0 <0.000312>
+588   17:45:24.619669 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=2, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4dc7000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000290>
+586   17:45:24.635136 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04), 0x676d34) = 0 <0.000355>
+588   17:45:24.645033 select(12, [11</dev/video0>], NULL, NULL, {4, 0} <unfinished ...>
+590   17:45:24.656440 ioctl(10</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x6d, 0x04) <unfinished ...>
+588   17:45:24.657364 <... select resumed> ) = 1 (in [11], left {3, 999959}) <0.011001>
+588   17:45:24.658827 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=3, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4ffa000, length=1382400, bytesused=1382400, flags=0, timestamp = {332.440000}, ...}) = 0 <0.000313>
+588   17:45:24.665263 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04) <unfinished ...>
+586   17:45:24.667234 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04) <unfinished ...>
+590   17:45:24.781318 <... ioctl resumed> , 0xae2f991c) = 0 <0.124028>
+588   17:45:24.782746 <... ioctl resumed> , 0xae35da6c) = 0 <0.116670>
+589   17:45:24.827422 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04), 0xae32b504) = 0 <0.000701>
+589   17:45:24.883123 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=3, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4ffa000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000781>
+586   17:45:24.892222 <... ioctl resumed> , 0x676d34) = 0 <0.224121>
+588   17:45:24.903316 select(12, [11</dev/video0>], NULL, NULL, {4, 0}) = 1 (in [11], left {3, 999958}) <0.004816>
+588   17:45:24.914349 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4961000, length=1382400, bytesused=1382400, flags=0, timestamp = {332.540000}, ...}) = 0 <0.002977>
+588   17:45:24.961538 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04), 0xae35da6c) = 0 <0.000293>
+589   17:45:24.964989 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04) <unfinished ...>
+586   17:45:24.968318 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04) <unfinished ...>
+589   17:45:24.969819 <... ioctl resumed> , 0xae32b504) = 0 <0.003704>
+589   17:45:24.976111 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4961000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000258>
+588   17:45:24.978810 select(12, [11</dev/video0>], NULL, NULL, {4, 0}) = 1 (in [11], left {3, 999959}) <0.000368>
+588   17:45:24.981106 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=1, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4b94000, length=1382400, bytesused=1382400, flags=0, timestamp = {332.640000}, ...}) = 0 <0.000318>
+588   17:45:24.987198 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04), 0xae35da6c) = 0 <0.000291>
+589   17:45:24.990768 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04) <unfinished ...>
+586   17:45:24.993453 <... ioctl resumed> , 0x676d34) = 0 <0.023870>
+589   17:45:24.995145 <... ioctl resumed> , 0xae32b504) = 0 <0.003256>
+589   17:45:25.003030 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=1, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4b94000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000313>
+588   17:45:25.006129 select(12, [11</dev/video0>], NULL, NULL, {4, 0}) = 1 (in [11], left {3, 999959}) <0.000605>
+588   17:45:25.014207 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=2, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4dc7000, length=1382400, bytesused=1382400, flags=0, timestamp = {332.840000}, ...}) = 0 <0.002908>
+588   17:45:25.045636 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04), 0xae35da6c) = 0 <0.000754>
+590   17:45:25.062191 ioctl(10</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x6d, 0x04) <unfinished ...>
+589   17:45:25.064809 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04) <unfinished ...>
+586   17:45:25.071299 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04) <unfinished ...>
+589   17:45:25.075235 <... ioctl resumed> , 0xae32b504) = 0 <0.007140>
+589   17:45:25.095936 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=2, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4dc7000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000319>
+588   17:45:25.098417 select(12, [11</dev/video0>], NULL, NULL, {4, 0}) = 1 (in [11], left {3, 999960}) <0.000559>
+588   17:45:25.101426 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=3, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4ffa000, length=1382400, bytesused=1382400, flags=0, timestamp = {332.940000}, ...}) = 0 <0.002359>
+588   17:45:25.126493 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04) <unfinished ...>
+586   17:45:25.136987 <... ioctl resumed> , 0x676d34) = 0 <0.064731>
+586   17:45:25.158419 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04) <unfinished ...>
+590   17:45:25.191106 <... ioctl resumed> , 0xae2f991c) = 0 <0.128084>
+588   17:45:25.193812 <... ioctl resumed> , 0xae35da6c) = 0 <0.066364>
+589   17:45:25.200166 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7c, 0x04), 0xae32ba54) = 0 <0.005225>
+589   17:45:25.397339 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04) <unfinished ...>
+586   17:45:25.399456 <... ioctl resumed> , 0x676d34) = 0 <0.240201>
+589   17:45:25.401808 <... ioctl resumed> , 0xae32b504) = 0 <0.003311>
+589   17:45:25.407789 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=3, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4ffa000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000318>
+588   17:45:25.410516 select(12, [11</dev/video0>], NULL, NULL, {4, 0}) = 1 (in [11], left {3, 999953}) <0.000364>
+588   17:45:25.413074 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4961000, length=1382400, bytesused=1382400, flags=0, timestamp = {333.040000}, ...}) = 0 <0.000359>
+588   17:45:25.420374 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04), 0xae35da6c) = 0 <0.000362>
+589   17:45:25.424406 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04), 0xae32b504) = 0 <0.004317>
+589   17:45:25.436523 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4961000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000361>
+588   17:45:25.439619 select(12, [11</dev/video0>], NULL, NULL, {4, 0}) = 1 (in [11], left {3, 999953}) <0.000293>
+588   17:45:25.442136 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=1, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4b94000, length=1382400, bytesused=1382400, flags=0, timestamp = {333.140000}, ...}) = 0 <0.000250>
+588   17:45:25.448809 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04), 0xae35da6c) = 0 <0.000289>
+589   17:45:25.452340 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04), 0xae32b504) = 0 <0.003583>
+589   17:45:25.462685 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=1, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4b94000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000361>
+588   17:45:25.465397 select(12, [11</dev/video0>], NULL, NULL, {4, 0}) = 1 (in [11], left {3, 999959}) <0.000319>
+588   17:45:25.467937 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=2, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4dc7000, length=1382400, bytesused=1382400, flags=0, timestamp = {333.340000}, ...}) = 0 <0.000313>
+588   17:45:25.476421 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04), 0xae35da6c) = 0 <0.000291>
+589   17:45:25.479900 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04) <unfinished ...>
+586   17:45:25.483326 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04) <unfinished ...>
+589   17:45:25.484856 <... ioctl resumed> , 0xae32b504) = 0 <0.003704>
+589   17:45:25.491015 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=2, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4dc7000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000415>
+588   17:45:25.493542 select(12, [11</dev/video0>], NULL, NULL, {4, 0} <unfinished ...>
+586   17:45:25.495337 <... ioctl resumed> , 0x676d34) = 0 <0.010772>
+591   17:45:25.512776 ioctl(12</dev/akpcm_cdev1>, _IOC(0, 0x50, 0xe2, 0x00), 0) = 0 <0.000397>
+591   17:45:25.514811 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_WRITE, 0x50, 0xf2, 0x1c), 0x6b84e0) = 0 <0.000583>
+591   17:45:25.516958 ioctl(12</dev/akpcm_cdev1>, _IOC(0, 0x50, 0xe0, 0x00), 0) = 0 <0.013209>
+586   17:45:25.534755 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04) <unfinished ...>
+591   17:45:25.536321 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xf0, 0x40), 0xae2b990c) = 0 <0.000374>
+591   17:45:25.563564 ioctl(12</dev/akpcm_cdev1>, _IOC(0, 0x50, 0xe2, 0x00), 0) = 0 <0.000355>
+591   17:45:25.582166 ioctl(12</dev/akpcm_cdev1>, _IOC(0, 0x50, 0xe1, 0x00) <unfinished ...>
+588   17:45:25.614153 <... select resumed> ) = 1 (in [11], left {3, 951614}) <0.119516>
+588   17:45:25.615799 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=3, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4ffa000, length=1382400, bytesused=1382400, flags=0, timestamp = {333.440000}, ...}) = 0 <0.000405>
+588   17:45:25.628797 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04), 0xae35da6c) = 0 <0.001758>
+589   17:45:25.638650 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04), 0xae32b504) = 0 <0.004634>
+589   17:45:25.652481 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=3, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4ffa000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000319>
+586   17:45:25.656640 <... ioctl resumed> , 0x676d34) = 0 <0.120972>
+588   17:45:25.667399 select(12, [11</dev/video0>], NULL, NULL, {4, 0}) = 1 (in [11], left {3, 999959}) <0.000322>
+588   17:45:25.669814 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4961000, length=1382400, bytesused=1382400, flags=0, timestamp = {333.540000}, ...}) = 0 <0.000340>
+588   17:45:25.676159 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04), 0xae35da6c) = 0 <0.000291>
+589   17:45:25.679584 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04) <unfinished ...>
+586   17:45:25.683047 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04) <unfinished ...>
+589   17:45:25.684544 <... ioctl resumed> , 0xae32b504) = 0 <0.003646>
+589   17:45:25.690739 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4961000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000544>
+588   17:45:25.693451 select(12, [11</dev/video0>], NULL, NULL, {4, 0} <unfinished ...>
+586   17:45:25.695218 <... ioctl resumed> , 0x676d34) = 0 <0.010925>
+591   17:45:25.705975 <... ioctl resumed> , 0xae2b990c) = 0 <0.122954>
+591   17:45:25.710446 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0x85, 0x04), 0xae2b990c) = 0 <0.006146>
+586   17:45:25.722393 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04), 0x676d34) = 0 <0.000355>
+591   17:45:25.753032 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_WRITE, 0x50, 0x86, 0x04), 0xae2b990c) = 0 <0.006704>
+588   17:45:25.775364 <... select resumed> ) = 1 (in [11], left {3, 951392}) <0.080910>
+588   17:45:25.778219 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=1, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4b94000, length=1382400, bytesused=1382400, flags=0, timestamp = {333.640000}, ...}) = 0 <0.001147>
+592   17:45:25.809994 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000248>
+592   17:45:25.812026 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000348>
+592   17:45:25.822718 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000320>
+592   17:45:25.836345 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000322>
+592   17:45:25.838226 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000350>
+592   17:45:25.840388 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000319>
+588   17:45:25.845360 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04), 0xae35da6c) = 0 <0.000291>
+589   17:45:25.849025 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04) <unfinished ...>
+592   17:45:25.853596 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000281>
+589   17:45:25.855359 <... ioctl resumed> , 0xae32b504) = 0 <0.005271>
+589   17:45:25.861609 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=1, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4b94000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000367>
+588   17:45:25.864463 select(12, [11</dev/video0>], NULL, NULL, {4, 0} <unfinished ...>
+592   17:45:25.866431 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000283>
+588   17:45:25.868149 <... select resumed> ) = 1 (in [11], left {3, 999959}) <0.002416>
+588   17:45:25.869562 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=2, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4dc7000, length=1382400, bytesused=1382400, flags=0, timestamp = {333.740000}, ...}) = 0 <0.000461>
+588   17:45:25.876825 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04), 0xae35da6c) = 0 <0.000294>
+592   17:45:25.878965 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000283>
+589   17:45:25.882786 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04), 0xae32b504) = 0 <0.003120>
+592   17:45:25.891542 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000384>
+589   17:45:25.901809 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=2, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4dc7000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000319>
+592   17:45:25.904218 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000323>
+592   17:45:25.905937 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000302>
+592   17:45:25.907830 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000285>
+588   17:45:25.910335 select(12, [11</dev/video0>], NULL, NULL, {4, 0} <unfinished ...>
+586   17:45:25.912625 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04), 0x676d34) = 0 <0.000352>
+592   17:45:25.921012 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000326>
+586   17:45:25.928655 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04), 0x676d34) = 0 <0.000955>
+592   17:45:25.933610 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000326>
+588   17:45:25.944304 <... select resumed> ) = 1 (in [11], left {3, 968508}) <0.032690>
+588   17:45:25.946074 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE <unfinished ...>
+592   17:45:25.947683 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000283>
+588   17:45:25.949387 <... ioctl resumed> , index=3, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4ffa000, length=1382400, bytesused=1382400, flags=0, timestamp = {333.840000}, ...}) = 0 <0.002456>
+588   17:45:25.955017 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04), 0xae35da6c) = 0 <0.000337>
+592   17:45:25.965266 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000395>
+592   17:45:25.967536 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000280>
+592   17:45:25.970036 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000326>
+589   17:45:25.973473 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04), 0xae32b504) = 0 <0.000322>
+589   17:45:25.980679 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=3, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4ffa000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000506>
+592   17:45:25.983033 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000285>
+586   17:45:25.986264 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04), 0x676d34) = 0 <0.000312>
+592   17:45:25.995928 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000284>
+588   17:45:25.998424 select(12, [11</dev/video0>], NULL, NULL, {4, 0} <unfinished ...>
+586   17:45:26.000692 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04), 0x676d34) = 0 <0.000311>
+592   17:45:26.008647 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000280>
+592   17:45:26.021754 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000324>
+592   17:45:26.030194 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.001356>
+592   17:45:26.034244 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000316>
+590   17:45:26.036919 ioctl(10</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x6d, 0x04) <unfinished ...>
+586   17:45:26.038697 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04) <unfinished ...>
+588   17:45:26.043575 <... select resumed> ) = 1 (in [11], left {3, 956388}) <0.044129>
+588   17:45:26.044943 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4961000, length=1382400, bytesused=1382400, flags=0, timestamp = {333.940000}, ...}) = 0 <0.000532>
+592   17:45:26.047339 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000283>
+588   17:45:26.053525 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04) <unfinished ...>
+592   17:45:26.059617 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000410>
+592   17:45:26.072599 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000282>
+521   17:45:26.081454 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x52, 0x04) <unfinished ...>
+592   17:45:26.085158 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.007088>
+590   17:45:26.093728 <... ioctl resumed> , 0xae2f991c) = 0 <0.055823>
+588   17:45:26.095678 <... ioctl resumed> , 0xae35da6c) = 0 <0.041338>
+589   17:45:26.099403 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04) <unfinished ...>
+586   17:45:26.102199 <... ioctl resumed> , 0x676d34) = 0 <0.062566>
+589   17:45:26.103481 <... ioctl resumed> , 0xae32b504) = 0 <0.002169>
+592   17:45:26.105313 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000328>
+592   17:45:26.107037 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000294>
+592   17:45:26.121311 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000318>
+589   17:45:26.129292 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4961000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000543>
+588   17:45:26.132208 select(12, [11</dev/video0>], NULL, NULL, {4, 0} <unfinished ...>
+592   17:45:26.134374 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000318>
+588   17:45:26.143322 <... select resumed> ) = 1 (in [11], left {3, 990637}) <0.009672>
+588   17:45:26.145749 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE <unfinished ...>
+592   17:45:26.147503 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000285>
+588   17:45:26.149264 <... ioctl resumed> , index=1, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4b94000, length=1382400, bytesused=1382400, flags=0, timestamp = {334.040000}, ...}) = 0 <0.002405>
+592   17:45:26.159842 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000226>
+592   17:45:26.161762 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000602>
+592   17:45:26.164056 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000285>
+592   17:45:26.174922 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000327>
+592   17:45:26.177599 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000225>
+592   17:45:26.181151 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000284>
+588   17:45:26.187999 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04), 0xae35da6c) = 0 <0.000290>
+589   17:45:26.191567 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04) <unfinished ...>
+592   17:45:26.193832 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000392>
+589   17:45:26.196220 <... ioctl resumed> , 0xae32b504) = 0 <0.003605>
+589   17:45:26.202921 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=1, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4b94000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000321>
+592   17:45:26.206816 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000284>
+586   17:45:26.209424 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04), 0x676d34) = 0 <0.000308>
+592   17:45:26.223723 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000318>
+592   17:45:26.225599 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000344>
+592   17:45:26.228534 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000320>
+592   17:45:26.231620 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000256>
+592   17:45:26.234781 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000317>
+592   17:45:26.237686 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000326>
+588   17:45:26.245550 select(12, [11</dev/video0>], NULL, NULL, {4, 0}) = 1 (in [11], left {3, 999959}) <0.000326>
+588   17:45:26.247749 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=2, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4dc7000, length=1382400, bytesused=1382400, flags=0, timestamp = {334.140000}, ...}) = 0 <0.000311>
+592   17:45:26.250197 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000282>
+588   17:45:26.256229 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04), 0xae35da6c) = 0 <0.000293>
+589   17:45:26.259733 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04) <unfinished ...>
+592   17:45:26.263096 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000226>
+589   17:45:26.265753 <... ioctl resumed> , 0xae32b504) = 0 <0.004192>
+589   17:45:26.271825 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=2, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4dc7000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000320>
+586   17:45:26.274866 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04) <unfinished ...>
+592   17:45:26.276752 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000282>
+586   17:45:26.278506 <... ioctl resumed> , 0x676d34) = 0 <0.002452>
+592   17:45:26.289355 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000284>
+592   17:45:26.291250 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000308>
+592   17:45:26.293250 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000286>
+592   17:45:26.295893 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000286>
+592   17:45:26.298526 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000281>
+592   17:45:26.301185 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000280>
+588   17:45:26.303672 select(12, [11</dev/video0>], NULL, NULL, {4, 0} <unfinished ...>
+592   17:45:26.313648 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000334>
+586   17:45:26.319107 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04), 0x676d34) = 0 <0.000960>
+592   17:45:26.326367 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000323>
+586   17:45:26.332580 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04), 0x676d34) = 0 <0.000349>
+592   17:45:26.338963 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000325>
+588   17:45:26.351078 <... select resumed> ) = 1 (in [11], left {3, 955245}) <0.046350>
+592   17:45:26.353032 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000279>
+592   17:45:26.354714 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000349>
+592   17:45:26.356702 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000282>
+592   17:45:26.359323 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000283>
+592   17:45:26.362102 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000277>
+592   17:45:26.365005 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000286>
+588   17:45:26.371006 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=3, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4ffa000, length=1382400, bytesused=1382400, flags=0, timestamp = {334.240000}, ...}) = 0 <0.003208>
+592   17:45:26.377303 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000289>
+588   17:45:26.382444 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04), 0xae35da6c) = 0 <0.000637>
+589   17:45:26.386237 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04) <unfinished ...>
+592   17:45:26.389935 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000269>
+589   17:45:26.393261 <... ioctl resumed> , 0xae32b504) = 0 <0.005955>
+589   17:45:26.400933 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=3, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4ffa000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000321>
+592   17:45:26.403314 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000284>
+588   17:45:26.405795 select(12, [11</dev/video0>], NULL, NULL, {4, 0} <unfinished ...>
+586   17:45:26.414269 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04) <unfinished ...>
+592   17:45:26.416271 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000321>
+592   17:45:26.418162 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000349>
+592   17:45:26.420768 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000319>
+592   17:45:26.424315 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000317>
+592   17:45:26.427314 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000314>
+592   17:45:26.430280 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000311>
+592   17:45:26.433655 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000323>
+586   17:45:26.442640 <... ioctl resumed> , 0x676d34) = 0 <0.027091>
+588   17:45:26.444283 <... select resumed> ) = 1 (in [11], left {3, 963777}) <0.037447>
+592   17:45:26.451243 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000288>
+588   17:45:26.453205 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4961000, length=1382400, bytesused=1382400, flags=0, timestamp = {334.340000}, ...}) = 0 <0.000319>
+588   17:45:26.461824 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04), 0xae35da6c) = 0 <0.000423>
+592   17:45:26.464013 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000284>
+589   17:45:26.466823 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7c, 0x04), 0xae32ba54) = 0 <0.000296>
+589   17:45:26.469865 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04) <unfinished ...>
+592   17:45:26.478748 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000284>
+592   17:45:26.480435 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000353>
+592   17:45:26.482836 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000278>
+592   17:45:26.485787 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000280>
+592   17:45:26.488438 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000284>
+592   17:45:26.491113 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000281>
+589   17:45:26.494459 <... ioctl resumed> , 0xae32b504) = 0 <0.023333>
+589   17:45:26.500422 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4961000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000315>
+592   17:45:26.503628 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000281>
+588   17:45:26.514949 select(12, [11</dev/video0>], NULL, NULL, {4, 0} <unfinished ...>
+592   17:45:26.518176 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000316>
+586   17:45:26.521191 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04), 0x676d34) = 0 <0.000351>
+592   17:45:26.530853 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.010132>
+588   17:45:26.547642 <... select resumed> ) = 1 (in [11], left {3, 973487}) <0.031166>
+592   17:45:26.616008 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000852>
+592   17:45:26.618487 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000354>
+592   17:45:26.620873 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.003579>
+592   17:45:26.634036 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.011094>
+592   17:45:26.649838 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000701>
+592   17:45:26.655257 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.002060>
+592   17:45:26.658868 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000488>
+592   17:45:26.662400 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.008154>
+592   17:45:26.674931 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000980>
+592   17:45:26.750930 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000337>
+592   17:45:26.753559 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000290>
+592   17:45:26.755493 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.008035>
+592   17:45:26.765838 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04) <unfinished ...>
+594   17:45:26.772781 +++ exited with 0 +++
+593   17:45:26.773781 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=594, si_uid=0, si_status=0, ...} ---
+592   17:45:26.779794 <... ioctl resumed> , 0xae299aa8) = 0 <0.013132>
+592   17:45:26.782003 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000467>
+592   17:45:26.787313 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.002365>
+592   17:45:26.799485 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.070469>
+592   17:45:26.871449 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.003111>
+592   17:45:26.876249 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000290>
+592   17:45:26.878906 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.006681>
+592   17:45:26.892722 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04) <unfinished ...>
+595   17:45:26.897075 +++ exited with 1 +++
+593   17:45:26.898059 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=595, si_uid=0, si_status=1, ...} ---
+592   17:45:26.901624 <... ioctl resumed> , 0xae299aa8) = 0 <0.008013>
+592   17:45:26.903711 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000464>
+592   17:45:26.909021 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.002629>
+592   17:45:26.913141 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000553>
+592   17:45:26.916083 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.074751>
+592   17:45:26.996800 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000292>
+592   17:45:26.999842 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000527>
+592   17:45:27.003460 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.009087>
+596   17:45:27.015031 +++ exited with 0 +++
+593   17:45:27.016086 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=596, si_uid=0, si_status=0, ...} ---
+593   17:45:27.033043 +++ exited with 0 +++
+592   17:45:27.033959 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000375>
+592   17:45:27.036221 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000371>
+592   17:45:27.039188 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000359>
+592   17:45:27.042286 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000224>
+592   17:45:27.045330 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000322>
+592   17:45:27.047093 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000308>
+592   17:45:27.049046 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000225>
+592   17:45:27.082718 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.001599>
+592   17:45:27.087151 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000285>
+592   17:45:27.089762 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000277>
+592   17:45:27.091653 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000312>
+592   17:45:27.093632 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000287>
+592   17:45:27.096281 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000329>
+592   17:45:27.098925 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000281>
+592   17:45:27.101651 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000284>
+592   17:45:27.103420 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000307>
+592   17:45:27.105392 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000319>
+592   17:45:27.108038 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000284>
+592   17:45:27.110823 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000325>
+592   17:45:27.120967 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000329>
+592   17:45:27.123958 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000320>
+592   17:45:27.125931 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000350>
+592   17:45:27.128181 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000318>
+592   17:45:27.131302 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000323>
+592   17:45:27.134308 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000320>
+592   17:45:27.137215 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000315>
+592   17:45:27.149667 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.010336>
+588   17:45:27.161645 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE <unfinished ...>
+590   17:45:27.164017 ioctl(10</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x6d, 0x04) <unfinished ...>
+588   17:45:27.165011 <... ioctl resumed> , index=1, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4b94000, length=1382400, bytesused=1382400, flags=0, timestamp = {334.440000}, ...}) = 0 <0.002507>
+588   17:45:27.170786 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04) <unfinished ...>
+592   17:45:27.172567 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000286>
+586   17:45:27.185573 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04) <unfinished ...>
+583   17:45:27.186929 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=593, si_uid=0, si_status=0, ...} ---
+592   17:45:27.195267 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000289>
+592   17:45:27.197011 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000313>
+592   17:45:27.198984 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.010984>
+592   17:45:27.212544 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000326>
+592   17:45:27.215548 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000323>
+592   17:45:27.218851 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000328>
+583   17:45:27.226482 +++ exited with 0 +++
+592   17:45:27.231841 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.020439>
+592   17:45:27.264439 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000333>
+592   17:45:27.266202 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000317>
+592   17:45:27.268194 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000288>
+592   17:45:27.276546 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000324>
+592   17:45:27.279192 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000289>
+592   17:45:27.282145 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000290>
+590   17:45:27.290847 <... ioctl resumed> , 0xae2f991c) = 0 <0.125926>
+588   17:45:27.292049 <... ioctl resumed> , 0xae35da6c) = 0 <0.120129>
+592   17:45:27.294527 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000330>
+589   17:45:27.297235 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04) <unfinished ...>
+586   17:45:27.299311 <... ioctl resumed> , 0x676d34) = 0 <0.112854>
+589   17:45:27.301691 <... ioctl resumed> , 0xae32b504) = 0 <0.003408>
+592   17:45:27.313605 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000322>
+592   17:45:27.315510 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000392>
+592   17:45:27.321057 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000327>
+592   17:45:27.324611 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.005365>
+592   17:45:27.332724 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000333>
+592   17:45:27.335665 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000323>
+589   17:45:27.346689 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=1 <unfinished ...>
+592   17:45:27.361006 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000285>
+589   17:45:27.362831 <... ioctl resumed> , memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4b94000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.002594>
+588   17:45:27.364696 select(12, [11</dev/video0>], NULL, NULL, {4, 0}) = 1 (in [11], left {3, 999959}) <0.000330>
+588   17:45:27.366846 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=2, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4dc7000, length=1382400, bytesused=1382400, flags=0, timestamp = {334.540000}, ...}) = 0 <0.000315>
+592   17:45:27.377637 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000287>
+592   17:45:27.379413 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000314>
+592   17:45:27.381598 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000280>
+592   17:45:27.384563 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000322>
+592   17:45:27.387201 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000284>
+592   17:45:27.389830 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000280>
+592   17:45:27.392564 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000282>
+588   17:45:27.398005 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04), 0xae35da6c) = 0 <0.000286>
+589   17:45:27.401785 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04) <unfinished ...>
+592   17:45:27.411275 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000326>
+589   17:45:27.413254 <... ioctl resumed> , 0xae32b504) = 0 <0.010353>
+592   17:45:27.424121 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000322>
+589   17:45:27.429612 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=2, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4dc7000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000493>
+592   17:45:27.442689 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000381>
+592   17:45:27.444978 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000307>
+592   17:45:27.447008 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000279>
+592   17:45:27.449641 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000407>
+592   17:45:27.452396 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000224>
+592   17:45:27.455183 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000285>
+588   17:45:27.459642 select(12, [11</dev/video0>], NULL, NULL, {4, 0}) = 1 (in [11], left {3, 999959}) <0.000325>
+588   17:45:27.461963 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=3, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4ffa000, length=1382400, bytesused=1382400, flags=0, timestamp = {334.640000}, ...}) = 0 <0.000313>
+592   17:45:27.467773 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000286>
+588   17:45:27.470386 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04), 0xae35da6c) = 0 <0.000291>
+589   17:45:27.473184 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7c, 0x04), 0xae32ba54) = 0 <0.000292>
+589   17:45:27.476133 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04) <unfinished ...>
+592   17:45:27.480494 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000326>
+589   17:45:27.482440 <... ioctl resumed> , 0xae32b504) = 0 <0.005247>
+589   17:45:27.488402 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=3, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4ffa000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000360>
+588   17:45:27.491479 select(12, [11</dev/video0>], NULL, NULL, {4, 0} <unfinished ...>
+592   17:45:27.493416 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000283>
+588   17:45:27.495190 <... select resumed> ) = 1 (in [11], left {3, 999959}) <0.002432>
+588   17:45:27.496561 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4961000, length=1382400, bytesused=1382400, flags=0, timestamp = {335.340000}, ...}) = 0 <0.000314>
+592   17:45:27.506244 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000284>
+592   17:45:27.507940 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000713>
+592   17:45:27.510308 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000323>
+592   17:45:27.513378 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000327>
+592   17:45:27.516410 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000243>
+592   17:45:27.520044 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000260>
+588   17:45:27.528390 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04), 0xae35da6c) = 0 <0.000331>
+589   17:45:27.532657 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04) <unfinished ...>
+592   17:45:27.535052 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000454>
+589   17:45:27.537759 <... ioctl resumed> , 0xae32b504) = 0 <0.003817>
+592   17:45:27.548394 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000288>
+589   17:45:27.553986 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4961000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000362>
+586   17:45:27.557228 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04), 0x676d34) = 0 <0.000311>
+592   17:45:27.560995 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000226>
+588   17:45:27.572543 select(12, [11</dev/video0>], NULL, NULL, {4, 0} <unfinished ...>
+592   17:45:27.574620 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000228>
+592   17:45:27.576617 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000305>
+592   17:45:27.578618 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000287>
+592   17:45:27.581382 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000285>
+592   17:45:27.584004 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000284>
+592   17:45:27.586561 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000286>
+588   17:45:27.594888 <... select resumed> ) = 1 (in [11], left {3, 999959}) <0.020980>
+588   17:45:27.596298 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=1, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4b94000, length=1382400, bytesused=1382400, flags=0, timestamp = {335.440000}, ...}) = 0 <0.000320>
+592   17:45:27.599174 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000330>
+588   17:45:27.604911 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04), 0xae35da6c) = 0 <0.000294>
+589   17:45:27.608325 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04) <unfinished ...>
+592   17:45:27.612669 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000326>
+589   17:45:27.616068 <... ioctl resumed> , 0xae32b504) = 0 <0.006668>
+592   17:45:27.627409 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.001267>
+592   17:45:27.637897 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000951>
+592   17:45:27.641420 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.001950>
+592   17:45:27.648026 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000929>
+592   17:45:27.651866 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000328>
+592   17:45:27.654455 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000282>
+592   17:45:27.666980 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000325>
+589   17:45:27.669209 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=1, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4b94000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000320>
+588   17:45:27.671868 select(12, [11</dev/video0>], NULL, NULL, {4, 0}) = 1 (in [11], left {3, 999959}) <0.000324>
+588   17:45:27.674047 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=2, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4dc7000, length=1382400, bytesused=1382400, flags=0, timestamp = {335.540000}, ...}) = 0 <0.000315>
+592   17:45:27.679366 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000285>
+588   17:45:27.682641 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04), 0xae35da6c) = 0 <0.000291>
+589   17:45:27.686135 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04) <unfinished ...>
+586   17:45:27.690163 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04) <unfinished ...>
+592   17:45:27.698803 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000284>
+592   17:45:27.700490 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000308>
+592   17:45:27.702793 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000285>
+592   17:45:27.705420 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000285>
+592   17:45:27.708044 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000284>
+592   17:45:27.710984 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000323>
+592   17:45:27.714305 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000319>
+592   17:45:27.726886 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000363>
+589   17:45:27.729905 <... ioctl resumed> , 0xae32b504) = 0 <0.042691>
+592   17:45:27.739465 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000461>
+589   17:45:27.742073 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=2, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4dc7000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000319>
+588   17:45:27.746196 select(12, [11</dev/video0>], NULL, NULL, {4, 0}) = 1 (in [11], left {3, 999959}) <0.000324>
+588   17:45:27.748338 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=3, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4ffa000, length=1382400, bytesused=1382400, flags=0, timestamp = {335.640000}, ...}) = 0 <0.000314>
+592   17:45:27.752207 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000287>
+588   17:45:27.763174 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04) <unfinished ...>
+592   17:45:27.764930 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000228>
+592   17:45:27.766882 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000313>
+592   17:45:27.768890 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000417>
+592   17:45:27.771825 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000284>
+592   17:45:27.774486 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000282>
+592   17:45:27.777080 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000284>
+588   17:45:27.781181 <... ioctl resumed> , 0xae35da6c) = 0 <0.016877>
+589   17:45:27.784007 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04) <unfinished ...>
+586   17:45:27.786671 <... ioctl resumed> , 0x676d34) = 0 <0.094916>
+589   17:45:27.788597 <... ioctl resumed> , 0xae32b504) = 0 <0.003468>
+592   17:45:27.790366 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000284>
+589   17:45:27.797327 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=3, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4ffa000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000321>
+588   17:45:27.800002 select(12, [11</dev/video0>], NULL, NULL, {4, 0} <unfinished ...>
+592   17:45:27.803131 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000288>
+592   17:45:27.815736 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000844>
+586   17:45:27.819159 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04) <unfinished ...>
+592   17:45:27.829542 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000449>
+592   17:45:27.831609 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000384>
+592   17:45:27.834336 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000320>
+592   17:45:27.837275 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000319>
+592   17:45:27.840208 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000306>
+592   17:45:27.843716 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000283>
+588   17:45:27.846162 <... select resumed> ) = 1 (in [11], left {3, 958133}) <0.045002>
+588   17:45:27.847554 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE <unfinished ...>
+592   17:45:27.856037 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000329>
+588   17:45:27.857806 <... ioctl resumed> , index=0, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4961000, length=1382400, bytesused=1382400, flags=0, timestamp = {335.740000}, ...}) = 0 <0.009060>
+588   17:45:27.863725 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04), 0xae35da6c) = 0 <0.000293>
+589   17:45:27.867149 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04) <unfinished ...>
+592   17:45:27.869555 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000380>
+589   17:45:27.871904 <... ioctl resumed> , 0xae32b504) = 0 <0.003264>
+592   17:45:27.882560 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000284>
+589   17:45:27.891010 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4961000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.001865>
+592   17:45:27.894871 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000284>
+592   17:45:27.896598 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000309>
+592   17:45:27.898565 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000285>
+592   17:45:27.901324 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000228>
+592   17:45:27.904254 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000325>
+592   17:45:27.906854 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000282>
+586   17:45:27.916526 <... ioctl resumed> , 0x676d34) = 0 <0.089277>
+592   17:45:27.919537 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000448>
+588   17:45:27.927088 select(12, [11</dev/video0>], NULL, NULL, {4, 0} <unfinished ...>
+592   17:45:27.932300 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000463>
+586   17:45:27.936800 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04), 0x676d34) = 0 <0.000351>
+588   17:45:27.943568 <... select resumed> ) = 1 (in [11], left {3, 985535}) <0.014997>
+592   17:45:27.945580 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000227>
+588   17:45:27.947740 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=1, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4b94000, length=1382400, bytesused=1382400, flags=0, timestamp = {335.840000}, ...}) = 0 <0.006753>
+592   17:45:27.958172 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000324>
+592   17:45:27.959906 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000302>
+592   17:45:27.961974 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000227>
+592   17:45:27.964834 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000282>
+592   17:45:27.967501 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000283>
+592   17:45:27.970104 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000266>
+592   17:45:27.982584 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000288>
+588   17:45:27.984790 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04), 0xae35da6c) = 0 <0.000290>
+589   17:45:27.988278 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04) <unfinished ...>
+586   17:45:27.991658 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04) <unfinished ...>
+589   17:45:27.993214 <... ioctl resumed> , 0xae32b504) = 0 <0.003811>
+592   17:45:27.994960 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000389>
+589   17:45:28.001858 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=1, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4b94000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000319>
+588   17:45:28.004544 select(12, [11</dev/video0>], NULL, NULL, {4, 0} <unfinished ...>
+586   17:45:28.006948 <... ioctl resumed> , 0x676d34) = 0 <0.013789>
+592   17:45:28.008350 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000285>
+592   17:45:28.020912 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000257>
+592   17:45:28.023442 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000352>
+592   17:45:28.025689 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000255>
+592   17:45:28.028936 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000325>
+592   17:45:28.032027 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000321>
+592   17:45:28.034975 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000328>
+592   17:45:28.037867 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000320>
+592   17:45:28.050354 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000287>
+590   17:45:28.058919 ioctl(10</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x6d, 0x04) <unfinished ...>
+588   17:45:28.059823 <... select resumed> ) = 1 (in [11], left {3, 962274}) <0.054276>
+588   17:45:28.061331 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE <unfinished ...>
+592   17:45:28.063094 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.004694>
+588   17:45:28.069307 <... ioctl resumed> , index=2, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4dc7000, length=1382400, bytesused=1382400, flags=0, timestamp = {335.940000}, ...}) = 0 <0.007125>
+588   17:45:28.074958 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04) <unfinished ...>
+592   17:45:28.084540 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000283>
+592   17:45:28.086262 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000308>
+592   17:45:28.088231 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000283>
+592   17:45:28.091013 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000283>
+592   17:45:28.093755 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000283>
+592   17:45:28.096337 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000323>
+586   17:45:28.099380 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04) <unfinished ...>
+592   17:45:28.108732 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000286>
+592   17:45:28.121499 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000322>
+592   17:45:28.134674 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000318>
+592   17:45:28.148893 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000287>
+592   17:45:28.150757 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000310>
+592   17:45:28.152774 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000285>
+592   17:45:28.155400 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000282>
+592   17:45:28.158025 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000284>
+592   17:45:28.160924 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000288>
+592   17:45:28.173340 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000288>
+590   17:45:28.181424 <... ioctl resumed> , 0xae2f991c) = 0 <0.121646>
+588   17:45:28.183220 <... ioctl resumed> , 0xae35da6c) = 0 <0.106718>
+592   17:45:28.185674 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000281>
+589   17:45:28.188382 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04) <unfinished ...>
+586   17:45:28.190447 <... ioctl resumed> , 0x676d34) = 0 <0.090170>
+589   17:45:28.192946 <... ioctl resumed> , 0xae32b504) = 0 <0.003517>
+592   17:45:28.197945 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000284>
+589   17:45:28.202058 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=2, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4dc7000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000321>
+588   17:45:28.204568 select(12, [11</dev/video0>], NULL, NULL, {4, 0} <unfinished ...>
+592   17:45:28.213132 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000321>
+592   17:45:28.215054 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000480>
+592   17:45:28.217378 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000316>
+592   17:45:28.220313 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000320>
+592   17:45:28.224213 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000706>
+592   17:45:28.227665 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000318>
+588   17:45:28.238279 <... select resumed> ) = 1 (in [11], left {3, 999952}) <0.025884>
+592   17:45:28.240247 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000352>
+588   17:45:28.242674 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=3, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4ffa000, length=1382400, bytesused=1382400, flags=0, timestamp = {336.040000}, ...}) = 0 <0.000309>
+588   17:45:28.249286 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04), 0xae35da6c) = 0 <0.000290>
+592   17:45:28.253224 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000398>
+589   17:45:28.255874 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04), 0xae32b504) = 0 <0.000393>
+589   17:45:28.263571 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=3, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4ffa000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000321>
+592   17:45:28.266343 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000285>
+592   17:45:28.278777 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000227>
+592   17:45:28.280884 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000318>
+592   17:45:28.283267 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000280>
+592   17:45:28.285959 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000285>
+592   17:45:28.288600 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000317>
+592   17:45:28.291299 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000284>
+588   17:45:28.301868 select(12, [11</dev/video0>], NULL, NULL, {4, 0} <unfinished ...>
+592   17:45:28.303698 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000336>
+588   17:45:28.305519 <... select resumed> ) = 1 (in [11], left {3, 999852}) <0.002645>
+588   17:45:28.306889 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4961000, length=1382400, bytesused=1382400, flags=0, timestamp = {336.140000}, ...}) = 0 <0.000315>
+588   17:45:28.313343 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04), 0xae35da6c) = 0 <0.000333>
+592   17:45:28.316184 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.001035>
+589   17:45:28.320796 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04) <unfinished ...>
+586   17:45:28.324567 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04) <unfinished ...>
+589   17:45:28.327303 <... ioctl resumed> , 0xae32b504) = 0 <0.005276>
+592   17:45:28.329575 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000470>
+592   17:45:28.342473 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000268>
+592   17:45:28.344568 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000310>
+592   17:45:28.346558 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000224>
+592   17:45:28.349368 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000286>
+592   17:45:28.352151 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000280>
+592   17:45:28.354791 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000285>
+592   17:45:28.357407 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000284>
+592   17:45:28.369738 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000420>
+589   17:45:28.375069 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4961000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000326>
+588   17:45:28.377582 select(12, [11</dev/video0>], NULL, NULL, {4, 0}) = 1 (in [11], left {3, 999959}) <0.000331>
+592   17:45:28.382130 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000289>
+588   17:45:28.384714 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=1, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4b94000, length=1382400, bytesused=1382400, flags=0, timestamp = {336.240000}, ...}) = 0 <0.000388>
+588   17:45:28.390958 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04), 0xae35da6c) = 0 <0.000295>
+592   17:45:28.394805 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000347>
+589   17:45:28.397052 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04), 0xae32b504) = 0 <0.006670>
+592   17:45:28.407392 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000281>
+592   17:45:28.409071 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000310>
+592   17:45:28.411220 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000325>
+592   17:45:28.414309 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000316>
+592   17:45:28.417791 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000317>
+592   17:45:28.420854 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000319>
+589   17:45:28.429460 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=1, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4b94000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000297>
+592   17:45:28.433455 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000323>
+586   17:45:28.435647 <... ioctl resumed> , 0x676d34) = 0 <0.109163>
+588   17:45:28.443786 select(12, [11</dev/video0>], NULL, NULL, {4, 0}) = 1 (in [11], left {3, 999959}) <0.000325>
+592   17:45:28.446387 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000283>
+588   17:45:28.448722 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=2, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4dc7000, length=1382400, bytesused=1382400, flags=0, timestamp = {336.340000}, ...}) = 0 <0.000783>
+588   17:45:28.455474 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04), 0xae35da6c) = 0 <0.000290>
+592   17:45:28.458903 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000284>
+589   17:45:28.461525 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04) <unfinished ...>
+592   17:45:28.471295 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000286>
+592   17:45:28.473022 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000307>
+592   17:45:28.474970 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000285>
+592   17:45:28.477598 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000284>
+592   17:45:28.480221 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000284>
+592   17:45:28.482998 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000283>
+589   17:45:28.491568 <... ioctl resumed> , 0xae32b504) = 0 <0.022144>
+592   17:45:28.495308 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000761>
+589   17:45:28.500423 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=2, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4dc7000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000316>
+586   17:45:28.503866 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04), 0x676d34) = 0 <0.000312>
+592   17:45:28.508096 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000277>
+588   17:45:28.513789 select(12, [11</dev/video0>], NULL, NULL, {4, 0} <unfinished ...>
+586   17:45:28.516809 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04), 0x676d34) = 0 <0.000813>
+592   17:45:28.521036 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000324>
+592   17:45:28.534815 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000367>
+592   17:45:28.536744 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000357>
+592   17:45:28.538969 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000258>
+592   17:45:28.542336 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000228>
+592   17:45:28.545442 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000283>
+592   17:45:28.548031 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000284>
+588   17:45:28.557863 <... select resumed> ) = 1 (in [11], left {3, 971931}) <0.042924>
+588   17:45:28.559234 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE <unfinished ...>
+592   17:45:28.561189 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000331>
+588   17:45:28.563013 <... ioctl resumed> , index=3, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4ffa000, length=1382400, bytesused=1382400, flags=0, timestamp = {336.440000}, ...}) = 0 <0.002597>
+588   17:45:28.568456 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04), 0xae35da6c) = 0 <0.000292>
+589   17:45:28.571234 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7c, 0x04), 0xae32ba54) = 0 <0.000293>
+592   17:45:28.573826 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000321>
+589   17:45:28.576546 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04) <unfinished ...>
+586   17:45:28.579469 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04) <unfinished ...>
+589   17:45:28.581124 <... ioctl resumed> , 0xae32b504) = 0 <0.003508>
+592   17:45:28.586215 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000284>
+589   17:45:28.590255 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=3 <unfinished ...>
+592   17:45:28.598546 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000287>
+592   17:45:28.600286 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000299>
+592   17:45:28.602447 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000224>
+592   17:45:28.605332 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000281>
+592   17:45:28.607966 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000286>
+592   17:45:28.610721 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000318>
+589   17:45:28.619573 <... ioctl resumed> , memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4ffa000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.021859>
+592   17:45:28.623347 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000369>
+588   17:45:28.625594 select(12, [11</dev/video0>], NULL, NULL, {4, 0} <unfinished ...>
+586   17:45:28.627593 <... ioctl resumed> , 0x676d34) = 0 <0.047046>
+592   17:45:28.636146 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000323>
+586   17:45:28.641391 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04), 0x676d34) = 0 <0.000354>
+588   17:45:28.643551 <... select resumed> ) = 1 (in [11], left {3, 983772}) <0.016775>
+588   17:45:28.645978 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4961000, length=1382400, bytesused=1382400, flags=0, timestamp = {336.540000}, ...}) = 0 <0.000348>
+592   17:45:28.649111 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000284>
+588   17:45:28.654539 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04) <unfinished ...>
+592   17:45:28.662764 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000283>
+592   17:45:28.664445 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000309>
+592   17:45:28.666652 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000281>
+592   17:45:28.669281 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000280>
+592   17:45:28.672018 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000284>
+592   17:45:28.674652 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000284>
+592   17:45:28.677235 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000284>
+592   17:45:28.689555 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000436>
+588   17:45:28.692381 <... ioctl resumed> , 0xae35da6c) = 0 <0.030238>
+589   17:45:28.695234 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04), 0xae32b504) = 0 <0.003454>
+592   17:45:28.702161 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000227>
+589   17:45:28.709220 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4961000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000323>
+588   17:45:28.711971 select(12, [11</dev/video0>], NULL, NULL, {4, 0} <unfinished ...>
+592   17:45:28.714899 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000370>
+586   17:45:28.717049 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04) <unfinished ...>
+592   17:45:28.727539 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000317>
+592   17:45:28.729512 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000475>
+592   17:45:28.731856 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000256>
+592   17:45:28.735092 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000318>
+592   17:45:28.738030 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000318>
+592   17:45:28.741070 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000323>
+588   17:45:28.744845 <... select resumed> ) = 1 (in [11], left {3, 970095}) <0.031724>
+588   17:45:28.746253 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=1, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4b94000, length=1382400, bytesused=1382400, flags=0, timestamp = {336.640000}, ...}) = 0 <0.000949>
+592   17:45:28.753791 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000284>
+588   17:45:28.755812 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04), 0xae35da6c) = 0 <0.000291>
+589   17:45:28.759218 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04) <unfinished ...>
+586   17:45:28.761700 <... ioctl resumed> , 0x676d34) = 0 <0.042788>
+589   17:45:28.763908 <... ioctl resumed> , 0xae32b504) = 0 <0.003635>
+592   17:45:28.766403 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000283>
+589   17:45:28.773037 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=1, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4b94000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000322>
+588   17:45:28.775520 select(12, [11</dev/video0>], NULL, NULL, {4, 0} <unfinished ...>
+592   17:45:28.779014 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000284>
+592   17:45:28.791480 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000285>
+592   17:45:28.793180 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000350>
+592   17:45:28.795216 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000283>
+592   17:45:28.798029 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000284>
+592   17:45:28.800831 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000283>
+592   17:45:28.803422 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000284>
+586   17:45:28.807741 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04), 0x676d34) = 0 <0.000314>
+592   17:45:28.816098 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000843>
+586   17:45:28.820278 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04), 0x676d34) = 0 <0.000350>
+592   17:45:28.829833 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.001631>
+586   17:45:28.835582 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04), 0x676d34) = 0 <0.000396>
+588   17:45:28.843696 <... select resumed> ) = 1 (in [11], left {3, 933539}) <0.067127>
+592   17:45:28.845533 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000372>
+588   17:45:28.855217 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=2, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4dc7000, length=1382400, bytesused=1382400, flags=0, timestamp = {336.740000}, ...}) = 0 <0.000317>
+592   17:45:28.858375 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000225>
+592   17:45:28.860319 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000302>
+592   17:45:28.862462 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000284>
+592   17:45:28.865093 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000329>
+592   17:45:28.867731 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000282>
+592   17:45:28.870315 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000277>
+588   17:45:28.876386 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04), 0xae35da6c) = 0 <0.000288>
+592   17:45:28.882847 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.001865>
+589   17:45:28.888084 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04) <unfinished ...>
+586   17:45:28.891529 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04) <unfinished ...>
+589   17:45:28.893020 <... ioctl resumed> , 0xae32b504) = 0 <0.003881>
+592   17:45:28.896794 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000286>
+589   17:45:28.902717 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=2, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4dc7000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000322>
+588   17:45:28.905214 select(12, [11</dev/video0>], NULL, NULL, {4, 0} <unfinished ...>
+586   17:45:28.906939 <... ioctl resumed> , 0x676d34) = 0 <0.014175>
+592   17:45:28.909288 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000406>
+592   17:45:28.922163 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000364>
+592   17:45:28.924096 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000332>
+592   17:45:28.926694 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000319>
+592   17:45:28.929629 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000302>
+592   17:45:28.933270 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000321>
+592   17:45:28.936166 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000317>
+588   17:45:28.944851 <... select resumed> ) = 1 (in [11], left {3, 963223}) <0.038629>
+588   17:45:28.948181 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE <unfinished ...>
+592   17:45:28.950120 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000268>
+588   17:45:28.952044 <... ioctl resumed> , index=3, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4ffa000, length=1382400, bytesused=1382400, flags=0, timestamp = {336.840000}, ...}) = 0 <0.002634>
+588   17:45:28.957522 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04), 0xae35da6c) = 0 <0.000292>
+589   17:45:28.961082 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04) <unfinished ...>
+592   17:45:28.963475 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000384>
+589   17:45:28.965682 <... ioctl resumed> , 0xae32b504) = 0 <0.003063>
+589   17:45:28.972345 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=3, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4ffa000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000322>
+586   17:45:28.975781 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04) <unfinished ...>
+592   17:45:28.983978 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000227>
+592   17:45:28.986026 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000308>
+592   17:45:28.988043 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000280>
+592   17:45:28.990833 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000285>
+592   17:45:28.993672 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000284>
+592   17:45:28.996301 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000285>
+592   17:45:28.998911 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000283>
+592   17:45:29.011286 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000325>
+588   17:45:29.018368 select(12, [11</dev/video0>], NULL, NULL, {4, 0} <unfinished ...>
+592   17:45:29.023786 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000326>
+590   17:45:29.026640 ioctl(10</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x6d, 0x04) <unfinished ...>
+586   17:45:29.029009 <... ioctl resumed> , 0x676d34) = 0 <0.045670>
+592   17:45:29.036623 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000317>
+592   17:45:29.049156 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000229>
+592   17:45:29.051221 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000444>
+592   17:45:29.053314 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000285>
+592   17:45:29.055960 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000283>
+592   17:45:29.058578 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000283>
+592   17:45:29.061293 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000285>
+588   17:45:29.063696 <... select resumed> ) = 1 (in [11], left {3, 971845}) <0.044181>
+588   17:45:29.065116 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4961000, length=1382400, bytesused=1382400, flags=0, timestamp = {336.940000}, ...}) = 0 <0.000319>
+588   17:45:29.071412 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04) <unfinished ...>
+592   17:45:29.073811 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000280>
+586   17:45:29.075689 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04) <unfinished ...>
+590   17:45:29.081349 <... ioctl resumed> , 0xae2f991c) = 0 <0.053774>
+588   17:45:29.083210 <... ioctl resumed> , 0xae35da6c) = 0 <0.010973>
+592   17:45:29.086110 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000282>
+589   17:45:29.089045 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04) <unfinished ...>
+586   17:45:29.091248 <... ioctl resumed> , 0x676d34) = 0 <0.014663>
+589   17:45:29.093546 <... ioctl resumed> , 0xae32b504) = 0 <0.003451>
+592   17:45:29.098586 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000469>
+589   17:45:29.102368 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4961000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000357>
+588   17:45:29.111494 select(12, [11</dev/video0>], NULL, NULL, {4, 0} <unfinished ...>
+592   17:45:29.113488 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000318>
+592   17:45:29.115411 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000346>
+592   17:45:29.117622 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000318>
+592   17:45:29.120699 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000319>
+592   17:45:29.124701 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000319>
+592   17:45:29.127602 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000323>
+592   17:45:29.140148 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000316>
+588   17:45:29.143312 <... select resumed> ) = 1 (in [11], left {3, 969694}) <0.030620>
+588   17:45:29.144683 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=1, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4b94000, length=1382400, bytesused=1382400, flags=0, timestamp = {337.040000}, ...}) = 0 <0.000313>
+588   17:45:29.151337 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04) <unfinished ...>
+592   17:45:29.153224 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000284>
+588   17:45:29.155011 <... ioctl resumed> , 0xae35da6c) = 0 <0.002793>
+589   17:45:29.157855 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04) <unfinished ...>
+586   17:45:29.162238 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04) <unfinished ...>
+589   17:45:29.163456 <... ioctl resumed> , 0xae32b504) = 0 <0.004538>
+592   17:45:29.165608 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000226>
+592   17:45:29.178140 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000284>
+592   17:45:29.179887 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000248>
+592   17:45:29.182267 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000282>
+592   17:45:29.184892 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000283>
+592   17:45:29.187542 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000283>
+592   17:45:29.190117 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000227>
+589   17:45:29.199519 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=1, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4b94000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000483>
+588   17:45:29.202326 select(12, [11</dev/video0>], NULL, NULL, {4, 0} <unfinished ...>
+592   17:45:29.204098 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000287>
+586   17:45:29.206346 <... ioctl resumed> , 0x676d34) = 0 <0.043244>
+592   17:45:29.216619 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000249>
+586   17:45:29.220335 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04), 0x676d34) = 0 <0.000869>
+592   17:45:29.230293 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000307>
+586   17:45:29.242407 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04) <unfinished ...>
+592   17:45:29.244910 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000284>
+592   17:45:29.246599 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000300>
+592   17:45:29.249323 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000282>
+592   17:45:29.252090 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000285>
+592   17:45:29.254714 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000283>
+592   17:45:29.257319 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000284>
+588   17:45:29.264527 <... select resumed> ) = 1 (in [11], left {3, 960384}) <0.061135>
+588   17:45:29.265940 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=2, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4dc7000, length=1382400, bytesused=1382400, flags=0, timestamp = {337.140000}, ...}) = 0 <0.000320>
+592   17:45:29.269849 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000279>
+588   17:45:29.274581 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04), 0xae35da6c) = 0 <0.000292>
+589   17:45:29.277987 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04) <unfinished ...>
+586   17:45:29.280766 <... ioctl resumed> , 0x676d34) = 0 <0.036420>
+592   17:45:29.282912 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000285>
+589   17:45:29.285607 <... ioctl resumed> , 0xae32b504) = 0 <0.006578>
+589   17:45:29.292600 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=2, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4dc7000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000320>
+592   17:45:29.295291 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000284>
+588   17:45:29.297317 select(12, [11</dev/video0>], NULL, NULL, {4, 0} <unfinished ...>
+592   17:45:29.307858 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000388>
+592   17:45:29.309664 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000456>
+592   17:45:29.311969 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000318>
+592   17:45:29.314905 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000318>
+592   17:45:29.318609 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000361>
+592   17:45:29.321707 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000320>
+592   17:45:29.324600 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000438>
+592   17:45:29.337269 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000255>
+586   17:45:29.340177 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04) <unfinished ...>
+588   17:45:29.343290 <... select resumed> ) = 1 (in [11], left {3, 961935}) <0.038354>
+588   17:45:29.346351 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=3, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4ffa000, length=1382400, bytesused=1382400, flags=0, timestamp = {337.240000}, ...}) = 0 <0.000319>
+592   17:45:29.350478 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000286>
+588   17:45:29.355672 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04), 0xae35da6c) = 0 <0.000289>
+589   17:45:29.359071 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04) <unfinished ...>
+592   17:45:29.369029 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000285>
+592   17:45:29.370858 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000297>
+592   17:45:29.373294 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000276>
+592   17:45:29.376265 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000285>
+592   17:45:29.378915 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000284>
+592   17:45:29.381634 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000326>
+589   17:45:29.384993 <... ioctl resumed> , 0xae32b504) = 0 <0.024748>
+589   17:45:29.391078 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=3, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4ffa000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000322>
+588   17:45:29.393762 select(12, [11</dev/video0>], NULL, NULL, {4, 0} <unfinished ...>
+592   17:45:29.395533 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000283>
+586   17:45:29.397691 <... ioctl resumed> , 0x676d34) = 0 <0.056394>
+592   17:45:29.407800 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000286>
+586   17:45:29.411564 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04), 0x676d34) = 0 <0.000395>
+592   17:45:29.420345 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000361>
+592   17:45:29.433590 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000322>
+592   17:45:29.435514 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000391>
+592   17:45:29.437735 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000319>
+592   17:45:29.440814 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000317>
+592   17:45:29.444365 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000284>
+592   17:45:29.447112 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000284>
+588   17:45:29.456372 <... select resumed> ) = 1 (in [11], left {3, 951787}) <0.061548>
+588   17:45:29.457781 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE <unfinished ...>
+592   17:45:29.459487 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000283>
+588   17:45:29.461342 <... ioctl resumed> , index=0, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4961000, length=1382400, bytesused=1382400, flags=0, timestamp = {337.340000}, ...}) = 0 <0.002711>
+588   17:45:29.466833 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04), 0xae35da6c) = 0 <0.000291>
+589   17:45:29.470232 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04) <unfinished ...>
+592   17:45:29.472854 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000386>
+589   17:45:29.475111 <... ioctl resumed> , 0xae32b504) = 0 <0.003172>
+589   17:45:29.481919 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4961000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000319>
+586   17:45:29.485364 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04) <unfinished ...>
+592   17:45:29.486897 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000321>
+586   17:45:29.488652 <... ioctl resumed> , 0x676d34) = 0 <0.002463>
+588   17:45:29.499014 select(12, [11</dev/video0>], NULL, NULL, {4, 0} <unfinished ...>
+592   17:45:29.501190 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000283>
+592   17:45:29.502913 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000308>
+592   17:45:29.504861 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000320>
+592   17:45:29.507488 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000285>
+592   17:45:29.510190 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000310>
+592   17:45:29.513163 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000319>
+586   17:45:29.522544 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04), 0x676d34) = 0 <0.000399>
+592   17:45:29.525968 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000469>
+586   17:45:29.535191 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04), 0x676d34) = 0 <0.000357>
+592   17:45:29.539028 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000449>
+588   17:45:29.543290 <... select resumed> ) = 1 (in [11], left {3, 957414}) <0.042858>
+588   17:45:29.544659 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=1, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4b94000, length=1382400, bytesused=1382400, flags=0, timestamp = {337.440000}, ...}) = 0 <0.000312>
+592   17:45:29.552077 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000379>
+588   17:45:29.554125 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04), 0xae35da6c) = 0 <0.000292>
+592   17:45:29.564916 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000394>
+592   17:45:29.567264 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000328>
+592   17:45:29.569839 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000280>
+592   17:45:29.572616 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000283>
+592   17:45:29.575243 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000283>
+592   17:45:29.577823 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000287>
+589   17:45:29.586599 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04), 0xae32b504) = 0 <0.000326>
+592   17:45:29.590388 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000283>
+589   17:45:29.595684 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=1, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4b94000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000323>
+586   17:45:29.598949 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04), 0x676d34) = 0 <0.000310>
+592   17:45:29.603280 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000280>
+588   17:45:29.608885 select(12, [11</dev/video0>], NULL, NULL, {4, 0} <unfinished ...>
+586   17:45:29.612028 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04), 0x676d34) = 0 <0.000350>
+592   17:45:29.616077 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000305>
+586   17:45:29.634793 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04), 0x676d34) = 0 <0.001628>
+592   17:45:29.639880 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000865>
+592   17:45:29.644140 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.001310>
+592   17:45:29.647157 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000281>
+592   17:45:29.649834 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000281>
+592   17:45:29.652720 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000287>
+592   17:45:29.655381 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000279>
+592   17:45:29.658371 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000287>
+592   17:45:29.670853 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000288>
+588   17:45:29.672623 <... select resumed> ) = 1 (in [11], left {3, 966831}) <0.062712>
+588   17:45:29.675162 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=2, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4dc7000, length=1382400, bytesused=1382400, flags=0, timestamp = {337.540000}, ...}) = 0 <0.000322>
+588   17:45:29.682334 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04) <unfinished ...>
+592   17:45:29.690419 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000277>
+592   17:45:29.692324 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000308>
+592   17:45:29.694286 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000284>
+592   17:45:29.696923 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000329>
+592   17:45:29.699586 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000404>
+592   17:45:29.702487 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000284>
+588   17:45:29.704941 <... ioctl resumed> , 0xae35da6c) = 0 <0.015209>
+589   17:45:29.706987 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7c, 0x04), 0xae32ba54) = 0 <0.000297>
+589   17:45:29.709897 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04) <unfinished ...>
+586   17:45:29.713774 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04) <unfinished ...>
+592   17:45:29.716595 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000262>
+589   17:45:29.720477 <... ioctl resumed> , 0xae32b504) = 0 <0.009152>
+589   17:45:29.728186 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=2 <unfinished ...>
+592   17:45:29.730105 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000258>
+589   17:45:29.732211 <... ioctl resumed> , memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4dc7000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.003034>
+588   17:45:29.734270 select(12, [11</dev/video0>], NULL, NULL, {4, 0} <unfinished ...>
+586   17:45:29.736200 <... ioctl resumed> , 0x676d34) = 0 <0.020428>
+592   17:45:29.743294 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000282>
+588   17:45:29.745367 <... select resumed> ) = 1 (in [11], left {3, 992344}) <0.009983>
+588   17:45:29.754155 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE <unfinished ...>
+592   17:45:29.755947 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000284>
+592   17:45:29.757625 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000310>
+592   17:45:29.759644 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000399>
+592   17:45:29.763095 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000324>
+592   17:45:29.765757 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000285>
+592   17:45:29.768339 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000287>
+588   17:45:29.771839 <... ioctl resumed> , index=3, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4ffa000, length=1382400, bytesused=1382400, flags=0, timestamp = {337.640000}, ...}) = 0 <0.016827>
+592   17:45:29.780774 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000287>
+588   17:45:29.785452 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04), 0xae35da6c) = 0 <0.000289>
+589   17:45:29.788853 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04) <unfinished ...>
+586   17:45:29.792273 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04) <unfinished ...>
+592   17:45:29.794644 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000283>
+589   17:45:29.796364 <... ioctl resumed> , 0xae32b504) = 0 <0.006452>
+589   17:45:29.803682 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=3, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4ffa000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000321>
+588   17:45:29.806179 select(12, [11</dev/video0>], NULL, NULL, {4, 0} <unfinished ...>
+592   17:45:29.808209 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000323>
+586   17:45:29.810368 <... ioctl resumed> , 0x676d34) = 0 <0.016459>
+592   17:45:29.821024 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000316>
+592   17:45:29.822943 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000291>
+592   17:45:29.825455 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000317>
+592   17:45:29.828385 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000319>
+592   17:45:29.831477 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000323>
+592   17:45:29.834402 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000320>
+588   17:45:29.843636 <... select resumed> ) = 1 (in [11], left {3, 964494}) <0.036130>
+588   17:45:29.845944 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE <unfinished ...>
+592   17:45:29.848016 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000282>
+588   17:45:29.849779 <... ioctl resumed> , index=0, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4961000, length=1382400, bytesused=1382400, flags=0, timestamp = {337.740000}, ...}) = 0 <0.002565>
+588   17:45:29.855608 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04), 0xae35da6c) = 0 <0.000293>
+589   17:45:29.859018 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04) <unfinished ...>
+592   17:45:29.861559 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000956>
+589   17:45:29.864184 <... ioctl resumed> , 0xae32b504) = 0 <0.003646>
+589   17:45:29.870865 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4961000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000322>
+586   17:45:29.874309 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04) <unfinished ...>
+592   17:45:29.882549 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000226>
+592   17:45:29.884483 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000308>
+592   17:45:29.886468 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000225>
+592   17:45:29.889290 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000323>
+592   17:45:29.892059 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000316>
+592   17:45:29.894643 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000284>
+588   17:45:29.902918 select(12, [11</dev/video0>], NULL, NULL, {4, 0} <unfinished ...>
+586   17:45:29.905836 <... ioctl resumed> , 0x676d34) = 0 <0.030624>
+592   17:45:29.907417 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000285>
+592   17:45:29.920347 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000322>
+586   17:45:29.923709 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04), 0x676d34) = 0 <0.000348>
+592   17:45:29.933408 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000255>
+586   17:45:29.936830 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04), 0x676d34) = 0 <0.000351>
+592   17:45:29.947617 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000286>
+592   17:45:29.949496 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000308>
+592   17:45:29.951637 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000289>
+592   17:45:29.954272 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000283>
+592   17:45:29.956923 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000284>
+592   17:45:29.959654 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000405>
+592   17:45:29.962366 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000285>
+588   17:45:29.971831 <... select resumed> ) = 1 (in [11], left {3, 957264}) <0.067891>
+588   17:45:29.973201 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE <unfinished ...>
+592   17:45:29.975094 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.004249>
+588   17:45:29.981006 <... ioctl resumed> , index=1, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4b94000, length=1382400, bytesused=1382400, flags=0, timestamp = {337.840000}, ...}) = 0 <0.006564>
+588   17:45:29.986527 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04), 0xae35da6c) = 0 <0.000295>
+589   17:45:29.989937 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04) <unfinished ...>
+592   17:45:29.992475 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000394>
+589   17:45:29.994684 <... ioctl resumed> , 0xae32b504) = 0 <0.003135>
+589   17:45:30.000768 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=1, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4b94000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000323>
+586   17:45:30.010862 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04) <unfinished ...>
+592   17:45:30.012773 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000307>
+592   17:45:30.015111 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000389>
+592   17:45:30.017328 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000318>
+592   17:45:30.020270 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000347>
+592   17:45:30.024034 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000323>
+592   17:45:30.026943 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000320>
+590   17:45:30.037462 ioctl(10</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x6d, 0x04) <unfinished ...>
+588   17:45:30.039327 select(12, [11</dev/video0>], NULL, NULL, {4, 0} <unfinished ...>
+592   17:45:30.041426 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000463>
+588   17:45:30.043988 <... select resumed> ) = 1 (in [11], left {3, 997397}) <0.003500>
+588   17:45:30.045370 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=2, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4dc7000, length=1382400, bytesused=1382400, flags=0, timestamp = {337.940000}, ...}) = 0 <0.000351>
+588   17:45:30.052307 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04) <unfinished ...>
+586   17:45:30.053807 <... ioctl resumed> , 0x676d34) = 0 <0.042038>
+592   17:45:30.055496 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000283>
+592   17:45:30.067881 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000280>
+592   17:45:30.076835 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000314>
+592   17:45:30.078801 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000284>
+592   17:45:30.081596 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000284>
+592   17:45:30.084224 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000284>
+592   17:45:30.086835 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000283>
+586   17:45:30.095064 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04) <unfinished ...>
+592   17:45:30.099191 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000714>
+590   17:45:30.101685 <... ioctl resumed> , 0xae2f991c) = 0 <0.063323>
+588   17:45:30.103514 <... ioctl resumed> , 0xae35da6c) = 0 <0.050382>
+589   17:45:30.106370 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04) <unfinished ...>
+586   17:45:30.108989 <... ioctl resumed> , 0x676d34) = 0 <0.013079>
+589   17:45:30.111127 <... ioctl resumed> , 0xae32b504) = 0 <0.003664>
+592   17:45:30.113008 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000320>
+589   17:45:30.122121 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=2, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4dc7000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000368>
+588   17:45:30.125241 select(12, [11</dev/video0>], NULL, NULL, {4, 0} <unfinished ...>
+592   17:45:30.127176 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000325>
+592   17:45:30.139935 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000311>
+592   17:45:30.142434 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000251>
+592   17:45:30.145054 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000282>
+592   17:45:30.147725 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000282>
+592   17:45:30.150360 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000315>
+592   17:45:30.153238 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000282>
+588   17:45:30.161791 <... select resumed> ) = 1 (in [11], left {3, 983370}) <0.035422>
+588   17:45:30.163167 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=3, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4ffa000, length=1382400, bytesused=1382400, flags=0, timestamp = {338.040000}, ...}) = 0 <0.000360>
+592   17:45:30.165553 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000318>
+588   17:45:30.172082 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04), 0xae35da6c) = 0 <0.000294>
+589   17:45:30.175563 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04) <unfinished ...>
+592   17:45:30.178472 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000474>
+589   17:45:30.180743 <... ioctl resumed> , 0xae32b504) = 0 <0.004093>
+589   17:45:30.187305 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=3, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4ffa000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000310>
+588   17:45:30.190159 select(12, [11</dev/video0>], NULL, NULL, {4, 0} <unfinished ...>
+592   17:45:30.192356 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000324>
+586   17:45:30.194727 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04), 0x676d34) = 0 <0.000310>
+592   17:45:30.204919 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000278>
+592   17:45:30.207172 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000310>
+592   17:45:30.209161 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000283>
+592   17:45:30.212033 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000318>
+592   17:45:30.214951 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000314>
+592   17:45:30.218345 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000319>
+586   17:45:30.227265 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04), 0x676d34) = 0 <0.000357>
+592   17:45:30.231202 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000302>
+586   17:45:30.240443 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04), 0x676d34) = 0 <0.000355>
+592   17:45:30.244056 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000225>
+588   17:45:30.246032 <... select resumed> ) = 1 (in [11], left {3, 948644}) <0.054370>
+588   17:45:30.247408 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4961000, length=1382400, bytesused=1382400, flags=0, timestamp = {338.140000}, ...}) = 0 <0.000312>
+588   17:45:30.254527 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04), 0xae35da6c) = 0 <0.000476>
+592   17:45:30.257025 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000284>
+589   17:45:30.267421 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04) <unfinished ...>
+592   17:45:30.269348 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000344>
+592   17:45:30.271527 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000308>
+592   17:45:30.273886 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000284>
+592   17:45:30.276527 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000325>
+592   17:45:30.279172 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000284>
+592   17:45:30.281907 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000284>
+592   17:45:30.284519 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000285>
+589   17:45:30.291546 <... ioctl resumed> , 0xae32b504) = 0 <0.023264>
+592   17:45:30.296803 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000291>
+589   17:45:30.306108 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4961000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000325>
+592   17:45:30.309132 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000282>
+586   17:45:30.311974 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04), 0x676d34) = 0 <0.000351>
+588   17:45:30.319330 select(12, [11</dev/video0>], NULL, NULL, {4, 0} <unfinished ...>
+592   17:45:30.322012 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000420>
+586   17:45:30.332182 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04) <unfinished ...>
+592   17:45:30.334879 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000450>
+592   17:45:30.336894 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000358>
+592   17:45:30.339143 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000318>
+592   17:45:30.342183 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000264>
+592   17:45:30.345245 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000284>
+592   17:45:30.347853 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000284>
+588   17:45:30.351019 <... select resumed> ) = 1 (in [11], left {3, 977662}) <0.030517>
+588   17:45:30.352394 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=1, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4b94000, length=1382400, bytesused=1382400, flags=0, timestamp = {338.240000}, ...}) = 0 <0.000316>
+588   17:45:30.359418 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04) <unfinished ...>
+592   17:45:30.361398 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000283>
+588   17:45:30.363174 <... ioctl resumed> , 0xae35da6c) = 0 <0.002571>
+589   17:45:30.365999 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04) <unfinished ...>
+586   17:45:30.368650 <... ioctl resumed> , 0x676d34) = 0 <0.035473>
+589   17:45:30.370521 <... ioctl resumed> , 0xae32b504) = 0 <0.003463>
+592   17:45:30.373780 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000286>
+589   17:45:30.379679 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=1, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4b94000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000433>
+588   17:45:30.382242 select(12, [11</dev/video0>], NULL, NULL, {4, 0} <unfinished ...>
+592   17:45:30.386335 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000286>
+592   17:45:30.398636 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000285>
+592   17:45:30.400352 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000311>
+592   17:45:30.402511 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000281>
+592   17:45:30.405148 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000289>
+592   17:45:30.407786 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000268>
+592   17:45:30.410925 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000318>
+586   17:45:30.414053 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04), 0x676d34) = 0 <0.000349>
+592   17:45:30.423433 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000332>
+586   17:45:30.427132 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04), 0x676d34) = 0 <0.000711>
+592   17:45:30.437131 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000320>
+586   17:45:30.440250 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04), 0x676d34) = 0 <0.000351>
+588   17:45:30.443509 <... select resumed> ) = 1 (in [11], left {3, 940281}) <0.060207>
+588   17:45:30.444880 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=2, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4dc7000, length=1382400, bytesused=1382400, flags=0, timestamp = {338.340000}, ...}) = 0 <0.000316>
+592   17:45:30.450217 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000317>
+588   17:45:30.461979 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04) <unfinished ...>
+592   17:45:30.463781 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000285>
+592   17:45:30.465480 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000308>
+592   17:45:30.467473 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000280>
+592   17:45:30.470106 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000226>
+592   17:45:30.472875 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000280>
+592   17:45:30.475799 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000653>
+588   17:45:30.483501 <... ioctl resumed> , 0xae35da6c) = 0 <0.020382>
+589   17:45:30.486328 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04) <unfinished ...>
+592   17:45:30.488970 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000367>
+589   17:45:30.491389 <... ioctl resumed> , 0xae32b504) = 0 <0.004005>
+589   17:45:30.497361 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=2, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4dc7000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000324>
+586   17:45:30.500137 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04) <unfinished ...>
+592   17:45:30.502355 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000282>
+586   17:45:30.506214 <... ioctl resumed> , 0x676d34) = 0 <0.004510>
+588   17:45:30.510140 select(12, [11</dev/video0>], NULL, NULL, {4, 0} <unfinished ...>
+592   17:45:30.515077 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000324>
+586   17:45:30.526122 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04) <unfinished ...>
+592   17:45:30.528141 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000313>
+592   17:45:30.530473 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000347>
+592   17:45:30.533357 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000323>
+592   17:45:30.536289 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000324>
+592   17:45:30.539253 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000324>
+592   17:45:30.542698 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000281>
+588   17:45:30.551620 <... select resumed> ) = 1 (in [11], left {3, 968311}) <0.040289>
+588   17:45:30.552994 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=3, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4ffa000, length=1382400, bytesused=1382400, flags=0, timestamp = {338.440000}, ...}) = 0 <0.000355>
+592   17:45:30.555543 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000281>
+588   17:45:30.561488 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04), 0xae35da6c) = 0 <0.000297>
+589   17:45:30.564976 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04) <unfinished ...>
+592   17:45:30.568155 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000228>
+589   17:45:30.570290 <... ioctl resumed> , 0xae32b504) = 0 <0.004191>
+589   17:45:30.577271 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=3, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4ffa000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000324>
+588   17:45:30.580161 select(12, [11</dev/video0>], NULL, NULL, {4, 0} <unfinished ...>
+592   17:45:30.588508 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000285>
+592   17:45:30.590229 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000311>
+592   17:45:30.592588 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000280>
+592   17:45:30.595231 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000283>
+592   17:45:30.598126 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000283>
+592   17:45:30.600882 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000329>
+592   17:45:30.603474 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000284>
+586   17:45:30.612864 <... ioctl resumed> , 0x676d34) = 0 <0.085458>
+592   17:45:30.618528 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000325>
+592   17:45:30.633627 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000259>
+586   17:45:30.637439 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04), 0x676d34) = 0 <0.000358>
+588   17:45:30.643631 <... select resumed> ) = 1 (in [11], left {3, 938611}) <0.061998>
+588   17:45:30.645064 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE <unfinished ...>
+592   17:45:30.653628 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000287>
+592   17:45:30.655336 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000309>
+592   17:45:30.657333 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000285>
+592   17:45:30.659963 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000225>
+592   17:45:30.662683 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000282>
+592   17:45:30.665267 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000284>
+588   17:45:30.668648 <... ioctl resumed> , index=0, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4961000, length=1382400, bytesused=1382400, flags=0, timestamp = {338.540000}, ...}) = 0 <0.022728>
+588   17:45:30.674264 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04), 0xae35da6c) = 0 <0.000292>
+592   17:45:30.678072 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000394>
+589   17:45:30.680890 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04), 0xae32b504) = 0 <0.000322>
+589   17:45:30.688764 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4961000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000320>
+592   17:45:30.691178 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000286>
+586   17:45:30.694351 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04), 0x676d34) = 0 <0.000311>
+592   17:45:30.703909 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000283>
+588   17:45:30.706507 select(12, [11</dev/video0>], NULL, NULL, {4, 0} <unfinished ...>
+586   17:45:30.708917 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04) <unfinished ...>
+592   17:45:30.719172 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000319>
+592   17:45:30.721186 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000353>
+592   17:45:30.723923 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000365>
+592   17:45:30.726865 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000359>
+592   17:45:30.729816 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000299>
+592   17:45:30.732832 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000358>
+586   17:45:30.736958 <... ioctl resumed> , 0x676d34) = 0 <0.027216>
+588   17:45:30.743328 <... select resumed> ) = 1 (in [11], left {3, 964537}) <0.035763>
+592   17:45:30.745310 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.001464>
+588   17:45:30.748484 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=1, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4b94000, length=1382400, bytesused=1382400, flags=0, timestamp = {338.640000}, ...}) = 0 <0.000354>
+588   17:45:30.754746 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04), 0xae35da6c) = 0 <0.000293>
+589   17:45:30.757401 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7c, 0x04) <unfinished ...>
+592   17:45:30.759137 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000282>
+589   17:45:30.760958 <... ioctl resumed> , 0xae32ba54) = 0 <0.002448>
+589   17:45:30.763340 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04), 0xae32b504) = 0 <0.003539>
+592   17:45:30.771609 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000285>
+592   17:45:30.784353 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000285>
+592   17:45:30.786088 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000309>
+592   17:45:30.788081 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000283>
+592   17:45:30.790984 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000282>
+592   17:45:30.793623 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000286>
+592   17:45:30.796243 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000322>
+589   17:45:30.804437 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=1, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4b94000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000322>
+588   17:45:30.806969 select(12, [11</dev/video0>], NULL, NULL, {4, 0} <unfinished ...>
+592   17:45:30.808870 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000285>
+586   17:45:30.811717 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04), 0x676d34) = 0 <0.000353>
+592   17:45:30.821473 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000324>
+586   17:45:30.825967 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04), 0x676d34) = 0 <0.000871>
+592   17:45:30.834468 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000309>
+588   17:45:30.846175 <... select resumed> ) = 1 (in [11], left {3, 962580}) <0.037950>
+592   17:45:30.848011 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000279>
+592   17:45:30.850057 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000347>
+592   17:45:30.852227 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000282>
+592   17:45:30.854858 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000283>
+592   17:45:30.857493 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000381>
+592   17:45:30.860191 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000282>
+588   17:45:30.868427 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=2, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4dc7000, length=1382400, bytesused=1382400, flags=0, timestamp = {338.740000}, ...}) = 0 <0.000315>
+592   17:45:30.872674 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000285>
+588   17:45:30.877074 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04), 0xae35da6c) = 0 <0.000330>
+589   17:45:30.880474 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04) <unfinished ...>
+586   17:45:30.883941 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04) <unfinished ...>
+592   17:45:30.886646 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000284>
+589   17:45:30.888529 <... ioctl resumed> , 0xae32b504) = 0 <0.006720>
+592   17:45:30.899210 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000284>
+589   17:45:30.901480 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=2, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4dc7000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000322>
+592   17:45:30.912095 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000319>
+592   17:45:30.913974 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000353>
+592   17:45:30.916243 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000359>
+592   17:45:30.919175 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000240>
+592   17:45:30.923113 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000322>
+592   17:45:30.926066 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000318>
+592   17:45:30.928977 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000321>
+592   17:45:30.941801 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000497>
+588   17:45:30.944384 select(12, [11</dev/video0>], NULL, NULL, {4, 0}) = 1 (in [11], left {3, 999959}) <0.000330>
+588   17:45:30.946530 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=3, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4ffa000, length=1382400, bytesused=1382400, flags=0, timestamp = {338.840000}, ...}) = 0 <0.000317>
+592   17:45:30.954430 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000286>
+588   17:45:30.956582 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04), 0xae35da6c) = 0 <0.000291>
+589   17:45:30.959982 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04) <unfinished ...>
+586   17:45:30.962776 <... ioctl resumed> , 0x676d34) = 0 <0.077156>
+589   17:45:30.964693 <... ioctl resumed> , 0xae32b504) = 0 <0.003412>
+592   17:45:30.966701 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000228>
+592   17:45:30.975165 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000308>
+592   17:45:30.977114 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000281>
+592   17:45:30.979758 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000283>
+592   17:45:30.982502 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000284>
+592   17:45:30.985119 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000283>
+589   17:45:30.992553 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=3, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4ffa000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.001862>
+588   17:45:30.997116 select(12, [11</dev/video0>], NULL, NULL, {4, 0} <unfinished ...>
+592   17:45:30.998893 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000284>
+592   17:45:31.011322 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000261>
+586   17:45:31.014045 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04), 0x676d34) = 0 <0.000348>
+592   17:45:31.024418 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000323>
+586   17:45:31.027310 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04), 0x676d34) = 0 <0.001000>
+592   17:45:31.039210 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000384>
+592   17:45:31.041620 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000368>
+592   17:45:31.044260 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000283>
+592   17:45:31.046880 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000283>
+592   17:45:31.049606 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000401>
+592   17:45:31.052511 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000286>
+592   17:45:31.064810 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000287>
+590   17:45:31.068891 ioctl(10</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x6d, 0x04) <unfinished ...>
+588   17:45:31.069799 <... select resumed> ) = 1 (in [11], left {3, 955145}) <0.071653>
+588   17:45:31.071411 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4961000, length=1382400, bytesused=1382400, flags=0, timestamp = {338.940000}, ...}) = 0 <0.000312>
+588   17:45:31.077517 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04) <unfinished ...>
+592   17:45:31.079395 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000287>
+586   17:45:31.081837 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04) <unfinished ...>
+592   17:45:31.092237 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000285>
+592   17:45:31.104908 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000285>
+592   17:45:31.106639 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000312>
+592   17:45:31.108604 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000225>
+592   17:45:31.111602 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000320>
+592   17:45:31.114552 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000328>
+592   17:45:31.118258 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000318>
+592   17:45:31.131525 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000320>
+592   17:45:31.144051 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000284>
+592   17:45:31.156398 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000233>
+592   17:45:31.170016 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000383>
+592   17:45:31.171972 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000309>
+592   17:45:31.173967 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000285>
+592   17:45:31.176594 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000282>
+592   17:45:31.179218 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000282>
+592   17:45:31.181926 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000284>
+590   17:45:31.191145 <... ioctl resumed> , 0xae2f991c) = 0 <0.121432>
+588   17:45:31.192679 <... ioctl resumed> , 0xae35da6c) = 0 <0.114341>
+592   17:45:31.194841 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000283>
+589   17:45:31.198619 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04) <unfinished ...>
+586   17:45:31.200895 <... ioctl resumed> , 0x676d34) = 0 <0.118168>
+589   17:45:31.203100 <... ioctl resumed> , 0xae32b504) = 0 <0.003336>
+592   17:45:31.207448 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000326>
+589   17:45:31.211924 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4961000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000362>
+588   17:45:31.215363 select(12, [11</dev/video0>], NULL, NULL, {4, 0}) = 1 (in [11], left {3, 999953}) <0.000363>
+588   17:45:31.218464 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE <unfinished ...>
+592   17:45:31.220441 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000325>
+588   17:45:31.223232 <... ioctl resumed> , index=1, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4b94000, length=1382400, bytesused=1382400, flags=0, timestamp = {339.040000}, ...}) = 0 <0.003523>
+592   17:45:31.234052 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000255>
+592   17:45:31.236257 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000348>
+592   17:45:31.238425 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000317>
+592   17:45:31.241547 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000628>
+592   17:45:31.244867 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000287>
+592   17:45:31.247458 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000283>
+592   17:45:31.250076 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000227>
+592   17:45:31.262574 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000286>
+588   17:45:31.267176 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04), 0xae35da6c) = 0 <0.000291>
+589   17:45:31.272890 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04) <unfinished ...>
+592   17:45:31.275576 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000365>
+589   17:45:31.277898 <... ioctl resumed> , 0xae32b504) = 0 <0.003950>
+589   17:45:31.283969 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=1, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4b94000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000321>
+592   17:45:31.295217 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000367>
+592   17:45:31.297807 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000347>
+592   17:45:31.299827 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000278>
+592   17:45:31.302764 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000282>
+592   17:45:31.305392 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000286>
+592   17:45:31.307982 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000285>
+588   17:45:31.312730 select(12, [11</dev/video0>], NULL, NULL, {4, 0}) = 1 (in [11], left {3, 999952}) <0.000362>
+588   17:45:31.315188 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=2, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4dc7000, length=1382400, bytesused=1382400, flags=0, timestamp = {339.140000}, ...}) = 0 <0.000356>
+592   17:45:31.320360 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000319>
+588   17:45:31.325413 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04), 0xae35da6c) = 0 <0.000334>
+589   17:45:31.329361 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04) <unfinished ...>
+592   17:45:31.333724 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000254>
+589   17:45:31.336032 <... ioctl resumed> , 0xae32b504) = 0 <0.004790>
+589   17:45:31.342871 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=2, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4dc7000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000319>
+586   17:45:31.346305 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04) <unfinished ...>
+592   17:45:31.347905 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000284>
+586   17:45:31.349668 <... ioctl resumed> , 0x676d34) = 0 <0.002436>
+592   17:45:31.360202 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000264>
+592   17:45:31.362301 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000312>
+592   17:45:31.364267 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000286>
+592   17:45:31.366988 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000285>
+592   17:45:31.369627 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000426>
+592   17:45:31.372319 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000282>
+588   17:45:31.375882 select(12, [11</dev/video0>], NULL, NULL, {4, 0}) = 1 (in [11], left {3, 999959}) <0.000325>
+588   17:45:31.378083 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=3, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4ffa000, length=1382400, bytesused=1382400, flags=0, timestamp = {339.240000}, ...}) = 0 <0.000315>
+592   17:45:31.384638 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.001806>
+588   17:45:31.392429 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04), 0xae35da6c) = 0 <0.000289>
+589   17:45:31.395818 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04) <unfinished ...>
+592   17:45:31.398960 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000229>
+589   17:45:31.401121 <... ioctl resumed> , 0xae32b504) = 0 <0.004336>
+589   17:45:31.407131 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=3, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4ffa000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000307>
+588   17:45:31.410772 select(12, [11</dev/video0>], NULL, NULL, {4, 0} <unfinished ...>
+592   17:45:31.413119 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000323>
+592   17:45:31.425876 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000321>
+592   17:45:31.427801 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000347>
+592   17:45:31.429979 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000308>
+592   17:45:31.433455 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000322>
+592   17:45:31.436447 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000322>
+592   17:45:31.439368 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000458>
+588   17:45:31.447244 <... select resumed> ) = 1 (in [11], left {3, 969304}) <0.034958>
+588   17:45:31.448612 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4961000, length=1382400, bytesused=1382400, flags=0, timestamp = {339.340000}, ...}) = 0 <0.000354>
+592   17:45:31.452296 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000285>
+588   17:45:31.457274 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04), 0xae35da6c) = 0 <0.000290>
+589   17:45:31.460890 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04) <unfinished ...>
+586   17:45:31.463158 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04) <unfinished ...>
+592   17:45:31.465640 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000284>
+589   17:45:31.468323 <... ioctl resumed> , 0xae32b504) = 0 <0.006372>
+589   17:45:31.475132 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4961000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000318>
+588   17:45:31.477803 select(12, [11</dev/video0>], NULL, NULL, {4, 0} <unfinished ...>
+592   17:45:31.479542 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000404>
+586   17:45:31.487562 <... ioctl resumed> , 0x676d34) = 0 <0.022675>
+592   17:45:31.498172 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000286>
+592   17:45:31.499911 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000306>
+592   17:45:31.502821 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000281>
+592   17:45:31.505427 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000284>
+592   17:45:31.508166 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000282>
+592   17:45:31.511262 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000259>
+586   17:45:31.523134 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04) <unfinished ...>
+592   17:45:31.525123 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000365>
+586   17:45:31.527131 <... ioctl resumed> , 0x676d34) = 0 <0.002746>
+592   17:45:31.537801 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000259>
+586   17:45:31.541198 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04), 0x676d34) = 0 <0.000352>
+588   17:45:31.543308 <... select resumed> ) = 1 (in [11], left {3, 935830}) <0.064467>
+588   17:45:31.544675 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE <unfinished ...>
+592   17:45:31.553068 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000285>
+592   17:45:31.554815 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000308>
+592   17:45:31.556774 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000283>
+592   17:45:31.559419 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000282>
+592   17:45:31.562391 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000282>
+592   17:45:31.565071 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000283>
+592   17:45:31.567680 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000285>
+592   17:45:31.580006 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000287>
+588   17:45:31.582826 <... ioctl resumed> , index=1, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4b94000, length=1382400, bytesused=1382400, flags=0, timestamp = {339.440000}, ...}) = 0 <0.030403>
+588   17:45:31.588316 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04), 0xae35da6c) = 0 <0.001134>
+592   17:45:31.592464 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000285>
+589   17:45:31.594971 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04), 0xae32b504) = 0 <0.003503>
+592   17:45:31.605185 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000286>
+589   17:45:31.608335 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=1, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4b94000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.006893>
+592   17:45:31.618079 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000322>
+592   17:45:31.620011 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000926>
+592   17:45:31.627055 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.001358>
+592   17:45:31.633016 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000670>
+592   17:45:31.638242 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000803>
+592   17:45:31.643535 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000285>
+588   17:45:31.647733 select(12, [11</dev/video0>], NULL, NULL, {4, 0}) = 1 (in [11], left {3, 999959}) <0.000324>
+588   17:45:31.649872 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=2, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4dc7000, length=1382400, bytesused=1382400, flags=0, timestamp = {339.540000}, ...}) = 0 <0.000314>
+592   17:45:31.656240 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000285>
+588   17:45:31.658561 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04), 0xae35da6c) = 0 <0.000292>
+589   17:45:31.662151 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04) <unfinished ...>
+586   17:45:31.665685 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04) <unfinished ...>
+589   17:45:31.668073 <... ioctl resumed> , 0xae32b504) = 0 <0.004650>
+592   17:45:31.669839 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000321>
+592   17:45:31.682491 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000284>
+592   17:45:31.684229 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000306>
+592   17:45:31.686214 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000225>
+592   17:45:31.689157 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000287>
+592   17:45:31.691902 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000283>
+592   17:45:31.694496 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000283>
+589   17:45:31.704316 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=2, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4dc7000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000362>
+592   17:45:31.706832 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000282>
+588   17:45:31.709110 select(12, [11</dev/video0>], NULL, NULL, {4, 0} <unfinished ...>
+586   17:45:31.711003 <... ioctl resumed> , 0x676d34) = 0 <0.044083>
+592   17:45:31.719547 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000458>
+586   17:45:31.724656 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04), 0x676d34) = 0 <0.000813>
+592   17:45:31.732256 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000252>
+592   17:45:31.745725 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000226>
+592   17:45:31.748091 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000344>
+592   17:45:31.750080 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000226>
+592   17:45:31.752845 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000282>
+592   17:45:31.755495 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000285>
+592   17:45:31.758261 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000285>
+588   17:45:31.765942 <... select resumed> ) = 1 (in [11], left {3, 965224}) <0.055784>
+588   17:45:31.767356 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=3, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4ffa000, length=1382400, bytesused=1382400, flags=0, timestamp = {339.640000}, ...}) = 0 <0.000357>
+592   17:45:31.770859 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000284>
+588   17:45:31.776102 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04), 0xae35da6c) = 0 <0.000290>
+589   17:45:31.778691 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7c, 0x04), 0xae32ba54) = 0 <0.000293>
+589   17:45:31.781765 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04) <unfinished ...>
+592   17:45:31.784217 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000391>
+589   17:45:31.786503 <... ioctl resumed> , 0xae32b504) = 0 <0.003154>
+589   17:45:31.793513 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=3, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4ffa000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000320>
+592   17:45:31.797127 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000284>
+586   17:45:31.799029 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04), 0x676d34) = 0 <0.000350>
+592   17:45:31.810344 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000475>
+592   17:45:31.812879 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000347>
+592   17:45:31.815048 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000322>
+592   17:45:31.818012 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000849>
+592   17:45:31.821668 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000322>
+592   17:45:31.824669 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000328>
+588   17:45:31.833223 select(12, [11</dev/video0>], NULL, NULL, {4, 0} <unfinished ...>
+586   17:45:31.836847 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04) <unfinished ...>
+592   17:45:31.838589 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000317>
+586   17:45:31.840701 <... ioctl resumed> , 0x676d34) = 0 <0.002770>
+588   17:45:31.843765 <... select resumed> ) = 1 (in [11], left {3, 991323}) <0.009424>
+588   17:45:31.845174 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4961000, length=1382400, bytesused=1382400, flags=0, timestamp = {339.740000}, ...}) = 0 <0.000314>
+592   17:45:31.851282 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000284>
+588   17:45:31.854032 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04), 0xae35da6c) = 0 <0.000290>
+589   17:45:31.858168 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04) <unfinished ...>
+586   17:45:31.861576 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04) <unfinished ...>
+592   17:45:31.863608 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000284>
+589   17:45:31.865321 <... ioctl resumed> , 0xae32b504) = 0 <0.006093>
+592   17:45:31.876185 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000276>
+592   17:45:31.878304 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000313>
+592   17:45:31.880274 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000285>
+592   17:45:31.883073 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000285>
+592   17:45:31.885704 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000287>
+592   17:45:31.888333 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000283>
+592   17:45:31.891059 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000286>
+592   17:45:31.903734 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000288>
+589   17:45:31.906609 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4961000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.002047>
+588   17:45:31.911379 select(12, [11</dev/video0>], NULL, NULL, {4, 0} <unfinished ...>
+586   17:45:31.913361 <... ioctl resumed> , 0x676d34) = 0 <0.050536>
+592   17:45:31.916356 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.001003>
+592   17:45:31.930203 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000344>
+592   17:45:31.939161 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000348>
+592   17:45:31.941514 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000338>
+592   17:45:31.944830 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000283>
+592   17:45:31.947469 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000283>
+592   17:45:31.950025 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000285>
+588   17:45:31.952626 <... select resumed> ) = 1 (in [11], left {3, 969453}) <0.040130>
+588   17:45:31.954040 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=1, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4b94000, length=1382400, bytesused=1382400, flags=0, timestamp = {339.840000}, ...}) = 0 <0.000315>
+588   17:45:31.961359 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04) <unfinished ...>
+592   17:45:31.963168 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000283>
+588   17:45:31.964876 <... ioctl resumed> , 0xae35da6c) = 0 <0.002335>
+589   17:45:31.967806 ioctl(8</dev/uio0>, _IOC(_IOC_READ, 0x55, 0x65, 0x04) <unfinished ...>
+586   17:45:31.971329 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04) <unfinished ...>
+589   17:45:31.973343 <... ioctl resumed> , 0xae32b504) = 0 <0.004372>
+592   17:45:31.975817 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000285>
+589   17:45:31.982139 ioctl(11</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=1, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4b94000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000359>
+588   17:45:31.984646 select(12, [11</dev/video0>], NULL, NULL, {4, 0} <unfinished ...>
+586   17:45:31.986412 <... ioctl resumed> , 0x676d34) = 0 <0.013878>
+592   17:45:31.988153 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000284>
+592   17:45:32.002763 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000282>
+592   17:45:32.004491 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000308>
+592   17:45:32.006475 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000322>
+592   17:45:32.009114 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000279>
+592   17:45:32.012553 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000319>
+592   17:45:32.015688 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000320>
+592   17:45:32.028795 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.003351>
+590   17:45:32.033998 ioctl(10</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x6d, 0x04) <unfinished ...>
+586   17:45:32.036107 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04), 0x676d34) = 0 <0.000533>
+588   17:45:32.043590 <... select resumed> ) = 1 (in [11], left {3, 942604}) <0.057939>
+592   17:45:32.045500 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000323>
+588   17:45:32.047645 ioctl(11</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=2, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb4dc7000, length=1382400, bytesused=1382400, flags=0, timestamp = {339.940000}, ...}) = 0 <0.000251>
+588   17:45:32.054687 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04) <unfinished ...>
+586   17:45:32.056635 ioctl(10</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x70, 0x04) <unfinished ...>
+592   17:45:32.058311 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000226>
+592   17:45:32.066774 read(12</dev/akpcm_cdev1>, ""..., 2048) = 2048 <0.000308>
+592   17:45:32.068770 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000282>
+592   17:45:32.071509 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000281>
+592   17:45:32.074145 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe6, 0x04), 0xae299aa8) = 0 <0.000275>
+592   17:45:32.077077 ioctl(12</dev/akpcm_cdev1>, _IOC(_IOC_READ, 0x50, 0xe8, 0x04), 0xae299aa8) = 0 <0.000283>

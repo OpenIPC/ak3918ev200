@@ -1,0 +1,34 @@
+515   00:01:05.949703 +++ exited with 0 +++
+514   00:01:05.952877 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=515, si_uid=0, si_status=0, ...} ---
+517   00:01:08.119138 --- SIGINT {si_signo=SIGINT, si_code=SI_KERNEL} ---
+518   00:01:08.120815 --- SIGINT {si_signo=SIGINT, si_code=SI_KERNEL} ---
+518   00:01:08.122528 +++ killed by SIGINT +++
+517   00:01:08.123434 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_KILLED, si_pid=518, si_uid=0, si_status=SIGINT, ...} ---
+517   00:01:08.125609 --- SIGINT {si_signo=SIGINT, si_code=SI_TKILL, si_pid=517, si_uid=0} ---
+517   00:01:08.127203 +++ killed by SIGINT +++
+516   00:01:08.128112 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_KILLED, si_pid=517, si_uid=0, si_status=SIGINT, ...} ---
+514   00:01:08.129177 --- SIGINT {si_signo=SIGINT, si_code=SI_KERNEL, ...} ---
+516   00:01:09.230622 --- SIGINT {si_signo=SIGINT, si_code=SI_KERNEL, ...} ---
+519   00:01:09.250797 +++ exited with 0 +++
+523   00:01:09.977625 +++ exited with 0 +++
+522   00:01:09.978541 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=523, si_uid=0, si_status=0, ...} ---
+522   00:01:09.992898 +++ exited with 0 +++
+521   00:01:09.993799 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=522, si_uid=0, si_status=0, ...} ---
+524   00:01:10.062379 +++ exited with 0 +++
+521   00:01:10.063287 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=524, si_uid=0, si_status=0, ...} ---
+525   00:01:10.169197 +++ exited with 0 +++
+521   00:01:10.170210 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=525, si_uid=0, si_status=0, ...} ---
+526   00:01:10.266295 +++ exited with 0 +++
+521   00:01:10.267196 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=526, si_uid=0, si_status=0, ...} ---
+527   00:01:10.379901 +++ exited with 0 +++
+521   00:01:10.380967 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=527, si_uid=0, si_status=0, ...} ---
+528   00:01:10.443024 +++ exited with 0 +++
+521   00:01:10.443978 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=528, si_uid=0, si_status=0, ...} ---
+529   00:01:10.746068 +++ exited with 0 +++
+521   00:01:10.746988 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=529, si_uid=0, si_status=0, ...} ---
+521   00:01:10.751286 +++ exited with 0 +++
+520   00:01:11.065304 --- SIGHUP {si_signo=SIGHUP, si_code=SI_KERNEL} ---
+520   00:01:11.066916 --- SIGTERM {si_signo=SIGTERM, si_code=SI_USER, si_pid=1, si_uid=0} ---
+514   00:01:11.075588 --- SIGHUP {si_signo=SIGHUP, si_code=SI_KERNEL} ---
+514   00:01:11.077184 --- SIGTERM {si_signo=SIGTERM, si_code=SI_USER, si_pid=1, si_uid=0} ---
+514   00:01:11.078940 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=519, si_uid=0, si_status=0, ...} ---

@@ -1,0 +1,1557 @@
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+GWCFG_ParseItem(): GWCFG_CheckValue(0) failed with ret=-1! name="version",value="wls_xxr_v1.00"
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+umount2 /dev/mmcblk0p1: Device or resource busy
+mount /dev/mmcblk0p1: Device or resource busy
+mount /dev/mmcblk0p1: Device or resource busy
+mount /dev/mmcblk0p1: Device or resource busy
+mount /dev/mmcblk0p1: Device or resource busy
+mount /dev/mmcblk0p1: Device or resource busy
+mount /dev/mmcblk0p1: Device or resource busy
+mount /dev/mmcblk0p1: Device or resource busy
+mount /dev/mmcblk0p1: Device or resource busy
+mount /dev/mmcblk0p1: Device or resource busy
+mount /dev/mmcblk0p1: Device or resource busy
+mount /dev/mmcblk0p1: Device or resource busy
+mount /dev/mmcblk0p1: Device or resource busy
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+mount /dev/mmcblk0p1: Device or resource busy
+mount /dev/mmcblk0p1: Device or resource busy
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+mount /dev/mmcblk0p1: Device or resource busy
+mount /dev/mmcblk0p1: Device or resource busy
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+Failed to connect to wpa_supplicant - wpa_ctrl_open: No such file or directory
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+mount /dev/mmcblk0p1: Device or resource busy
+mount /dev/mmcblk0p1: Device or resource busy
+mount /dev/mmcblk0p1: Device or resource busy
+mount /dev/mmcblk0p1: Device or resource busy
+mount /dev/mmcblk0p1: Device or resource busy
+mount /dev/mmcblk0p1: Device or resource busy
+[dmabuf_replay_4] inited replay_hz=30
+[warn] Unable to add nameserver [240c::6666]:53: error 1
+[warn] Unable to add nameserver [2001:4860:4860::8888]:53: error 1
+[msg] Nameserver 8.8.8.8:53 has failed: Network is unreachable
+[msg] Nameserver 114.114.114.114:53 has failed: Network is unreachable
+[dmabuf_replay_4] stored master frame len=1382400
+[dmabuf_replay_4] captured buffer index=0 ptr=0xb5223000 len=1382400
+[dmabuf_replay_4] captured buffer index=1 ptr=0xb5456000 len=1382400
+ioctl[SIOCSIWAP]: Operation not permitted
+[dmabuf_replay_4] captured buffer index=2 ptr=0xb5689000 len=1382400
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] captured buffer index=3 ptr=0xb58bc000 len=1382400
+[dmabuf_replay_4] spawned replay worker
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[msg] Nameserver 119.29.29.29:53 has failed: Network is unreachable
+[msg] All nameservers have failed
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+route: SIOCDELRT: No such process
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] fini
+getaddrinfo: Name or service not known
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] fini
+[msg] Nameserver 8.8.8.8:53 is back up
+[msg] Nameserver 114.114.114.114:53 is back up
+[1;32mSendAudioToEncoderProc [238] exit >>> [0m
+[1;32mGetVideoFromEncoderProcess [229] exit >>> [0m
+[1;32mrecord_av_proc [224] exit >>> [0m
+ISO File Writing: |====================| (100/100)                                                        [dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] fini
+[msg] Nameserver 119.29.29.29:53 is back up
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+route: SIOCADDRT: Network is down
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+                                                        [dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+                                                        [dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[1;32mav_real_play_proc [349] exit >>> [0m
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+                                                        [dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+                                                        [dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+                                                        [dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=[dmabuf_replay_4] inited replay_hz=30
+30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+                                                        [dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+                                                        [dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=[dmabuf_replay_4] fini
+30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+                                                        [dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+                                                        [dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=sh: write error: Input/output error
+sh: write error: Input/output error
+30
+[1;32mvTimerProc [757] exit >>> [0m
+[1;32mMdProc [218] exit >>> [0m
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] inited replay_hz=30
+sh: write error: Input/output error
+sh: write error: Input/output error
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+sh: write error: Input/output error
+/ipc/TimeBeforeReboot.sh: line 12: can't create /rom/timebeforereboot.txt: Read-only file system
+[dmabuf_replay_4] inited replay_hz=30
+cp: can't create '/tmp/echo': Read-only file system
+[dmabuf_replay_4] fini
+[dmabuf_replay_4] inited replay_hz=30
+[dmabuf_replay_4] fini
+sh: write error: Input/output error
+/ipc/TimeBeforeReboot.sh: line 12: can't create /rom/timebeforereboot.txt: Read-only file system
+[dmabuf_replay_4] inited replay_hz=30
+cp: can't create '/tmp/sync': Read-only file system
+[dmabuf_replay_4] fini

@@ -1,0 +1,80 @@
+533   02:13:39.031654 open("/dev/ion", O_RDONLY) = 3</dev/ion> <0.000372>
+533   02:13:39.034772 ioctl(3</dev/ion>, ION_IOC_ALLOC, 0x69c134) = 0 <0.000359>
+533   02:13:39.037656 ioctl(3</dev/ion>, ION_IOC_MAP, 0x69c148) = 0 <0.000306>
+533   02:13:39.046834 open("/dev/uio0", O_RDWR) = 6</dev/uio0> <0.000412>
+533   02:13:39.051489 open("/dev/isp_char", O_RDWR) = 8</dev/isp_char> <0.000751>
+533   02:13:39.055316 open("/dev/video0", O_RDWR|O_NONBLOCK) = 9</dev/video0> <0.066617>
+533   02:13:39.124033 ioctl(8</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x02, 0x04), 0x6b844c) = 0 <0.000354>
+533   02:13:39.126016 ioctl(8</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x04, 0x04), 0x6b8506) = 0 <0.000311>
+533   02:13:39.127723 ioctl(8</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x0a, 0x04), 0x6b85c6) = 0 <0.000331>
+533   02:13:39.129440 ioctl(8</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x0c, 0x04), 0x6b8932) = 0 <0.000261>
+533   02:13:39.131248 ioctl(8</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x2b, 0x04), 0x6b9028) = 0 <0.000293>
+533   02:13:39.132928 ioctl(8</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x2f, 0x04), 0x6b920e) = 0 <0.000305>
+533   02:13:39.134658 ioctl(8</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x06, 0x04), 0x6b964e) = 0 <0.000286>
+533   02:13:39.136338 ioctl(8</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x0e, 0x04), 0x6b96a4) = 0 <0.000289>
+533   02:13:39.138020 ioctl(8</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x1a, 0x04), 0x6b96ba) = 0 <0.000335>
+533   02:13:39.139741 ioctl(8</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x12, 0x04), 0x6b9a26) = 0 <0.000285>
+533   02:13:39.141619 ioctl(8</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x36, 0x04), 0x6b9aae) = 0 <0.000293>
+533   02:13:39.143302 ioctl(8</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x1b, 0x04), 0x6b9b18) = 0 <0.000535>
+533   02:13:39.145458 ioctl(8</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x25, 0x04), 0x6bc206) = 0 <0.000543>
+533   02:13:39.147391 ioctl(8</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x27, 0x04), 0x6bed3c) = 0 <0.000291>
+533   02:13:39.149081 ioctl(8</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x3b, 0x04), 0x6bed5e) = 0 <0.000410>
+533   02:13:39.150911 ioctl(8</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x39, 0x04), 0x6bee2c) = 0 <0.000286>
+533   02:13:39.152596 ioctl(8</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x3f, 0x04), 0x6bee6c) = 0 <0.000287>
+533   02:13:39.154284 ioctl(8</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x41, 0x04), 0x6bee72) = 0 <0.000289>
+533   02:13:39.155980 ioctl(8</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x10, 0x04), 0x6bee80) = 0 <0.000284>
+533   02:13:39.157685 ioctl(8</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x5e, 0x04), 0x6bfedc) = 0 <0.000311>
+533   02:13:39.159410 ioctl(8</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x60, 0x04), 0x6bffe0) = 0 <0.000231>
+533   02:13:39.161207 ioctl(8</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x53, 0x04), 0x6c000e) = 0 <0.000284>
+533   02:13:39.162892 ioctl(8</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x63, 0x04), 0x6c0010) = 0 <0.000285>
+533   02:13:39.164569 ioctl(8</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x55, 0x04), 0x6c001c) = 0 <0.000289>
+533   02:13:39.166266 ioctl(8</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x73, 0x04), 0x6c00d6) = 0 <0.000291>
+533   02:13:39.167971 ioctl(8</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x43, 0x04), 0x6c021e) = 0 <0.000279>
+533   02:13:39.169651 ioctl(8</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x46, 0x04), 0x6c0220) = 0 <0.000277>
+533   02:13:39.171479 ioctl(8</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x49, 0x04), 0x6c0222) = 0 <0.000279>
+533   02:13:39.173507 ioctl(8</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x4c, 0x04), 0x6c0224) = 0 <0.000279>
+533   02:13:39.175180 ioctl(8</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x4e, 0x04), 0x6c0226) = 0 <0.000286>
+533   02:13:39.176870 ioctl(8</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x50, 0x04), 0x6c023e) = 0 <0.000291>
+533   02:13:39.178562 ioctl(8</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x4f, 0x04), 0xbeb34c70) = 0 <0.000283>
+533   02:13:39.209309 ioctl(8</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x7a, 0x04), 0xbeb34c44) = 0 <0.006144>
+533   02:13:39.224662 ioctl(8</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x6e, 0x04), 0x6c030e) = 0 <0.000303>
+533   02:13:39.226483 ioctl(8</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x75, 0x04), 0x6c032c) = 0 <0.000298>
+533   02:13:39.228177 ioctl(8</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x77, 0x04), 0x6c045e) = 0 <0.000299>
+533   02:13:39.229879 ioctl(8</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x69, 0x04), 0xbeb34cc8) = 0 <0.036027>
+533   02:13:39.289699 ioctl(9</dev/video0>, VIDIOC_CROPCAP, type=V4L2_BUF_TYPE_VIDEO_CAPTURE, bounds={left=0, top=0, width=1280, height=720}, defrect={left=0, top=0, width=1280, height=720}, pixelaspect=1/1) = 0 <0.000291>
+533   02:13:39.297000 ioctl(8</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x67, 0x04), 0xbeb34cd8) = 0 <0.000281>
+533   02:13:39.298727 ioctl(8</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x56, 0x04), 0xbeb34c30) = 0 <0.000284>
+533   02:13:39.306960 ioctl(8</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x55, 0x04), 0xbeb34c30) = 0 <0.000282>
+533   02:13:39.310789 ioctl(8</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x4f, 0x04), 0xbeb34cc0) = 0 <0.000290>
+533   02:13:39.348432 ioctl(8</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x7a, 0x04), 0xbeb34c94) = 0 <0.003884>
+533   02:13:39.361563 ioctl(9</dev/video0>, VIDIOC_QUERYCAP, {driver="ak_camera", card="AK_Camera", bus_info="", version=3.4.35, capabilities=V4L2_CAP_VIDEO_CAPTURE|V4L2_CAP_STREAMING, device_caps=0}) = 0 <0.000292>
+533   02:13:39.363546 ioctl(9</dev/video0>, VIDIOC_CROPCAP, type=V4L2_BUF_TYPE_VIDEO_CAPTURE, bounds={left=0, top=0, width=1280, height=720}, defrect={left=0, top=0, width=1280, height=720}, pixelaspect=1/1) = 0 <0.000298>
+533   02:13:39.365328 ioctl(9</dev/video0>, VIDIOC_S_CROP, 0xbeb34c64) = 0 <0.000317>
+533   02:13:39.373576 ioctl(9</dev/video0>, VIDIOC_S_FMT, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, fmt.pix={width=1280, height=720, pixelformat=v4l2_fourcc('Y', 'U', 'Y', 'V'), field=V4L2_FIELD_INTERLACED, bytesperline=0, sizeimage=0, colorspace=0 /* V4L2_COLORSPACE_??? */} => fmt.pix={width=1280, height=720, pixelformat=v4l2_fourcc('Y', 'U', 'Y', 'V'), field=V4L2_FIELD_INTERLACED, bytesperline=2560, sizeimage=1843200, colorspace=0 /* V4L2_COLORSPACE_??? */}}) = 0 <0.000329>
+533   02:13:39.375707 ioctl(9</dev/video0>, VIDIOC_S_PARM, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, {capability=0x1 /* V4L2_CAP_??? */, capturemode=0x280 /* V4L2_MODE_??? */, timeperframe=360/0, extendedmode=0, readbuffers=0} => {capability=0x1 /* V4L2_CAP_??? */, capturemode=0x280 /* V4L2_MODE_??? */, timeperframe=360/0, extendedmode=0, readbuffers=0}}) = 0 <0.008937>
+533   02:13:39.394139 ioctl(8</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x7a, 0x04), 0xbeb34d14) = 0 <0.001805>
+533   02:13:39.397463 ioctl(8</dev/isp_char>, _IOC(_IOC_READ, 0x49, 0x7b, 0x04), 0xbeb34d0c) = 0 <0.000307>
+533   02:13:39.433711 ioctl(8</dev/isp_char>, _IOC(_IOC_WRITE, 0x49, 0x6d, 0x04), 0xbeb34c84) = 0 <0.000306>
+533   02:13:39.459505 open("/dev/akpcm_cdev1", O_RDONLY) = 10</dev/akpcm_cdev1> <0.000477>
+533   02:13:39.478454 ioctl(10</dev/akpcm_cdev1>, SNDCTL_DSP_SETTRIGGER, 0xbeb34cfc) = 0 <0.000432>
+533   02:13:39.487329 ioctl(10</dev/akpcm_cdev1>, _IOC(_IOC_WRITE, 0x50, 0x70, 0x04), 0xbeb34cfc) = 0 <0.000814>
+533   02:13:39.510609 ioctl(10</dev/akpcm_cdev1>, _IOC(_IOC_WRITE, 0x50, 0x30, 0x04), 0xbeb34d0c) = 0 <0.000339>
+533   02:13:39.647281 ioctl(10</dev/akpcm_cdev1>, _IOC(0, 0x50, 0xe3, 0x00), 0xbeb34d0c) = 0 <0.000375>
+533   02:13:39.738859 ioctl(10</dev/akpcm_cdev1>, _IOC(_IOC_WRITE, 0x50, 0x88, 0x04), 0xbeb34c28) = 0 <0.025397>
+533   02:13:39.777283 ioctl(9</dev/video0>, VIDIOC_REQBUFS, {count=4, type=V4L2_BUF_TYPE_VIDEO_CAPTURE, memory=V4L2_MEMORY_USERPTR}) = 0 ({count=4}) <0.000325>
+533   02:13:39.832752 ioctl(9</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb59ca000, length=2306048, bytesused=0, flags=0, ...}) = 0 <0.000386>
+533   02:13:39.834773 ioctl(9</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=1, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb5bfd000, length=2306048, bytesused=0, flags=0, ...}) = 0 <0.000389>
+533   02:13:39.836725 ioctl(9</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=2, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb5e30000, length=2306048, bytesused=0, flags=0, ...}) = 0 <0.000394>
+533   02:13:39.838754 ioctl(9</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=3, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb6063000, length=2306048, bytesused=0, flags=0, ...}) = 0 <0.000388>
+533   02:13:39.840832 ioctl(9</dev/video0>, VIDIOC_STREAMON, V4L2_BUF_TYPE_VIDEO_CAPTURE) = 0 <0.004761>
+533   02:13:39.881089 ioctl(9</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb59ca000, length=1382400, bytesused=1382400, flags=0, timestamp = {8019.870000}, ...}) = 0 <0.000305>
+533   02:13:39.886357 ioctl(9</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb59ca000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000317>
+533   02:13:39.947951 ioctl(9</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=1, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb5bfd000, length=1382400, bytesused=1382400, flags=0, timestamp = {8019.930000}, ...}) = 0 <0.000306>
+533   02:13:39.953321 ioctl(9</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=1, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb5bfd000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000315>
+533   02:13:40.014452 ioctl(9</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=2, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb5e30000, length=1382400, bytesused=1382400, flags=0, timestamp = {0.000000}, ...}) = 0 <0.000310>
+533   02:13:40.019791 ioctl(9</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=2, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb5e30000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000816>
+533   02:13:40.081311 ioctl(9</dev/video0>, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=3, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb6063000, length=1382400, bytesused=1382400, flags=0, timestamp = {0.000000}, ...}) = 0 <0.000306>
+533   02:13:40.086567 ioctl(9</dev/video0>, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=3, memory=V4L2_MEMORY_USERPTR, m.userptr=0xb6063000, length=1382400, bytesused=1382400, flags=0, ...}) = 0 <0.000665>
+533   02:13:40.095757 --- SIGSEGV {si_signo=SIGSEGV, si_code=SEGV_MAPERR, si_addr=0} ---
+534   02:13:40.602994 +++ killed by SIGSEGV +++
+533   02:13:40.603767 +++ killed by SIGSEGV +++

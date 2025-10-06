@@ -1,0 +1,3238 @@
+Parsing trace /mnt/disc1/camtrace_rdev-interesante.log
+Parsed 2962 actions
+[DRY] would drop caches
+dup2: old missing
+[REPLAY] CLOSE logged=3 real=-1
+[REPLAY] write: fd missing
+dup2: old missing
+[REPLAY] CLOSE logged=10 real=-1
+[REPLAY] mmap: no real fd for logged -1
+[REPLAY] MMAP fd(log)=-1 real=-1 len=8388608 prot=0x3 flags=0x20022 off=0
+[REPLAY] OPEN /dev/akgpio flags=0x2
+[REPLAY] OPEN /dev/watchdog flags=0x0
+[REPLAY] IOCTL logged_fd=4 real=-1 req=0xc0045706 size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 4 (skipping)
+[REPLAY] CLOSE logged=4 real=-1
+[REPLAY] OPEN /dev/ion flags=0x0
+[REPLAY] IOCTL logged_fd=5 real=-1 req=0xc0144900 size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 5 (skipping)
+[REPLAY] IOCTL logged_fd=5 real=-1 req=0xc0084902 size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 5 (skipping)
+[REPLAY] mmap: no real fd for logged 7
+[REPLAY] MMAP fd(log)=7 real=-1 len=25165824 prot=0x3 flags=0x1 off=0
+[REPLAY] OPEN /dev/uio0 flags=0x2
+[REPLAY] OPEN /dev/null flags=0x1
+[REPLAY] OPEN /dev/isp_char flags=0x2
+[REPLAY] IOCTL logged_fd=4 real=-1 req=0xc0045706 size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 4 (skipping)
+[REPLAY] OPEN /dev/video0 flags=0x802
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x40044902 size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x40044904 size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x4004490a size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x4004490c size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x4004492b size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x4004492f size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x40044906 size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x4004490e size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x4004491a size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x40044912 size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x40044936 size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x4004491b size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x40044925 size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x40044927 size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x4004493b size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x40044939 size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x4004493f size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x40044941 size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x40044910 size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x4004495e size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x40044960 size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x40044953 size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x40044963 size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x40044955 size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x40044973 size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x40044943 size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x40044946 size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x40044949 size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x4004494c size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x4004494e size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x40044950 size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x8004494f size=0 dir=2
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x4004497a size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x4004496e size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x40044975 size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x40044977 size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x40044969 size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=11 real=-1 req=0xc02c563a size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 11 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x40044967 size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x80044956 size=0 dir=2
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x40044955 size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] mmap: no real fd for logged -1
+[REPLAY] MMAP fd(log)=-1 real=-1 len=102400 prot=0x3 flags=0x20022 off=0
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x8004494f size=0 dir=2
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x4004497a size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=11 real=-1 req=0x80685600 size=0 dir=2
+[REPLAY] ioctl: no real fd for logged 11 (skipping)
+[REPLAY] IOCTL logged_fd=11 real=-1 req=0xc02c563a size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 11 (skipping)
+[REPLAY] IOCTL logged_fd=11 real=-1 req=0x4014563c size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 11 (skipping)
+[REPLAY] IOCTL logged_fd=11 real=-1 req=0xc0cc5605 size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 11 (skipping)
+[REPLAY] IOCTL logged_fd=11 real=-1 req=0xc0cc5616 size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 11 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x4004497a size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x8004497b size=0 dir=2
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x4004496d size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] OPEN /dev/akpcm_cdev1 flags=0x0
+[REPLAY] IOCTL logged_fd=12 real=-1 req=0x40045010 size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 12 (skipping)
+[REPLAY] IOCTL logged_fd=12 real=-1 req=0x40045070 size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 12 (skipping)
+[REPLAY] IOCTL logged_fd=12 real=-1 req=0x40045030 size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 12 (skipping)
+[REPLAY] OPEN /dev/mem flags=0x0
+[REPLAY] mmap: no real fd for logged 13
+[REPLAY] MMAP fd(log)=13 real=-1 len=4 prot=0x1 flags=0x1 off=134217728
+[REPLAY] CLOSE logged=13 real=-1
+[REPLAY] MUNMAP ptr=0xb4d4a000 len=4
+[REPLAY] IOCTL logged_fd=12 real=-1 req=0x50e3 size=0 dir=0
+[REPLAY] ioctl: no real fd for logged 12 (skipping)
+[REPLAY] OPEN /dev/mem flags=0x0
+[REPLAY] mmap: no real fd for logged 13
+[REPLAY] MMAP fd(log)=13 real=-1 len=4 prot=0x1 flags=0x1 off=134217728
+[REPLAY] CLOSE logged=13 real=-1
+[REPLAY] MUNMAP ptr=0xb4d4a000 len=4
+[REPLAY] IOCTL logged_fd=12 real=-1 req=0x40045088 size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 12 (skipping)
+[REPLAY] IOCTL logged_fd=4 real=-1 req=0xc0045706 size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 4 (skipping)
+[REPLAY] IOCTL logged_fd=4 real=-1 req=0xc0045706 size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 4 (skipping)
+[REPLAY] mmap: no real fd for logged -1
+[REPLAY] MMAP fd(log)=-1 real=-1 len=131072 prot=0x3 flags=0x20022 off=0
+[REPLAY] mmap: no real fd for logged -1
+[REPLAY] MMAP fd(log)=-1 real=-1 len=131072 prot=0x3 flags=0x20022 off=0
+[REPLAY] mmap: no real fd for logged -1
+[REPLAY] MMAP fd(log)=-1 real=-1 len=131072 prot=0x3 flags=0x20022 off=0
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0x4001662a size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0x4001662a size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0x4001662a size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0x4001662a size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] CLOSE logged=13 real=-1
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0x4001662a size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0x4001662a size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0x4001662a size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0x4001662a size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0x4001662a size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0x4001662a size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=4 real=-1 req=0xc0045706 size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 4 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x80044956 size=0 dir=2
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x40044955 size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x80044952 size=0 dir=2
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x80044952 size=0 dir=2
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x80044952 size=0 dir=2
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x80044952 size=0 dir=2
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x80044952 size=0 dir=2
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x80044952 size=0 dir=2
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x80044952 size=0 dir=2
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=4 real=-1 req=0xc0045706 size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 4 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x80044952 size=0 dir=2
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x80044952 size=0 dir=2
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x80044952 size=0 dir=2
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x80044952 size=0 dir=2
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x80044952 size=0 dir=2
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x80044952 size=0 dir=2
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x80044952 size=0 dir=2
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x80044952 size=0 dir=2
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x80044952 size=0 dir=2
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x80044952 size=0 dir=2
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0x4001662a size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0x4001662a size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0x4001662a size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] mmap: no real fd for logged -1
+[REPLAY] MMAP fd(log)=-1 real=-1 len=131072 prot=0x3 flags=0x20022 off=0
+[REPLAY] IOCTL logged_fd=4 real=-1 req=0xc0045706 size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 4 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x80044952 size=0 dir=2
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] mmap: no real fd for logged -1
+[REPLAY] MMAP fd(log)=-1 real=-1 len=131072 prot=0x3 flags=0x20022 off=0
+[REPLAY] mmap: no real fd for logged -1
+[REPLAY] MMAP fd(log)=-1 real=-1 len=131072 prot=0x3 flags=0x20022 off=0
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0x4001662a size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] mmap: no real fd for logged -1
+[REPLAY] MMAP fd(log)=-1 real=-1 len=131072 prot=0x3 flags=0x20022 off=0
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0x4001662a size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0x4001662a size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x80044952 size=0 dir=2
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x80044952 size=0 dir=2
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x80044952 size=0 dir=2
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x80044952 size=0 dir=2
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x80044952 size=0 dir=2
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] OPEN /dev/akpcm_cdev0 flags=0x1
+[REPLAY] IOCTL logged_fd=15 real=-1 req=0x40045081 size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 15 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x80044952 size=0 dir=2
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=15 real=-1 req=0x50e3 size=0 dir=0
+[REPLAY] ioctl: no real fd for logged 15 (skipping)
+[REPLAY] read: fd missing
+[REPLAY] IOCTL logged_fd=15 real=-1 req=0x40045030 size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 15 (skipping)
+[REPLAY] OPEN /dev/mem flags=0x0
+[REPLAY] mmap: no real fd for logged 16
+[REPLAY] MMAP fd(log)=16 real=-1 len=4 prot=0x1 flags=0x1 off=134217728
+[REPLAY] CLOSE logged=16 real=-1
+[REPLAY] MUNMAP ptr=0xb4c6a000 len=4
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x80044952 size=0 dir=2
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=16 real=-1 req=0x89f1 size=0 dir=0
+[REPLAY] ioctl: no real fd for logged 16 (skipping)
+[REPLAY] CLOSE logged=16 real=-1
+[REPLAY] IOCTL logged_fd=16 real=-1 req=0x8914 size=0 dir=0
+[REPLAY] ioctl: no real fd for logged 16 (skipping)
+[REPLAY] CLOSE logged=16 real=-1
+[REPLAY] IOCTL logged_fd=16 real=-1 req=0x8914 size=0 dir=0
+[REPLAY] ioctl: no real fd for logged 16 (skipping)
+[REPLAY] CLOSE logged=16 real=-1
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x80044952 size=0 dir=2
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] OPEN /rom/wpa_supplicant1.conf flags=0x0
+[REPLAY] read: fd missing
+[REPLAY] write: fd missing
+[REPLAY] read: fd missing
+[REPLAY] CLOSE logged=16 real=-1
+[REPLAY] CLOSE logged=17 real=-1
+[REPLAY] IOCTL logged_fd=16 real=-1 req=0x8914 size=0 dir=0
+[REPLAY] ioctl: no real fd for logged 16 (skipping)
+[REPLAY] CLOSE logged=16 real=-1
+[REPLAY] CLOSE logged=3 real=-1
+[REPLAY] CLOSE logged=4 real=-1
+[REPLAY] CLOSE logged=5 real=-1
+[REPLAY] CLOSE logged=6 real=-1
+[REPLAY] CLOSE logged=7 real=-1
+[REPLAY] CLOSE logged=8 real=-1
+[REPLAY] CLOSE logged=9 real=-1
+[REPLAY] CLOSE logged=10 real=-1
+[REPLAY] CLOSE logged=11 real=-1
+[REPLAY] CLOSE logged=12 real=-1
+[REPLAY] CLOSE logged=13 real=-1
+[REPLAY] CLOSE logged=14 real=-1
+[REPLAY] CLOSE logged=15 real=-1
+[REPLAY] CLOSE logged=16 real=-1
+[REPLAY] CLOSE logged=17 real=-1
+[REPLAY] CLOSE logged=18 real=-1
+[REPLAY] CLOSE logged=19 real=-1
+[REPLAY] CLOSE logged=20 real=-1
+[REPLAY] CLOSE logged=21 real=-1
+[REPLAY] CLOSE logged=22 real=-1
+[REPLAY] CLOSE logged=23 real=-1
+[REPLAY] CLOSE logged=24 real=-1
+[REPLAY] CLOSE logged=25 real=-1
+[REPLAY] CLOSE logged=26 real=-1
+[REPLAY] CLOSE logged=27 real=-1
+[REPLAY] CLOSE logged=28 real=-1
+[REPLAY] CLOSE logged=29 real=-1
+[REPLAY] CLOSE logged=30 real=-1
+[REPLAY] CLOSE logged=31 real=-1
+[REPLAY] CLOSE logged=32 real=-1
+[REPLAY] CLOSE logged=33 real=-1
+[REPLAY] CLOSE logged=34 real=-1
+[REPLAY] CLOSE logged=35 real=-1
+[REPLAY] CLOSE logged=36 real=-1
+[REPLAY] CLOSE logged=37 real=-1
+[REPLAY] CLOSE logged=38 real=-1
+[REPLAY] CLOSE logged=39 real=-1
+[REPLAY] CLOSE logged=40 real=-1
+[REPLAY] CLOSE logged=41 real=-1
+[REPLAY] CLOSE logged=42 real=-1
+[REPLAY] CLOSE logged=43 real=-1
+[REPLAY] CLOSE logged=44 real=-1
+[REPLAY] CLOSE logged=45 real=-1
+[REPLAY] CLOSE logged=46 real=-1
+[REPLAY] CLOSE logged=47 real=-1
+[REPLAY] CLOSE logged=48 real=-1
+[REPLAY] CLOSE logged=49 real=-1
+[REPLAY] CLOSE logged=50 real=-1
+[REPLAY] CLOSE logged=51 real=-1
+[REPLAY] CLOSE logged=52 real=-1
+[REPLAY] CLOSE logged=53 real=-1
+[REPLAY] CLOSE logged=54 real=-1
+[REPLAY] CLOSE logged=55 real=-1
+[REPLAY] CLOSE logged=56 real=-1
+[REPLAY] CLOSE logged=57 real=-1
+[REPLAY] CLOSE logged=58 real=-1
+[REPLAY] CLOSE logged=59 real=-1
+[REPLAY] CLOSE logged=60 real=-1
+[REPLAY] CLOSE logged=61 real=-1
+[REPLAY] CLOSE logged=62 real=-1
+[REPLAY] CLOSE logged=63 real=-1
+[REPLAY] CLOSE logged=64 real=-1
+[REPLAY] CLOSE logged=65 real=-1
+[REPLAY] CLOSE logged=66 real=-1
+[REPLAY] CLOSE logged=67 real=-1
+[REPLAY] CLOSE logged=68 real=-1
+[REPLAY] CLOSE logged=69 real=-1
+[REPLAY] CLOSE logged=70 real=-1
+[REPLAY] CLOSE logged=71 real=-1
+[REPLAY] CLOSE logged=72 real=-1
+[REPLAY] CLOSE logged=73 real=-1
+[REPLAY] CLOSE logged=74 real=-1
+[REPLAY] CLOSE logged=75 real=-1
+[REPLAY] CLOSE logged=76 real=-1
+[REPLAY] CLOSE logged=77 real=-1
+[REPLAY] CLOSE logged=78 real=-1
+[REPLAY] CLOSE logged=79 real=-1
+[REPLAY] CLOSE logged=80 real=-1
+[REPLAY] CLOSE logged=81 real=-1
+[REPLAY] CLOSE logged=82 real=-1
+[REPLAY] CLOSE logged=83 real=-1
+[REPLAY] CLOSE logged=84 real=-1
+[REPLAY] CLOSE logged=85 real=-1
+[REPLAY] CLOSE logged=86 real=-1
+[REPLAY] CLOSE logged=87 real=-1
+[REPLAY] CLOSE logged=88 real=-1
+[REPLAY] CLOSE logged=89 real=-1
+[REPLAY] CLOSE logged=90 real=-1
+[REPLAY] CLOSE logged=91 real=-1
+[REPLAY] CLOSE logged=92 real=-1
+[REPLAY] CLOSE logged=93 real=-1
+[REPLAY] CLOSE logged=94 real=-1
+[REPLAY] CLOSE logged=95 real=-1
+[REPLAY] CLOSE logged=96 real=-1
+[REPLAY] CLOSE logged=97 real=-1
+[REPLAY] CLOSE logged=98 real=-1
+[REPLAY] CLOSE logged=99 real=-1
+[REPLAY] CLOSE logged=100 real=-1
+[REPLAY] CLOSE logged=101 real=-1
+[REPLAY] CLOSE logged=102 real=-1
+[REPLAY] CLOSE logged=103 real=-1
+[REPLAY] CLOSE logged=104 real=-1
+[REPLAY] CLOSE logged=3 real=-1
+[REPLAY] CLOSE logged=4 real=-1
+[REPLAY] CLOSE logged=5 real=-1
+[REPLAY] CLOSE logged=6 real=-1
+[REPLAY] CLOSE logged=7 real=-1
+[REPLAY] CLOSE logged=8 real=-1
+[REPLAY] CLOSE logged=9 real=-1
+[REPLAY] CLOSE logged=10 real=-1
+[REPLAY] CLOSE logged=11 real=-1
+[REPLAY] CLOSE logged=12 real=-1
+[REPLAY] CLOSE logged=13 real=-1
+[REPLAY] CLOSE logged=14 real=-1
+[REPLAY] CLOSE logged=15 real=-1
+[REPLAY] CLOSE logged=16 real=-1
+[REPLAY] CLOSE logged=17 real=-1
+[REPLAY] CLOSE logged=18 real=-1
+[REPLAY] CLOSE logged=19 real=-1
+[REPLAY] CLOSE logged=20 real=-1
+[REPLAY] CLOSE logged=21 real=-1
+[REPLAY] CLOSE logged=22 real=-1
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] CLOSE logged=105 real=-1
+[REPLAY] CLOSE logged=106 real=-1
+[REPLAY] CLOSE logged=107 real=-1
+[REPLAY] CLOSE logged=108 real=-1
+[REPLAY] CLOSE logged=109 real=-1
+[REPLAY] CLOSE logged=110 real=-1
+[REPLAY] CLOSE logged=111 real=-1
+[REPLAY] CLOSE logged=112 real=-1
+[REPLAY] CLOSE logged=113 real=-1
+[REPLAY] CLOSE logged=114 real=-1
+[REPLAY] CLOSE logged=115 real=-1
+[REPLAY] CLOSE logged=116 real=-1
+[REPLAY] CLOSE logged=117 real=-1
+[REPLAY] CLOSE logged=118 real=-1
+[REPLAY] CLOSE logged=119 real=-1
+[REPLAY] CLOSE logged=120 real=-1
+[REPLAY] CLOSE logged=121 real=-1
+[REPLAY] CLOSE logged=122 real=-1
+[REPLAY] CLOSE logged=123 real=-1
+[REPLAY] CLOSE logged=124 real=-1
+[REPLAY] CLOSE logged=125 real=-1
+[REPLAY] CLOSE logged=126 real=-1
+[REPLAY] CLOSE logged=127 real=-1
+[REPLAY] CLOSE logged=128 real=-1
+[REPLAY] CLOSE logged=129 real=-1
+[REPLAY] CLOSE logged=130 real=-1
+[REPLAY] CLOSE logged=131 real=-1
+[REPLAY] CLOSE logged=132 real=-1
+[REPLAY] CLOSE logged=133 real=-1
+[REPLAY] CLOSE logged=134 real=-1
+[REPLAY] CLOSE logged=135 real=-1
+[REPLAY] CLOSE logged=136 real=-1
+[REPLAY] CLOSE logged=137 real=-1
+[REPLAY] CLOSE logged=138 real=-1
+[REPLAY] CLOSE logged=139 real=-1
+[REPLAY] CLOSE logged=140 real=-1
+[REPLAY] CLOSE logged=141 real=-1
+[REPLAY] CLOSE logged=142 real=-1
+[REPLAY] CLOSE logged=143 real=-1
+[REPLAY] CLOSE logged=144 real=-1
+[REPLAY] CLOSE logged=145 real=-1
+[REPLAY] CLOSE logged=146 real=-1
+[REPLAY] CLOSE logged=147 real=-1
+[REPLAY] CLOSE logged=148 real=-1
+[REPLAY] CLOSE logged=149 real=-1
+[REPLAY] CLOSE logged=150 real=-1
+[REPLAY] CLOSE logged=151 real=-1
+[REPLAY] CLOSE logged=152 real=-1
+[REPLAY] CLOSE logged=153 real=-1
+[REPLAY] CLOSE logged=154 real=-1
+[REPLAY] CLOSE logged=24 real=-1
+[REPLAY] CLOSE logged=25 real=-1
+[REPLAY] CLOSE logged=26 real=-1
+[REPLAY] CLOSE logged=27 real=-1
+[REPLAY] CLOSE logged=28 real=-1
+[REPLAY] CLOSE logged=29 real=-1
+[REPLAY] CLOSE logged=30 real=-1
+[REPLAY] CLOSE logged=31 real=-1
+[REPLAY] CLOSE logged=32 real=-1
+[REPLAY] CLOSE logged=33 real=-1
+[REPLAY] CLOSE logged=34 real=-1
+[REPLAY] CLOSE logged=35 real=-1
+[REPLAY] CLOSE logged=36 real=-1
+[REPLAY] CLOSE logged=37 real=-1
+[REPLAY] CLOSE logged=38 real=-1
+[REPLAY] CLOSE logged=39 real=-1
+[REPLAY] CLOSE logged=40 real=-1
+[REPLAY] CLOSE logged=41 real=-1
+[REPLAY] CLOSE logged=42 real=-1
+[REPLAY] CLOSE logged=43 real=-1
+[REPLAY] CLOSE logged=44 real=-1
+[REPLAY] CLOSE logged=45 real=-1
+[REPLAY] CLOSE logged=46 real=-1
+[REPLAY] CLOSE logged=47 real=-1
+[REPLAY] CLOSE logged=48 real=-1
+[REPLAY] CLOSE logged=49 real=-1
+[REPLAY] CLOSE logged=50 real=-1
+[REPLAY] CLOSE logged=51 real=-1
+[REPLAY] CLOSE logged=52 real=-1
+[REPLAY] CLOSE logged=53 real=-1
+[REPLAY] CLOSE logged=54 real=-1
+[REPLAY] CLOSE logged=55 real=-1
+[REPLAY] CLOSE logged=56 real=-1
+[REPLAY] CLOSE logged=57 real=-1
+[REPLAY] CLOSE logged=58 real=-1
+[REPLAY] CLOSE logged=59 real=-1
+[REPLAY] CLOSE logged=60 real=-1
+[REPLAY] CLOSE logged=61 real=-1
+[REPLAY] CLOSE logged=62 real=-1
+[REPLAY] CLOSE logged=63 real=-1
+[REPLAY] CLOSE logged=64 real=-1
+[REPLAY] CLOSE logged=155 real=-1
+[REPLAY] CLOSE logged=156 real=-1
+[REPLAY] CLOSE logged=157 real=-1
+[REPLAY] CLOSE logged=158 real=-1
+[REPLAY] CLOSE logged=159 real=-1
+[REPLAY] CLOSE logged=160 real=-1
+[REPLAY] CLOSE logged=161 real=-1
+[REPLAY] CLOSE logged=162 real=-1
+[REPLAY] CLOSE logged=163 real=-1
+[REPLAY] CLOSE logged=164 real=-1
+[REPLAY] CLOSE logged=165 real=-1
+[REPLAY] CLOSE logged=166 real=-1
+[REPLAY] CLOSE logged=167 real=-1
+[REPLAY] CLOSE logged=168 real=-1
+[REPLAY] CLOSE logged=169 real=-1
+[REPLAY] CLOSE logged=170 real=-1
+[REPLAY] CLOSE logged=171 real=-1
+[REPLAY] CLOSE logged=172 real=-1
+[REPLAY] CLOSE logged=173 real=-1
+[REPLAY] CLOSE logged=174 real=-1
+[REPLAY] CLOSE logged=175 real=-1
+[REPLAY] CLOSE logged=176 real=-1
+[REPLAY] CLOSE logged=177 real=-1
+[REPLAY] CLOSE logged=178 real=-1
+[REPLAY] CLOSE logged=179 real=-1
+[REPLAY] CLOSE logged=180 real=-1
+[REPLAY] CLOSE logged=181 real=-1
+[REPLAY] CLOSE logged=182 real=-1
+[REPLAY] CLOSE logged=183 real=-1
+[REPLAY] CLOSE logged=184 real=-1
+[REPLAY] CLOSE logged=185 real=-1
+[REPLAY] CLOSE logged=186 real=-1
+[REPLAY] CLOSE logged=187 real=-1
+[REPLAY] CLOSE logged=188 real=-1
+[REPLAY] CLOSE logged=189 real=-1
+[REPLAY] CLOSE logged=190 real=-1
+[REPLAY] CLOSE logged=191 real=-1
+[REPLAY] CLOSE logged=192 real=-1
+[REPLAY] CLOSE logged=193 real=-1
+[REPLAY] CLOSE logged=194 real=-1
+[REPLAY] CLOSE logged=195 real=-1
+[REPLAY] CLOSE logged=196 real=-1
+[REPLAY] CLOSE logged=197 real=-1
+[REPLAY] CLOSE logged=66 real=-1
+[REPLAY] CLOSE logged=67 real=-1
+[REPLAY] CLOSE logged=68 real=-1
+[REPLAY] CLOSE logged=69 real=-1
+[REPLAY] CLOSE logged=70 real=-1
+[REPLAY] CLOSE logged=71 real=-1
+[REPLAY] CLOSE logged=72 real=-1
+[REPLAY] CLOSE logged=73 real=-1
+[REPLAY] CLOSE logged=74 real=-1
+[REPLAY] CLOSE logged=75 real=-1
+[REPLAY] CLOSE logged=76 real=-1
+[REPLAY] CLOSE logged=77 real=-1
+[REPLAY] CLOSE logged=78 real=-1
+[REPLAY] CLOSE logged=79 real=-1
+[REPLAY] CLOSE logged=80 real=-1
+[REPLAY] CLOSE logged=81 real=-1
+[REPLAY] CLOSE logged=82 real=-1
+[REPLAY] CLOSE logged=83 real=-1
+[REPLAY] CLOSE logged=84 real=-1
+[REPLAY] CLOSE logged=85 real=-1
+[REPLAY] CLOSE logged=86 real=-1
+[REPLAY] CLOSE logged=87 real=-1
+[REPLAY] CLOSE logged=88 real=-1
+[REPLAY] CLOSE logged=89 real=-1
+[REPLAY] CLOSE logged=90 real=-1
+[REPLAY] CLOSE logged=91 real=-1
+[REPLAY] CLOSE logged=198 real=-1
+[REPLAY] CLOSE logged=199 real=-1
+[REPLAY] CLOSE logged=200 real=-1
+[REPLAY] CLOSE logged=201 real=-1
+[REPLAY] CLOSE logged=202 real=-1
+[REPLAY] CLOSE logged=203 real=-1
+[REPLAY] CLOSE logged=204 real=-1
+[REPLAY] CLOSE logged=205 real=-1
+[REPLAY] CLOSE logged=206 real=-1
+[REPLAY] CLOSE logged=207 real=-1
+[REPLAY] CLOSE logged=208 real=-1
+[REPLAY] CLOSE logged=209 real=-1
+[REPLAY] CLOSE logged=210 real=-1
+[REPLAY] CLOSE logged=211 real=-1
+[REPLAY] CLOSE logged=212 real=-1
+[REPLAY] CLOSE logged=213 real=-1
+[REPLAY] CLOSE logged=214 real=-1
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x80044952 size=0 dir=2
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] CLOSE logged=92 real=-1
+[REPLAY] CLOSE logged=93 real=-1
+[REPLAY] CLOSE logged=94 real=-1
+[REPLAY] CLOSE logged=95 real=-1
+[REPLAY] CLOSE logged=96 real=-1
+[REPLAY] CLOSE logged=97 real=-1
+[REPLAY] CLOSE logged=98 real=-1
+[REPLAY] CLOSE logged=99 real=-1
+[REPLAY] CLOSE logged=100 real=-1
+[REPLAY] CLOSE logged=101 real=-1
+[REPLAY] CLOSE logged=102 real=-1
+[REPLAY] CLOSE logged=103 real=-1
+[REPLAY] CLOSE logged=104 real=-1
+[REPLAY] CLOSE logged=105 real=-1
+[REPLAY] CLOSE logged=106 real=-1
+[REPLAY] CLOSE logged=107 real=-1
+[REPLAY] CLOSE logged=108 real=-1
+[REPLAY] CLOSE logged=109 real=-1
+[REPLAY] CLOSE logged=110 real=-1
+[REPLAY] CLOSE logged=111 real=-1
+[REPLAY] CLOSE logged=112 real=-1
+[REPLAY] CLOSE logged=113 real=-1
+[REPLAY] CLOSE logged=114 real=-1
+[REPLAY] CLOSE logged=115 real=-1
+[REPLAY] CLOSE logged=116 real=-1
+[REPLAY] CLOSE logged=117 real=-1
+[REPLAY] CLOSE logged=118 real=-1
+[REPLAY] CLOSE logged=119 real=-1
+[REPLAY] CLOSE logged=120 real=-1
+[REPLAY] CLOSE logged=121 real=-1
+[REPLAY] CLOSE logged=122 real=-1
+[REPLAY] CLOSE logged=123 real=-1
+[REPLAY] CLOSE logged=124 real=-1
+[REPLAY] CLOSE logged=216 real=-1
+[REPLAY] CLOSE logged=217 real=-1
+[REPLAY] CLOSE logged=218 real=-1
+[REPLAY] CLOSE logged=219 real=-1
+[REPLAY] CLOSE logged=220 real=-1
+[REPLAY] CLOSE logged=221 real=-1
+[REPLAY] CLOSE logged=222 real=-1
+[REPLAY] CLOSE logged=223 real=-1
+[REPLAY] CLOSE logged=224 real=-1
+[REPLAY] CLOSE logged=225 real=-1
+[REPLAY] CLOSE logged=226 real=-1
+[REPLAY] CLOSE logged=227 real=-1
+[REPLAY] CLOSE logged=228 real=-1
+[REPLAY] CLOSE logged=229 real=-1
+[REPLAY] CLOSE logged=230 real=-1
+[REPLAY] CLOSE logged=231 real=-1
+[REPLAY] CLOSE logged=232 real=-1
+[REPLAY] CLOSE logged=233 real=-1
+[REPLAY] CLOSE logged=234 real=-1
+[REPLAY] CLOSE logged=235 real=-1
+[REPLAY] CLOSE logged=236 real=-1
+[REPLAY] CLOSE logged=237 real=-1
+[REPLAY] CLOSE logged=238 real=-1
+[REPLAY] CLOSE logged=239 real=-1
+[REPLAY] CLOSE logged=240 real=-1
+[REPLAY] CLOSE logged=241 real=-1
+[REPLAY] CLOSE logged=242 real=-1
+[REPLAY] CLOSE logged=243 real=-1
+[REPLAY] CLOSE logged=244 real=-1
+[REPLAY] CLOSE logged=245 real=-1
+[REPLAY] CLOSE logged=246 real=-1
+[REPLAY] CLOSE logged=247 real=-1
+[REPLAY] CLOSE logged=248 real=-1
+[REPLAY] CLOSE logged=249 real=-1
+[REPLAY] CLOSE logged=250 real=-1
+[REPLAY] CLOSE logged=251 real=-1
+[REPLAY] CLOSE logged=252 real=-1
+[REPLAY] CLOSE logged=253 real=-1
+[REPLAY] CLOSE logged=254 real=-1
+[REPLAY] CLOSE logged=255 real=-1
+[REPLAY] CLOSE logged=256 real=-1
+[REPLAY] CLOSE logged=257 real=-1
+[REPLAY] CLOSE logged=125 real=-1
+[REPLAY] CLOSE logged=126 real=-1
+[REPLAY] CLOSE logged=127 real=-1
+[REPLAY] CLOSE logged=128 real=-1
+[REPLAY] CLOSE logged=129 real=-1
+[REPLAY] CLOSE logged=130 real=-1
+[REPLAY] CLOSE logged=131 real=-1
+[REPLAY] CLOSE logged=132 real=-1
+[REPLAY] CLOSE logged=133 real=-1
+[REPLAY] CLOSE logged=134 real=-1
+[REPLAY] CLOSE logged=135 real=-1
+[REPLAY] CLOSE logged=136 real=-1
+[REPLAY] CLOSE logged=137 real=-1
+[REPLAY] CLOSE logged=138 real=-1
+[REPLAY] CLOSE logged=139 real=-1
+[REPLAY] CLOSE logged=140 real=-1
+[REPLAY] CLOSE logged=141 real=-1
+[REPLAY] CLOSE logged=142 real=-1
+[REPLAY] CLOSE logged=143 real=-1
+[REPLAY] CLOSE logged=144 real=-1
+[REPLAY] CLOSE logged=145 real=-1
+[REPLAY] CLOSE logged=146 real=-1
+[REPLAY] CLOSE logged=147 real=-1
+[REPLAY] CLOSE logged=148 real=-1
+[REPLAY] CLOSE logged=149 real=-1
+[REPLAY] CLOSE logged=150 real=-1
+[REPLAY] CLOSE logged=151 real=-1
+[REPLAY] CLOSE logged=152 real=-1
+[REPLAY] CLOSE logged=153 real=-1
+[REPLAY] CLOSE logged=154 real=-1
+[REPLAY] CLOSE logged=155 real=-1
+[REPLAY] CLOSE logged=156 real=-1
+[REPLAY] CLOSE logged=157 real=-1
+[REPLAY] CLOSE logged=158 real=-1
+[REPLAY] CLOSE logged=159 real=-1
+[REPLAY] CLOSE logged=160 real=-1
+[REPLAY] CLOSE logged=161 real=-1
+[REPLAY] CLOSE logged=162 real=-1
+[REPLAY] CLOSE logged=163 real=-1
+[REPLAY] CLOSE logged=164 real=-1
+[REPLAY] CLOSE logged=165 real=-1
+[REPLAY] CLOSE logged=258 real=-1
+[REPLAY] CLOSE logged=259 real=-1
+[REPLAY] CLOSE logged=260 real=-1
+[REPLAY] CLOSE logged=261 real=-1
+[REPLAY] CLOSE logged=262 real=-1
+[REPLAY] CLOSE logged=263 real=-1
+[REPLAY] CLOSE logged=264 real=-1
+[REPLAY] CLOSE logged=265 real=-1
+[REPLAY] CLOSE logged=266 real=-1
+[REPLAY] CLOSE logged=267 real=-1
+[REPLAY] CLOSE logged=268 real=-1
+[REPLAY] CLOSE logged=269 real=-1
+[REPLAY] CLOSE logged=270 real=-1
+[REPLAY] CLOSE logged=271 real=-1
+[REPLAY] CLOSE logged=272 real=-1
+[REPLAY] CLOSE logged=273 real=-1
+[REPLAY] CLOSE logged=274 real=-1
+[REPLAY] CLOSE logged=275 real=-1
+[REPLAY] CLOSE logged=276 real=-1
+[REPLAY] CLOSE logged=277 real=-1
+[REPLAY] CLOSE logged=278 real=-1
+[REPLAY] CLOSE logged=279 real=-1
+[REPLAY] CLOSE logged=280 real=-1
+[REPLAY] CLOSE logged=281 real=-1
+[REPLAY] CLOSE logged=282 real=-1
+[REPLAY] CLOSE logged=283 real=-1
+[REPLAY] CLOSE logged=284 real=-1
+[REPLAY] CLOSE logged=285 real=-1
+[REPLAY] CLOSE logged=286 real=-1
+[REPLAY] CLOSE logged=287 real=-1
+[REPLAY] CLOSE logged=288 real=-1
+[REPLAY] CLOSE logged=289 real=-1
+[REPLAY] CLOSE logged=290 real=-1
+[REPLAY] CLOSE logged=291 real=-1
+[REPLAY] CLOSE logged=292 real=-1
+[REPLAY] CLOSE logged=293 real=-1
+[REPLAY] CLOSE logged=294 real=-1
+[REPLAY] CLOSE logged=295 real=-1
+[REPLAY] CLOSE logged=296 real=-1
+[REPLAY] CLOSE logged=297 real=-1
+[REPLAY] CLOSE logged=298 real=-1
+[REPLAY] CLOSE logged=299 real=-1
+[REPLAY] CLOSE logged=300 real=-1
+[REPLAY] CLOSE logged=166 real=-1
+[REPLAY] CLOSE logged=167 real=-1
+[REPLAY] CLOSE logged=168 real=-1
+[REPLAY] CLOSE logged=169 real=-1
+[REPLAY] CLOSE logged=170 real=-1
+[REPLAY] CLOSE logged=171 real=-1
+[REPLAY] CLOSE logged=172 real=-1
+[REPLAY] CLOSE logged=173 real=-1
+[REPLAY] CLOSE logged=174 real=-1
+[REPLAY] CLOSE logged=175 real=-1
+[REPLAY] CLOSE logged=176 real=-1
+[REPLAY] CLOSE logged=177 real=-1
+[REPLAY] CLOSE logged=178 real=-1
+[REPLAY] CLOSE logged=179 real=-1
+[REPLAY] CLOSE logged=180 real=-1
+[REPLAY] CLOSE logged=181 real=-1
+[REPLAY] CLOSE logged=182 real=-1
+[REPLAY] CLOSE logged=183 real=-1
+[REPLAY] CLOSE logged=184 real=-1
+[REPLAY] CLOSE logged=185 real=-1
+[REPLAY] CLOSE logged=186 real=-1
+[REPLAY] CLOSE logged=187 real=-1
+[REPLAY] CLOSE logged=188 real=-1
+[REPLAY] CLOSE logged=189 real=-1
+[REPLAY] CLOSE logged=190 real=-1
+[REPLAY] CLOSE logged=191 real=-1
+[REPLAY] CLOSE logged=192 real=-1
+[REPLAY] CLOSE logged=193 real=-1
+[REPLAY] CLOSE logged=194 real=-1
+[REPLAY] CLOSE logged=195 real=-1
+[REPLAY] CLOSE logged=196 real=-1
+[REPLAY] CLOSE logged=197 real=-1
+[REPLAY] CLOSE logged=198 real=-1
+[REPLAY] CLOSE logged=199 real=-1
+[REPLAY] CLOSE logged=200 real=-1
+[REPLAY] CLOSE logged=201 real=-1
+[REPLAY] CLOSE logged=202 real=-1
+[REPLAY] CLOSE logged=203 real=-1
+[REPLAY] CLOSE logged=301 real=-1
+[REPLAY] CLOSE logged=302 real=-1
+[REPLAY] CLOSE logged=303 real=-1
+[REPLAY] CLOSE logged=304 real=-1
+[REPLAY] CLOSE logged=305 real=-1
+[REPLAY] CLOSE logged=306 real=-1
+[REPLAY] CLOSE logged=307 real=-1
+[REPLAY] CLOSE logged=308 real=-1
+[REPLAY] CLOSE logged=309 real=-1
+[REPLAY] CLOSE logged=310 real=-1
+[REPLAY] CLOSE logged=311 real=-1
+[REPLAY] CLOSE logged=312 real=-1
+[REPLAY] CLOSE logged=313 real=-1
+[REPLAY] CLOSE logged=314 real=-1
+[REPLAY] CLOSE logged=315 real=-1
+[REPLAY] CLOSE logged=316 real=-1
+[REPLAY] CLOSE logged=317 real=-1
+[REPLAY] CLOSE logged=318 real=-1
+[REPLAY] CLOSE logged=319 real=-1
+[REPLAY] CLOSE logged=320 real=-1
+[REPLAY] CLOSE logged=321 real=-1
+[REPLAY] CLOSE logged=322 real=-1
+[REPLAY] CLOSE logged=323 real=-1
+[REPLAY] CLOSE logged=324 real=-1
+[REPLAY] CLOSE logged=325 real=-1
+[REPLAY] CLOSE logged=326 real=-1
+[REPLAY] CLOSE logged=327 real=-1
+[REPLAY] CLOSE logged=328 real=-1
+[REPLAY] CLOSE logged=329 real=-1
+[REPLAY] CLOSE logged=330 real=-1
+[REPLAY] CLOSE logged=331 real=-1
+[REPLAY] CLOSE logged=332 real=-1
+[REPLAY] CLOSE logged=333 real=-1
+[REPLAY] CLOSE logged=334 real=-1
+[REPLAY] CLOSE logged=335 real=-1
+[REPLAY] CLOSE logged=336 real=-1
+[REPLAY] CLOSE logged=337 real=-1
+[REPLAY] CLOSE logged=338 real=-1
+[REPLAY] CLOSE logged=339 real=-1
+[REPLAY] CLOSE logged=340 real=-1
+[REPLAY] CLOSE logged=341 real=-1
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] CLOSE logged=204 real=-1
+[REPLAY] CLOSE logged=205 real=-1
+[REPLAY] CLOSE logged=206 real=-1
+[REPLAY] CLOSE logged=207 real=-1
+[REPLAY] CLOSE logged=208 real=-1
+[REPLAY] CLOSE logged=209 real=-1
+[REPLAY] CLOSE logged=210 real=-1
+[REPLAY] CLOSE logged=211 real=-1
+[REPLAY] CLOSE logged=212 real=-1
+[REPLAY] CLOSE logged=213 real=-1
+[REPLAY] CLOSE logged=214 real=-1
+[REPLAY] CLOSE logged=215 real=-1
+[REPLAY] CLOSE logged=216 real=-1
+[REPLAY] CLOSE logged=217 real=-1
+[REPLAY] CLOSE logged=218 real=-1
+[REPLAY] CLOSE logged=219 real=-1
+[REPLAY] CLOSE logged=220 real=-1
+[REPLAY] CLOSE logged=221 real=-1
+[REPLAY] CLOSE logged=222 real=-1
+[REPLAY] CLOSE logged=223 real=-1
+[REPLAY] CLOSE logged=224 real=-1
+[REPLAY] CLOSE logged=225 real=-1
+[REPLAY] CLOSE logged=226 real=-1
+[REPLAY] CLOSE logged=227 real=-1
+[REPLAY] CLOSE logged=228 real=-1
+[REPLAY] CLOSE logged=229 real=-1
+[REPLAY] CLOSE logged=230 real=-1
+[REPLAY] CLOSE logged=231 real=-1
+[REPLAY] CLOSE logged=232 real=-1
+[REPLAY] CLOSE logged=233 real=-1
+[REPLAY] CLOSE logged=234 real=-1
+[REPLAY] CLOSE logged=235 real=-1
+[REPLAY] CLOSE logged=236 real=-1
+[REPLAY] CLOSE logged=237 real=-1
+[REPLAY] CLOSE logged=238 real=-1
+[REPLAY] CLOSE logged=239 real=-1
+[REPLAY] CLOSE logged=240 real=-1
+[REPLAY] CLOSE logged=241 real=-1
+[REPLAY] CLOSE logged=342 real=-1
+[REPLAY] CLOSE logged=343 real=-1
+[REPLAY] CLOSE logged=344 real=-1
+[REPLAY] CLOSE logged=345 real=-1
+[REPLAY] CLOSE logged=346 real=-1
+[REPLAY] CLOSE logged=347 real=-1
+[REPLAY] CLOSE logged=348 real=-1
+[REPLAY] CLOSE logged=349 real=-1
+[REPLAY] CLOSE logged=350 real=-1
+[REPLAY] CLOSE logged=351 real=-1
+[REPLAY] CLOSE logged=352 real=-1
+[REPLAY] CLOSE logged=353 real=-1
+[REPLAY] CLOSE logged=354 real=-1
+[REPLAY] CLOSE logged=355 real=-1
+[REPLAY] CLOSE logged=356 real=-1
+[REPLAY] CLOSE logged=357 real=-1
+[REPLAY] CLOSE logged=358 real=-1
+[REPLAY] CLOSE logged=359 real=-1
+[REPLAY] CLOSE logged=360 real=-1
+[REPLAY] CLOSE logged=361 real=-1
+[REPLAY] CLOSE logged=362 real=-1
+[REPLAY] CLOSE logged=363 real=-1
+[REPLAY] CLOSE logged=364 real=-1
+[REPLAY] CLOSE logged=365 real=-1
+[REPLAY] CLOSE logged=366 real=-1
+[REPLAY] CLOSE logged=367 real=-1
+[REPLAY] CLOSE logged=368 real=-1
+[REPLAY] CLOSE logged=369 real=-1
+[REPLAY] CLOSE logged=370 real=-1
+[REPLAY] CLOSE logged=371 real=-1
+[REPLAY] CLOSE logged=372 real=-1
+[REPLAY] CLOSE logged=373 real=-1
+[REPLAY] CLOSE logged=374 real=-1
+[REPLAY] CLOSE logged=375 real=-1
+[REPLAY] CLOSE logged=376 real=-1
+[REPLAY] CLOSE logged=377 real=-1
+[REPLAY] CLOSE logged=378 real=-1
+[REPLAY] CLOSE logged=379 real=-1
+[REPLAY] CLOSE logged=380 real=-1
+[REPLAY] CLOSE logged=381 real=-1
+[REPLAY] CLOSE logged=382 real=-1
+[REPLAY] CLOSE logged=383 real=-1
+[REPLAY] CLOSE logged=242 real=-1
+[REPLAY] CLOSE logged=243 real=-1
+[REPLAY] CLOSE logged=244 real=-1
+[REPLAY] CLOSE logged=245 real=-1
+[REPLAY] CLOSE logged=246 real=-1
+[REPLAY] CLOSE logged=247 real=-1
+[REPLAY] CLOSE logged=248 real=-1
+[REPLAY] CLOSE logged=249 real=-1
+[REPLAY] CLOSE logged=250 real=-1
+[REPLAY] CLOSE logged=251 real=-1
+[REPLAY] CLOSE logged=252 real=-1
+[REPLAY] CLOSE logged=253 real=-1
+[REPLAY] CLOSE logged=254 real=-1
+[REPLAY] CLOSE logged=255 real=-1
+[REPLAY] CLOSE logged=256 real=-1
+[REPLAY] CLOSE logged=257 real=-1
+[REPLAY] CLOSE logged=258 real=-1
+[REPLAY] CLOSE logged=259 real=-1
+[REPLAY] CLOSE logged=260 real=-1
+[REPLAY] CLOSE logged=261 real=-1
+[REPLAY] CLOSE logged=262 real=-1
+[REPLAY] CLOSE logged=263 real=-1
+[REPLAY] CLOSE logged=264 real=-1
+[REPLAY] CLOSE logged=265 real=-1
+[REPLAY] CLOSE logged=266 real=-1
+[REPLAY] CLOSE logged=267 real=-1
+[REPLAY] CLOSE logged=268 real=-1
+[REPLAY] CLOSE logged=269 real=-1
+[REPLAY] CLOSE logged=270 real=-1
+[REPLAY] CLOSE logged=271 real=-1
+[REPLAY] CLOSE logged=272 real=-1
+[REPLAY] CLOSE logged=273 real=-1
+[REPLAY] CLOSE logged=274 real=-1
+[REPLAY] CLOSE logged=275 real=-1
+[REPLAY] CLOSE logged=276 real=-1
+[REPLAY] CLOSE logged=277 real=-1
+[REPLAY] CLOSE logged=278 real=-1
+[REPLAY] CLOSE logged=279 real=-1
+[REPLAY] CLOSE logged=280 real=-1
+[REPLAY] CLOSE logged=281 real=-1
+[REPLAY] CLOSE logged=282 real=-1
+[REPLAY] CLOSE logged=384 real=-1
+[REPLAY] CLOSE logged=385 real=-1
+[REPLAY] CLOSE logged=386 real=-1
+[REPLAY] CLOSE logged=387 real=-1
+[REPLAY] CLOSE logged=388 real=-1
+[REPLAY] CLOSE logged=389 real=-1
+[REPLAY] CLOSE logged=390 real=-1
+[REPLAY] CLOSE logged=391 real=-1
+[REPLAY] CLOSE logged=392 real=-1
+[REPLAY] CLOSE logged=393 real=-1
+[REPLAY] CLOSE logged=394 real=-1
+[REPLAY] CLOSE logged=395 real=-1
+[REPLAY] CLOSE logged=396 real=-1
+[REPLAY] CLOSE logged=397 real=-1
+[REPLAY] CLOSE logged=398 real=-1
+[REPLAY] CLOSE logged=399 real=-1
+[REPLAY] CLOSE logged=400 real=-1
+[REPLAY] CLOSE logged=401 real=-1
+[REPLAY] CLOSE logged=402 real=-1
+[REPLAY] CLOSE logged=403 real=-1
+[REPLAY] CLOSE logged=404 real=-1
+[REPLAY] CLOSE logged=405 real=-1
+[REPLAY] CLOSE logged=406 real=-1
+[REPLAY] CLOSE logged=407 real=-1
+[REPLAY] CLOSE logged=408 real=-1
+[REPLAY] CLOSE logged=409 real=-1
+[REPLAY] CLOSE logged=410 real=-1
+[REPLAY] CLOSE logged=411 real=-1
+[REPLAY] CLOSE logged=283 real=-1
+[REPLAY] CLOSE logged=284 real=-1
+[REPLAY] CLOSE logged=285 real=-1
+[REPLAY] CLOSE logged=286 real=-1
+[REPLAY] CLOSE logged=287 real=-1
+[REPLAY] CLOSE logged=288 real=-1
+[REPLAY] CLOSE logged=289 real=-1
+[REPLAY] CLOSE logged=290 real=-1
+[REPLAY] CLOSE logged=291 real=-1
+[REPLAY] CLOSE logged=292 real=-1
+[REPLAY] CLOSE logged=293 real=-1
+[REPLAY] CLOSE logged=294 real=-1
+[REPLAY] CLOSE logged=295 real=-1
+[REPLAY] CLOSE logged=413 real=-1
+[REPLAY] CLOSE logged=414 real=-1
+[REPLAY] CLOSE logged=415 real=-1
+[REPLAY] CLOSE logged=416 real=-1
+[REPLAY] CLOSE logged=417 real=-1
+[REPLAY] CLOSE logged=418 real=-1
+[REPLAY] CLOSE logged=419 real=-1
+[REPLAY] CLOSE logged=420 real=-1
+[REPLAY] CLOSE logged=421 real=-1
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x80044952 size=0 dir=2
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] CLOSE logged=296 real=-1
+[REPLAY] CLOSE logged=297 real=-1
+[REPLAY] CLOSE logged=298 real=-1
+[REPLAY] CLOSE logged=299 real=-1
+[REPLAY] CLOSE logged=300 real=-1
+[REPLAY] CLOSE logged=301 real=-1
+[REPLAY] CLOSE logged=302 real=-1
+[REPLAY] CLOSE logged=303 real=-1
+[REPLAY] CLOSE logged=304 real=-1
+[REPLAY] CLOSE logged=305 real=-1
+[REPLAY] CLOSE logged=306 real=-1
+[REPLAY] CLOSE logged=307 real=-1
+[REPLAY] CLOSE logged=308 real=-1
+[REPLAY] CLOSE logged=309 real=-1
+[REPLAY] CLOSE logged=310 real=-1
+[REPLAY] CLOSE logged=311 real=-1
+[REPLAY] CLOSE logged=312 real=-1
+[REPLAY] CLOSE logged=313 real=-1
+[REPLAY] CLOSE logged=314 real=-1
+[REPLAY] CLOSE logged=315 real=-1
+[REPLAY] CLOSE logged=316 real=-1
+[REPLAY] CLOSE logged=317 real=-1
+[REPLAY] CLOSE logged=318 real=-1
+[REPLAY] CLOSE logged=319 real=-1
+[REPLAY] CLOSE logged=320 real=-1
+[REPLAY] CLOSE logged=422 real=-1
+[REPLAY] CLOSE logged=423 real=-1
+[REPLAY] CLOSE logged=424 real=-1
+[REPLAY] CLOSE logged=425 real=-1
+[REPLAY] CLOSE logged=426 real=-1
+[REPLAY] CLOSE logged=427 real=-1
+[REPLAY] CLOSE logged=428 real=-1
+[REPLAY] CLOSE logged=429 real=-1
+[REPLAY] CLOSE logged=430 real=-1
+[REPLAY] CLOSE logged=431 real=-1
+[REPLAY] CLOSE logged=432 real=-1
+[REPLAY] CLOSE logged=433 real=-1
+[REPLAY] CLOSE logged=434 real=-1
+[REPLAY] CLOSE logged=435 real=-1
+[REPLAY] CLOSE logged=436 real=-1
+[REPLAY] CLOSE logged=437 real=-1
+[REPLAY] CLOSE logged=438 real=-1
+[REPLAY] CLOSE logged=439 real=-1
+[REPLAY] CLOSE logged=440 real=-1
+[REPLAY] CLOSE logged=441 real=-1
+[REPLAY] CLOSE logged=442 real=-1
+[REPLAY] CLOSE logged=443 real=-1
+[REPLAY] CLOSE logged=444 real=-1
+[REPLAY] CLOSE logged=445 real=-1
+[REPLAY] CLOSE logged=446 real=-1
+[REPLAY] CLOSE logged=447 real=-1
+[REPLAY] CLOSE logged=448 real=-1
+[REPLAY] CLOSE logged=449 real=-1
+[REPLAY] CLOSE logged=450 real=-1
+[REPLAY] CLOSE logged=451 real=-1
+[REPLAY] CLOSE logged=452 real=-1
+[REPLAY] CLOSE logged=453 real=-1
+[REPLAY] CLOSE logged=454 real=-1
+[REPLAY] CLOSE logged=455 real=-1
+[REPLAY] CLOSE logged=456 real=-1
+[REPLAY] CLOSE logged=457 real=-1
+[REPLAY] CLOSE logged=458 real=-1
+[REPLAY] CLOSE logged=459 real=-1
+[REPLAY] CLOSE logged=460 real=-1
+[REPLAY] CLOSE logged=461 real=-1
+[REPLAY] CLOSE logged=462 real=-1
+[REPLAY] CLOSE logged=463 real=-1
+[REPLAY] CLOSE logged=464 real=-1
+[REPLAY] CLOSE logged=321 real=-1
+[REPLAY] CLOSE logged=322 real=-1
+[REPLAY] CLOSE logged=323 real=-1
+[REPLAY] CLOSE logged=324 real=-1
+[REPLAY] CLOSE logged=325 real=-1
+[REPLAY] CLOSE logged=326 real=-1
+[REPLAY] CLOSE logged=327 real=-1
+[REPLAY] CLOSE logged=328 real=-1
+[REPLAY] CLOSE logged=329 real=-1
+[REPLAY] CLOSE logged=330 real=-1
+[REPLAY] CLOSE logged=331 real=-1
+[REPLAY] CLOSE logged=332 real=-1
+[REPLAY] CLOSE logged=333 real=-1
+[REPLAY] CLOSE logged=334 real=-1
+[REPLAY] CLOSE logged=335 real=-1
+[REPLAY] CLOSE logged=336 real=-1
+[REPLAY] CLOSE logged=337 real=-1
+[REPLAY] CLOSE logged=338 real=-1
+[REPLAY] CLOSE logged=339 real=-1
+[REPLAY] CLOSE logged=340 real=-1
+[REPLAY] CLOSE logged=341 real=-1
+[REPLAY] CLOSE logged=342 real=-1
+[REPLAY] CLOSE logged=343 real=-1
+[REPLAY] CLOSE logged=344 real=-1
+[REPLAY] CLOSE logged=345 real=-1
+[REPLAY] CLOSE logged=346 real=-1
+[REPLAY] CLOSE logged=347 real=-1
+[REPLAY] CLOSE logged=348 real=-1
+[REPLAY] CLOSE logged=349 real=-1
+[REPLAY] CLOSE logged=350 real=-1
+[REPLAY] CLOSE logged=351 real=-1
+[REPLAY] CLOSE logged=352 real=-1
+[REPLAY] CLOSE logged=353 real=-1
+[REPLAY] CLOSE logged=354 real=-1
+[REPLAY] CLOSE logged=355 real=-1
+[REPLAY] CLOSE logged=356 real=-1
+[REPLAY] CLOSE logged=357 real=-1
+[REPLAY] CLOSE logged=358 real=-1
+[REPLAY] CLOSE logged=359 real=-1
+[REPLAY] CLOSE logged=360 real=-1
+[REPLAY] CLOSE logged=361 real=-1
+[REPLAY] CLOSE logged=362 real=-1
+[REPLAY] CLOSE logged=466 real=-1
+[REPLAY] CLOSE logged=467 real=-1
+[REPLAY] CLOSE logged=468 real=-1
+[REPLAY] CLOSE logged=469 real=-1
+[REPLAY] CLOSE logged=470 real=-1
+[REPLAY] CLOSE logged=471 real=-1
+[REPLAY] CLOSE logged=472 real=-1
+[REPLAY] CLOSE logged=473 real=-1
+[REPLAY] CLOSE logged=474 real=-1
+[REPLAY] CLOSE logged=475 real=-1
+[REPLAY] CLOSE logged=476 real=-1
+[REPLAY] CLOSE logged=477 real=-1
+[REPLAY] CLOSE logged=478 real=-1
+[REPLAY] CLOSE logged=479 real=-1
+[REPLAY] CLOSE logged=480 real=-1
+[REPLAY] CLOSE logged=481 real=-1
+[REPLAY] CLOSE logged=482 real=-1
+[REPLAY] CLOSE logged=483 real=-1
+[REPLAY] CLOSE logged=484 real=-1
+[REPLAY] CLOSE logged=485 real=-1
+[REPLAY] CLOSE logged=486 real=-1
+[REPLAY] CLOSE logged=487 real=-1
+[REPLAY] CLOSE logged=488 real=-1
+[REPLAY] CLOSE logged=489 real=-1
+[REPLAY] CLOSE logged=490 real=-1
+[REPLAY] CLOSE logged=491 real=-1
+[REPLAY] CLOSE logged=492 real=-1
+[REPLAY] CLOSE logged=493 real=-1
+[REPLAY] CLOSE logged=494 real=-1
+[REPLAY] CLOSE logged=495 real=-1
+[REPLAY] CLOSE logged=496 real=-1
+[REPLAY] CLOSE logged=497 real=-1
+[REPLAY] CLOSE logged=498 real=-1
+[REPLAY] CLOSE logged=499 real=-1
+[REPLAY] CLOSE logged=500 real=-1
+[REPLAY] CLOSE logged=501 real=-1
+[REPLAY] CLOSE logged=502 real=-1
+[REPLAY] CLOSE logged=503 real=-1
+[REPLAY] CLOSE logged=504 real=-1
+[REPLAY] CLOSE logged=505 real=-1
+[REPLAY] CLOSE logged=506 real=-1
+[REPLAY] CLOSE logged=507 real=-1
+[REPLAY] CLOSE logged=508 real=-1
+[REPLAY] CLOSE logged=363 real=-1
+[REPLAY] CLOSE logged=364 real=-1
+[REPLAY] CLOSE logged=365 real=-1
+[REPLAY] CLOSE logged=366 real=-1
+[REPLAY] CLOSE logged=367 real=-1
+[REPLAY] CLOSE logged=368 real=-1
+[REPLAY] CLOSE logged=369 real=-1
+[REPLAY] CLOSE logged=370 real=-1
+[REPLAY] CLOSE logged=371 real=-1
+[REPLAY] CLOSE logged=372 real=-1
+[REPLAY] CLOSE logged=373 real=-1
+[REPLAY] CLOSE logged=374 real=-1
+[REPLAY] CLOSE logged=375 real=-1
+[REPLAY] CLOSE logged=376 real=-1
+[REPLAY] CLOSE logged=377 real=-1
+[REPLAY] CLOSE logged=378 real=-1
+[REPLAY] CLOSE logged=379 real=-1
+[REPLAY] CLOSE logged=380 real=-1
+[REPLAY] CLOSE logged=381 real=-1
+[REPLAY] CLOSE logged=382 real=-1
+[REPLAY] CLOSE logged=383 real=-1
+[REPLAY] CLOSE logged=384 real=-1
+[REPLAY] CLOSE logged=385 real=-1
+[REPLAY] CLOSE logged=386 real=-1
+[REPLAY] CLOSE logged=387 real=-1
+[REPLAY] CLOSE logged=388 real=-1
+[REPLAY] CLOSE logged=389 real=-1
+[REPLAY] CLOSE logged=390 real=-1
+[REPLAY] CLOSE logged=391 real=-1
+[REPLAY] CLOSE logged=392 real=-1
+[REPLAY] CLOSE logged=393 real=-1
+[REPLAY] CLOSE logged=394 real=-1
+[REPLAY] CLOSE logged=395 real=-1
+[REPLAY] CLOSE logged=396 real=-1
+[REPLAY] CLOSE logged=397 real=-1
+[REPLAY] CLOSE logged=398 real=-1
+[REPLAY] CLOSE logged=399 real=-1
+[REPLAY] CLOSE logged=400 real=-1
+[REPLAY] CLOSE logged=401 real=-1
+[REPLAY] CLOSE logged=402 real=-1
+[REPLAY] CLOSE logged=403 real=-1
+[REPLAY] CLOSE logged=509 real=-1
+[REPLAY] CLOSE logged=510 real=-1
+[REPLAY] CLOSE logged=511 real=-1
+[REPLAY] CLOSE logged=512 real=-1
+[REPLAY] CLOSE logged=513 real=-1
+[REPLAY] CLOSE logged=514 real=-1
+[REPLAY] CLOSE logged=515 real=-1
+[REPLAY] CLOSE logged=516 real=-1
+[REPLAY] CLOSE logged=517 real=-1
+[REPLAY] CLOSE logged=518 real=-1
+[REPLAY] CLOSE logged=519 real=-1
+[REPLAY] CLOSE logged=520 real=-1
+[REPLAY] CLOSE logged=521 real=-1
+[REPLAY] CLOSE logged=522 real=-1
+[REPLAY] CLOSE logged=523 real=-1
+[REPLAY] CLOSE logged=524 real=-1
+[REPLAY] CLOSE logged=525 real=-1
+[REPLAY] CLOSE logged=526 real=-1
+[REPLAY] CLOSE logged=527 real=-1
+[REPLAY] CLOSE logged=528 real=-1
+[REPLAY] CLOSE logged=529 real=-1
+[REPLAY] CLOSE logged=530 real=-1
+[REPLAY] CLOSE logged=531 real=-1
+[REPLAY] CLOSE logged=532 real=-1
+[REPLAY] CLOSE logged=533 real=-1
+[REPLAY] CLOSE logged=534 real=-1
+[REPLAY] CLOSE logged=535 real=-1
+[REPLAY] CLOSE logged=536 real=-1
+[REPLAY] CLOSE logged=537 real=-1
+[REPLAY] CLOSE logged=538 real=-1
+[REPLAY] CLOSE logged=539 real=-1
+[REPLAY] CLOSE logged=540 real=-1
+[REPLAY] CLOSE logged=541 real=-1
+[REPLAY] CLOSE logged=542 real=-1
+[REPLAY] CLOSE logged=543 real=-1
+[REPLAY] CLOSE logged=544 real=-1
+[REPLAY] CLOSE logged=545 real=-1
+[REPLAY] CLOSE logged=546 real=-1
+[REPLAY] CLOSE logged=547 real=-1
+[REPLAY] CLOSE logged=548 real=-1
+[REPLAY] CLOSE logged=549 real=-1
+[REPLAY] CLOSE logged=550 real=-1
+[REPLAY] CLOSE logged=551 real=-1
+[REPLAY] CLOSE logged=404 real=-1
+[REPLAY] CLOSE logged=405 real=-1
+[REPLAY] CLOSE logged=406 real=-1
+[REPLAY] CLOSE logged=407 real=-1
+[REPLAY] CLOSE logged=408 real=-1
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] CLOSE logged=409 real=-1
+[REPLAY] CLOSE logged=410 real=-1
+[REPLAY] CLOSE logged=411 real=-1
+[REPLAY] CLOSE logged=412 real=-1
+[REPLAY] CLOSE logged=413 real=-1
+[REPLAY] CLOSE logged=414 real=-1
+[REPLAY] CLOSE logged=415 real=-1
+[REPLAY] CLOSE logged=416 real=-1
+[REPLAY] CLOSE logged=417 real=-1
+[REPLAY] CLOSE logged=418 real=-1
+[REPLAY] CLOSE logged=419 real=-1
+[REPLAY] CLOSE logged=420 real=-1
+[REPLAY] CLOSE logged=421 real=-1
+[REPLAY] CLOSE logged=422 real=-1
+[REPLAY] CLOSE logged=423 real=-1
+[REPLAY] CLOSE logged=424 real=-1
+[REPLAY] CLOSE logged=425 real=-1
+[REPLAY] CLOSE logged=426 real=-1
+[REPLAY] CLOSE logged=427 real=-1
+[REPLAY] CLOSE logged=428 real=-1
+[REPLAY] CLOSE logged=429 real=-1
+[REPLAY] CLOSE logged=430 real=-1
+[REPLAY] CLOSE logged=431 real=-1
+[REPLAY] CLOSE logged=432 real=-1
+[REPLAY] CLOSE logged=433 real=-1
+[REPLAY] CLOSE logged=434 real=-1
+[REPLAY] CLOSE logged=435 real=-1
+[REPLAY] CLOSE logged=436 real=-1
+[REPLAY] CLOSE logged=437 real=-1
+[REPLAY] CLOSE logged=438 real=-1
+[REPLAY] CLOSE logged=439 real=-1
+[REPLAY] CLOSE logged=440 real=-1
+[REPLAY] CLOSE logged=441 real=-1
+[REPLAY] CLOSE logged=442 real=-1
+[REPLAY] CLOSE logged=443 real=-1
+[REPLAY] CLOSE logged=444 real=-1
+[REPLAY] CLOSE logged=445 real=-1
+[REPLAY] CLOSE logged=446 real=-1
+[REPLAY] CLOSE logged=447 real=-1
+[REPLAY] CLOSE logged=448 real=-1
+[REPLAY] CLOSE logged=449 real=-1
+[REPLAY] CLOSE logged=450 real=-1
+[REPLAY] CLOSE logged=451 real=-1
+[REPLAY] CLOSE logged=452 real=-1
+[REPLAY] CLOSE logged=453 real=-1
+[REPLAY] CLOSE logged=454 real=-1
+[REPLAY] CLOSE logged=455 real=-1
+[REPLAY] CLOSE logged=456 real=-1
+[REPLAY] CLOSE logged=457 real=-1
+[REPLAY] CLOSE logged=458 real=-1
+[REPLAY] CLOSE logged=459 real=-1
+[REPLAY] CLOSE logged=460 real=-1
+[REPLAY] CLOSE logged=461 real=-1
+[REPLAY] CLOSE logged=462 real=-1
+[REPLAY] CLOSE logged=463 real=-1
+[REPLAY] CLOSE logged=464 real=-1
+[REPLAY] CLOSE logged=465 real=-1
+[REPLAY] CLOSE logged=466 real=-1
+[REPLAY] CLOSE logged=467 real=-1
+[REPLAY] CLOSE logged=468 real=-1
+[REPLAY] CLOSE logged=469 real=-1
+[REPLAY] CLOSE logged=470 real=-1
+[REPLAY] CLOSE logged=471 real=-1
+[REPLAY] CLOSE logged=472 real=-1
+[REPLAY] CLOSE logged=552 real=-1
+[REPLAY] CLOSE logged=553 real=-1
+[REPLAY] CLOSE logged=554 real=-1
+[REPLAY] CLOSE logged=555 real=-1
+[REPLAY] CLOSE logged=556 real=-1
+[REPLAY] CLOSE logged=557 real=-1
+[REPLAY] CLOSE logged=558 real=-1
+[REPLAY] CLOSE logged=559 real=-1
+[REPLAY] CLOSE logged=560 real=-1
+[REPLAY] CLOSE logged=561 real=-1
+[REPLAY] CLOSE logged=562 real=-1
+[REPLAY] CLOSE logged=563 real=-1
+[REPLAY] CLOSE logged=564 real=-1
+[REPLAY] CLOSE logged=565 real=-1
+[REPLAY] CLOSE logged=566 real=-1
+[REPLAY] CLOSE logged=567 real=-1
+[REPLAY] CLOSE logged=568 real=-1
+[REPLAY] CLOSE logged=569 real=-1
+[REPLAY] CLOSE logged=570 real=-1
+[REPLAY] CLOSE logged=571 real=-1
+[REPLAY] CLOSE logged=572 real=-1
+[REPLAY] CLOSE logged=573 real=-1
+[REPLAY] CLOSE logged=574 real=-1
+[REPLAY] CLOSE logged=575 real=-1
+[REPLAY] CLOSE logged=576 real=-1
+[REPLAY] CLOSE logged=577 real=-1
+[REPLAY] CLOSE logged=578 real=-1
+[REPLAY] CLOSE logged=579 real=-1
+[REPLAY] CLOSE logged=580 real=-1
+[REPLAY] CLOSE logged=581 real=-1
+[REPLAY] CLOSE logged=582 real=-1
+[REPLAY] CLOSE logged=583 real=-1
+[REPLAY] CLOSE logged=584 real=-1
+[REPLAY] CLOSE logged=585 real=-1
+[REPLAY] CLOSE logged=586 real=-1
+[REPLAY] CLOSE logged=587 real=-1
+[REPLAY] CLOSE logged=588 real=-1
+[REPLAY] CLOSE logged=589 real=-1
+[REPLAY] CLOSE logged=590 real=-1
+[REPLAY] CLOSE logged=591 real=-1
+[REPLAY] CLOSE logged=592 real=-1
+[REPLAY] CLOSE logged=593 real=-1
+[REPLAY] CLOSE logged=594 real=-1
+[REPLAY] CLOSE logged=474 real=-1
+[REPLAY] CLOSE logged=475 real=-1
+[REPLAY] CLOSE logged=476 real=-1
+[REPLAY] CLOSE logged=477 real=-1
+[REPLAY] CLOSE logged=478 real=-1
+[REPLAY] CLOSE logged=479 real=-1
+[REPLAY] CLOSE logged=480 real=-1
+[REPLAY] CLOSE logged=481 real=-1
+[REPLAY] CLOSE logged=482 real=-1
+[REPLAY] CLOSE logged=483 real=-1
+[REPLAY] CLOSE logged=484 real=-1
+[REPLAY] CLOSE logged=485 real=-1
+[REPLAY] CLOSE logged=486 real=-1
+[REPLAY] CLOSE logged=487 real=-1
+[REPLAY] CLOSE logged=488 real=-1
+[REPLAY] CLOSE logged=489 real=-1
+[REPLAY] CLOSE logged=490 real=-1
+[REPLAY] CLOSE logged=491 real=-1
+[REPLAY] CLOSE logged=492 real=-1
+[REPLAY] CLOSE logged=493 real=-1
+[REPLAY] CLOSE logged=494 real=-1
+[REPLAY] CLOSE logged=495 real=-1
+[REPLAY] CLOSE logged=496 real=-1
+[REPLAY] CLOSE logged=497 real=-1
+[REPLAY] CLOSE logged=498 real=-1
+[REPLAY] CLOSE logged=499 real=-1
+[REPLAY] CLOSE logged=500 real=-1
+[REPLAY] CLOSE logged=501 real=-1
+[REPLAY] CLOSE logged=595 real=-1
+[REPLAY] CLOSE logged=596 real=-1
+[REPLAY] CLOSE logged=597 real=-1
+[REPLAY] CLOSE logged=598 real=-1
+[REPLAY] CLOSE logged=599 real=-1
+[REPLAY] CLOSE logged=600 real=-1
+[REPLAY] CLOSE logged=601 real=-1
+[REPLAY] CLOSE logged=602 real=-1
+[REPLAY] CLOSE logged=603 real=-1
+[REPLAY] CLOSE logged=604 real=-1
+[REPLAY] CLOSE logged=605 real=-1
+[REPLAY] CLOSE logged=606 real=-1
+[REPLAY] CLOSE logged=607 real=-1
+[REPLAY] CLOSE logged=608 real=-1
+[REPLAY] CLOSE logged=609 real=-1
+[REPLAY] CLOSE logged=610 real=-1
+[REPLAY] CLOSE logged=611 real=-1
+[REPLAY] CLOSE logged=612 real=-1
+[REPLAY] CLOSE logged=613 real=-1
+[REPLAY] CLOSE logged=614 real=-1
+[REPLAY] CLOSE logged=615 real=-1
+[REPLAY] CLOSE logged=616 real=-1
+[REPLAY] CLOSE logged=617 real=-1
+[REPLAY] CLOSE logged=618 real=-1
+[REPLAY] CLOSE logged=619 real=-1
+[REPLAY] CLOSE logged=620 real=-1
+[REPLAY] CLOSE logged=621 real=-1
+[REPLAY] CLOSE logged=622 real=-1
+[REPLAY] CLOSE logged=623 real=-1
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x80044952 size=0 dir=2
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] CLOSE logged=502 real=-1
+[REPLAY] CLOSE logged=503 real=-1
+[REPLAY] CLOSE logged=504 real=-1
+[REPLAY] CLOSE logged=505 real=-1
+[REPLAY] CLOSE logged=506 real=-1
+[REPLAY] CLOSE logged=507 real=-1
+[REPLAY] CLOSE logged=508 real=-1
+[REPLAY] CLOSE logged=509 real=-1
+[REPLAY] CLOSE logged=510 real=-1
+[REPLAY] CLOSE logged=511 real=-1
+[REPLAY] CLOSE logged=512 real=-1
+[REPLAY] CLOSE logged=513 real=-1
+[REPLAY] CLOSE logged=514 real=-1
+[REPLAY] CLOSE logged=515 real=-1
+[REPLAY] CLOSE logged=516 real=-1
+[REPLAY] CLOSE logged=517 real=-1
+[REPLAY] CLOSE logged=518 real=-1
+[REPLAY] CLOSE logged=519 real=-1
+[REPLAY] CLOSE logged=624 real=-1
+[REPLAY] CLOSE logged=625 real=-1
+[REPLAY] CLOSE logged=626 real=-1
+[REPLAY] CLOSE logged=627 real=-1
+[REPLAY] CLOSE logged=628 real=-1
+[REPLAY] CLOSE logged=629 real=-1
+[REPLAY] CLOSE logged=630 real=-1
+[REPLAY] CLOSE logged=631 real=-1
+[REPLAY] CLOSE logged=632 real=-1
+[REPLAY] CLOSE logged=633 real=-1
+[REPLAY] CLOSE logged=634 real=-1
+[REPLAY] CLOSE logged=635 real=-1
+[REPLAY] CLOSE logged=636 real=-1
+[REPLAY] CLOSE logged=637 real=-1
+[REPLAY] CLOSE logged=638 real=-1
+[REPLAY] CLOSE logged=639 real=-1
+[REPLAY] CLOSE logged=640 real=-1
+[REPLAY] CLOSE logged=641 real=-1
+[REPLAY] CLOSE logged=642 real=-1
+[REPLAY] CLOSE logged=643 real=-1
+[REPLAY] CLOSE logged=644 real=-1
+[REPLAY] CLOSE logged=645 real=-1
+[REPLAY] CLOSE logged=646 real=-1
+[REPLAY] CLOSE logged=647 real=-1
+[REPLAY] CLOSE logged=648 real=-1
+[REPLAY] CLOSE logged=649 real=-1
+[REPLAY] CLOSE logged=650 real=-1
+[REPLAY] CLOSE logged=651 real=-1
+[REPLAY] CLOSE logged=652 real=-1
+[REPLAY] CLOSE logged=653 real=-1
+[REPLAY] CLOSE logged=654 real=-1
+[REPLAY] CLOSE logged=655 real=-1
+[REPLAY] CLOSE logged=656 real=-1
+[REPLAY] CLOSE logged=657 real=-1
+[REPLAY] CLOSE logged=658 real=-1
+[REPLAY] CLOSE logged=659 real=-1
+[REPLAY] CLOSE logged=660 real=-1
+[REPLAY] CLOSE logged=661 real=-1
+[REPLAY] CLOSE logged=662 real=-1
+[REPLAY] CLOSE logged=663 real=-1
+[REPLAY] CLOSE logged=664 real=-1
+[REPLAY] CLOSE logged=665 real=-1
+[REPLAY] CLOSE logged=666 real=-1
+[REPLAY] CLOSE logged=520 real=-1
+[REPLAY] CLOSE logged=521 real=-1
+[REPLAY] CLOSE logged=522 real=-1
+[REPLAY] CLOSE logged=523 real=-1
+[REPLAY] CLOSE logged=524 real=-1
+[REPLAY] CLOSE logged=525 real=-1
+[REPLAY] CLOSE logged=526 real=-1
+[REPLAY] CLOSE logged=527 real=-1
+[REPLAY] CLOSE logged=528 real=-1
+[REPLAY] CLOSE logged=529 real=-1
+[REPLAY] CLOSE logged=530 real=-1
+[REPLAY] CLOSE logged=531 real=-1
+[REPLAY] CLOSE logged=532 real=-1
+[REPLAY] CLOSE logged=533 real=-1
+[REPLAY] CLOSE logged=534 real=-1
+[REPLAY] CLOSE logged=535 real=-1
+[REPLAY] CLOSE logged=536 real=-1
+[REPLAY] CLOSE logged=537 real=-1
+[REPLAY] CLOSE logged=538 real=-1
+[REPLAY] CLOSE logged=539 real=-1
+[REPLAY] CLOSE logged=540 real=-1
+[REPLAY] CLOSE logged=541 real=-1
+[REPLAY] CLOSE logged=542 real=-1
+[REPLAY] CLOSE logged=543 real=-1
+[REPLAY] CLOSE logged=544 real=-1
+[REPLAY] CLOSE logged=545 real=-1
+[REPLAY] CLOSE logged=546 real=-1
+[REPLAY] CLOSE logged=547 real=-1
+[REPLAY] CLOSE logged=548 real=-1
+[REPLAY] CLOSE logged=549 real=-1
+[REPLAY] CLOSE logged=550 real=-1
+[REPLAY] CLOSE logged=551 real=-1
+[REPLAY] CLOSE logged=552 real=-1
+[REPLAY] CLOSE logged=553 real=-1
+[REPLAY] CLOSE logged=554 real=-1
+[REPLAY] CLOSE logged=555 real=-1
+[REPLAY] CLOSE logged=556 real=-1
+[REPLAY] CLOSE logged=557 real=-1
+[REPLAY] CLOSE logged=558 real=-1
+[REPLAY] CLOSE logged=559 real=-1
+[REPLAY] CLOSE logged=560 real=-1
+[REPLAY] CLOSE logged=561 real=-1
+[REPLAY] CLOSE logged=668 real=-1
+[REPLAY] CLOSE logged=669 real=-1
+[REPLAY] CLOSE logged=670 real=-1
+[REPLAY] CLOSE logged=671 real=-1
+[REPLAY] CLOSE logged=672 real=-1
+[REPLAY] CLOSE logged=673 real=-1
+[REPLAY] CLOSE logged=674 real=-1
+[REPLAY] CLOSE logged=675 real=-1
+[REPLAY] CLOSE logged=676 real=-1
+[REPLAY] CLOSE logged=677 real=-1
+[REPLAY] CLOSE logged=678 real=-1
+[REPLAY] CLOSE logged=679 real=-1
+[REPLAY] CLOSE logged=680 real=-1
+[REPLAY] CLOSE logged=681 real=-1
+[REPLAY] CLOSE logged=682 real=-1
+[REPLAY] CLOSE logged=683 real=-1
+[REPLAY] CLOSE logged=684 real=-1
+[REPLAY] CLOSE logged=685 real=-1
+[REPLAY] CLOSE logged=686 real=-1
+[REPLAY] CLOSE logged=687 real=-1
+[REPLAY] CLOSE logged=688 real=-1
+[REPLAY] CLOSE logged=689 real=-1
+[REPLAY] CLOSE logged=690 real=-1
+[REPLAY] CLOSE logged=691 real=-1
+[REPLAY] CLOSE logged=692 real=-1
+[REPLAY] CLOSE logged=562 real=-1
+[REPLAY] CLOSE logged=563 real=-1
+[REPLAY] CLOSE logged=564 real=-1
+[REPLAY] CLOSE logged=565 real=-1
+[REPLAY] CLOSE logged=566 real=-1
+[REPLAY] CLOSE logged=567 real=-1
+[REPLAY] CLOSE logged=568 real=-1
+[REPLAY] CLOSE logged=569 real=-1
+[REPLAY] CLOSE logged=570 real=-1
+[REPLAY] CLOSE logged=571 real=-1
+[REPLAY] CLOSE logged=572 real=-1
+[REPLAY] CLOSE logged=573 real=-1
+[REPLAY] CLOSE logged=574 real=-1
+[REPLAY] CLOSE logged=575 real=-1
+[REPLAY] CLOSE logged=576 real=-1
+[REPLAY] CLOSE logged=693 real=-1
+[REPLAY] CLOSE logged=694 real=-1
+[REPLAY] CLOSE logged=695 real=-1
+[REPLAY] CLOSE logged=696 real=-1
+[REPLAY] CLOSE logged=697 real=-1
+[REPLAY] CLOSE logged=698 real=-1
+[REPLAY] CLOSE logged=699 real=-1
+[REPLAY] CLOSE logged=700 real=-1
+[REPLAY] CLOSE logged=701 real=-1
+[REPLAY] CLOSE logged=702 real=-1
+[REPLAY] CLOSE logged=703 real=-1
+[REPLAY] CLOSE logged=704 real=-1
+[REPLAY] CLOSE logged=705 real=-1
+[REPLAY] CLOSE logged=706 real=-1
+[REPLAY] CLOSE logged=707 real=-1
+[REPLAY] CLOSE logged=708 real=-1
+[REPLAY] CLOSE logged=709 real=-1
+[REPLAY] CLOSE logged=710 real=-1
+[REPLAY] CLOSE logged=711 real=-1
+[REPLAY] CLOSE logged=712 real=-1
+[REPLAY] CLOSE logged=713 real=-1
+[REPLAY] CLOSE logged=714 real=-1
+[REPLAY] CLOSE logged=715 real=-1
+[REPLAY] CLOSE logged=716 real=-1
+[REPLAY] CLOSE logged=717 real=-1
+[REPLAY] CLOSE logged=718 real=-1
+[REPLAY] CLOSE logged=719 real=-1
+[REPLAY] CLOSE logged=720 real=-1
+[REPLAY] CLOSE logged=721 real=-1
+[REPLAY] CLOSE logged=722 real=-1
+[REPLAY] CLOSE logged=723 real=-1
+[REPLAY] CLOSE logged=724 real=-1
+[REPLAY] CLOSE logged=725 real=-1
+[REPLAY] CLOSE logged=726 real=-1
+[REPLAY] CLOSE logged=727 real=-1
+[REPLAY] CLOSE logged=728 real=-1
+[REPLAY] CLOSE logged=729 real=-1
+[REPLAY] CLOSE logged=730 real=-1
+[REPLAY] CLOSE logged=731 real=-1
+[REPLAY] CLOSE logged=732 real=-1
+[REPLAY] CLOSE logged=578 real=-1
+[REPLAY] CLOSE logged=579 real=-1
+[REPLAY] CLOSE logged=580 real=-1
+[REPLAY] CLOSE logged=581 real=-1
+[REPLAY] CLOSE logged=582 real=-1
+[REPLAY] CLOSE logged=583 real=-1
+[REPLAY] CLOSE logged=584 real=-1
+[REPLAY] CLOSE logged=585 real=-1
+[REPLAY] CLOSE logged=586 real=-1
+[REPLAY] CLOSE logged=587 real=-1
+[REPLAY] CLOSE logged=588 real=-1
+[REPLAY] CLOSE logged=589 real=-1
+[REPLAY] CLOSE logged=590 real=-1
+[REPLAY] CLOSE logged=591 real=-1
+[REPLAY] CLOSE logged=592 real=-1
+[REPLAY] CLOSE logged=593 real=-1
+[REPLAY] CLOSE logged=594 real=-1
+[REPLAY] CLOSE logged=595 real=-1
+[REPLAY] CLOSE logged=596 real=-1
+[REPLAY] CLOSE logged=597 real=-1
+[REPLAY] CLOSE logged=598 real=-1
+[REPLAY] CLOSE logged=599 real=-1
+[REPLAY] CLOSE logged=600 real=-1
+[REPLAY] CLOSE logged=601 real=-1
+[REPLAY] CLOSE logged=602 real=-1
+[REPLAY] CLOSE logged=603 real=-1
+[REPLAY] CLOSE logged=604 real=-1
+[REPLAY] CLOSE logged=605 real=-1
+[REPLAY] CLOSE logged=606 real=-1
+[REPLAY] CLOSE logged=607 real=-1
+[REPLAY] CLOSE logged=608 real=-1
+[REPLAY] CLOSE logged=609 real=-1
+[REPLAY] CLOSE logged=610 real=-1
+[REPLAY] CLOSE logged=611 real=-1
+[REPLAY] CLOSE logged=612 real=-1
+[REPLAY] CLOSE logged=613 real=-1
+[REPLAY] CLOSE logged=614 real=-1
+[REPLAY] CLOSE logged=615 real=-1
+[REPLAY] CLOSE logged=616 real=-1
+[REPLAY] CLOSE logged=617 real=-1
+[REPLAY] CLOSE logged=618 real=-1
+[REPLAY] CLOSE logged=619 real=-1
+[REPLAY] CLOSE logged=620 real=-1
+[REPLAY] CLOSE logged=733 real=-1
+[REPLAY] CLOSE logged=734 real=-1
+[REPLAY] CLOSE logged=735 real=-1
+[REPLAY] CLOSE logged=736 real=-1
+[REPLAY] CLOSE logged=737 real=-1
+[REPLAY] CLOSE logged=738 real=-1
+[REPLAY] CLOSE logged=739 real=-1
+[REPLAY] CLOSE logged=740 real=-1
+[REPLAY] CLOSE logged=741 real=-1
+[REPLAY] CLOSE logged=742 real=-1
+[REPLAY] CLOSE logged=743 real=-1
+[REPLAY] CLOSE logged=744 real=-1
+[REPLAY] CLOSE logged=745 real=-1
+[REPLAY] CLOSE logged=746 real=-1
+[REPLAY] CLOSE logged=747 real=-1
+[REPLAY] CLOSE logged=748 real=-1
+[REPLAY] CLOSE logged=749 real=-1
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] CLOSE logged=621 real=-1
+[REPLAY] CLOSE logged=622 real=-1
+[REPLAY] CLOSE logged=623 real=-1
+[REPLAY] CLOSE logged=624 real=-1
+[REPLAY] CLOSE logged=625 real=-1
+[REPLAY] CLOSE logged=626 real=-1
+[REPLAY] CLOSE logged=627 real=-1
+[REPLAY] CLOSE logged=628 real=-1
+[REPLAY] CLOSE logged=629 real=-1
+[REPLAY] CLOSE logged=630 real=-1
+[REPLAY] CLOSE logged=631 real=-1
+[REPLAY] CLOSE logged=632 real=-1
+[REPLAY] CLOSE logged=633 real=-1
+[REPLAY] CLOSE logged=634 real=-1
+[REPLAY] CLOSE logged=635 real=-1
+[REPLAY] CLOSE logged=636 real=-1
+[REPLAY] CLOSE logged=637 real=-1
+[REPLAY] CLOSE logged=638 real=-1
+[REPLAY] CLOSE logged=639 real=-1
+[REPLAY] CLOSE logged=640 real=-1
+[REPLAY] CLOSE logged=641 real=-1
+[REPLAY] CLOSE logged=642 real=-1
+[REPLAY] CLOSE logged=643 real=-1
+[REPLAY] CLOSE logged=644 real=-1
+[REPLAY] CLOSE logged=645 real=-1
+[REPLAY] CLOSE logged=646 real=-1
+[REPLAY] CLOSE logged=647 real=-1
+[REPLAY] CLOSE logged=648 real=-1
+[REPLAY] CLOSE logged=649 real=-1
+[REPLAY] CLOSE logged=650 real=-1
+[REPLAY] CLOSE logged=651 real=-1
+[REPLAY] CLOSE logged=652 real=-1
+[REPLAY] CLOSE logged=653 real=-1
+[REPLAY] CLOSE logged=654 real=-1
+[REPLAY] CLOSE logged=655 real=-1
+[REPLAY] CLOSE logged=656 real=-1
+[REPLAY] CLOSE logged=657 real=-1
+[REPLAY] CLOSE logged=658 real=-1
+[REPLAY] CLOSE logged=659 real=-1
+[REPLAY] CLOSE logged=660 real=-1
+[REPLAY] CLOSE logged=661 real=-1
+[REPLAY] CLOSE logged=662 real=-1
+[REPLAY] CLOSE logged=663 real=-1
+[REPLAY] CLOSE logged=664 real=-1
+[REPLAY] CLOSE logged=665 real=-1
+[REPLAY] CLOSE logged=666 real=-1
+[REPLAY] CLOSE logged=667 real=-1
+[REPLAY] CLOSE logged=668 real=-1
+[REPLAY] CLOSE logged=669 real=-1
+[REPLAY] CLOSE logged=670 real=-1
+[REPLAY] CLOSE logged=671 real=-1
+[REPLAY] CLOSE logged=672 real=-1
+[REPLAY] CLOSE logged=673 real=-1
+[REPLAY] CLOSE logged=750 real=-1
+[REPLAY] CLOSE logged=751 real=-1
+[REPLAY] CLOSE logged=752 real=-1
+[REPLAY] CLOSE logged=753 real=-1
+[REPLAY] CLOSE logged=754 real=-1
+[REPLAY] CLOSE logged=755 real=-1
+[REPLAY] CLOSE logged=756 real=-1
+[REPLAY] CLOSE logged=757 real=-1
+[REPLAY] CLOSE logged=758 real=-1
+[REPLAY] CLOSE logged=759 real=-1
+[REPLAY] CLOSE logged=760 real=-1
+[REPLAY] CLOSE logged=761 real=-1
+[REPLAY] CLOSE logged=762 real=-1
+[REPLAY] CLOSE logged=763 real=-1
+[REPLAY] CLOSE logged=764 real=-1
+[REPLAY] CLOSE logged=765 real=-1
+[REPLAY] CLOSE logged=766 real=-1
+[REPLAY] CLOSE logged=767 real=-1
+[REPLAY] CLOSE logged=768 real=-1
+[REPLAY] CLOSE logged=769 real=-1
+[REPLAY] CLOSE logged=770 real=-1
+[REPLAY] CLOSE logged=771 real=-1
+[REPLAY] CLOSE logged=772 real=-1
+[REPLAY] CLOSE logged=773 real=-1
+[REPLAY] CLOSE logged=774 real=-1
+[REPLAY] CLOSE logged=775 real=-1
+[REPLAY] CLOSE logged=776 real=-1
+[REPLAY] CLOSE logged=777 real=-1
+[REPLAY] CLOSE logged=778 real=-1
+[REPLAY] CLOSE logged=779 real=-1
+[REPLAY] CLOSE logged=780 real=-1
+[REPLAY] CLOSE logged=781 real=-1
+[REPLAY] CLOSE logged=782 real=-1
+[REPLAY] CLOSE logged=783 real=-1
+[REPLAY] CLOSE logged=784 real=-1
+[REPLAY] CLOSE logged=785 real=-1
+[REPLAY] CLOSE logged=786 real=-1
+[REPLAY] CLOSE logged=787 real=-1
+[REPLAY] CLOSE logged=788 real=-1
+[REPLAY] CLOSE logged=789 real=-1
+[REPLAY] CLOSE logged=790 real=-1
+[REPLAY] CLOSE logged=791 real=-1
+[REPLAY] CLOSE logged=792 real=-1
+[REPLAY] CLOSE logged=675 real=-1
+[REPLAY] CLOSE logged=676 real=-1
+[REPLAY] CLOSE logged=677 real=-1
+[REPLAY] CLOSE logged=678 real=-1
+[REPLAY] CLOSE logged=679 real=-1
+[REPLAY] CLOSE logged=680 real=-1
+[REPLAY] CLOSE logged=681 real=-1
+[REPLAY] CLOSE logged=682 real=-1
+[REPLAY] CLOSE logged=683 real=-1
+[REPLAY] CLOSE logged=684 real=-1
+[REPLAY] CLOSE logged=685 real=-1
+[REPLAY] CLOSE logged=686 real=-1
+[REPLAY] CLOSE logged=687 real=-1
+[REPLAY] CLOSE logged=688 real=-1
+[REPLAY] CLOSE logged=689 real=-1
+[REPLAY] CLOSE logged=690 real=-1
+[REPLAY] CLOSE logged=691 real=-1
+[REPLAY] CLOSE logged=692 real=-1
+[REPLAY] CLOSE logged=693 real=-1
+[REPLAY] CLOSE logged=694 real=-1
+[REPLAY] CLOSE logged=695 real=-1
+[REPLAY] CLOSE logged=696 real=-1
+[REPLAY] CLOSE logged=697 real=-1
+[REPLAY] CLOSE logged=698 real=-1
+[REPLAY] CLOSE logged=699 real=-1
+[REPLAY] CLOSE logged=700 real=-1
+[REPLAY] CLOSE logged=701 real=-1
+[REPLAY] CLOSE logged=702 real=-1
+[REPLAY] CLOSE logged=703 real=-1
+[REPLAY] CLOSE logged=793 real=-1
+[REPLAY] CLOSE logged=794 real=-1
+[REPLAY] CLOSE logged=795 real=-1
+[REPLAY] CLOSE logged=796 real=-1
+[REPLAY] CLOSE logged=797 real=-1
+[REPLAY] CLOSE logged=798 real=-1
+[REPLAY] CLOSE logged=799 real=-1
+[REPLAY] CLOSE logged=800 real=-1
+[REPLAY] CLOSE logged=801 real=-1
+[REPLAY] CLOSE logged=802 real=-1
+[REPLAY] CLOSE logged=803 real=-1
+[REPLAY] CLOSE logged=804 real=-1
+[REPLAY] CLOSE logged=805 real=-1
+[REPLAY] CLOSE logged=806 real=-1
+[REPLAY] CLOSE logged=807 real=-1
+[REPLAY] CLOSE logged=808 real=-1
+[REPLAY] CLOSE logged=809 real=-1
+[REPLAY] CLOSE logged=810 real=-1
+[REPLAY] CLOSE logged=811 real=-1
+[REPLAY] CLOSE logged=812 real=-1
+[REPLAY] CLOSE logged=813 real=-1
+[REPLAY] CLOSE logged=814 real=-1
+[REPLAY] CLOSE logged=815 real=-1
+[REPLAY] CLOSE logged=816 real=-1
+[REPLAY] CLOSE logged=817 real=-1
+[REPLAY] CLOSE logged=818 real=-1
+[REPLAY] CLOSE logged=819 real=-1
+[REPLAY] CLOSE logged=820 real=-1
+[REPLAY] CLOSE logged=821 real=-1
+[REPLAY] CLOSE logged=822 real=-1
+[REPLAY] CLOSE logged=823 real=-1
+[REPLAY] CLOSE logged=824 real=-1
+[REPLAY] CLOSE logged=825 real=-1
+[REPLAY] CLOSE logged=826 real=-1
+[REPLAY] CLOSE logged=827 real=-1
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x80044952 size=0 dir=2
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] CLOSE logged=704 real=-1
+[REPLAY] CLOSE logged=705 real=-1
+[REPLAY] CLOSE logged=706 real=-1
+[REPLAY] CLOSE logged=707 real=-1
+[REPLAY] CLOSE logged=708 real=-1
+[REPLAY] CLOSE logged=709 real=-1
+[REPLAY] CLOSE logged=710 real=-1
+[REPLAY] CLOSE logged=711 real=-1
+[REPLAY] CLOSE logged=712 real=-1
+[REPLAY] CLOSE logged=713 real=-1
+[REPLAY] CLOSE logged=714 real=-1
+[REPLAY] CLOSE logged=715 real=-1
+[REPLAY] CLOSE logged=716 real=-1
+[REPLAY] CLOSE logged=717 real=-1
+[REPLAY] CLOSE logged=718 real=-1
+[REPLAY] CLOSE logged=719 real=-1
+[REPLAY] CLOSE logged=720 real=-1
+[REPLAY] CLOSE logged=721 real=-1
+[REPLAY] CLOSE logged=722 real=-1
+[REPLAY] CLOSE logged=723 real=-1
+[REPLAY] CLOSE logged=724 real=-1
+[REPLAY] CLOSE logged=725 real=-1
+[REPLAY] CLOSE logged=726 real=-1
+[REPLAY] CLOSE logged=727 real=-1
+[REPLAY] CLOSE logged=728 real=-1
+[REPLAY] CLOSE logged=729 real=-1
+[REPLAY] CLOSE logged=730 real=-1
+[REPLAY] CLOSE logged=731 real=-1
+[REPLAY] CLOSE logged=732 real=-1
+[REPLAY] CLOSE logged=733 real=-1
+[REPLAY] CLOSE logged=734 real=-1
+[REPLAY] CLOSE logged=735 real=-1
+[REPLAY] CLOSE logged=736 real=-1
+[REPLAY] CLOSE logged=737 real=-1
+[REPLAY] CLOSE logged=738 real=-1
+[REPLAY] CLOSE logged=739 real=-1
+[REPLAY] CLOSE logged=740 real=-1
+[REPLAY] CLOSE logged=741 real=-1
+[REPLAY] CLOSE logged=742 real=-1
+[REPLAY] CLOSE logged=743 real=-1
+[REPLAY] CLOSE logged=744 real=-1
+[REPLAY] CLOSE logged=745 real=-1
+[REPLAY] CLOSE logged=746 real=-1
+[REPLAY] CLOSE logged=747 real=-1
+[REPLAY] CLOSE logged=748 real=-1
+[REPLAY] CLOSE logged=749 real=-1
+[REPLAY] CLOSE logged=750 real=-1
+[REPLAY] CLOSE logged=751 real=-1
+[REPLAY] CLOSE logged=752 real=-1
+[REPLAY] CLOSE logged=753 real=-1
+[REPLAY] CLOSE logged=754 real=-1
+[REPLAY] CLOSE logged=755 real=-1
+[REPLAY] CLOSE logged=756 real=-1
+[REPLAY] CLOSE logged=828 real=-1
+[REPLAY] CLOSE logged=829 real=-1
+[REPLAY] CLOSE logged=830 real=-1
+[REPLAY] CLOSE logged=831 real=-1
+[REPLAY] CLOSE logged=832 real=-1
+[REPLAY] CLOSE logged=833 real=-1
+[REPLAY] CLOSE logged=834 real=-1
+[REPLAY] CLOSE logged=835 real=-1
+[REPLAY] CLOSE logged=836 real=-1
+[REPLAY] CLOSE logged=837 real=-1
+[REPLAY] CLOSE logged=838 real=-1
+[REPLAY] CLOSE logged=839 real=-1
+[REPLAY] CLOSE logged=840 real=-1
+[REPLAY] CLOSE logged=841 real=-1
+[REPLAY] CLOSE logged=842 real=-1
+[REPLAY] CLOSE logged=843 real=-1
+[REPLAY] CLOSE logged=844 real=-1
+[REPLAY] CLOSE logged=845 real=-1
+[REPLAY] CLOSE logged=846 real=-1
+[REPLAY] CLOSE logged=847 real=-1
+[REPLAY] CLOSE logged=848 real=-1
+[REPLAY] CLOSE logged=849 real=-1
+[REPLAY] CLOSE logged=850 real=-1
+[REPLAY] CLOSE logged=851 real=-1
+[REPLAY] CLOSE logged=852 real=-1
+[REPLAY] CLOSE logged=853 real=-1
+[REPLAY] CLOSE logged=854 real=-1
+[REPLAY] CLOSE logged=855 real=-1
+[REPLAY] CLOSE logged=856 real=-1
+[REPLAY] CLOSE logged=857 real=-1
+[REPLAY] CLOSE logged=858 real=-1
+[REPLAY] CLOSE logged=859 real=-1
+[REPLAY] CLOSE logged=860 real=-1
+[REPLAY] CLOSE logged=861 real=-1
+[REPLAY] CLOSE logged=862 real=-1
+[REPLAY] CLOSE logged=863 real=-1
+[REPLAY] CLOSE logged=864 real=-1
+[REPLAY] CLOSE logged=865 real=-1
+[REPLAY] CLOSE logged=866 real=-1
+[REPLAY] CLOSE logged=867 real=-1
+[REPLAY] CLOSE logged=868 real=-1
+[REPLAY] CLOSE logged=869 real=-1
+[REPLAY] CLOSE logged=870 real=-1
+[REPLAY] CLOSE logged=871 real=-1
+[REPLAY] CLOSE logged=872 real=-1
+[REPLAY] CLOSE logged=873 real=-1
+[REPLAY] CLOSE logged=874 real=-1
+[REPLAY] CLOSE logged=875 real=-1
+[REPLAY] CLOSE logged=876 real=-1
+[REPLAY] CLOSE logged=877 real=-1
+[REPLAY] CLOSE logged=878 real=-1
+[REPLAY] CLOSE logged=879 real=-1
+[REPLAY] CLOSE logged=880 real=-1
+[REPLAY] CLOSE logged=881 real=-1
+[REPLAY] CLOSE logged=882 real=-1
+[REPLAY] CLOSE logged=883 real=-1
+[REPLAY] CLOSE logged=884 real=-1
+[REPLAY] CLOSE logged=885 real=-1
+[REPLAY] CLOSE logged=886 real=-1
+[REPLAY] CLOSE logged=887 real=-1
+[REPLAY] CLOSE logged=888 real=-1
+[REPLAY] CLOSE logged=889 real=-1
+[REPLAY] CLOSE logged=890 real=-1
+[REPLAY] CLOSE logged=891 real=-1
+[REPLAY] CLOSE logged=892 real=-1
+[REPLAY] CLOSE logged=893 real=-1
+[REPLAY] CLOSE logged=894 real=-1
+[REPLAY] CLOSE logged=895 real=-1
+[REPLAY] CLOSE logged=896 real=-1
+[REPLAY] CLOSE logged=897 real=-1
+[REPLAY] CLOSE logged=757 real=-1
+[REPLAY] CLOSE logged=758 real=-1
+[REPLAY] CLOSE logged=759 real=-1
+[REPLAY] CLOSE logged=760 real=-1
+[REPLAY] CLOSE logged=761 real=-1
+[REPLAY] CLOSE logged=762 real=-1
+[REPLAY] CLOSE logged=763 real=-1
+[REPLAY] CLOSE logged=764 real=-1
+[REPLAY] CLOSE logged=765 real=-1
+[REPLAY] CLOSE logged=766 real=-1
+[REPLAY] CLOSE logged=767 real=-1
+[REPLAY] CLOSE logged=768 real=-1
+[REPLAY] CLOSE logged=769 real=-1
+[REPLAY] CLOSE logged=770 real=-1
+[REPLAY] CLOSE logged=771 real=-1
+[REPLAY] CLOSE logged=772 real=-1
+[REPLAY] CLOSE logged=773 real=-1
+[REPLAY] CLOSE logged=774 real=-1
+[REPLAY] CLOSE logged=775 real=-1
+[REPLAY] CLOSE logged=776 real=-1
+[REPLAY] CLOSE logged=777 real=-1
+[REPLAY] CLOSE logged=778 real=-1
+[REPLAY] CLOSE logged=779 real=-1
+[REPLAY] CLOSE logged=780 real=-1
+[REPLAY] CLOSE logged=781 real=-1
+[REPLAY] CLOSE logged=782 real=-1
+[REPLAY] CLOSE logged=783 real=-1
+[REPLAY] CLOSE logged=784 real=-1
+[REPLAY] CLOSE logged=785 real=-1
+[REPLAY] CLOSE logged=786 real=-1
+[REPLAY] CLOSE logged=787 real=-1
+[REPLAY] CLOSE logged=788 real=-1
+[REPLAY] CLOSE logged=789 real=-1
+[REPLAY] CLOSE logged=790 real=-1
+[REPLAY] CLOSE logged=791 real=-1
+[REPLAY] CLOSE logged=792 real=-1
+[REPLAY] CLOSE logged=793 real=-1
+[REPLAY] CLOSE logged=794 real=-1
+[REPLAY] CLOSE logged=795 real=-1
+[REPLAY] CLOSE logged=796 real=-1
+[REPLAY] CLOSE logged=797 real=-1
+[REPLAY] CLOSE logged=798 real=-1
+[REPLAY] CLOSE logged=799 real=-1
+[REPLAY] CLOSE logged=800 real=-1
+[REPLAY] CLOSE logged=801 real=-1
+[REPLAY] CLOSE logged=802 real=-1
+[REPLAY] CLOSE logged=803 real=-1
+[REPLAY] CLOSE logged=804 real=-1
+[REPLAY] CLOSE logged=805 real=-1
+[REPLAY] CLOSE logged=898 real=-1
+[REPLAY] CLOSE logged=899 real=-1
+[REPLAY] CLOSE logged=900 real=-1
+[REPLAY] CLOSE logged=901 real=-1
+[REPLAY] CLOSE logged=902 real=-1
+[REPLAY] CLOSE logged=903 real=-1
+[REPLAY] CLOSE logged=904 real=-1
+[REPLAY] CLOSE logged=905 real=-1
+[REPLAY] CLOSE logged=906 real=-1
+[REPLAY] CLOSE logged=907 real=-1
+[REPLAY] CLOSE logged=908 real=-1
+[REPLAY] CLOSE logged=909 real=-1
+[REPLAY] CLOSE logged=910 real=-1
+[REPLAY] CLOSE logged=911 real=-1
+[REPLAY] CLOSE logged=912 real=-1
+[REPLAY] CLOSE logged=913 real=-1
+[REPLAY] CLOSE logged=914 real=-1
+[REPLAY] CLOSE logged=915 real=-1
+[REPLAY] CLOSE logged=916 real=-1
+[REPLAY] CLOSE logged=917 real=-1
+[REPLAY] CLOSE logged=918 real=-1
+[REPLAY] CLOSE logged=919 real=-1
+[REPLAY] CLOSE logged=920 real=-1
+[REPLAY] CLOSE logged=921 real=-1
+[REPLAY] CLOSE logged=922 real=-1
+[REPLAY] CLOSE logged=923 real=-1
+[REPLAY] CLOSE logged=924 real=-1
+[REPLAY] CLOSE logged=925 real=-1
+[REPLAY] CLOSE logged=926 real=-1
+[REPLAY] CLOSE logged=927 real=-1
+[REPLAY] CLOSE logged=928 real=-1
+[REPLAY] CLOSE logged=929 real=-1
+[REPLAY] CLOSE logged=930 real=-1
+[REPLAY] CLOSE logged=931 real=-1
+[REPLAY] CLOSE logged=932 real=-1
+[REPLAY] CLOSE logged=933 real=-1
+[REPLAY] CLOSE logged=934 real=-1
+[REPLAY] CLOSE logged=935 real=-1
+[REPLAY] CLOSE logged=936 real=-1
+[REPLAY] CLOSE logged=937 real=-1
+[REPLAY] CLOSE logged=938 real=-1
+[REPLAY] CLOSE logged=939 real=-1
+[REPLAY] CLOSE logged=940 real=-1
+[REPLAY] CLOSE logged=806 real=-1
+[REPLAY] CLOSE logged=807 real=-1
+[REPLAY] CLOSE logged=808 real=-1
+[REPLAY] CLOSE logged=809 real=-1
+[REPLAY] CLOSE logged=810 real=-1
+[REPLAY] CLOSE logged=811 real=-1
+[REPLAY] CLOSE logged=812 real=-1
+[REPLAY] CLOSE logged=813 real=-1
+[REPLAY] CLOSE logged=814 real=-1
+[REPLAY] CLOSE logged=815 real=-1
+[REPLAY] CLOSE logged=816 real=-1
+[REPLAY] CLOSE logged=817 real=-1
+[REPLAY] CLOSE logged=818 real=-1
+[REPLAY] CLOSE logged=819 real=-1
+[REPLAY] CLOSE logged=820 real=-1
+[REPLAY] CLOSE logged=821 real=-1
+[REPLAY] CLOSE logged=822 real=-1
+[REPLAY] CLOSE logged=823 real=-1
+[REPLAY] CLOSE logged=824 real=-1
+[REPLAY] CLOSE logged=825 real=-1
+[REPLAY] CLOSE logged=826 real=-1
+[REPLAY] CLOSE logged=827 real=-1
+[REPLAY] CLOSE logged=828 real=-1
+[REPLAY] CLOSE logged=829 real=-1
+[REPLAY] CLOSE logged=830 real=-1
+[REPLAY] CLOSE logged=831 real=-1
+[REPLAY] CLOSE logged=832 real=-1
+[REPLAY] CLOSE logged=833 real=-1
+[REPLAY] CLOSE logged=834 real=-1
+[REPLAY] CLOSE logged=835 real=-1
+[REPLAY] CLOSE logged=836 real=-1
+[REPLAY] CLOSE logged=837 real=-1
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] CLOSE logged=941 real=-1
+[REPLAY] CLOSE logged=942 real=-1
+[REPLAY] CLOSE logged=943 real=-1
+[REPLAY] CLOSE logged=944 real=-1
+[REPLAY] CLOSE logged=945 real=-1
+[REPLAY] CLOSE logged=946 real=-1
+[REPLAY] CLOSE logged=947 real=-1
+[REPLAY] CLOSE logged=948 real=-1
+[REPLAY] CLOSE logged=949 real=-1
+[REPLAY] CLOSE logged=950 real=-1
+[REPLAY] CLOSE logged=951 real=-1
+[REPLAY] CLOSE logged=952 real=-1
+[REPLAY] CLOSE logged=953 real=-1
+[REPLAY] CLOSE logged=954 real=-1
+[REPLAY] CLOSE logged=955 real=-1
+[REPLAY] CLOSE logged=956 real=-1
+[REPLAY] CLOSE logged=957 real=-1
+[REPLAY] CLOSE logged=958 real=-1
+[REPLAY] CLOSE logged=959 real=-1
+[REPLAY] CLOSE logged=960 real=-1
+[REPLAY] CLOSE logged=961 real=-1
+[REPLAY] CLOSE logged=962 real=-1
+[REPLAY] CLOSE logged=963 real=-1
+[REPLAY] CLOSE logged=964 real=-1
+[REPLAY] CLOSE logged=965 real=-1
+[REPLAY] CLOSE logged=966 real=-1
+[REPLAY] CLOSE logged=967 real=-1
+[REPLAY] CLOSE logged=968 real=-1
+[REPLAY] CLOSE logged=969 real=-1
+[REPLAY] CLOSE logged=970 real=-1
+[REPLAY] CLOSE logged=971 real=-1
+[REPLAY] CLOSE logged=972 real=-1
+[REPLAY] CLOSE logged=973 real=-1
+[REPLAY] CLOSE logged=974 real=-1
+[REPLAY] CLOSE logged=975 real=-1
+[REPLAY] CLOSE logged=976 real=-1
+[REPLAY] CLOSE logged=977 real=-1
+[REPLAY] CLOSE logged=978 real=-1
+[REPLAY] CLOSE logged=838 real=-1
+[REPLAY] CLOSE logged=839 real=-1
+[REPLAY] CLOSE logged=840 real=-1
+[REPLAY] CLOSE logged=841 real=-1
+[REPLAY] CLOSE logged=842 real=-1
+[REPLAY] CLOSE logged=843 real=-1
+[REPLAY] CLOSE logged=844 real=-1
+[REPLAY] CLOSE logged=845 real=-1
+[REPLAY] CLOSE logged=846 real=-1
+[REPLAY] CLOSE logged=847 real=-1
+[REPLAY] CLOSE logged=848 real=-1
+[REPLAY] CLOSE logged=849 real=-1
+[REPLAY] CLOSE logged=850 real=-1
+[REPLAY] CLOSE logged=851 real=-1
+[REPLAY] CLOSE logged=852 real=-1
+[REPLAY] CLOSE logged=853 real=-1
+[REPLAY] CLOSE logged=854 real=-1
+[REPLAY] CLOSE logged=855 real=-1
+[REPLAY] CLOSE logged=856 real=-1
+[REPLAY] CLOSE logged=857 real=-1
+[REPLAY] CLOSE logged=858 real=-1
+[REPLAY] CLOSE logged=859 real=-1
+[REPLAY] CLOSE logged=860 real=-1
+[REPLAY] CLOSE logged=861 real=-1
+[REPLAY] CLOSE logged=862 real=-1
+[REPLAY] CLOSE logged=863 real=-1
+[REPLAY] CLOSE logged=864 real=-1
+[REPLAY] CLOSE logged=865 real=-1
+[REPLAY] CLOSE logged=866 real=-1
+[REPLAY] CLOSE logged=867 real=-1
+[REPLAY] CLOSE logged=868 real=-1
+[REPLAY] CLOSE logged=869 real=-1
+[REPLAY] CLOSE logged=870 real=-1
+[REPLAY] CLOSE logged=871 real=-1
+[REPLAY] CLOSE logged=872 real=-1
+[REPLAY] CLOSE logged=873 real=-1
+[REPLAY] CLOSE logged=874 real=-1
+[REPLAY] CLOSE logged=875 real=-1
+[REPLAY] CLOSE logged=876 real=-1
+[REPLAY] CLOSE logged=877 real=-1
+[REPLAY] CLOSE logged=878 real=-1
+[REPLAY] CLOSE logged=879 real=-1
+[REPLAY] CLOSE logged=979 real=-1
+[REPLAY] CLOSE logged=980 real=-1
+[REPLAY] CLOSE logged=981 real=-1
+[REPLAY] CLOSE logged=982 real=-1
+[REPLAY] CLOSE logged=983 real=-1
+[REPLAY] CLOSE logged=984 real=-1
+[REPLAY] CLOSE logged=985 real=-1
+[REPLAY] CLOSE logged=986 real=-1
+[REPLAY] CLOSE logged=987 real=-1
+[REPLAY] CLOSE logged=988 real=-1
+[REPLAY] CLOSE logged=989 real=-1
+[REPLAY] CLOSE logged=990 real=-1
+[REPLAY] CLOSE logged=991 real=-1
+[REPLAY] CLOSE logged=992 real=-1
+[REPLAY] CLOSE logged=993 real=-1
+[REPLAY] CLOSE logged=994 real=-1
+[REPLAY] CLOSE logged=995 real=-1
+[REPLAY] CLOSE logged=996 real=-1
+[REPLAY] CLOSE logged=997 real=-1
+[REPLAY] CLOSE logged=998 real=-1
+[REPLAY] CLOSE logged=999 real=-1
+[REPLAY] CLOSE logged=1000 real=-1
+[REPLAY] CLOSE logged=1001 real=-1
+[REPLAY] CLOSE logged=1002 real=-1
+[REPLAY] CLOSE logged=1003 real=-1
+[REPLAY] CLOSE logged=1004 real=-1
+[REPLAY] CLOSE logged=1005 real=-1
+[REPLAY] CLOSE logged=1006 real=-1
+[REPLAY] CLOSE logged=1007 real=-1
+[REPLAY] CLOSE logged=1008 real=-1
+[REPLAY] CLOSE logged=1009 real=-1
+[REPLAY] CLOSE logged=1010 real=-1
+[REPLAY] CLOSE logged=881 real=-1
+[REPLAY] CLOSE logged=882 real=-1
+[REPLAY] CLOSE logged=883 real=-1
+[REPLAY] CLOSE logged=884 real=-1
+[REPLAY] CLOSE logged=885 real=-1
+[REPLAY] CLOSE logged=886 real=-1
+[REPLAY] CLOSE logged=887 real=-1
+[REPLAY] CLOSE logged=888 real=-1
+[REPLAY] CLOSE logged=889 real=-1
+[REPLAY] CLOSE logged=890 real=-1
+[REPLAY] CLOSE logged=891 real=-1
+[REPLAY] CLOSE logged=892 real=-1
+[REPLAY] CLOSE logged=893 real=-1
+[REPLAY] CLOSE logged=894 real=-1
+[REPLAY] CLOSE logged=895 real=-1
+[REPLAY] CLOSE logged=896 real=-1
+[REPLAY] CLOSE logged=897 real=-1
+[REPLAY] CLOSE logged=898 real=-1
+[REPLAY] CLOSE logged=899 real=-1
+[REPLAY] CLOSE logged=900 real=-1
+[REPLAY] CLOSE logged=901 real=-1
+[REPLAY] CLOSE logged=902 real=-1
+[REPLAY] CLOSE logged=903 real=-1
+[REPLAY] CLOSE logged=904 real=-1
+[REPLAY] CLOSE logged=905 real=-1
+[REPLAY] CLOSE logged=906 real=-1
+[REPLAY] CLOSE logged=907 real=-1
+[REPLAY] CLOSE logged=908 real=-1
+[REPLAY] CLOSE logged=909 real=-1
+[REPLAY] CLOSE logged=910 real=-1
+[REPLAY] CLOSE logged=911 real=-1
+[REPLAY] CLOSE logged=912 real=-1
+[REPLAY] CLOSE logged=913 real=-1
+[REPLAY] CLOSE logged=914 real=-1
+[REPLAY] CLOSE logged=915 real=-1
+[REPLAY] CLOSE logged=916 real=-1
+[REPLAY] CLOSE logged=917 real=-1
+[REPLAY] CLOSE logged=918 real=-1
+[REPLAY] CLOSE logged=919 real=-1
+[REPLAY] CLOSE logged=920 real=-1
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x80044952 size=0 dir=2
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] CLOSE logged=1011 real=-1
+[REPLAY] CLOSE logged=1012 real=-1
+[REPLAY] CLOSE logged=1013 real=-1
+[REPLAY] CLOSE logged=1014 real=-1
+[REPLAY] CLOSE logged=1015 real=-1
+[REPLAY] CLOSE logged=1016 real=-1
+[REPLAY] CLOSE logged=1017 real=-1
+[REPLAY] CLOSE logged=1018 real=-1
+[REPLAY] CLOSE logged=1019 real=-1
+[REPLAY] CLOSE logged=1020 real=-1
+[REPLAY] CLOSE logged=1021 real=-1
+[REPLAY] CLOSE logged=1022 real=-1
+[REPLAY] CLOSE logged=1023 real=-1
+[REPLAY] CLOSE logged=921 real=-1
+[REPLAY] CLOSE logged=922 real=-1
+[REPLAY] CLOSE logged=923 real=-1
+[REPLAY] CLOSE logged=924 real=-1
+[REPLAY] CLOSE logged=925 real=-1
+[REPLAY] CLOSE logged=926 real=-1
+[REPLAY] CLOSE logged=927 real=-1
+[REPLAY] CLOSE logged=928 real=-1
+[REPLAY] CLOSE logged=929 real=-1
+[REPLAY] CLOSE logged=930 real=-1
+[REPLAY] CLOSE logged=931 real=-1
+[REPLAY] CLOSE logged=932 real=-1
+[REPLAY] CLOSE logged=933 real=-1
+[REPLAY] CLOSE logged=934 real=-1
+[REPLAY] CLOSE logged=935 real=-1
+[REPLAY] CLOSE logged=936 real=-1
+[REPLAY] CLOSE logged=937 real=-1
+[REPLAY] CLOSE logged=938 real=-1
+[REPLAY] CLOSE logged=939 real=-1
+[REPLAY] CLOSE logged=940 real=-1
+[REPLAY] CLOSE logged=941 real=-1
+[REPLAY] CLOSE logged=942 real=-1
+[REPLAY] CLOSE logged=943 real=-1
+[REPLAY] CLOSE logged=944 real=-1
+[REPLAY] CLOSE logged=945 real=-1
+[REPLAY] CLOSE logged=946 real=-1
+[REPLAY] CLOSE logged=947 real=-1
+[REPLAY] CLOSE logged=948 real=-1
+[REPLAY] CLOSE logged=949 real=-1
+[REPLAY] CLOSE logged=950 real=-1
+[REPLAY] CLOSE logged=951 real=-1
+[REPLAY] CLOSE logged=952 real=-1
+[REPLAY] CLOSE logged=953 real=-1
+[REPLAY] CLOSE logged=954 real=-1
+[REPLAY] CLOSE logged=955 real=-1
+[REPLAY] CLOSE logged=956 real=-1
+[REPLAY] CLOSE logged=957 real=-1
+[REPLAY] CLOSE logged=958 real=-1
+[REPLAY] CLOSE logged=959 real=-1
+[REPLAY] CLOSE logged=960 real=-1
+[REPLAY] CLOSE logged=961 real=-1
+[REPLAY] CLOSE logged=962 real=-1
+[REPLAY] CLOSE logged=963 real=-1
+[REPLAY] CLOSE logged=964 real=-1
+[REPLAY] CLOSE logged=965 real=-1
+[REPLAY] CLOSE logged=966 real=-1
+[REPLAY] CLOSE logged=967 real=-1
+[REPLAY] CLOSE logged=968 real=-1
+[REPLAY] CLOSE logged=969 real=-1
+[REPLAY] CLOSE logged=970 real=-1
+[REPLAY] CLOSE logged=971 real=-1
+[REPLAY] CLOSE logged=972 real=-1
+[REPLAY] CLOSE logged=973 real=-1
+[REPLAY] CLOSE logged=974 real=-1
+[REPLAY] CLOSE logged=975 real=-1
+[REPLAY] CLOSE logged=976 real=-1
+[REPLAY] CLOSE logged=977 real=-1
+[REPLAY] CLOSE logged=978 real=-1
+[REPLAY] CLOSE logged=979 real=-1
+[REPLAY] CLOSE logged=980 real=-1
+[REPLAY] CLOSE logged=981 real=-1
+[REPLAY] CLOSE logged=982 real=-1
+[REPLAY] CLOSE logged=983 real=-1
+[REPLAY] CLOSE logged=984 real=-1
+[REPLAY] CLOSE logged=985 real=-1
+[REPLAY] CLOSE logged=986 real=-1
+[REPLAY] CLOSE logged=987 real=-1
+[REPLAY] CLOSE logged=988 real=-1
+[REPLAY] CLOSE logged=989 real=-1
+[REPLAY] CLOSE logged=990 real=-1
+[REPLAY] CLOSE logged=991 real=-1
+[REPLAY] CLOSE logged=992 real=-1
+[REPLAY] CLOSE logged=993 real=-1
+[REPLAY] CLOSE logged=994 real=-1
+[REPLAY] CLOSE logged=995 real=-1
+[REPLAY] CLOSE logged=996 real=-1
+[REPLAY] CLOSE logged=997 real=-1
+[REPLAY] CLOSE logged=998 real=-1
+[REPLAY] CLOSE logged=999 real=-1
+[REPLAY] CLOSE logged=1000 real=-1
+[REPLAY] CLOSE logged=1001 real=-1
+[REPLAY] CLOSE logged=1002 real=-1
+[REPLAY] CLOSE logged=1003 real=-1
+[REPLAY] CLOSE logged=1004 real=-1
+[REPLAY] CLOSE logged=1005 real=-1
+[REPLAY] CLOSE logged=1006 real=-1
+[REPLAY] CLOSE logged=1007 real=-1
+[REPLAY] CLOSE logged=1008 real=-1
+[REPLAY] CLOSE logged=1009 real=-1
+[REPLAY] CLOSE logged=1010 real=-1
+[REPLAY] CLOSE logged=1011 real=-1
+[REPLAY] CLOSE logged=1012 real=-1
+[REPLAY] CLOSE logged=1013 real=-1
+[REPLAY] CLOSE logged=1014 real=-1
+[REPLAY] CLOSE logged=1015 real=-1
+[REPLAY] CLOSE logged=1016 real=-1
+[REPLAY] CLOSE logged=1017 real=-1
+[REPLAY] CLOSE logged=1018 real=-1
+[REPLAY] CLOSE logged=1019 real=-1
+[REPLAY] CLOSE logged=1020 real=-1
+[REPLAY] CLOSE logged=1021 real=-1
+[REPLAY] CLOSE logged=1022 real=-1
+[REPLAY] CLOSE logged=1023 real=-1
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x80044952 size=0 dir=2
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x80044952 size=0 dir=2
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x80044952 size=0 dir=2
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=4 real=-1 req=0xc0045706 size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 4 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x80044952 size=0 dir=2
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0x8913 size=0 dir=0
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0x8914 size=0 dir=0
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x80044952 size=0 dir=2
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x80044952 size=0 dir=2
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x80044952 size=0 dir=2
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] CLOSE logged=3 real=-1
+[REPLAY] MUNMAP ptr=0xb6fbb000 len=9340
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x80044952 size=0 dir=2
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x80044952 size=0 dir=2
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] OPEN /dev/preset_motor flags=0x2
+[REPLAY] IOCTL logged_fd=17 real=-1 req=0x3 size=0 dir=0
+[REPLAY] ioctl: no real fd for logged 17 (skipping)
+[REPLAY] IOCTL logged_fd=17 real=-1 req=0x7 size=0 dir=0
+[REPLAY] ioctl: no real fd for logged 17 (skipping)
+[REPLAY] IOCTL logged_fd=17 real=-1 req=0x5 size=0 dir=0
+[REPLAY] ioctl: no real fd for logged 17 (skipping)
+[REPLAY] mmap: no real fd for logged -1
+[REPLAY] MMAP fd(log)=-1 real=-1 len=131072 prot=0x3 flags=0x20022 off=0
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x80044952 size=0 dir=2
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] read: fd missing
+[REPLAY] read: fd missing
+[REPLAY] CLOSE logged=4 real=-1
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x80044952 size=0 dir=2
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x80044952 size=0 dir=2
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] mmap: no real fd for logged -1
+[REPLAY] MMAP fd(log)=-1 real=-1 len=8388608 prot=0x3 flags=0x20022 off=0
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x80044952 size=0 dir=2
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x80044952 size=0 dir=2
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x80044952 size=0 dir=2
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x80044952 size=0 dir=2
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x80044952 size=0 dir=2
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=18 real=-1 req=0x8927 size=0 dir=0
+[REPLAY] ioctl: no real fd for logged 18 (skipping)
+[REPLAY] CLOSE logged=18 real=-1
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] read: fd missing
+[REPLAY] CLOSE logged=22 real=-1
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x80044952 size=0 dir=2
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] read: fd missing
+[REPLAY] CLOSE logged=22 real=-1
+[REPLAY] read: fd missing
+[REPLAY] CLOSE logged=22 real=-1
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] OPEN /dev/random flags=0x800
+[REPLAY] read: fd missing
+[REPLAY] CLOSE logged=25 real=-1
+[REPLAY] CLOSE logged=-1 real=-1
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x80044952 size=0 dir=2
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=4 real=-1 req=0xc0045706 size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 4 (skipping)
+[REPLAY] CLOSE logged=-1 real=-1
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] CLOSE logged=4 real=-1
+[REPLAY] CLOSE logged=-1 real=-1
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] CLOSE logged=3 real=-1
+[REPLAY] CLOSE logged=4 real=-1
+[REPLAY] CLOSE logged=5 real=-1
+[REPLAY] CLOSE logged=6 real=-1
+[REPLAY] CLOSE logged=7 real=-1
+[REPLAY] CLOSE logged=8 real=-1
+[REPLAY] CLOSE logged=9 real=-1
+[REPLAY] CLOSE logged=10 real=-1
+[REPLAY] CLOSE logged=11 real=-1
+[REPLAY] CLOSE logged=12 real=-1
+[REPLAY] CLOSE logged=13 real=-1
+[REPLAY] CLOSE logged=14 real=-1
+[REPLAY] CLOSE logged=15 real=-1
+[REPLAY] CLOSE logged=16 real=-1
+[REPLAY] CLOSE logged=17 real=-1
+[REPLAY] CLOSE logged=18 real=-1
+[REPLAY] CLOSE logged=19 real=-1
+[REPLAY] CLOSE logged=20 real=-1
+[REPLAY] CLOSE logged=21 real=-1
+[REPLAY] CLOSE logged=22 real=-1
+[REPLAY] CLOSE logged=23 real=-1
+[REPLAY] CLOSE logged=24 real=-1
+[REPLAY] CLOSE logged=25 real=-1
+[REPLAY] CLOSE logged=26 real=-1
+[REPLAY] CLOSE logged=27 real=-1
+[REPLAY] CLOSE logged=28 real=-1
+[REPLAY] CLOSE logged=29 real=-1
+[REPLAY] CLOSE logged=30 real=-1
+[REPLAY] CLOSE logged=31 real=-1
+[REPLAY] CLOSE logged=32 real=-1
+[REPLAY] CLOSE logged=33 real=-1
+[REPLAY] CLOSE logged=34 real=-1
+[REPLAY] CLOSE logged=35 real=-1
+[REPLAY] CLOSE logged=36 real=-1
+[REPLAY] CLOSE logged=37 real=-1
+[REPLAY] CLOSE logged=38 real=-1
+[REPLAY] CLOSE logged=39 real=-1
+[REPLAY] CLOSE logged=40 real=-1
+[REPLAY] CLOSE logged=41 real=-1
+[REPLAY] CLOSE logged=42 real=-1
+[REPLAY] CLOSE logged=43 real=-1
+[REPLAY] CLOSE logged=44 real=-1
+[REPLAY] CLOSE logged=45 real=-1
+[REPLAY] CLOSE logged=46 real=-1
+[REPLAY] CLOSE logged=47 real=-1
+[REPLAY] CLOSE logged=48 real=-1
+[REPLAY] CLOSE logged=49 real=-1
+[REPLAY] CLOSE logged=50 real=-1
+[REPLAY] CLOSE logged=51 real=-1
+[REPLAY] CLOSE logged=52 real=-1
+[REPLAY] CLOSE logged=53 real=-1
+[REPLAY] CLOSE logged=54 real=-1
+[REPLAY] CLOSE logged=55 real=-1
+[REPLAY] CLOSE logged=56 real=-1
+[REPLAY] CLOSE logged=57 real=-1
+[REPLAY] CLOSE logged=58 real=-1
+[REPLAY] CLOSE logged=59 real=-1
+[REPLAY] CLOSE logged=60 real=-1
+[REPLAY] CLOSE logged=61 real=-1
+[REPLAY] CLOSE logged=62 real=-1
+[REPLAY] CLOSE logged=63 real=-1
+[REPLAY] CLOSE logged=64 real=-1
+[REPLAY] CLOSE logged=65 real=-1
+[REPLAY] CLOSE logged=66 real=-1
+[REPLAY] CLOSE logged=67 real=-1
+[REPLAY] CLOSE logged=68 real=-1
+[REPLAY] CLOSE logged=69 real=-1
+[REPLAY] CLOSE logged=70 real=-1
+[REPLAY] CLOSE logged=71 real=-1
+[REPLAY] CLOSE logged=72 real=-1
+[REPLAY] CLOSE logged=73 real=-1
+[REPLAY] CLOSE logged=74 real=-1
+[REPLAY] CLOSE logged=75 real=-1
+[REPLAY] CLOSE logged=76 real=-1
+[REPLAY] CLOSE logged=77 real=-1
+[REPLAY] CLOSE logged=78 real=-1
+[REPLAY] CLOSE logged=79 real=-1
+[REPLAY] CLOSE logged=80 real=-1
+[REPLAY] CLOSE logged=81 real=-1
+[REPLAY] CLOSE logged=82 real=-1
+[REPLAY] CLOSE logged=83 real=-1
+[REPLAY] CLOSE logged=84 real=-1
+[REPLAY] CLOSE logged=85 real=-1
+[REPLAY] CLOSE logged=86 real=-1
+[REPLAY] CLOSE logged=87 real=-1
+[REPLAY] CLOSE logged=88 real=-1
+[REPLAY] CLOSE logged=89 real=-1
+[REPLAY] CLOSE logged=90 real=-1
+[REPLAY] CLOSE logged=91 real=-1
+[REPLAY] CLOSE logged=92 real=-1
+[REPLAY] CLOSE logged=93 real=-1
+[REPLAY] CLOSE logged=94 real=-1
+[REPLAY] CLOSE logged=95 real=-1
+[REPLAY] CLOSE logged=96 real=-1
+[REPLAY] CLOSE logged=97 real=-1
+[REPLAY] CLOSE logged=98 real=-1
+[REPLAY] CLOSE logged=99 real=-1
+[REPLAY] CLOSE logged=100 real=-1
+[REPLAY] CLOSE logged=101 real=-1
+[REPLAY] CLOSE logged=102 real=-1
+[REPLAY] CLOSE logged=103 real=-1
+[REPLAY] CLOSE logged=104 real=-1
+[REPLAY] CLOSE logged=105 real=-1
+[REPLAY] CLOSE logged=106 real=-1
+[REPLAY] CLOSE logged=107 real=-1
+[REPLAY] CLOSE logged=108 real=-1
+[REPLAY] CLOSE logged=109 real=-1
+[REPLAY] CLOSE logged=110 real=-1
+[REPLAY] CLOSE logged=111 real=-1
+[REPLAY] CLOSE logged=112 real=-1
+[REPLAY] CLOSE logged=113 real=-1
+[REPLAY] CLOSE logged=114 real=-1
+[REPLAY] CLOSE logged=115 real=-1
+[REPLAY] CLOSE logged=116 real=-1
+[REPLAY] CLOSE logged=117 real=-1
+[REPLAY] CLOSE logged=118 real=-1
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x80044952 size=0 dir=2
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] CLOSE logged=119 real=-1
+[REPLAY] CLOSE logged=120 real=-1
+[REPLAY] CLOSE logged=121 real=-1
+[REPLAY] CLOSE logged=122 real=-1
+[REPLAY] CLOSE logged=123 real=-1
+[REPLAY] CLOSE logged=124 real=-1
+[REPLAY] CLOSE logged=125 real=-1
+[REPLAY] CLOSE logged=126 real=-1
+[REPLAY] CLOSE logged=127 real=-1
+[REPLAY] CLOSE logged=128 real=-1
+[REPLAY] CLOSE logged=129 real=-1
+[REPLAY] CLOSE logged=130 real=-1
+[REPLAY] CLOSE logged=131 real=-1
+[REPLAY] CLOSE logged=132 real=-1
+[REPLAY] CLOSE logged=133 real=-1
+[REPLAY] CLOSE logged=134 real=-1
+[REPLAY] CLOSE logged=135 real=-1
+[REPLAY] CLOSE logged=136 real=-1
+[REPLAY] CLOSE logged=137 real=-1
+[REPLAY] CLOSE logged=138 real=-1
+[REPLAY] CLOSE logged=139 real=-1
+[REPLAY] CLOSE logged=140 real=-1
+[REPLAY] CLOSE logged=141 real=-1
+[REPLAY] CLOSE logged=142 real=-1
+[REPLAY] CLOSE logged=143 real=-1
+[REPLAY] CLOSE logged=144 real=-1
+[REPLAY] CLOSE logged=145 real=-1
+[REPLAY] CLOSE logged=146 real=-1
+[REPLAY] CLOSE logged=147 real=-1
+[REPLAY] CLOSE logged=148 real=-1
+[REPLAY] CLOSE logged=149 real=-1
+[REPLAY] CLOSE logged=150 real=-1
+[REPLAY] CLOSE logged=151 real=-1
+[REPLAY] CLOSE logged=152 real=-1
+[REPLAY] CLOSE logged=153 real=-1
+[REPLAY] CLOSE logged=154 real=-1
+[REPLAY] CLOSE logged=155 real=-1
+[REPLAY] CLOSE logged=156 real=-1
+[REPLAY] CLOSE logged=157 real=-1
+[REPLAY] CLOSE logged=158 real=-1
+[REPLAY] CLOSE logged=159 real=-1
+[REPLAY] CLOSE logged=160 real=-1
+[REPLAY] CLOSE logged=161 real=-1
+[REPLAY] CLOSE logged=162 real=-1
+[REPLAY] CLOSE logged=163 real=-1
+[REPLAY] CLOSE logged=164 real=-1
+[REPLAY] CLOSE logged=165 real=-1
+[REPLAY] CLOSE logged=166 real=-1
+[REPLAY] CLOSE logged=167 real=-1
+[REPLAY] CLOSE logged=168 real=-1
+[REPLAY] CLOSE logged=169 real=-1
+[REPLAY] CLOSE logged=170 real=-1
+[REPLAY] CLOSE logged=171 real=-1
+[REPLAY] CLOSE logged=172 real=-1
+[REPLAY] CLOSE logged=173 real=-1
+[REPLAY] CLOSE logged=174 real=-1
+[REPLAY] CLOSE logged=175 real=-1
+[REPLAY] CLOSE logged=176 real=-1
+[REPLAY] CLOSE logged=177 real=-1
+[REPLAY] CLOSE logged=178 real=-1
+[REPLAY] CLOSE logged=179 real=-1
+[REPLAY] CLOSE logged=180 real=-1
+[REPLAY] CLOSE logged=181 real=-1
+[REPLAY] CLOSE logged=182 real=-1
+[REPLAY] CLOSE logged=183 real=-1
+[REPLAY] CLOSE logged=184 real=-1
+[REPLAY] CLOSE logged=185 real=-1
+[REPLAY] CLOSE logged=186 real=-1
+[REPLAY] CLOSE logged=187 real=-1
+[REPLAY] CLOSE logged=188 real=-1
+[REPLAY] CLOSE logged=189 real=-1
+[REPLAY] CLOSE logged=190 real=-1
+[REPLAY] CLOSE logged=191 real=-1
+[REPLAY] CLOSE logged=192 real=-1
+[REPLAY] CLOSE logged=193 real=-1
+[REPLAY] CLOSE logged=194 real=-1
+[REPLAY] CLOSE logged=195 real=-1
+[REPLAY] CLOSE logged=196 real=-1
+[REPLAY] CLOSE logged=197 real=-1
+[REPLAY] CLOSE logged=198 real=-1
+[REPLAY] CLOSE logged=199 real=-1
+[REPLAY] CLOSE logged=200 real=-1
+[REPLAY] CLOSE logged=201 real=-1
+[REPLAY] CLOSE logged=202 real=-1
+[REPLAY] CLOSE logged=203 real=-1
+[REPLAY] CLOSE logged=204 real=-1
+[REPLAY] CLOSE logged=205 real=-1
+[REPLAY] CLOSE logged=206 real=-1
+[REPLAY] CLOSE logged=207 real=-1
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x80044952 size=0 dir=2
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=4 real=-1 req=0xc0045706 size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 4 (skipping)
+[REPLAY] CLOSE logged=-1 real=-1
+[REPLAY] mmap: no real fd for logged -1
+[REPLAY] MMAP fd(log)=-1 real=-1 len=8388608 prot=0x3 flags=0x20022 off=0
+[REPLAY] mmap: no real fd for logged -1
+[REPLAY] MMAP fd(log)=-1 real=-1 len=8388608 prot=0x3 flags=0x20022 off=0
+[REPLAY] mmap: no real fd for logged -1
+[REPLAY] MMAP fd(log)=-1 real=-1 len=8388608 prot=0x3 flags=0x20022 off=0
+[REPLAY] mmap: no real fd for logged -1
+[REPLAY] MMAP fd(log)=-1 real=-1 len=8388608 prot=0x3 flags=0x20022 off=0
+[REPLAY] CLOSE logged=208 real=-1
+[REPLAY] CLOSE logged=209 real=-1
+[REPLAY] CLOSE logged=210 real=-1
+[REPLAY] CLOSE logged=211 real=-1
+[REPLAY] CLOSE logged=212 real=-1
+[REPLAY] CLOSE logged=213 real=-1
+[REPLAY] CLOSE logged=214 real=-1
+[REPLAY] CLOSE logged=215 real=-1
+[REPLAY] CLOSE logged=216 real=-1
+[REPLAY] CLOSE logged=217 real=-1
+[REPLAY] mmap: no real fd for logged -1
+[REPLAY] MMAP fd(log)=-1 real=-1 len=8388608 prot=0x3 flags=0x20022 off=0
+[REPLAY] mmap: no real fd for logged -1
+[REPLAY] MMAP fd(log)=-1 real=-1 len=8388608 prot=0x3 flags=0x20022 off=0
+[REPLAY] CLOSE logged=218 real=-1
+[REPLAY] CLOSE logged=219 real=-1
+[REPLAY] CLOSE logged=220 real=-1
+[REPLAY] CLOSE logged=221 real=-1
+[REPLAY] CLOSE logged=222 real=-1
+[REPLAY] CLOSE logged=223 real=-1
+[REPLAY] CLOSE logged=224 real=-1
+[REPLAY] CLOSE logged=225 real=-1
+[REPLAY] CLOSE logged=226 real=-1
+[REPLAY] CLOSE logged=227 real=-1
+[REPLAY] CLOSE logged=228 real=-1
+[REPLAY] CLOSE logged=229 real=-1
+[REPLAY] CLOSE logged=230 real=-1
+[REPLAY] CLOSE logged=231 real=-1
+[REPLAY] CLOSE logged=232 real=-1
+[REPLAY] CLOSE logged=233 real=-1
+[REPLAY] CLOSE logged=234 real=-1
+[REPLAY] CLOSE logged=235 real=-1
+[REPLAY] CLOSE logged=236 real=-1
+[REPLAY] CLOSE logged=237 real=-1
+[REPLAY] CLOSE logged=238 real=-1
+[REPLAY] CLOSE logged=239 real=-1
+[REPLAY] CLOSE logged=240 real=-1
+[REPLAY] CLOSE logged=241 real=-1
+[REPLAY] CLOSE logged=242 real=-1
+[REPLAY] CLOSE logged=243 real=-1
+[REPLAY] CLOSE logged=244 real=-1
+[REPLAY] CLOSE logged=245 real=-1
+[REPLAY] CLOSE logged=246 real=-1
+[REPLAY] read: fd missing
+[REPLAY] CLOSE logged=16 real=-1
+[REPLAY] read: fd missing
+[REPLAY] CLOSE logged=16 real=-1
+[REPLAY] read: fd missing
+[REPLAY] CLOSE logged=16 real=-1
+[REPLAY] mmap: no real fd for logged -1
+[REPLAY] MMAP fd(log)=-1 real=-1 len=8388608 prot=0x3 flags=0x20022 off=0
+[REPLAY] CLOSE logged=247 real=-1
+[REPLAY] CLOSE logged=248 real=-1
+[REPLAY] CLOSE logged=249 real=-1
+[REPLAY] CLOSE logged=250 real=-1
+[REPLAY] CLOSE logged=251 real=-1
+[REPLAY] CLOSE logged=252 real=-1
+[REPLAY] CLOSE logged=253 real=-1
+[REPLAY] CLOSE logged=254 real=-1
+[REPLAY] CLOSE logged=255 real=-1
+[REPLAY] CLOSE logged=256 real=-1
+[REPLAY] CLOSE logged=257 real=-1
+[REPLAY] CLOSE logged=258 real=-1
+[REPLAY] CLOSE logged=259 real=-1
+[REPLAY] CLOSE logged=260 real=-1
+[REPLAY] CLOSE logged=261 real=-1
+[REPLAY] CLOSE logged=262 real=-1
+[REPLAY] CLOSE logged=263 real=-1
+[REPLAY] CLOSE logged=264 real=-1
+[REPLAY] CLOSE logged=265 real=-1
+[REPLAY] CLOSE logged=266 real=-1
+[REPLAY] CLOSE logged=267 real=-1
+[REPLAY] CLOSE logged=268 real=-1
+[REPLAY] CLOSE logged=269 real=-1
+[REPLAY] CLOSE logged=270 real=-1
+[REPLAY] CLOSE logged=271 real=-1
+[REPLAY] CLOSE logged=272 real=-1
+[REPLAY] CLOSE logged=273 real=-1
+[REPLAY] CLOSE logged=274 real=-1
+[REPLAY] CLOSE logged=275 real=-1
+[REPLAY] CLOSE logged=276 real=-1
+[REPLAY] CLOSE logged=277 real=-1
+[REPLAY] CLOSE logged=278 real=-1
+[REPLAY] CLOSE logged=279 real=-1
+[REPLAY] CLOSE logged=280 real=-1
+[REPLAY] CLOSE logged=281 real=-1
+[REPLAY] CLOSE logged=282 real=-1
+[REPLAY] CLOSE logged=283 real=-1
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] CLOSE logged=284 real=-1
+[REPLAY] CLOSE logged=285 real=-1
+[REPLAY] CLOSE logged=286 real=-1
+[REPLAY] CLOSE logged=287 real=-1
+[REPLAY] CLOSE logged=288 real=-1
+[REPLAY] CLOSE logged=289 real=-1
+[REPLAY] CLOSE logged=290 real=-1
+[REPLAY] CLOSE logged=291 real=-1
+[REPLAY] CLOSE logged=292 real=-1
+[REPLAY] CLOSE logged=293 real=-1
+[REPLAY] CLOSE logged=294 real=-1
+[REPLAY] CLOSE logged=295 real=-1
+[REPLAY] CLOSE logged=296 real=-1
+[REPLAY] CLOSE logged=297 real=-1
+[REPLAY] CLOSE logged=298 real=-1
+[REPLAY] CLOSE logged=299 real=-1
+[REPLAY] CLOSE logged=300 real=-1
+[REPLAY] CLOSE logged=301 real=-1
+[REPLAY] CLOSE logged=302 real=-1
+[REPLAY] CLOSE logged=303 real=-1
+[REPLAY] CLOSE logged=304 real=-1
+[REPLAY] CLOSE logged=305 real=-1
+[REPLAY] CLOSE logged=306 real=-1
+[REPLAY] CLOSE logged=307 real=-1
+[REPLAY] CLOSE logged=308 real=-1
+[REPLAY] CLOSE logged=309 real=-1
+[REPLAY] CLOSE logged=310 real=-1
+[REPLAY] CLOSE logged=311 real=-1
+[REPLAY] CLOSE logged=312 real=-1
+[REPLAY] CLOSE logged=313 real=-1
+[REPLAY] CLOSE logged=314 real=-1
+[REPLAY] CLOSE logged=315 real=-1
+[REPLAY] CLOSE logged=316 real=-1
+[REPLAY] CLOSE logged=317 real=-1
+[REPLAY] CLOSE logged=318 real=-1
+[REPLAY] CLOSE logged=319 real=-1
+[REPLAY] CLOSE logged=320 real=-1
+[REPLAY] CLOSE logged=321 real=-1
+[REPLAY] CLOSE logged=322 real=-1
+[REPLAY] CLOSE logged=323 real=-1
+[REPLAY] CLOSE logged=324 real=-1
+[REPLAY] CLOSE logged=325 real=-1
+[REPLAY] CLOSE logged=326 real=-1
+[REPLAY] CLOSE logged=327 real=-1
+[REPLAY] CLOSE logged=328 real=-1
+[REPLAY] CLOSE logged=329 real=-1
+[REPLAY] CLOSE logged=330 real=-1
+[REPLAY] CLOSE logged=331 real=-1
+[REPLAY] CLOSE logged=332 real=-1
+[REPLAY] CLOSE logged=333 real=-1
+[REPLAY] CLOSE logged=334 real=-1
+[REPLAY] CLOSE logged=335 real=-1
+[REPLAY] CLOSE logged=336 real=-1
+[REPLAY] CLOSE logged=337 real=-1
+[REPLAY] CLOSE logged=338 real=-1
+[REPLAY] CLOSE logged=339 real=-1
+[REPLAY] CLOSE logged=340 real=-1
+[REPLAY] CLOSE logged=341 real=-1
+[REPLAY] CLOSE logged=342 real=-1
+[REPLAY] CLOSE logged=343 real=-1
+[REPLAY] CLOSE logged=344 real=-1
+[REPLAY] CLOSE logged=345 real=-1
+[REPLAY] CLOSE logged=346 real=-1
+[REPLAY] CLOSE logged=347 real=-1
+[REPLAY] CLOSE logged=348 real=-1
+[REPLAY] CLOSE logged=349 real=-1
+[REPLAY] CLOSE logged=350 real=-1
+[REPLAY] CLOSE logged=351 real=-1
+[REPLAY] CLOSE logged=352 real=-1
+[REPLAY] CLOSE logged=353 real=-1
+[REPLAY] CLOSE logged=354 real=-1
+[REPLAY] CLOSE logged=355 real=-1
+[REPLAY] CLOSE logged=356 real=-1
+[REPLAY] CLOSE logged=357 real=-1
+[REPLAY] CLOSE logged=358 real=-1
+[REPLAY] CLOSE logged=359 real=-1
+[REPLAY] CLOSE logged=360 real=-1
+[REPLAY] CLOSE logged=361 real=-1
+[REPLAY] CLOSE logged=362 real=-1
+[REPLAY] CLOSE logged=363 real=-1
+[REPLAY] CLOSE logged=364 real=-1
+[REPLAY] CLOSE logged=365 real=-1
+[REPLAY] CLOSE logged=366 real=-1
+[REPLAY] CLOSE logged=367 real=-1
+[REPLAY] CLOSE logged=368 real=-1
+[REPLAY] CLOSE logged=369 real=-1
+[REPLAY] CLOSE logged=370 real=-1
+[REPLAY] CLOSE logged=371 real=-1
+[REPLAY] CLOSE logged=372 real=-1
+[REPLAY] CLOSE logged=373 real=-1
+[REPLAY] CLOSE logged=374 real=-1
+[REPLAY] CLOSE logged=375 real=-1
+[REPLAY] CLOSE logged=376 real=-1
+[REPLAY] CLOSE logged=377 real=-1
+[REPLAY] CLOSE logged=378 real=-1
+[REPLAY] CLOSE logged=379 real=-1
+[REPLAY] CLOSE logged=380 real=-1
+[REPLAY] CLOSE logged=381 real=-1
+[REPLAY] CLOSE logged=382 real=-1
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] mmap: no real fd for logged -1
+[REPLAY] MMAP fd(log)=-1 real=-1 len=131072 prot=0x3 flags=0x20022 off=0
+[REPLAY] mmap: no real fd for logged -1
+[REPLAY] MMAP fd(log)=-1 real=-1 len=8388608 prot=0x3 flags=0x20022 off=0
+[REPLAY] mmap: no real fd for logged -1
+[REPLAY] MMAP fd(log)=-1 real=-1 len=8388608 prot=0x3 flags=0x20022 off=0
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x80044952 size=0 dir=2
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=4 real=-1 req=0xc0045706 size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 4 (skipping)
+[REPLAY] CLOSE logged=383 real=-1
+[REPLAY] CLOSE logged=384 real=-1
+[REPLAY] CLOSE logged=385 real=-1
+[REPLAY] CLOSE logged=386 real=-1
+[REPLAY] CLOSE logged=387 real=-1
+[REPLAY] CLOSE logged=388 real=-1
+[REPLAY] CLOSE logged=389 real=-1
+[REPLAY] CLOSE logged=390 real=-1
+[REPLAY] CLOSE logged=391 real=-1
+[REPLAY] CLOSE logged=392 real=-1
+[REPLAY] CLOSE logged=393 real=-1
+[REPLAY] CLOSE logged=394 real=-1
+[REPLAY] CLOSE logged=395 real=-1
+[REPLAY] CLOSE logged=396 real=-1
+[REPLAY] CLOSE logged=397 real=-1
+[REPLAY] CLOSE logged=398 real=-1
+[REPLAY] CLOSE logged=399 real=-1
+[REPLAY] CLOSE logged=400 real=-1
+[REPLAY] CLOSE logged=401 real=-1
+[REPLAY] CLOSE logged=402 real=-1
+[REPLAY] CLOSE logged=403 real=-1
+[REPLAY] CLOSE logged=404 real=-1
+[REPLAY] CLOSE logged=405 real=-1
+[REPLAY] CLOSE logged=406 real=-1
+[REPLAY] CLOSE logged=407 real=-1
+[REPLAY] CLOSE logged=408 real=-1
+[REPLAY] CLOSE logged=409 real=-1
+[REPLAY] CLOSE logged=410 real=-1
+[REPLAY] CLOSE logged=411 real=-1
+[REPLAY] CLOSE logged=412 real=-1
+[REPLAY] CLOSE logged=413 real=-1
+[REPLAY] IOCTL logged_fd=11 real=-1 req=0xc0145608 size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 11 (skipping)
+[REPLAY] CLOSE logged=414 real=-1
+[REPLAY] CLOSE logged=415 real=-1
+[REPLAY] CLOSE logged=416 real=-1
+[REPLAY] CLOSE logged=417 real=-1
+[REPLAY] CLOSE logged=418 real=-1
+[REPLAY] CLOSE logged=419 real=-1
+[REPLAY] CLOSE logged=420 real=-1
+[REPLAY] CLOSE logged=421 real=-1
+[REPLAY] CLOSE logged=422 real=-1
+[REPLAY] CLOSE logged=423 real=-1
+[REPLAY] CLOSE logged=424 real=-1
+[REPLAY] CLOSE logged=425 real=-1
+[REPLAY] CLOSE logged=426 real=-1
+[REPLAY] CLOSE logged=427 real=-1
+[REPLAY] CLOSE logged=428 real=-1
+[REPLAY] CLOSE logged=429 real=-1
+[REPLAY] CLOSE logged=430 real=-1
+[REPLAY] CLOSE logged=431 real=-1
+[REPLAY] CLOSE logged=432 real=-1
+[REPLAY] CLOSE logged=433 real=-1
+[REPLAY] CLOSE logged=434 real=-1
+[REPLAY] CLOSE logged=435 real=-1
+[REPLAY] CLOSE logged=436 real=-1
+[REPLAY] CLOSE logged=437 real=-1
+[REPLAY] CLOSE logged=438 real=-1
+[REPLAY] CLOSE logged=439 real=-1
+[REPLAY] CLOSE logged=440 real=-1
+[REPLAY] CLOSE logged=441 real=-1
+[REPLAY] CLOSE logged=442 real=-1
+[REPLAY] CLOSE logged=443 real=-1
+[REPLAY] CLOSE logged=444 real=-1
+[REPLAY] CLOSE logged=445 real=-1
+[REPLAY] CLOSE logged=446 real=-1
+[REPLAY] CLOSE logged=447 real=-1
+[REPLAY] CLOSE logged=448 real=-1
+[REPLAY] CLOSE logged=449 real=-1
+[REPLAY] CLOSE logged=450 real=-1
+[REPLAY] CLOSE logged=451 real=-1
+[REPLAY] CLOSE logged=452 real=-1
+[REPLAY] CLOSE logged=453 real=-1
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x80044952 size=0 dir=2
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=11 real=-1 req=0xc044560f size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 11 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] CLOSE logged=454 real=-1
+[REPLAY] CLOSE logged=455 real=-1
+[REPLAY] CLOSE logged=456 real=-1
+[REPLAY] CLOSE logged=457 real=-1
+[REPLAY] CLOSE logged=458 real=-1
+[REPLAY] CLOSE logged=459 real=-1
+[REPLAY] CLOSE logged=460 real=-1
+[REPLAY] CLOSE logged=461 real=-1
+[REPLAY] CLOSE logged=462 real=-1
+[REPLAY] CLOSE logged=463 real=-1
+[REPLAY] CLOSE logged=464 real=-1
+[REPLAY] CLOSE logged=465 real=-1
+[REPLAY] CLOSE logged=466 real=-1
+[REPLAY] CLOSE logged=467 real=-1
+[REPLAY] CLOSE logged=468 real=-1
+[REPLAY] CLOSE logged=469 real=-1
+[REPLAY] CLOSE logged=470 real=-1
+[REPLAY] CLOSE logged=471 real=-1
+[REPLAY] CLOSE logged=472 real=-1
+[REPLAY] CLOSE logged=473 real=-1
+[REPLAY] CLOSE logged=474 real=-1
+[REPLAY] CLOSE logged=475 real=-1
+[REPLAY] CLOSE logged=476 real=-1
+[REPLAY] CLOSE logged=477 real=-1
+[REPLAY] CLOSE logged=478 real=-1
+[REPLAY] CLOSE logged=479 real=-1
+[REPLAY] CLOSE logged=480 real=-1
+[REPLAY] IOCTL logged_fd=11 real=-1 req=0xc044560f size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 11 (skipping)
+[REPLAY] IOCTL logged_fd=11 real=-1 req=0xc044560f size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 11 (skipping)
+[REPLAY] CLOSE logged=481 real=-1
+[REPLAY] CLOSE logged=482 real=-1
+[REPLAY] CLOSE logged=483 real=-1
+[REPLAY] CLOSE logged=484 real=-1
+[REPLAY] CLOSE logged=485 real=-1
+[REPLAY] CLOSE logged=486 real=-1
+[REPLAY] CLOSE logged=487 real=-1
+[REPLAY] CLOSE logged=488 real=-1
+[REPLAY] CLOSE logged=489 real=-1
+[REPLAY] CLOSE logged=490 real=-1
+[REPLAY] CLOSE logged=491 real=-1
+[REPLAY] CLOSE logged=492 real=-1
+[REPLAY] CLOSE logged=493 real=-1
+[REPLAY] CLOSE logged=494 real=-1
+[REPLAY] CLOSE logged=495 real=-1
+[REPLAY] CLOSE logged=496 real=-1
+[REPLAY] CLOSE logged=497 real=-1
+[REPLAY] CLOSE logged=498 real=-1
+[REPLAY] CLOSE logged=499 real=-1
+[REPLAY] CLOSE logged=500 real=-1
+[REPLAY] CLOSE logged=501 real=-1
+[REPLAY] CLOSE logged=502 real=-1
+[REPLAY] CLOSE logged=503 real=-1
+[REPLAY] CLOSE logged=504 real=-1
+[REPLAY] CLOSE logged=505 real=-1
+[REPLAY] CLOSE logged=506 real=-1
+[REPLAY] CLOSE logged=507 real=-1
+[REPLAY] CLOSE logged=508 real=-1
+[REPLAY] CLOSE logged=509 real=-1
+[REPLAY] CLOSE logged=510 real=-1
+[REPLAY] CLOSE logged=511 real=-1
+[REPLAY] CLOSE logged=512 real=-1
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=4 real=-1 req=0xc0045706 size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 4 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] CLOSE logged=513 real=-1
+[REPLAY] IOCTL logged_fd=11 real=-1 req=0xc044560f size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 11 (skipping)
+[REPLAY] CLOSE logged=514 real=-1
+[REPLAY] CLOSE logged=515 real=-1
+[REPLAY] CLOSE logged=516 real=-1
+[REPLAY] CLOSE logged=517 real=-1
+[REPLAY] CLOSE logged=518 real=-1
+[REPLAY] CLOSE logged=519 real=-1
+[REPLAY] CLOSE logged=520 real=-1
+[REPLAY] CLOSE logged=521 real=-1
+[REPLAY] CLOSE logged=522 real=-1
+[REPLAY] CLOSE logged=523 real=-1
+[REPLAY] CLOSE logged=524 real=-1
+[REPLAY] CLOSE logged=525 real=-1
+[REPLAY] CLOSE logged=526 real=-1
+[REPLAY] CLOSE logged=527 real=-1
+[REPLAY] CLOSE logged=528 real=-1
+[REPLAY] CLOSE logged=529 real=-1
+[REPLAY] CLOSE logged=530 real=-1
+[REPLAY] CLOSE logged=531 real=-1
+[REPLAY] CLOSE logged=532 real=-1
+[REPLAY] IOCTL logged_fd=11 real=-1 req=0x40045612 size=0 dir=1
+[REPLAY] ioctl: no real fd for logged 11 (skipping)
+STREAMON encountered but no video fd mapped
+Failed building cam context
+[REPLAY] CLOSE logged=533 real=-1
+[REPLAY] CLOSE logged=534 real=-1
+[REPLAY] CLOSE logged=535 real=-1
+[REPLAY] CLOSE logged=536 real=-1
+[REPLAY] CLOSE logged=537 real=-1
+[REPLAY] CLOSE logged=538 real=-1
+[REPLAY] CLOSE logged=539 real=-1
+[REPLAY] CLOSE logged=540 real=-1
+[REPLAY] CLOSE logged=541 real=-1
+[REPLAY] CLOSE logged=542 real=-1
+[REPLAY] CLOSE logged=543 real=-1
+[REPLAY] CLOSE logged=544 real=-1
+[REPLAY] CLOSE logged=545 real=-1
+[REPLAY] CLOSE logged=546 real=-1
+[REPLAY] CLOSE logged=547 real=-1
+[REPLAY] CLOSE logged=548 real=-1
+[REPLAY] CLOSE logged=549 real=-1
+[REPLAY] CLOSE logged=550 real=-1
+[REPLAY] CLOSE logged=551 real=-1
+[REPLAY] CLOSE logged=552 real=-1
+[REPLAY] CLOSE logged=553 real=-1
+[REPLAY] CLOSE logged=554 real=-1
+[REPLAY] CLOSE logged=555 real=-1
+[REPLAY] CLOSE logged=556 real=-1
+[REPLAY] CLOSE logged=557 real=-1
+[REPLAY] CLOSE logged=558 real=-1
+[REPLAY] CLOSE logged=559 real=-1
+[REPLAY] CLOSE logged=560 real=-1
+[REPLAY] CLOSE logged=561 real=-1
+[REPLAY] CLOSE logged=562 real=-1
+[REPLAY] CLOSE logged=563 real=-1
+[REPLAY] CLOSE logged=564 real=-1
+[REPLAY] CLOSE logged=565 real=-1
+[REPLAY] CLOSE logged=566 real=-1
+[REPLAY] CLOSE logged=567 real=-1
+[REPLAY] CLOSE logged=568 real=-1
+[REPLAY] CLOSE logged=569 real=-1
+[REPLAY] CLOSE logged=570 real=-1
+[REPLAY] CLOSE logged=571 real=-1
+[REPLAY] CLOSE logged=572 real=-1
+[REPLAY] CLOSE logged=573 real=-1
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=3 real=-1 req=0xc001662b size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 3 (skipping)
+[REPLAY] IOCTL logged_fd=10 real=-1 req=0x80044952 size=0 dir=2
+[REPLAY] ioctl: no real fd for logged 10 (skipping)
+[REPLAY] IOCTL logged_fd=11 real=-1 req=0xc0445611 size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 11 (skipping)
+[REPLAY] CLOSE logged=574 real=-1
+[REPLAY] CLOSE logged=575 real=-1
+[REPLAY] CLOSE logged=576 real=-1
+[REPLAY] CLOSE logged=577 real=-1
+[REPLAY] CLOSE logged=578 real=-1
+[REPLAY] CLOSE logged=579 real=-1
+[REPLAY] CLOSE logged=580 real=-1
+[REPLAY] CLOSE logged=581 real=-1
+[REPLAY] CLOSE logged=582 real=-1
+[REPLAY] CLOSE logged=583 real=-1
+[REPLAY] CLOSE logged=584 real=-1
+[REPLAY] IOCTL logged_fd=11 real=-1 req=0xc044560f size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 11 (skipping)
+[REPLAY] IOCTL logged_fd=11 real=-1 req=0xc0445611 size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 11 (skipping)
+[REPLAY] CLOSE logged=585 real=-1
+[REPLAY] CLOSE logged=586 real=-1
+[REPLAY] CLOSE logged=587 real=-1
+[REPLAY] CLOSE logged=588 real=-1
+[REPLAY] CLOSE logged=589 real=-1
+[REPLAY] CLOSE logged=590 real=-1
+[REPLAY] CLOSE logged=591 real=-1
+[REPLAY] CLOSE logged=592 real=-1
+[REPLAY] CLOSE logged=593 real=-1
+[REPLAY] CLOSE logged=594 real=-1
+[REPLAY] IOCTL logged_fd=11 real=-1 req=0xc044560f size=0 dir=3
+[REPLAY] ioctl: no real fd for logged 11 (skipping)
+[REPLAY] CLOSE logged=595 real=-1
+Note: no STREAMON reached during replay

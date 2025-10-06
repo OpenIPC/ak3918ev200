@@ -1,0 +1,455 @@
+Los archivos vendor/linux-3.4.35-vanilla/arch/arm/boot/compressed/head.S y vendor/linux-3.4.35/arch/arm/boot/compressed/head.S son distintos
+Los archivos vendor/linux-3.4.35-vanilla/arch/arm/boot/compressed/misc.c y vendor/linux-3.4.35/arch/arm/boot/compressed/misc.c son distintos
+Sólo en vendor/linux-3.4.35/arch/arm/common: fiq_debugger.c
+Sólo en vendor/linux-3.4.35/arch/arm/common: fiq_debugger_ringbuf.h
+Sólo en vendor/linux-3.4.35/arch/arm/common: fiq_glue.S
+Sólo en vendor/linux-3.4.35/arch/arm/common: fiq_glue_setup.c
+Los archivos vendor/linux-3.4.35-vanilla/arch/arm/common/Kconfig y vendor/linux-3.4.35/arch/arm/common/Kconfig son distintos
+Los archivos vendor/linux-3.4.35-vanilla/arch/arm/common/Makefile y vendor/linux-3.4.35/arch/arm/common/Makefile son distintos
+Sólo en vendor/linux-3.4.35/arch/arm/configs: aimer39_ak3916_defconfig
+Sólo en vendor/linux-3.4.35/arch/arm/configs: aimer39_ak3916_ram_defconfig
+Sólo en vendor/linux-3.4.35/arch/arm/configs: aimer39_ak3918_defconfig
+Sólo en vendor/linux-3.4.35/arch/arm/configs: ak39_micro_defconfig
+Sólo en vendor/linux-3.4.35/arch/arm/configs: ak39_producer_defconfig
+Sólo en vendor/linux-3.4.35/arch/arm/configs: ak39_sdk3910_defconfig
+Los archivos vendor/linux-3.4.35-vanilla/arch/arm/include/asm/cacheflush.h y vendor/linux-3.4.35/arch/arm/include/asm/cacheflush.h son distintos
+Sólo en vendor/linux-3.4.35/arch/arm/include/asm: fiq_debugger.h
+Sólo en vendor/linux-3.4.35/arch/arm/include/asm: fiq_glue.h
+Los archivos vendor/linux-3.4.35-vanilla/arch/arm/include/asm/hardirq.h y vendor/linux-3.4.35/arch/arm/include/asm/hardirq.h son distintos
+Los archivos vendor/linux-3.4.35-vanilla/arch/arm/include/asm/hardware/cache-l2x0.h y vendor/linux-3.4.35/arch/arm/include/asm/hardware/cache-l2x0.h son distintos
+Los archivos vendor/linux-3.4.35-vanilla/arch/arm/include/asm/hardware/coresight.h y vendor/linux-3.4.35/arch/arm/include/asm/hardware/coresight.h son distintos
+Los archivos vendor/linux-3.4.35-vanilla/arch/arm/include/asm/irq.h y vendor/linux-3.4.35/arch/arm/include/asm/irq.h son distintos
+Sólo en vendor/linux-3.4.35/arch/arm/include/asm/mach: mmc.h
+Los archivos vendor/linux-3.4.35-vanilla/arch/arm/include/asm/mmu_context.h y vendor/linux-3.4.35/arch/arm/include/asm/mmu_context.h son distintos
+Los archivos vendor/linux-3.4.35-vanilla/arch/arm/include/asm/mmu.h y vendor/linux-3.4.35/arch/arm/include/asm/mmu.h son distintos
+Sólo en vendor/linux-3.4.35/arch/arm/include/asm: rodata.h
+Los archivos vendor/linux-3.4.35-vanilla/arch/arm/include/asm/sched_clock.h y vendor/linux-3.4.35/arch/arm/include/asm/sched_clock.h son distintos
+Los archivos vendor/linux-3.4.35-vanilla/arch/arm/include/asm/smp.h y vendor/linux-3.4.35/arch/arm/include/asm/smp.h son distintos
+Los archivos vendor/linux-3.4.35-vanilla/arch/arm/include/asm/thread_info.h y vendor/linux-3.4.35/arch/arm/include/asm/thread_info.h son distintos
+Los archivos vendor/linux-3.4.35-vanilla/arch/arm/include/asm/uaccess.h y vendor/linux-3.4.35/arch/arm/include/asm/uaccess.h son distintos
+Los archivos vendor/linux-3.4.35-vanilla/arch/arm/Kconfig y vendor/linux-3.4.35/arch/arm/Kconfig son distintos
+Los archivos vendor/linux-3.4.35-vanilla/arch/arm/Kconfig.debug y vendor/linux-3.4.35/arch/arm/Kconfig.debug son distintos
+Los archivos vendor/linux-3.4.35-vanilla/arch/arm/kernel/etm.c y vendor/linux-3.4.35/arch/arm/kernel/etm.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/arch/arm/kernel/ftrace.c y vendor/linux-3.4.35/arch/arm/kernel/ftrace.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/arch/arm/kernel/leds.c y vendor/linux-3.4.35/arch/arm/kernel/leds.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/arch/arm/kernel/process.c y vendor/linux-3.4.35/arch/arm/kernel/process.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/arch/arm/kernel/sched_clock.c y vendor/linux-3.4.35/arch/arm/kernel/sched_clock.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/arch/arm/kernel/setup.c y vendor/linux-3.4.35/arch/arm/kernel/setup.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/arch/arm/kernel/signal.c y vendor/linux-3.4.35/arch/arm/kernel/signal.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/arch/arm/kernel/smp.c y vendor/linux-3.4.35/arch/arm/kernel/smp.c son distintos
+Sólo en vendor/linux-3.4.35/arch/arm: mach-ak39
+Los archivos vendor/linux-3.4.35-vanilla/arch/arm/Makefile y vendor/linux-3.4.35/arch/arm/Makefile son distintos
+Los archivos vendor/linux-3.4.35-vanilla/arch/arm/mm/cache-l2x0.c y vendor/linux-3.4.35/arch/arm/mm/cache-l2x0.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/arch/arm/mm/cache-v6.S y vendor/linux-3.4.35/arch/arm/mm/cache-v6.S son distintos
+Los archivos vendor/linux-3.4.35-vanilla/arch/arm/mm/context.c y vendor/linux-3.4.35/arch/arm/mm/context.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/arch/arm/mm/Makefile y vendor/linux-3.4.35/arch/arm/mm/Makefile son distintos
+Los archivos vendor/linux-3.4.35-vanilla/arch/arm/mm/mmu.c y vendor/linux-3.4.35/arch/arm/mm/mmu.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/arch/arm/mm/proc-v7-2level.S y vendor/linux-3.4.35/arch/arm/mm/proc-v7-2level.S son distintos
+Sólo en vendor/linux-3.4.35/arch/arm/mm: rodata.c
+Sólo en vendor/linux-3.4.35/arch/arm: plat-anyka
+Los archivos vendor/linux-3.4.35-vanilla/arch/arm/tools/mach-types y vendor/linux-3.4.35/arch/arm/tools/mach-types son distintos
+Los archivos vendor/linux-3.4.35-vanilla/arch/x86/include/asm/idle.h y vendor/linux-3.4.35/arch/x86/include/asm/idle.h son distintos
+Los archivos vendor/linux-3.4.35-vanilla/arch/x86/kernel/process.c y vendor/linux-3.4.35/arch/x86/kernel/process.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/block/genhd.c y vendor/linux-3.4.35/block/genhd.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/block/partition-generic.c y vendor/linux-3.4.35/block/partition-generic.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/Documentation/ABI/testing/sysfs-devices-power y vendor/linux-3.4.35/Documentation/ABI/testing/sysfs-devices-power son distintos
+Los archivos vendor/linux-3.4.35-vanilla/Documentation/ABI/testing/sysfs-power y vendor/linux-3.4.35/Documentation/ABI/testing/sysfs-power son distintos
+Sólo en vendor/linux-3.4.35/Documentation: android.txt
+Los archivos vendor/linux-3.4.35-vanilla/Documentation/cgroups/cgroups.txt y vendor/linux-3.4.35/Documentation/cgroups/cgroups.txt son distintos
+Los archivos vendor/linux-3.4.35-vanilla/Documentation/cpu-freq/governors.txt y vendor/linux-3.4.35/Documentation/cpu-freq/governors.txt son distintos
+Los archivos vendor/linux-3.4.35-vanilla/Documentation/dma-buf-sharing.txt y vendor/linux-3.4.35/Documentation/dma-buf-sharing.txt son distintos
+Los archivos vendor/linux-3.4.35-vanilla/Documentation/filesystems/Locking y vendor/linux-3.4.35/Documentation/filesystems/Locking son distintos
+Sólo en vendor/linux-3.4.35/Documentation/filesystems: overlayfs.txt
+Los archivos vendor/linux-3.4.35-vanilla/Documentation/filesystems/vfs.txt y vendor/linux-3.4.35/Documentation/filesystems/vfs.txt son distintos
+Sólo en vendor/linux-3.4.35/Documentation/hid: uhid.txt
+Los archivos vendor/linux-3.4.35-vanilla/Documentation/kernel-parameters.txt y vendor/linux-3.4.35/Documentation/kernel-parameters.txt son distintos
+Los archivos vendor/linux-3.4.35-vanilla/Documentation/power/suspend-and-cpuhotplug.txt y vendor/linux-3.4.35/Documentation/power/suspend-and-cpuhotplug.txt son distintos
+Sólo en vendor/linux-3.4.35/Documentation: sync.txt
+Los archivos vendor/linux-3.4.35-vanilla/Documentation/trace/ftrace.txt y vendor/linux-3.4.35/Documentation/trace/ftrace.txt son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/base/dma-buf.c y vendor/linux-3.4.35/drivers/base/dma-buf.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/base/Kconfig y vendor/linux-3.4.35/drivers/base/Kconfig son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/base/Makefile y vendor/linux-3.4.35/drivers/base/Makefile son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/base/power/domain.c y vendor/linux-3.4.35/drivers/base/power/domain.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/base/power/domain_governor.c y vendor/linux-3.4.35/drivers/base/power/domain_governor.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/base/power/main.c y vendor/linux-3.4.35/drivers/base/power/main.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/base/power/qos.c y vendor/linux-3.4.35/drivers/base/power/qos.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/base/power/runtime.c y vendor/linux-3.4.35/drivers/base/power/runtime.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/base/power/sysfs.c y vendor/linux-3.4.35/drivers/base/power/sysfs.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/base/power/wakeup.c y vendor/linux-3.4.35/drivers/base/power/wakeup.c son distintos
+Sólo en vendor/linux-3.4.35/drivers/base: sw_sync.c
+Sólo en vendor/linux-3.4.35/drivers/base: sync.c
+Sólo en vendor/linux-3.4.35/drivers/char: dcc_tty.c
+Los archivos vendor/linux-3.4.35-vanilla/drivers/char/Kconfig y vendor/linux-3.4.35/drivers/char/Kconfig son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/char/Makefile y vendor/linux-3.4.35/drivers/char/Makefile son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/char/mem.c y vendor/linux-3.4.35/drivers/char/mem.c son distintos
+Sólo en vendor/linux-3.4.35/drivers/cpufreq: cpufreq_interactive.c
+Los archivos vendor/linux-3.4.35-vanilla/drivers/cpufreq/cpufreq_stats.c y vendor/linux-3.4.35/drivers/cpufreq/cpufreq_stats.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/cpufreq/Kconfig y vendor/linux-3.4.35/drivers/cpufreq/Kconfig son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/cpufreq/Makefile y vendor/linux-3.4.35/drivers/cpufreq/Makefile son distintos
+Sólo en vendor/linux-3.4.35/drivers/cpuidle: coupled.c
+Los archivos vendor/linux-3.4.35-vanilla/drivers/cpuidle/cpuidle.c y vendor/linux-3.4.35/drivers/cpuidle/cpuidle.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/cpuidle/cpuidle.h y vendor/linux-3.4.35/drivers/cpuidle/cpuidle.h son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/cpuidle/governors/menu.c y vendor/linux-3.4.35/drivers/cpuidle/governors/menu.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/cpuidle/Kconfig y vendor/linux-3.4.35/drivers/cpuidle/Kconfig son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/cpuidle/Makefile y vendor/linux-3.4.35/drivers/cpuidle/Makefile son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/devfreq/governor_performance.c y vendor/linux-3.4.35/drivers/devfreq/governor_performance.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/devfreq/governor_powersave.c y vendor/linux-3.4.35/drivers/devfreq/governor_powersave.c son distintos
+Sólo en vendor/linux-3.4.35/drivers/gpu: ion
+Los archivos vendor/linux-3.4.35-vanilla/drivers/gpu/Makefile y vendor/linux-3.4.35/drivers/gpu/Makefile son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/hid/hid-input.c y vendor/linux-3.4.35/drivers/hid/hid-input.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/hid/hid-magicmouse.c y vendor/linux-3.4.35/drivers/hid/hid-magicmouse.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/hid/hid-multitouch.c y vendor/linux-3.4.35/drivers/hid/hid-multitouch.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/hid/Kconfig y vendor/linux-3.4.35/drivers/hid/Kconfig son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/hid/Makefile y vendor/linux-3.4.35/drivers/hid/Makefile son distintos
+Sólo en vendor/linux-3.4.35/drivers/hid: uhid.c
+Sólo en vendor/linux-3.4.35/drivers/i2c/busses: i2c-ak39.c
+Sólo en vendor/linux-3.4.35/drivers/i2c/busses: i2c-gpio-soft.c
+Los archivos vendor/linux-3.4.35-vanilla/drivers/i2c/busses/Kconfig y vendor/linux-3.4.35/drivers/i2c/busses/Kconfig son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/i2c/busses/Makefile y vendor/linux-3.4.35/drivers/i2c/busses/Makefile son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/input/evdev.c y vendor/linux-3.4.35/drivers/input/evdev.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/input/Kconfig y vendor/linux-3.4.35/drivers/input/Kconfig son distintos
+Sólo en vendor/linux-3.4.35/drivers/input/keyboard: akad-keys.c
+Sólo en vendor/linux-3.4.35/drivers/input/keyboard: akgpio_keys.c
+Sólo en vendor/linux-3.4.35/drivers/input/keyboard: akmatrix_keypad.c
+Los archivos vendor/linux-3.4.35-vanilla/drivers/input/keyboard/Kconfig y vendor/linux-3.4.35/drivers/input/keyboard/Kconfig son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/input/keyboard/Makefile y vendor/linux-3.4.35/drivers/input/keyboard/Makefile son distintos
+Sólo en vendor/linux-3.4.35/drivers/input: keyreset.c
+Los archivos vendor/linux-3.4.35-vanilla/drivers/input/Makefile y vendor/linux-3.4.35/drivers/input/Makefile son distintos
+Sólo en vendor/linux-3.4.35/drivers/input/misc: gpio_axis.c
+Sólo en vendor/linux-3.4.35/drivers/input/misc: gpio_event.c
+Sólo en vendor/linux-3.4.35/drivers/input/misc: gpio_input.c
+Sólo en vendor/linux-3.4.35/drivers/input/misc: gpio_matrix.c
+Sólo en vendor/linux-3.4.35/drivers/input/misc: gpio_output.c
+Los archivos vendor/linux-3.4.35-vanilla/drivers/input/misc/Kconfig y vendor/linux-3.4.35/drivers/input/misc/Kconfig son distintos
+Sólo en vendor/linux-3.4.35/drivers/input/misc: keychord.c
+Los archivos vendor/linux-3.4.35-vanilla/drivers/input/misc/Makefile y vendor/linux-3.4.35/drivers/input/misc/Makefile son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/input/touchscreen/Kconfig y vendor/linux-3.4.35/drivers/input/touchscreen/Kconfig son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/input/touchscreen/Makefile y vendor/linux-3.4.35/drivers/input/touchscreen/Makefile son distintos
+Sólo en vendor/linux-3.4.35/drivers/input/touchscreen: synaptics_i2c_rmi.c
+Sólo en vendor/linux-3.4.35/drivers/input/touchscreen: tscp2007.c
+Los archivos vendor/linux-3.4.35-vanilla/drivers/Kconfig y vendor/linux-3.4.35/drivers/Kconfig son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/leds/Kconfig y vendor/linux-3.4.35/drivers/leds/Kconfig son distintos
+Sólo en vendor/linux-3.4.35/drivers/leds: leds-ak39.c
+Los archivos vendor/linux-3.4.35-vanilla/drivers/leds/led-triggers.c y vendor/linux-3.4.35/drivers/leds/led-triggers.c son distintos
+Sólo en vendor/linux-3.4.35/drivers/leds: ledtrig-sleep.c
+Los archivos vendor/linux-3.4.35-vanilla/drivers/leds/Makefile y vendor/linux-3.4.35/drivers/leds/Makefile son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/Makefile y vendor/linux-3.4.35/drivers/Makefile son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/media/video/Kconfig y vendor/linux-3.4.35/drivers/media/video/Kconfig son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/media/video/Makefile y vendor/linux-3.4.35/drivers/media/video/Makefile son distintos
+Sólo en vendor/linux-3.4.35/drivers/media/video: plat-anyka
+Los archivos vendor/linux-3.4.35-vanilla/drivers/media/video/v4l2-ioctl.c y vendor/linux-3.4.35/drivers/media/video/v4l2-ioctl.c son distintos
+Sólo en vendor/linux-3.4.35/drivers/misc: akgpios.c
+Sólo en vendor/linux-3.4.35/drivers/misc: akm8975.c
+Sólo en vendor/linux-3.4.35/drivers/misc: ak_motor.c
+Sólo en vendor/linux-3.4.35/drivers/misc: ak_sn.c
+Los archivos vendor/linux-3.4.35-vanilla/drivers/misc/Kconfig y vendor/linux-3.4.35/drivers/misc/Kconfig son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/misc/Makefile y vendor/linux-3.4.35/drivers/misc/Makefile son distintos
+Sólo en vendor/linux-3.4.35/drivers/misc: uid_stat.c
+Sólo en vendor/linux-3.4.35/drivers/misc: wl127x-rfkill.c
+Los archivos vendor/linux-3.4.35-vanilla/drivers/mmc/card/block.c y vendor/linux-3.4.35/drivers/mmc/card/block.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/mmc/card/Kconfig y vendor/linux-3.4.35/drivers/mmc/card/Kconfig son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/mmc/card/Makefile y vendor/linux-3.4.35/drivers/mmc/card/Makefile son distintos
+Sólo en vendor/linux-3.4.35/drivers/mmc/card: sdio_wifi.c
+Los archivos vendor/linux-3.4.35-vanilla/drivers/mmc/core/core.c y vendor/linux-3.4.35/drivers/mmc/core/core.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/mmc/core/host.c y vendor/linux-3.4.35/drivers/mmc/core/host.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/mmc/core/Kconfig y vendor/linux-3.4.35/drivers/mmc/core/Kconfig son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/mmc/core/sd.c y vendor/linux-3.4.35/drivers/mmc/core/sd.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/mmc/core/sdio_bus.c y vendor/linux-3.4.35/drivers/mmc/core/sdio_bus.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/mmc/core/sdio.c y vendor/linux-3.4.35/drivers/mmc/core/sdio.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/mmc/core/sdio_io.c y vendor/linux-3.4.35/drivers/mmc/core/sdio_io.c son distintos
+Sólo en vendor/linux-3.4.35/drivers/mmc/host: akmci.c
+Los archivos vendor/linux-3.4.35-vanilla/drivers/mmc/host/Kconfig y vendor/linux-3.4.35/drivers/mmc/host/Kconfig son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/mmc/host/Makefile y vendor/linux-3.4.35/drivers/mmc/host/Makefile son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/mmc/host/sdhci.c y vendor/linux-3.4.35/drivers/mmc/host/sdhci.c son distintos
+Sólo en vendor/linux-3.4.35/drivers/mtd: akfha_char.c
+Sólo en vendor/linux-3.4.35/drivers/mtd/devices: ak_spiflash.c
+Los archivos vendor/linux-3.4.35-vanilla/drivers/mtd/devices/Kconfig y vendor/linux-3.4.35/drivers/mtd/devices/Kconfig son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/mtd/devices/Makefile y vendor/linux-3.4.35/drivers/mtd/devices/Makefile son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/mtd/Makefile y vendor/linux-3.4.35/drivers/mtd/Makefile son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/mtd/mtdchar.c y vendor/linux-3.4.35/drivers/mtd/mtdchar.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/mtd/nand/Kconfig y vendor/linux-3.4.35/drivers/mtd/nand/Kconfig son distintos
+Sólo en vendor/linux-3.4.35/drivers/net/ethernet: ak-ethernet
+Los archivos vendor/linux-3.4.35-vanilla/drivers/net/ethernet/Kconfig y vendor/linux-3.4.35/drivers/net/ethernet/Kconfig son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/net/ethernet/Makefile y vendor/linux-3.4.35/drivers/net/ethernet/Makefile son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/net/ppp/Kconfig y vendor/linux-3.4.35/drivers/net/ppp/Kconfig son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/net/ppp/Makefile y vendor/linux-3.4.35/drivers/net/ppp/Makefile son distintos
+Sólo en vendor/linux-3.4.35/drivers/net/ppp: pppolac.c
+Sólo en vendor/linux-3.4.35/drivers/net/ppp: pppopns.c
+Los archivos vendor/linux-3.4.35-vanilla/drivers/net/tun.c y vendor/linux-3.4.35/drivers/net/tun.c son distintos
+Sólo en vendor/linux-3.4.35/drivers/net/wireless: bcmdhd
+Los archivos vendor/linux-3.4.35-vanilla/drivers/net/wireless/Kconfig y vendor/linux-3.4.35/drivers/net/wireless/Kconfig son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/net/wireless/Makefile y vendor/linux-3.4.35/drivers/net/wireless/Makefile son distintos
+Sólo en vendor/linux-3.4.35/drivers/power: android_battery.c
+Los archivos vendor/linux-3.4.35-vanilla/drivers/power/Kconfig y vendor/linux-3.4.35/drivers/power/Kconfig son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/power/Makefile y vendor/linux-3.4.35/drivers/power/Makefile son distintos
+Sólo en vendor/linux-3.4.35/drivers/power: plat-anyka
+Los archivos vendor/linux-3.4.35-vanilla/drivers/power/power_supply_core.c y vendor/linux-3.4.35/drivers/power/power_supply_core.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/power/power_supply_sysfs.c y vendor/linux-3.4.35/drivers/power/power_supply_sysfs.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/power/smb347-charger.c y vendor/linux-3.4.35/drivers/power/smb347-charger.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/rtc/Kconfig y vendor/linux-3.4.35/drivers/rtc/Kconfig son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/rtc/Makefile y vendor/linux-3.4.35/drivers/rtc/Makefile son distintos
+Sólo en vendor/linux-3.4.35/drivers/rtc: plat-anyka
+Los archivos vendor/linux-3.4.35-vanilla/drivers/scsi/Kconfig y vendor/linux-3.4.35/drivers/scsi/Kconfig son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/spi/Kconfig y vendor/linux-3.4.35/drivers/spi/Kconfig son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/spi/Makefile y vendor/linux-3.4.35/drivers/spi/Makefile son distintos
+Sólo en vendor/linux-3.4.35/drivers/spi: spi-anyka.c
+Sólo en vendor/linux-3.4.35/drivers/spi: spi-anyka-slave.c
+Los archivos vendor/linux-3.4.35-vanilla/drivers/spi/spi-bitbang.c y vendor/linux-3.4.35/drivers/spi/spi-bitbang.c son distintos
+Sólo en vendor/linux-3.4.35-vanilla/drivers/staging/android: alarm.c
+Los archivos vendor/linux-3.4.35-vanilla/drivers/staging/android/alarm-dev.c y vendor/linux-3.4.35/drivers/staging/android/alarm-dev.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/staging/android/android_alarm.h y vendor/linux-3.4.35/drivers/staging/android/android_alarm.h son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/staging/android/ashmem.c y vendor/linux-3.4.35/drivers/staging/android/ashmem.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/staging/android/binder.c y vendor/linux-3.4.35/drivers/staging/android/binder.c son distintos
+Sólo en vendor/linux-3.4.35/drivers/staging/android: binder_trace.h
+Los archivos vendor/linux-3.4.35-vanilla/drivers/staging/android/Kconfig y vendor/linux-3.4.35/drivers/staging/android/Kconfig son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/staging/android/logger.c y vendor/linux-3.4.35/drivers/staging/android/logger.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/staging/android/logger.h y vendor/linux-3.4.35/drivers/staging/android/logger.h son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/staging/android/lowmemorykiller.c y vendor/linux-3.4.35/drivers/staging/android/lowmemorykiller.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/staging/android/Makefile y vendor/linux-3.4.35/drivers/staging/android/Makefile son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/staging/android/persistent_ram.c y vendor/linux-3.4.35/drivers/staging/android/persistent_ram.c son distintos
+Sólo en vendor/linux-3.4.35-vanilla/drivers/staging/android: persistent_ram.h
+Los archivos vendor/linux-3.4.35-vanilla/drivers/staging/android/ram_console.c y vendor/linux-3.4.35/drivers/staging/android/ram_console.c son distintos
+Sólo en vendor/linux-3.4.35-vanilla/drivers/staging/android: TODO
+Sólo en vendor/linux-3.4.35/drivers/staging/android: trace_persistent.c
+Los archivos vendor/linux-3.4.35-vanilla/drivers/staging/iio/industrialio-event.c y vendor/linux-3.4.35/drivers/staging/iio/industrialio-event.c son distintos
+Sólo en vendor/linux-3.4.35/drivers: switch
+Sólo en vendor/linux-3.4.35/drivers/tty/serial: ak39_uart.c
+Sólo en vendor/linux-3.4.35/drivers/tty/serial: ak39_uart.h
+Sólo en vendor/linux-3.4.35/drivers/tty/serial: gpio_uart.c
+Los archivos vendor/linux-3.4.35-vanilla/drivers/tty/serial/Kconfig y vendor/linux-3.4.35/drivers/tty/serial/Kconfig son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/tty/serial/Makefile y vendor/linux-3.4.35/drivers/tty/serial/Makefile son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/tty/serial/samsung.c y vendor/linux-3.4.35/drivers/tty/serial/samsung.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/tty/serial/serial_core.c y vendor/linux-3.4.35/drivers/tty/serial/serial_core.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/uio/Kconfig y vendor/linux-3.4.35/drivers/uio/Kconfig son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/uio/Makefile y vendor/linux-3.4.35/drivers/uio/Makefile son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/uio/uio.c y vendor/linux-3.4.35/drivers/uio/uio.c son distintos
+Sólo en vendor/linux-3.4.35/drivers/uio: uio_video_codec.c
+Los archivos vendor/linux-3.4.35-vanilla/drivers/usb/core/hub.c y vendor/linux-3.4.35/drivers/usb/core/hub.c son distintos
+Sólo en vendor/linux-3.4.35/drivers/usb/gadget: android.c
+Los archivos vendor/linux-3.4.35-vanilla/drivers/usb/gadget/composite.c y vendor/linux-3.4.35/drivers/usb/gadget/composite.c son distintos
+Sólo en vendor/linux-3.4.35/drivers/usb/gadget: f_accessory.c
+Sólo en vendor/linux-3.4.35/drivers/usb/gadget: f_adb.c
+Sólo en vendor/linux-3.4.35/drivers/usb/gadget: f_audio_source.c
+Los archivos vendor/linux-3.4.35-vanilla/drivers/usb/gadget/f_fs.c y vendor/linux-3.4.35/drivers/usb/gadget/f_fs.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/usb/gadget/file_storage.c y vendor/linux-3.4.35/drivers/usb/gadget/file_storage.c son distintos
+Sólo en vendor/linux-3.4.35/drivers/usb/gadget: f_mtp.c
+Los archivos vendor/linux-3.4.35-vanilla/drivers/usb/gadget/f_rndis.c y vendor/linux-3.4.35/drivers/usb/gadget/f_rndis.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/usb/gadget/gadget_chips.h y vendor/linux-3.4.35/drivers/usb/gadget/gadget_chips.h son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/usb/gadget/Kconfig y vendor/linux-3.4.35/drivers/usb/gadget/Kconfig son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/usb/gadget/Makefile y vendor/linux-3.4.35/drivers/usb/gadget/Makefile son distintos
+Sólo en vendor/linux-3.4.35/drivers/usb/gadget: plat-anyka
+Los archivos vendor/linux-3.4.35-vanilla/drivers/usb/gadget/rndis.c y vendor/linux-3.4.35/drivers/usb/gadget/rndis.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/usb/gadget/u_ether.c y vendor/linux-3.4.35/drivers/usb/gadget/u_ether.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/usb/gadget/u_ether.h y vendor/linux-3.4.35/drivers/usb/gadget/u_ether.h son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/usb/gadget/u_serial.c y vendor/linux-3.4.35/drivers/usb/gadget/u_serial.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/usb/host/Kconfig y vendor/linux-3.4.35/drivers/usb/host/Kconfig son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/usb/host/Makefile y vendor/linux-3.4.35/drivers/usb/host/Makefile son distintos
+Sólo en vendor/linux-3.4.35/drivers/usb/host: plat-anyka
+Los archivos vendor/linux-3.4.35-vanilla/drivers/usb/Makefile y vendor/linux-3.4.35/drivers/usb/Makefile son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/usb/otg/Kconfig y vendor/linux-3.4.35/drivers/usb/otg/Kconfig son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/usb/otg/Makefile y vendor/linux-3.4.35/drivers/usb/otg/Makefile son distintos
+Sólo en vendor/linux-3.4.35/drivers/usb/otg: otg-wakelock.c
+Los archivos vendor/linux-3.4.35-vanilla/drivers/video/Kconfig y vendor/linux-3.4.35/drivers/video/Kconfig son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/w1/masters/ds2482.c y vendor/linux-3.4.35/drivers/w1/masters/ds2482.c son distintos
+Sólo en vendor/linux-3.4.35/drivers/watchdog: ak39_wdt.c
+Los archivos vendor/linux-3.4.35-vanilla/drivers/watchdog/Kconfig y vendor/linux-3.4.35/drivers/watchdog/Kconfig son distintos
+Los archivos vendor/linux-3.4.35-vanilla/drivers/watchdog/Makefile y vendor/linux-3.4.35/drivers/watchdog/Makefile son distintos
+Los archivos vendor/linux-3.4.35-vanilla/fs/ecryptfs/main.c y vendor/linux-3.4.35/fs/ecryptfs/main.c son distintos
+Sólo en vendor/linux-3.4.35/fs/ecryptfs: main.c.orig
+Los archivos vendor/linux-3.4.35-vanilla/fs/eventpoll.c y vendor/linux-3.4.35/fs/eventpoll.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/fs/ext4/ialloc.c y vendor/linux-3.4.35/fs/ext4/ialloc.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/fs/fat/dir.c y vendor/linux-3.4.35/fs/fat/dir.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/fs/fat/fat.h y vendor/linux-3.4.35/fs/fat/fat.h son distintos
+Los archivos vendor/linux-3.4.35-vanilla/fs/fat/inode.c y vendor/linux-3.4.35/fs/fat/inode.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/fs/fs-writeback.c y vendor/linux-3.4.35/fs/fs-writeback.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/fs/fuse/dev.c y vendor/linux-3.4.35/fs/fuse/dev.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/fs/jffs2/file.c y vendor/linux-3.4.35/fs/jffs2/file.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/fs/jffs2/readinode.c y vendor/linux-3.4.35/fs/jffs2/readinode.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/fs/jffs2/super.c y vendor/linux-3.4.35/fs/jffs2/super.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/fs/jffs2/wbuf.c y vendor/linux-3.4.35/fs/jffs2/wbuf.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/fs/jffs2/write.c y vendor/linux-3.4.35/fs/jffs2/write.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/fs/Kconfig y vendor/linux-3.4.35/fs/Kconfig son distintos
+Los archivos vendor/linux-3.4.35-vanilla/fs/Makefile y vendor/linux-3.4.35/fs/Makefile son distintos
+Los archivos vendor/linux-3.4.35-vanilla/fs/namei.c y vendor/linux-3.4.35/fs/namei.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/fs/namespace.c y vendor/linux-3.4.35/fs/namespace.c son distintos
+Sólo en vendor/linux-3.4.35/fs: namespace.c.orig
+Los archivos vendor/linux-3.4.35-vanilla/fs/open.c y vendor/linux-3.4.35/fs/open.c son distintos
+Sólo en vendor/linux-3.4.35/fs: overlayfs
+Los archivos vendor/linux-3.4.35-vanilla/fs/proc/base.c y vendor/linux-3.4.35/fs/proc/base.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/fs/splice.c y vendor/linux-3.4.35/fs/splice.c son distintos
+Sólo en vendor/linux-3.4.35/fs: splice.c.orig
+Sólo en vendor/linux-3.4.35/fs: yaffs2
+Sólo en vendor/linux-3.4.35/include/linux: akm8975.h
+Sólo en vendor/linux-3.4.35/include/linux: akuio_driver.h
+Los archivos vendor/linux-3.4.35-vanilla/include/linux/alarmtimer.h y vendor/linux-3.4.35/include/linux/alarmtimer.h son distintos
+Los archivos vendor/linux-3.4.35-vanilla/include/linux/amba/mmci.h y vendor/linux-3.4.35/include/linux/amba/mmci.h son distintos
+Sólo en vendor/linux-3.4.35/include/linux: android_aid.h
+Los archivos vendor/linux-3.4.35-vanilla/include/linux/capability.h y vendor/linux-3.4.35/include/linux/capability.h son distintos
+Los archivos vendor/linux-3.4.35-vanilla/include/linux/cgroup.h y vendor/linux-3.4.35/include/linux/cgroup.h son distintos
+Los archivos vendor/linux-3.4.35-vanilla/include/linux/cpufreq.h y vendor/linux-3.4.35/include/linux/cpufreq.h son distintos
+Los archivos vendor/linux-3.4.35-vanilla/include/linux/cpu.h y vendor/linux-3.4.35/include/linux/cpu.h son distintos
+Los archivos vendor/linux-3.4.35-vanilla/include/linux/cpuidle.h y vendor/linux-3.4.35/include/linux/cpuidle.h son distintos
+Los archivos vendor/linux-3.4.35-vanilla/include/linux/dma-buf.h y vendor/linux-3.4.35/include/linux/dma-buf.h son distintos
+Los archivos vendor/linux-3.4.35-vanilla/include/linux/eventpoll.h y vendor/linux-3.4.35/include/linux/eventpoll.h son distintos
+Los archivos vendor/linux-3.4.35-vanilla/include/linux/freezer.h y vendor/linux-3.4.35/include/linux/freezer.h son distintos
+Los archivos vendor/linux-3.4.35-vanilla/include/linux/fs.h y vendor/linux-3.4.35/include/linux/fs.h son distintos
+Sólo en vendor/linux-3.4.35/include/linux: fs.h.orig
+Sólo en vendor/linux-3.4.35/include/linux: gpio_event.h
+Los archivos vendor/linux-3.4.35-vanilla/include/linux/hid.h y vendor/linux-3.4.35/include/linux/hid.h son distintos
+Sólo en vendor/linux-3.4.35/include/linux: if_pppolac.h
+Sólo en vendor/linux-3.4.35/include/linux: if_pppopns.h
+Los archivos vendor/linux-3.4.35-vanilla/include/linux/if_pppox.h y vendor/linux-3.4.35/include/linux/if_pppox.h son distintos
+Sólo en vendor/linux-3.4.35/include/linux/input: akmatrix_keypad.h
+Los archivos vendor/linux-3.4.35-vanilla/include/linux/input.h y vendor/linux-3.4.35/include/linux/input.h son distintos
+Sólo en vendor/linux-3.4.35/include/linux: ion.h
+Los archivos vendor/linux-3.4.35-vanilla/include/linux/Kbuild y vendor/linux-3.4.35/include/linux/Kbuild son distintos
+Los archivos vendor/linux-3.4.35-vanilla/include/linux/kernel.h y vendor/linux-3.4.35/include/linux/kernel.h son distintos
+Sólo en vendor/linux-3.4.35/include/linux: keychord.h
+Sólo en vendor/linux-3.4.35/include/linux: keyreset.h
+Los archivos vendor/linux-3.4.35-vanilla/include/linux/mmc/core.h y vendor/linux-3.4.35/include/linux/mmc/core.h son distintos
+Los archivos vendor/linux-3.4.35-vanilla/include/linux/mmc/host.h y vendor/linux-3.4.35/include/linux/mmc/host.h son distintos
+Los archivos vendor/linux-3.4.35-vanilla/include/linux/mmc/pm.h y vendor/linux-3.4.35/include/linux/mmc/pm.h son distintos
+Los archivos vendor/linux-3.4.35-vanilla/include/linux/mmc/sdio_func.h y vendor/linux-3.4.35/include/linux/mmc/sdio_func.h son distintos
+Los archivos vendor/linux-3.4.35-vanilla/include/linux/mm.h y vendor/linux-3.4.35/include/linux/mm.h son distintos
+Los archivos vendor/linux-3.4.35-vanilla/include/linux/mount.h y vendor/linux-3.4.35/include/linux/mount.h son distintos
+Los archivos vendor/linux-3.4.35-vanilla/include/linux/msdos_fs.h y vendor/linux-3.4.35/include/linux/msdos_fs.h son distintos
+Los archivos vendor/linux-3.4.35-vanilla/include/linux/mtd/mtd.h y vendor/linux-3.4.35/include/linux/mtd/mtd.h son distintos
+Los archivos vendor/linux-3.4.35-vanilla/include/linux/netfilter/xt_IDLETIMER.h y vendor/linux-3.4.35/include/linux/netfilter/xt_IDLETIMER.h son distintos
+Sólo en vendor/linux-3.4.35/include/linux/netfilter: xt_qtaguid.h
+Sólo en vendor/linux-3.4.35/include/linux/netfilter: xt_quota2.h
+Los archivos vendor/linux-3.4.35-vanilla/include/linux/netfilter/xt_socket.h y vendor/linux-3.4.35/include/linux/netfilter/xt_socket.h son distintos
+Los archivos vendor/linux-3.4.35-vanilla/include/linux/nmi.h y vendor/linux-3.4.35/include/linux/nmi.h son distintos
+Sólo en vendor/linux-3.4.35/include/linux: persistent_ram.h
+Sólo en vendor/linux-3.4.35/include/linux/platform_data: android_battery.h
+Sólo en vendor/linux-3.4.35/include/linux/platform_data: ds2482.h
+Los archivos vendor/linux-3.4.35-vanilla/include/linux/pm_domain.h y vendor/linux-3.4.35/include/linux/pm_domain.h son distintos
+Los archivos vendor/linux-3.4.35-vanilla/include/linux/pm.h y vendor/linux-3.4.35/include/linux/pm.h son distintos
+Los archivos vendor/linux-3.4.35-vanilla/include/linux/pm_runtime.h y vendor/linux-3.4.35/include/linux/pm_runtime.h son distintos
+Los archivos vendor/linux-3.4.35-vanilla/include/linux/pm_wakeup.h y vendor/linux-3.4.35/include/linux/pm_wakeup.h son distintos
+Los archivos vendor/linux-3.4.35-vanilla/include/linux/power/smb347-charger.h y vendor/linux-3.4.35/include/linux/power/smb347-charger.h son distintos
+Los archivos vendor/linux-3.4.35-vanilla/include/linux/power_supply.h y vendor/linux-3.4.35/include/linux/power_supply.h son distintos
+Los archivos vendor/linux-3.4.35-vanilla/include/linux/sched.h y vendor/linux-3.4.35/include/linux/sched.h son distintos
+Los archivos vendor/linux-3.4.35-vanilla/include/linux/security.h y vendor/linux-3.4.35/include/linux/security.h son distintos
+Los archivos vendor/linux-3.4.35-vanilla/include/linux/serial_core.h y vendor/linux-3.4.35/include/linux/serial_core.h son distintos
+Los archivos vendor/linux-3.4.35-vanilla/include/linux/sockios.h y vendor/linux-3.4.35/include/linux/sockios.h son distintos
+Los archivos vendor/linux-3.4.35-vanilla/include/linux/spi/flash.h y vendor/linux-3.4.35/include/linux/spi/flash.h son distintos
+Los archivos vendor/linux-3.4.35-vanilla/include/linux/spi/spi.h y vendor/linux-3.4.35/include/linux/spi/spi.h son distintos
+Los archivos vendor/linux-3.4.35-vanilla/include/linux/suspend.h y vendor/linux-3.4.35/include/linux/suspend.h son distintos
+Sólo en vendor/linux-3.4.35/include/linux: switch.h
+Sólo en vendor/linux-3.4.35/include/linux: sw_sync.h
+Sólo en vendor/linux-3.4.35/include/linux: synaptics_i2c_rmi.h
+Sólo en vendor/linux-3.4.35/include/linux: sync.h
+Sólo en vendor/linux-3.4.35/include/linux: uhid.h
+Sólo en vendor/linux-3.4.35/include/linux: uid_stat.h
+Los archivos vendor/linux-3.4.35-vanilla/include/linux/uio_driver.h y vendor/linux-3.4.35/include/linux/uio_driver.h son distintos
+Los archivos vendor/linux-3.4.35-vanilla/include/linux/usb/composite.h y vendor/linux-3.4.35/include/linux/usb/composite.h son distintos
+Sólo en vendor/linux-3.4.35/include/linux/usb: f_accessory.h
+Sólo en vendor/linux-3.4.35/include/linux/usb: f_mtp.h
+Los archivos vendor/linux-3.4.35-vanilla/include/linux/videodev2.h y vendor/linux-3.4.35/include/linux/videodev2.h son distintos
+Sólo en vendor/linux-3.4.35/include/linux: wakelock.h
+Sólo en vendor/linux-3.4.35/include/linux: wifi_tiwlan.h
+Sólo en vendor/linux-3.4.35/include/linux: wl127x-rfkill.h
+Sólo en vendor/linux-3.4.35/include/linux: wlan_plat.h
+Sólo en vendor/linux-3.4.35/include: mach-anyka
+Sólo en vendor/linux-3.4.35/include/net: activity_stats.h
+Los archivos vendor/linux-3.4.35-vanilla/include/net/bluetooth/hci_core.h y vendor/linux-3.4.35/include/net/bluetooth/hci_core.h son distintos
+Los archivos vendor/linux-3.4.35-vanilla/include/net/bluetooth/hci.h y vendor/linux-3.4.35/include/net/bluetooth/hci.h son distintos
+Los archivos vendor/linux-3.4.35-vanilla/include/net/bluetooth/sco.h y vendor/linux-3.4.35/include/net/bluetooth/sco.h son distintos
+Los archivos vendor/linux-3.4.35-vanilla/include/net/tcp.h y vendor/linux-3.4.35/include/net/tcp.h son distintos
+Sólo en vendor/linux-3.4.35/include: plat-anyka
+Los archivos vendor/linux-3.4.35-vanilla/include/scsi/scsi.h y vendor/linux-3.4.35/include/scsi/scsi.h son distintos
+Sólo en vendor/linux-3.4.35/include/sound: ak_pcm.h
+Los archivos vendor/linux-3.4.35-vanilla/include/sound/soc-dapm.h y vendor/linux-3.4.35/include/sound/soc-dapm.h son distintos
+Los archivos vendor/linux-3.4.35-vanilla/include/sound/soc.h y vendor/linux-3.4.35/include/sound/soc.h son distintos
+Sólo en vendor/linux-3.4.35/include/trace/events: cpufreq_interactive.h
+Sólo en vendor/linux-3.4.35/include/trace/events: gpu.h
+Los archivos vendor/linux-3.4.35-vanilla/include/trace/events/power.h y vendor/linux-3.4.35/include/trace/events/power.h son distintos
+Sólo en vendor/linux-3.4.35/include/trace/events: sync.h
+Los archivos vendor/linux-3.4.35-vanilla/init/Kconfig y vendor/linux-3.4.35/init/Kconfig son distintos
+Los archivos vendor/linux-3.4.35-vanilla/kernel/cgroup.c y vendor/linux-3.4.35/kernel/cgroup.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/kernel/cpu.c y vendor/linux-3.4.35/kernel/cpu.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/kernel/debug/debug_core.c y vendor/linux-3.4.35/kernel/debug/debug_core.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/kernel/debug/kdb/kdb_io.c y vendor/linux-3.4.35/kernel/debug/kdb/kdb_io.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/kernel/fork.c y vendor/linux-3.4.35/kernel/fork.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/kernel/irq/pm.c y vendor/linux-3.4.35/kernel/irq/pm.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/kernel/panic.c y vendor/linux-3.4.35/kernel/panic.c son distintos
+Sólo en vendor/linux-3.4.35/kernel/power: autosleep.c
+Los archivos vendor/linux-3.4.35-vanilla/kernel/power/hibernate.c y vendor/linux-3.4.35/kernel/power/hibernate.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/kernel/power/Kconfig y vendor/linux-3.4.35/kernel/power/Kconfig son distintos
+Los archivos vendor/linux-3.4.35-vanilla/kernel/power/main.c y vendor/linux-3.4.35/kernel/power/main.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/kernel/power/Makefile y vendor/linux-3.4.35/kernel/power/Makefile son distintos
+Los archivos vendor/linux-3.4.35-vanilla/kernel/power/power.h y vendor/linux-3.4.35/kernel/power/power.h son distintos
+Los archivos vendor/linux-3.4.35-vanilla/kernel/power/suspend.c y vendor/linux-3.4.35/kernel/power/suspend.c son distintos
+Sólo en vendor/linux-3.4.35/kernel/power: suspend_time.c
+Los archivos vendor/linux-3.4.35-vanilla/kernel/power/swap.c y vendor/linux-3.4.35/kernel/power/swap.c son distintos
+Sólo en vendor/linux-3.4.35/kernel/power: wakelock.c
+Los archivos vendor/linux-3.4.35-vanilla/kernel/printk.c y vendor/linux-3.4.35/kernel/printk.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/kernel/sched/core.c y vendor/linux-3.4.35/kernel/sched/core.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/kernel/sched/rt.c y vendor/linux-3.4.35/kernel/sched/rt.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/kernel/signal.c y vendor/linux-3.4.35/kernel/signal.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/kernel/sysctl.c y vendor/linux-3.4.35/kernel/sysctl.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/kernel/time/alarmtimer.c y vendor/linux-3.4.35/kernel/time/alarmtimer.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/kernel/time/timekeeping.c y vendor/linux-3.4.35/kernel/time/timekeeping.c son distintos
+Sólo en vendor/linux-3.4.35/kernel/trace: gpu-traces.c
+Los archivos vendor/linux-3.4.35-vanilla/kernel/trace/Kconfig y vendor/linux-3.4.35/kernel/trace/Kconfig son distintos
+Los archivos vendor/linux-3.4.35-vanilla/kernel/trace/Makefile y vendor/linux-3.4.35/kernel/trace/Makefile son distintos
+Los archivos vendor/linux-3.4.35-vanilla/kernel/trace/trace.c y vendor/linux-3.4.35/kernel/trace/trace.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/kernel/trace/trace_functions_graph.c y vendor/linux-3.4.35/kernel/trace/trace_functions_graph.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/kernel/trace/trace.h y vendor/linux-3.4.35/kernel/trace/trace.h son distintos
+Los archivos vendor/linux-3.4.35-vanilla/kernel/trace/trace_output.c y vendor/linux-3.4.35/kernel/trace/trace_output.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/kernel/watchdog.c y vendor/linux-3.4.35/kernel/watchdog.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/lib/Kconfig.debug y vendor/linux-3.4.35/lib/Kconfig.debug son distintos
+Los archivos vendor/linux-3.4.35-vanilla/MAINTAINERS y vendor/linux-3.4.35/MAINTAINERS son distintos
+Los archivos vendor/linux-3.4.35-vanilla/Makefile y vendor/linux-3.4.35/Makefile son distintos
+Los archivos vendor/linux-3.4.35-vanilla/mm/page_alloc.c y vendor/linux-3.4.35/mm/page_alloc.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/mm/shmem.c y vendor/linux-3.4.35/mm/shmem.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/mm/vmscan.c y vendor/linux-3.4.35/mm/vmscan.c son distintos
+Sólo en vendor/linux-3.4.35/net: activity_stats.c
+Los archivos vendor/linux-3.4.35-vanilla/net/bluetooth/af_bluetooth.c y vendor/linux-3.4.35/net/bluetooth/af_bluetooth.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/net/bluetooth/hci_conn.c y vendor/linux-3.4.35/net/bluetooth/hci_conn.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/net/bluetooth/hci_event.c y vendor/linux-3.4.35/net/bluetooth/hci_event.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/net/bluetooth/l2cap_core.c y vendor/linux-3.4.35/net/bluetooth/l2cap_core.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/net/bluetooth/mgmt.c y vendor/linux-3.4.35/net/bluetooth/mgmt.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/net/bluetooth/rfcomm/core.c y vendor/linux-3.4.35/net/bluetooth/rfcomm/core.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/net/bluetooth/sco.c y vendor/linux-3.4.35/net/bluetooth/sco.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/net/bridge/br_device.c y vendor/linux-3.4.35/net/bridge/br_device.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/net/ipv4/af_inet.c y vendor/linux-3.4.35/net/ipv4/af_inet.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/net/ipv4/devinet.c y vendor/linux-3.4.35/net/ipv4/devinet.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/net/ipv4/Makefile y vendor/linux-3.4.35/net/ipv4/Makefile son distintos
+Los archivos vendor/linux-3.4.35-vanilla/net/ipv4/netfilter/ipt_REJECT.c y vendor/linux-3.4.35/net/ipv4/netfilter/ipt_REJECT.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/net/ipv4/netfilter/Kconfig y vendor/linux-3.4.35/net/ipv4/netfilter/Kconfig son distintos
+Sólo en vendor/linux-3.4.35/net/ipv4: sysfs_net_ipv4.c
+Los archivos vendor/linux-3.4.35-vanilla/net/ipv4/tcp.c y vendor/linux-3.4.35/net/ipv4/tcp.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/net/ipv6/af_inet6.c y vendor/linux-3.4.35/net/ipv6/af_inet6.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/net/ipv6/netfilter/ip6_tables.c y vendor/linux-3.4.35/net/ipv6/netfilter/ip6_tables.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/net/ipv6/netfilter/ip6t_REJECT.c y vendor/linux-3.4.35/net/ipv6/netfilter/ip6t_REJECT.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/net/ipv6/netfilter/Kconfig y vendor/linux-3.4.35/net/ipv6/netfilter/Kconfig son distintos
+Los archivos vendor/linux-3.4.35-vanilla/net/ipv6/route.c y vendor/linux-3.4.35/net/ipv6/route.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/net/Kconfig y vendor/linux-3.4.35/net/Kconfig son distintos
+Los archivos vendor/linux-3.4.35-vanilla/net/Makefile y vendor/linux-3.4.35/net/Makefile son distintos
+Los archivos vendor/linux-3.4.35-vanilla/net/netfilter/Kconfig y vendor/linux-3.4.35/net/netfilter/Kconfig son distintos
+Los archivos vendor/linux-3.4.35-vanilla/net/netfilter/Makefile y vendor/linux-3.4.35/net/netfilter/Makefile son distintos
+Los archivos vendor/linux-3.4.35-vanilla/net/netfilter/xt_IDLETIMER.c y vendor/linux-3.4.35/net/netfilter/xt_IDLETIMER.c son distintos
+Sólo en vendor/linux-3.4.35/net/netfilter: xt_qtaguid.c
+Sólo en vendor/linux-3.4.35/net/netfilter: xt_qtaguid_internal.h
+Sólo en vendor/linux-3.4.35/net/netfilter: xt_qtaguid_print.c
+Sólo en vendor/linux-3.4.35/net/netfilter: xt_qtaguid_print.h
+Sólo en vendor/linux-3.4.35/net/netfilter: xt_quota2.c
+Los archivos vendor/linux-3.4.35-vanilla/net/netfilter/xt_socket.c y vendor/linux-3.4.35/net/netfilter/xt_socket.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/net/rfkill/core.c y vendor/linux-3.4.35/net/rfkill/core.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/net/rfkill/Kconfig y vendor/linux-3.4.35/net/rfkill/Kconfig son distintos
+Los archivos vendor/linux-3.4.35-vanilla/net/wireless/Kconfig y vendor/linux-3.4.35/net/wireless/Kconfig son distintos
+Los archivos vendor/linux-3.4.35-vanilla/net/wireless/scan.c y vendor/linux-3.4.35/net/wireless/scan.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/net/wireless/sme.c y vendor/linux-3.4.35/net/wireless/sme.c son distintos
+Sólo en vendor/linux-3.4.35/samples: uhid
+Los archivos vendor/linux-3.4.35-vanilla/security/capability.c y vendor/linux-3.4.35/security/capability.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/security/commoncap.c y vendor/linux-3.4.35/security/commoncap.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/security/security.c y vendor/linux-3.4.35/security/security.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/security/selinux/hooks.c y vendor/linux-3.4.35/security/selinux/hooks.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/security/selinux/include/classmap.h y vendor/linux-3.4.35/security/selinux/include/classmap.h son distintos
+Sólo en vendor/linux-3.4.35/sound/arm: ak39_codec.c
+Sólo en vendor/linux-3.4.35/sound/arm: ak_pcm.c
+Los archivos vendor/linux-3.4.35-vanilla/sound/arm/Kconfig y vendor/linux-3.4.35/sound/arm/Kconfig son distintos
+Los archivos vendor/linux-3.4.35-vanilla/sound/arm/Makefile y vendor/linux-3.4.35/sound/arm/Makefile son distintos
+Los archivos vendor/linux-3.4.35-vanilla/sound/soc/soc-core.c y vendor/linux-3.4.35/sound/soc/soc-core.c son distintos
+Los archivos vendor/linux-3.4.35-vanilla/sound/soc/soc-dapm.c y vendor/linux-3.4.35/sound/soc/soc-dapm.c son distintos

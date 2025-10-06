@@ -1,0 +1,4095 @@
+1) Solo tracear las syscalls: open, ioctl, mmap, read, close, de los devices: /dev/{akgpio, ion, uio0, isp_char, video0, akpcm_cdev0, akpcm_cdev1}
+2) Si ioctl tiene size 0 no se dumpea arg, si tiene size > 0 entonces se dumpea `size' bytes de arg.
+3) Tracear hilos, mostrar PID delante de cada línea:
+[PID] [ts] syscall(args, ...) = ret
+[dump de arg] si fuera una llamada ioctl
+4) No mostrar log inútil, solo llamadas y dumps.
+5) No hace falta decodificar las syscalls, solo mostrar el valor hexadecimal de sus argumentos.
+6) Pensar que se hará replay del log, por lo que tiene que tener un formato fácil de parsear, claro y funcional.
+
+[1758734294.742337] open64('/proc/sys/vm/drop_caches',0x241) = 3 tag=DEV[0] rdev=0
+[1758734294.746943] dup2(3,1) = 1 tag=DEV[0]
+[1758734294.747220] DEV[0] close(3)
+[1758734294.775205] DEV[0] write(fd=1, buf=0x11c70, count=2) = 2
+[1758734294.780405] dup2(10,1) = 1 tag=DEV[0]
+[1758734294.780675] ? close(10)
+[1758734296.459205] open('/dev/akgpio',0x2) = 3 tag=DEV[0xa39] rdev=0xa39
+[1758734297.412418] open('/dev/ion',0x0) = 5 tag=ION rdev=0xa3e
+[1758734297.417138] ION ioctl(fd=5, request=0xc0144900 type=0x49('I') nr=0 dir=READ|WRITE size=20, arg=0x69c134)
+[1758734297.417606]   arg hexdump (size=20):
+    0000: 00 00 80 01 00 10 00 00 ff 00 00 00 03 00 00 00
+    0010: 00 00 00 00
+[1758734297.418826] ION ioctl -> 0 (errno=0)
+[1758734297.419147] ION ioctl(fd=5, request=0xc0084902 type=0x49('I') nr=2 dir=READ|WRITE size=8, arg=0x69c148)
+[1758734297.419570]   arg hexdump (size=8):
+    0000: c0 9d 81 c1 00 00 00 00
+[1758734297.420180] ION ioctl -> 0 (errno=0)
+[1758734297.421923] ? mmap(fd=7, len=25165824, prot=0x3, flags=0x1, off=0) = 0xb4d64000
+[1758734297.422680] open('/dev/uio0',0x2) = 8 tag=UIO rdev=0xfd00
+[1758734297.424801] open('/dev/isp_char',0x2) = 10 tag=ISP rdev=0xa3d
+[1758734297.496687] open('/dev/video0',0x802) = 11 tag=V4L2 rdev=0x5100
+[1758734297.500781] ISP ioctl(fd=10, request=0x40044902 type=0x49('I') nr=2 dir=WRITE size=4, arg=0x6b86c4)
+[1758734297.501263]   arg hexdump (size=4):
+    0000: 01 00 01 00
+[1758734297.501771] ISP ioctl -> 0 (errno=0)
+[1758734297.502087] ISP ioctl(fd=10, request=0x40044904 type=0x49('I') nr=4 dir=WRITE size=4, arg=0x6b877e)
+[1758734297.502584]   arg hexdump (size=4):
+    0000: 01 00 80 02
+[1758734297.503061] ISP ioctl -> 0 (errno=0)
+[1758734297.503363] ISP ioctl(fd=10, request=0x4004490a type=0x49('I') nr=10 dir=WRITE size=4, arg=0x6b883e)
+[1758734297.503803]   arg hexdump (size=4):
+    0000: 00 00 08 00
+[1758734297.504315] ISP ioctl -> 0 (errno=0)
+[1758734297.504610] ISP ioctl(fd=10, request=0x4004490c type=0x49('I') nr=12 dir=WRITE size=4, arg=0x6b8baa)
+[1758734297.505050]   arg hexdump (size=4):
+    0000: 01 00 00 00
+[1758734297.510786] ISP ioctl -> 0 (errno=0)
+[1758734297.511113] ISP ioctl(fd=10, request=0x4004492b type=0x49('I') nr=43 dir=WRITE size=4, arg=0x6b92a0)
+[1758734297.511547]   arg hexdump (size=4):
+    0000: 01 00 00 00
+[1758734297.512026] ISP ioctl -> 0 (errno=0)
+[1758734297.512324] ISP ioctl(fd=10, request=0x4004492f type=0x49('I') nr=47 dir=WRITE size=4, arg=0x6b9486)
+[1758734297.512759]   arg hexdump (size=4):
+    0000: 01 00 00 00
+[1758734297.513245] ISP ioctl -> 0 (errno=0)
+[1758734297.513538] ISP ioctl(fd=10, request=0x40044906 type=0x49('I') nr=6 dir=WRITE size=4, arg=0x6b98c6)
+[1758734297.514028]   arg hexdump (size=4):
+    0000: 01 00 01 00
+[1758734297.514499] ISP ioctl -> 0 (errno=0)
+[1758734297.514789] ISP ioctl(fd=10, request=0x4004490e type=0x49('I') nr=14 dir=WRITE size=4, arg=0x6b991c)
+[1758734297.515763]   arg hexdump (size=4):
+    0000: c0 00 00 00
+[1758734297.520853] ISP ioctl -> 0 (errno=0)
+[1758734297.521184] ISP ioctl(fd=10, request=0x4004491a type=0x49('I') nr=26 dir=WRITE size=4, arg=0x6b9932)
+[1758734297.521624]   arg hexdump (size=4):
+    0000: 00 00 1a 00
+[1758734297.522200] ISP ioctl -> 0 (errno=0)
+[1758734297.522528] ISP ioctl(fd=10, request=0x40044912 type=0x49('I') nr=18 dir=WRITE size=4, arg=0x6b9c9e)
+[1758734297.522964]   arg hexdump (size=4):
+    0000: 01 00 00 00
+[1758734297.523430] ISP ioctl -> 0 (errno=0)
+[1758734297.523728] ISP ioctl(fd=10, request=0x40044936 type=0x49('I') nr=54 dir=WRITE size=4, arg=0x6b9d26)
+[1758734297.524157]   arg hexdump (size=4):
+    0000: 00 00 07 00
+[1758734297.524616] ISP ioctl -> 0 (errno=0)
+[1758734297.524956] ISP ioctl(fd=10, request=0x4004491b type=0x49('I') nr=27 dir=WRITE size=4, arg=0x6b9d90)
+[1758734297.530467]   arg hexdump (size=4):
+    0000: 01 00 10 00
+[1758734297.531298] ISP ioctl -> 0 (errno=0)
+[1758734297.531854] ISP ioctl(fd=10, request=0x40044925 type=0x49('I') nr=37 dir=WRITE size=4, arg=0x6bc47e)
+[1758734297.532359]   arg hexdump (size=4):
+    0000: 01 00 01 00
+[1758734297.533049] ISP ioctl -> 0 (errno=0)
+[1758734297.533436] ISP ioctl(fd=10, request=0x40044927 type=0x49('I') nr=39 dir=WRITE size=4, arg=0x6befb4)
+[1758734297.533880]   arg hexdump (size=4):
+    0000: 08 00 02 00
+[1758734297.534359] ISP ioctl -> 0 (errno=0)
+[1758734297.534657] ISP ioctl(fd=10, request=0x4004493b type=0x49('I') nr=59 dir=WRITE size=4, arg=0x6befd6)
+[1758734297.535096]   arg hexdump (size=4):
+    0000: 01 00 01 00
+[1758734297.540798] ISP ioctl -> 0 (errno=0)
+[1758734297.541123] ISP ioctl(fd=10, request=0x40044939 type=0x49('I') nr=57 dir=WRITE size=4, arg=0x6bf0a4)
+[1758734297.541564]   arg hexdump (size=4):
+    0000: 01 00 40 00
+[1758734297.542084] ISP ioctl -> 0 (errno=0)
+[1758734297.542380] ISP ioctl(fd=10, request=0x4004493f type=0x49('I') nr=63 dir=WRITE size=4, arg=0x6bf0e4)
+[1758734297.542816]   arg hexdump (size=4):
+    0000: 00 00 0f 00
+[1758734297.543279] ISP ioctl -> 0 (errno=0)
+[1758734297.543576] ISP ioctl(fd=10, request=0x40044941 type=0x49('I') nr=65 dir=WRITE size=4, arg=0x6bf0ea)
+[1758734297.544006]   arg hexdump (size=4):
+    0000: 44 00 00 00
+[1758734297.544502] ISP ioctl -> 0 (errno=0)
+[1758734297.544805] ISP ioctl(fd=10, request=0x40044910 type=0x49('I') nr=16 dir=WRITE size=4, arg=0x6bf0f8)
+[1758734297.545575]   arg hexdump (size=4):
+    0000: 01 00 00 00
+[1758734297.546131] ISP ioctl -> 0 (errno=0)
+[1758734297.546447] ISP ioctl(fd=10, request=0x4004495e type=0x49('I') nr=94 dir=WRITE size=4, arg=0x6c0154)
+[1758734297.546887]   arg hexdump (size=4):
+    0000: 06 00 06 00
+[1758734297.547435] ISP ioctl -> 0 (errno=0)
+[1758734297.547745] ISP ioctl(fd=10, request=0x40044960 type=0x49('I') nr=96 dir=WRITE size=4, arg=0x6c0258)
+[1758734297.548180]   arg hexdump (size=4):
+    0000: 00 00 ff 04
+[1758734297.548649] ISP ioctl -> 0 (errno=0)
+[1758734297.548943] ISP ioctl(fd=10, request=0x40044953 type=0x49('I') nr=83 dir=WRITE size=4, arg=0x6c0286)
+[1758734297.549385]   arg hexdump (size=4):
+    0000: 01 00 9d 01
+[1758734297.549841] ISP ioctl -> 0 (errno=0)
+[1758734297.550174] ISP ioctl(fd=10, request=0x40044963 type=0x49('I') nr=99 dir=WRITE size=4, arg=0x6c0288)
+[1758734297.550622]   arg hexdump (size=4):
+    0000: 9d 01 00 01
+[1758734297.551073] ISP ioctl -> 0 (errno=0)
+[1758734297.551357] ISP ioctl(fd=10, request=0x40044955 type=0x49('I') nr=85 dir=WRITE size=4, arg=0x6c0294)
+[1758734297.551785]   arg hexdump (size=4):
+    0000: 0f 00 08 00
+[1758734297.552250] ISP ioctl -> 0 (errno=0)
+[1758734297.552550] ISP ioctl(fd=10, request=0x40044973 type=0x49('I') nr=115 dir=WRITE size=4, arg=0x6c034e)
+[1758734297.553043]   arg hexdump (size=4):
+    0000: 01 00 00 00
+[1758734297.553510] ISP ioctl -> 0 (errno=0)
+[1758734297.553810] ISP ioctl(fd=10, request=0x40044943 type=0x49('I') nr=67 dir=WRITE size=4, arg=0x6c0496)
+[1758734297.554250]   arg hexdump (size=4):
+    0000: 01 00 00 00
+[1758734297.554718] ISP ioctl -> 0 (errno=0)
+[1758734297.555000] ISP ioctl(fd=10, request=0x40044946 type=0x49('I') nr=70 dir=WRITE size=4, arg=0x6c0498)
+[1758734297.555701]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734297.556190] ISP ioctl -> 0 (errno=0)
+[1758734297.556492] ISP ioctl(fd=10, request=0x40044949 type=0x49('I') nr=73 dir=WRITE size=4, arg=0x6c049a)
+[1758734297.556917]   arg hexdump (size=4):
+    0000: 00 00 01 00
+[1758734297.557378] ISP ioctl -> 0 (errno=0)
+[1758734297.557656] ISP ioctl(fd=10, request=0x4004494c type=0x49('I') nr=76 dir=WRITE size=4, arg=0x6c049c)
+[1758734297.558091]   arg hexdump (size=4):
+    0000: 01 00 0f 00
+[1758734297.558611] ISP ioctl -> 0 (errno=0)
+[1758734297.558905] ISP ioctl(fd=10, request=0x4004494e type=0x49('I') nr=78 dir=WRITE size=4, arg=0x6c049e)
+[1758734297.559344]   arg hexdump (size=4):
+    0000: 0f 00 00 00
+[1758734297.559804] ISP ioctl -> 0 (errno=0)
+[1758734297.560087] ISP ioctl(fd=10, request=0x40044950 type=0x49('I') nr=80 dir=WRITE size=4, arg=0x6c04b6)
+[1758734297.560511]   arg hexdump (size=4):
+    0000: dc 05 00 00
+[1758734297.560966] ISP ioctl -> 0 (errno=0)
+[1758734297.561302] ISP ioctl(fd=10, request=0x8004494f type=0x49('I') nr=79 dir=READ size=4, arg=0xbef20930)
+[1758734297.561749]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734297.562204] ISP ioctl -> 0 (errno=0)
+[m[1758734297.566914] ISP ioctl(fd=10, request=0x4004497a type=0x49('I') nr=122 dir=WRITE size=4, arg=0xbef20904)
+[1758734297.567419]   arg hexdump (size=4):
+    0000: 0f 00 00 00
+[1758734297.573792] ISP ioctl -> 0 (errno=0)
+[1;33m[set_fps:185] set fps:15 ok
+[m[1758734297.575403] ISP ioctl(fd=10, request=0x4004496e type=0x49('I') nr=110 dir=WRITE size=4, arg=0x6c0586)
+[1758734297.575928]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734297.576423] ISP ioctl -> 0 (errno=0)
+[1758734297.576725] ISP ioctl(fd=10, request=0x40044975 type=0x49('I') nr=117 dir=WRITE size=4, arg=0x6c05a4)
+[1758734297.577169]   arg hexdump (size=4):
+    0000: 00 00 08 00
+[1758734297.577661] ISP ioctl -> 0 (errno=0)
+[1758734297.577960] ISP ioctl(fd=10, request=0x40044977 type=0x49('I') nr=119 dir=WRITE size=4, arg=0x6c06d6)
+[1758734297.578471]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734297.578975] ISP ioctl -> 0 (errno=0)
+[1758734297.579285] ISP ioctl(fd=10, request=0x40044969 type=0x49('I') nr=105 dir=WRITE size=4, arg=0xbef20988)
+[1758734297.579726]   arg hexdump (size=4):
+    0000: 4a 00 00 00
+[1758734297.615899] ISP ioctl -> 0 (errno=0)
+[1758734297.619490] V4L2 ioctl(fd=11, request=0xc02c563a type=0x56('V') nr=58 dir=READ|WRITE size=44, arg=0xbef209a4)
+[1758734297.620063]   arg hexdump (size=44):
+    0000: 01 00 00 00 00 83 6b 00 b4 82 6b 00 b0 15 03 00
+    0010: 8b 4b 51 00 42 47 51 00 41 02 00 00 00 00 00 00
+    0020: 01 00 00 00 3c 11 dc b6 d8 6c 67 00
+[1758734297.622010] V4L2 ioctl -> 0 (errno=0)
+[1758734297.622872] ISP ioctl(fd=10, request=0x40044967 type=0x49('I') nr=103 dir=WRITE size=4, arg=0xbef20998)
+[1758734297.623351]   arg hexdump (size=4):
+    0000: 00 00 00 80
+[1758734297.623822] ISP ioctl -> 0 (errno=0)
+[1758734297.624118] ISP ioctl(fd=10, request=0x80044956 type=0x49('I') nr=86 dir=READ size=4, arg=0xbef208f0)
+[1758734297.624564]   arg hexdump (size=4):
+    0000: 67 49 04 40
+[1758734297.625026] ISP ioctl -> 0 (errno=0)
+[1758734297.626547] ISP ioctl(fd=10, request=0x40044955 type=0x49('I') nr=85 dir=WRITE size=4, arg=0xbef208f0)
+[1758734297.627043]   arg hexdump (size=4):
+    0000: 0f 00 08 00
+[1758734297.627531] ISP ioctl -> 0 (errno=0)
+[1758734297.628833] ISP ioctl(fd=10, request=0x8004494f type=0x49('I') nr=79 dir=READ size=4, arg=0xbef20980)
+[1758734297.629344]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734297.629833] ISP ioctl -> 0 (errno=0)
+[1758734297.634985] ISP ioctl(fd=10, request=0x4004497a type=0x49('I') nr=122 dir=WRITE size=4, arg=0xbef20954)
+[1758734297.635648]   arg hexdump (size=4):
+    0000: 0f 00 00 00
+[1758734297.639712] ISP ioctl -> 0 (errno=0)
+[1758734297.642095] V4L2 ioctl(fd=11, request=0x80685600 type=0x56('V') nr=0 dir=READ size=104, arg=0xbef20938)
+[1758734297.642660]   => VIDIOC_QUERYCAP
+[1758734297.642867]   arg hexdump (size=104):
+    0000: 00 00 00 00 00 00 00 00 e4 89 69 00 e4 89 69 00
+    0010: b4 82 6b 00 d0 02 00 00 80 02 00 00 d0 02 00 00
+    0020: 00 00 00 00 b4 66 f3 b6 70 b5 69 00 00 00 00 00
+    0030: 00 00 00 00 e4 89 69 00 d0 02 00 00 5c 5a 03 00
+    0040: 00 10 00 00 18 00 00 00 0f 00 00 00 dc 05 00 00
+    0050: 0c 00 00 00 0a 00 00 00 fe 07 00 00 04 00 00 00
+    0060: 00 00 00 00 00 00 00 00
+[1758734297.647399] V4L2 ioctl -> 0 (errno=0)
+[1758734297.647685] V4L2 ioctl(fd=11, request=0xc02c563a type=0x56('V') nr=58 dir=READ|WRITE size=44, arg=0xbef20938)
+[1758734297.648172]   arg hexdump (size=44):
+    0000: 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+    0010: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+    0020: 00 00 00 00 00 00 00 00 00 00 00 00
+[1758734297.650246] V4L2 ioctl -> 0 (errno=0)
+[1758734297.650518] V4L2 ioctl(fd=11, request=0x4014563c type=0x56('V') nr=60 dir=WRITE size=20, arg=0xbef20924)
+[1758734297.651025]   arg hexdump (size=20):
+    0000: 01 00 00 00 00 00 00 00 00 00 00 00 00 05 00 00
+    0010: d0 02 00 00
+[1758734297.652164] V4L2 ioctl -> 0 (errno=0)
+[1758734297.653530] V4L2 ioctl(fd=11, request=0xc0cc5605 type=0x56('V') nr=5 dir=READ|WRITE size=204, arg=0xbef208e4)
+[1758734297.654013]   => VIDIOC_S_FMT
+[1758734297.654203]   arg hexdump (size=204):
+    0000: 01 00 00 00 00 05 00 00 d0 02 00 00 59 55 59 56
+    0010: 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+    0020: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+    0030: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+    0040: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+    0050: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+    0060: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+    0070: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+    0080: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+    0090: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+    00a0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+    00b0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+    00c0: 00 00 00 00 00 00 00 00 00 00 00 00
+[1758734297.662888] V4L2 ioctl -> 0 (errno=0)
+[1758734297.663181] V4L2 ioctl(fd=11, request=0xc0cc5616 type=0x56('V') nr=22 dir=READ|WRITE size=204, arg=0xbef208e4)
+[1758734297.663615]   arg hexdump (size=204):
+    0000: 01 00 00 00 01 00 00 00 80 02 00 00 68 01 00 00
+    0010: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+    0020: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+    0030: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+    0040: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+    0050: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+    0060: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+    0070: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+    0080: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+    0090: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+    00a0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+    00b0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+    00c0: 00 00 00 00 00 00 00 00 00 00 00 00
+[1758734297.683280] V4L2 ioctl -> 0 (errno=0)
+[1758734297.684718] ISP ioctl(fd=10, request=0x4004497a type=0x49('I') nr=122 dir=WRITE size=4, arg=0xbef209d4)
+[1758734297.685203]   arg hexdump (size=4):
+    0000: 0f 00 00 00
+[1758734297.687381] ISP ioctl -> 0 (errno=0)
+[1758734297.687695] ISP ioctl(fd=10, request=0x8004497b type=0x49('I') nr=123 dir=READ size=4, arg=0xbef209cc)
+[1758734297.688162]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734297.688639] ISP ioctl -> 0 (errno=0)
+[1758734297.696158] ISP ioctl(fd=10, request=0x4004496d type=0x49('I') nr=109 dir=WRITE size=4, arg=0xbef20944)
+[1758734297.696700]   arg hexdump (size=4):
+    0000: 0a 49 05 40
+[1758734297.697213] ISP ioctl -> 0 (errno=0)
+[1758734297.701395] open('/dev/akpcm_cdev1',0x0) = 12 tag=AKPCM rdev=0xfe01
+[1758734297.704031] AKPCM ioctl(fd=12, request=0x40045010 type=0x50('P') nr=16 dir=WRITE size=4, arg=0xbef209bc)
+[1758734297.704522]   arg hexdump (size=4):
+    0000: 02 00 00 00
+[1758734297.705186] AKPCM ioctl -> 0 (errno=0)
+[1758734297.709188] AKPCM ioctl(fd=12, request=0x40045070 type=0x50('P') nr=112 dir=WRITE size=4, arg=0xbef209bc)
+[1758734297.709627]   arg hexdump (size=4):
+    0000: 01 00 00 00
+[1758734297.710150] AKPCM ioctl -> 0 (errno=0)
+[1758734297.712617] AKPCM ioctl(fd=12, request=0x40045030 type=0x50('P') nr=48 dir=WRITE size=4, arg=0xbef209cc)
+[1758734297.713103]   arg hexdump (size=4):
+    0000: 07 00 00 00
+[1758734297.713683] AKPCM ioctl -> 0 (errno=0)
+[1758734298.007567] AKPCM ioctl(fd=12, request=0x50e3 type=0x50('P') nr=227 dir=NONE size=0, arg=0xbef209cc)
+[1758734298.008172] AKPCM ioctl -> 0 (errno=0)
+[1758734298.025839] AKPCM ioctl(fd=12, request=0x40045088 type=0x50('P') nr=136 dir=WRITE size=4, arg=0xbef208e8)
+[1758734298.026325]   arg hexdump (size=4):
+    0000: 01 00 00 00
+[1758734298.057769] AKPCM ioctl -> 0 (errno=0)
+[1758734300.124922] DEV[0xa39] ioctl(fd=3, request=0x4001662a type=0x66('f') nr=42 dir=WRITE size=1, arg=0xbef20a04)
+[1758734300.420804]   arg hexdump (size=1):
+    0000: 07
+[1758734300.126012] ? ioctl(fd=13, request=0x8914 type=0x89('?') nr=20 dir=NONE size=0, arg=0xb4d29990)
+[1758734300.421231] DEV[0xa39] ioctl -> 0 (errno=0)
+[1758734300.421503] DEV[0xa39] ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xbef20a1c)
+[1758734300.421926]   arg hexdump (size=1):
+    0000: 07
+[1758734300.422272] DEV[0xa39] ioctl -> 0 (errno=0)
+[1758734300.422522] DEV[0xa39] ioctl(fd=3, request=0x4001662a type=0x66('f') nr=42 dir=WRITE size=1, arg=0xbef20a1c)
+[1758734300.422936]   arg hexdump (size=1):
+    0000: 07
+[1758734300.423340] DEV[0xa39] ioctl -> 0 (errno=0)
+[1758734300.423613] DEV[0xa39] ioctl(fd=3, request=0x4001662a type=0x66('f') nr=42 dir=WRITE size=1, arg=0xbef20a24)
+[1758734300.424032]   arg hexdump (size=1):
+    0000: 07
+[1758734300.424374] DEV[0xa39] ioctl -> 0 (errno=0)
+[1758734300.424637] DEV[0xa39] ioctl(fd=3, request=0x4001662a type=0x66('f') nr=42 dir=WRITE size=1, arg=0xbef20a04)
+[1758734300.425065]   arg hexdump (size=1):[1758734300.436697] ? ioctl -> 0 (errno=0)
+[1758734300.439333] ? close(13)
+
+    0000: 2f
+[1758734300.447387] DEV[0xa39] ioctl -> 0 (errno=0)
+[1758734300.448611] DEV[0xa39] ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xbef20a1c)
+[1758734300.449064]   arg hexdump (size=1):
+    0000: 2f
+[1758734300.449407] DEV[0xa39] ioctl -> 0 (errno=0)
+[1758734300.449663] DEV[0xa39] ioctl(fd=3, request=0x4001662a type=0x66('f') nr=42 dir=WRITE size=1, arg=0xbef20a1c)
+[1758734300.450085]   arg hexdump (size=1):
+    0000: 2f
+[1758734300.450423] DEV[0xa39] ioctl -> 0 (errno=0)
+[1758734300.450687] DEV[0xa39] ioctl(fd=3, request=0x4001662a type=0x66('f') nr=42 dir=WRITE size=1, arg=0xbef2097c)
+[1758734300.451165]   arg hexdump (size=1):
+    0000: 2f
+[1758734300.451511] DEV[0xa39] ioctl -> 0 (errno=0)
+[1758734300.451941] DEV[0xa39] ioctl(fd=3, request=0x4001662a type=0x66('f') nr=42 dir=WRITE size=1, arg=0xbef20a84)
+[1758734300.452387]   arg hexdump (size=1):
+    0000: 2a
+[1758734300.452746] DEV[0xa39] ioctl -> 0 (errno=0)
+[1758734300.453004] DEV[0xa39] ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xbef20a9c)
+[1758734300.453418]   arg hexdump (size=1):
+    0000: 2a
+[1758734300.453753] DEV[0xa39] ioctl -> 0 (errno=0)
+[1758734300.454053] DEV[0xa39] ioctl(fd=3, request=0x4001662a type=0x66('f') nr=42 dir=WRITE size=1, arg=0xbef20a9c)
+[1758734300.454478]   arg hexdump (size=1):
+    0000: 2a
+[1758734300.454824] DEV[0xa39] ioctl -> 0 (errno=0)
+[1758734300.455089] DEV[0xa39] ioctl(fd=3, request=0x4001662a type=0x66('f') nr=42 dir=WRITE size=1, arg=0xbef20aa4)
+[1758734300.472264]   arg hexdump (size=1):
+    0000: 2a
+[1758734300.472648] DEV[0xa39] ioctl -> 0 (errno=0)
+[1758734300.473081] DEV[0xa39] ioctl(fd=3, request=0x4001662a type=0x66('f') nr=42 dir=WRITE size=1, arg=0xbef20aa4)
+[1758734300.473579]   arg hexdump (size=1):
+    0000: 2a
+[1758734300.473939] DEV[0xa39] ioctl -> 0 (errno=0)
+[1758734300.504391] DEV[0xa82] ioctl(fd=4, request=0xc0045706 type=0x57('W') nr=6 dir=READ|WRITE size=4, arg=0x69b94c)
+[1758734300.504996]   arg hexdump (size=4):
+    0000: 08 00 00 00
+[1758734300.505638] DEV[0xa82] ioctl -> 0 (errno=0)
+[1758734300.641831] ISP ioctl(fd=10, request=0x80044956 type=0x49('I') nr=86 dir=READ size=4, arg=0xb4d62a10)
+[1758734300.642388]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734300.642872] ISP ioctl -> 0 (errno=0)
+[0;36m[GW_APP] [2025-09-25 01:18:18:058167][vSmokeAlarmInit():785]vSmokeAlarmInit 0[0;37m [0m
+Enter UISsInit
+[0;32m[GW_APP] [2025-09-25 01:18:18:856475][vOpenSSLInit():19]start[0;37m [0m
+[0;32m[GW_APP] [2025-09-25 01:18:20:117035][vOpenSSLInit():22]end[0;37m [0m
+[0;36m[GW_APP] [2025-09-25 01:18:20:117260][NetMgProc_Init():1381]*************NetMgProc_Init******************[0;37m [0m
+[0;36m[GW_APP] [2025-09-25 01:18:20:117602][UserCmdSetWifiProc_Init():255]*************UserCmdSetWifiProc_Init******************[0;37m [0m
+[0;36m[GW_APP] [2025-09-25 01:18:20:126205][vUserCmdSetWifiProc():162]*************enter vUserCmdSetWifiProc******************[0;37m [0m
+[0;32m[GW_APP] [2025-09-25 01:18:20:417421][DiskProc():445]sd card plugged in! <<<<<<[0;37m [0m
+[0;32m[GW_APP] [2025-09-25 01:18:20:417602][SDCard_Umount():345]umount2...[0;37m [0m
+[0;32m[GW_APP] [2025-09-25 01:18:20:418158][SDCard_Mount():284]try to mounting...[0;37m [0m
+[0;36m[GW_APP] [2025-09-25 01:18:20:434130][dm_update_tfCardInfo():999]tfCardStatus: 7, freeSpace: 123639936, totalSpace: -124864512[0;37m [0m
+[0;32m[GW_APP] [2025-09-25 01:18:20:451765][WhiteLight_Switch():363]this_status[0]
+[0;37m [0m
+[0;36m[GW_APP] [2025-09-25 01:18:20:472916][vIrcutSwitchToFilter():133]fgCutEn = 0[0;37m [0m
+[reload_config_awb_step:225] get awb_attr ok, cur auto_awb_step:10, set to step:30
+[1758734300.793312] ISP ioctl(fd=10, request=0x40044955 type=0x49('I') nr=85 dir=WRITE size=4, arg=0xb4d62a10)
+[1758734300.793805]   arg hexdump (size=4):
+    0000: 0f 00 08 00
+[1758734300.794289] ISP ioctl -> 0 (errno=0)
+[1758734300.794620] ISP ioctl(fd=10, request=0x80044952 type=0x49('I') nr=82 dir=READ size=4, arg=0xb4d62a10)
+[1758734300.795067]   arg hexdump (size=4):
+    0000: 0f 00 08 00
+[1758734300.799881] ISP ioctl -> 0 (errno=0)
+mount /dev/mmcblk0p1: Device or resource busy
+mount /dev/mmcblk0p1: Device or resource busy
+[1758734300.900376] ISP ioctl(fd=10, request=0x80044952 type=0x49('I') nr=82 dir=READ size=4, arg=0xb4d62a10)
+[1758734300.901865]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734300.902422] ISP ioctl -> 0 (errno=0)
+[1758734301.002915] ISP ioctl(fd=10, request=0x80044952 type=0x49('I') nr=82 dir=READ size=4, arg=0xb4d62a10)
+[1758734301.006010]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734301.006518] ISP ioctl -> 0 (errno=0)
+[1758734301.106992] ISP ioctl(fd=10, request=0x80044952 type=0x49('I') nr=82 dir=READ size=4, arg=0xb4d62a10)
+[1758734301.109278]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734301.109772] ISP ioctl -> 0 (errno=0)
+[1758734301.210260] ISP ioctl(fd=10, request=0x80044952 type=0x49('I') nr=82 dir=READ size=4, arg=0xb4d62a10)
+[1758734301.213257]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734301.213750] ISP ioctl -> 0 (errno=0)
+[1758734301.314234] ISP ioctl(fd=10, request=0x80044952 type=0x49('I') nr=82 dir=READ size=4, arg=0xb4d62a10)
+[1758734301.316623]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734301.317109] ISP ioctl -> 0 (errno=0)
+mount /dev/mmcblk0p1: Device or resource busy
+mount /dev/mmcblk0p1: Device or resource busy
+[1758734301.417589] ISP ioctl(fd=10, request=0x80044952 type=0x49('I') nr=82 dir=READ size=4, arg=0xb4d62a10)
+[1758734301.419902]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734301.420390] ISP ioctl -> 0 (errno=0)
+[1758734301.506128] DEV[0xa82] ioctl(fd=4, request=0xc0045706 type=0x57('W') nr=6 dir=READ|WRITE size=4, arg=0x69b94c)
+[1758734301.506671]   arg hexdump (size=4):
+    0000: 08 00 00 00
+[1758734301.507136] DEV[0xa82] ioctl -> 0 (errno=0)
+[1758734301.520874] ISP ioctl(fd=10, request=0x80044952 type=0x49('I') nr=82 dir=READ size=4, arg=0xb4d62a10)
+[1758734301.523038]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734301.523524] ISP ioctl -> 0 (errno=0)
+[1758734301.624012] ISP ioctl(fd=10, request=0x80044952 type=0x49('I') nr=82 dir=READ size=4, arg=0xb4d62a10)
+[1758734301.627128]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734301.627620] ISP ioctl -> 0 (errno=0)
+[1758734301.728112] ISP ioctl(fd=10, request=0x80044952 type=0x49('I') nr=82 dir=READ size=4, arg=0xb4d62a10)
+[1758734301.730776]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734301.731275] ISP ioctl -> 0 (errno=0)
+[1758734301.831737] ISP ioctl(fd=10, request=0x80044952 type=0x49('I') nr=82 dir=READ size=4, arg=0xb4d62a10)
+[1758734301.834697]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734301.835196] ISP ioctl -> 0 (errno=0)
+mount /dev/mmcblk0p1: Device or resource busy
+mount /dev/mmcblk0p1: Device or resource busy
+[1758734301.935811] ISP ioctl(fd=10, request=0x80044952 type=0x49('I') nr=82 dir=READ size=4, arg=0xb4d62a10)
+[1758734301.938103]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734301.938601] ISP ioctl -> 0 (errno=0)
+[1758734302.039120] ISP ioctl(fd=10, request=0x80044952 type=0x49('I') nr=82 dir=READ size=4, arg=0xb4d62a10)
+[1758734302.041776]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734302.042266] ISP ioctl -> 0 (errno=0)
+[1758734302.142756] ISP ioctl(fd=10, request=0x80044952 type=0x49('I') nr=82 dir=READ size=4, arg=0xb4d62a10)
+[1758734302.145819]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734302.146322] ISP ioctl -> 0 (errno=0)
+[1758734302.246793] ISP ioctl(fd=10, request=0x80044952 type=0x49('I') nr=82 dir=READ size=4, arg=0xb4d62a10)
+[1758734302.249445]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734302.249944] ISP ioctl -> 0 (errno=0)
+[1758734302.350446] ISP ioctl(fd=10, request=0x80044952 type=0x49('I') nr=82 dir=READ size=4, arg=0xb4d62a10)
+[1758734302.353408]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734302.353906] ISP ioctl -> 0 (errno=0)
+mount /dev/mmcblk0p1: Device or resource busy
+mount /dev/mmcblk0p1: Device or resource busy
+[1758734302.454414] ISP ioctl(fd=10, request=0x80044952 type=0x49('I') nr=82 dir=READ size=4, arg=0xb4d62a10)
+[1758734302.456513]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734302.457004] ISP ioctl -> 0 (errno=0)
+[1758734302.474591] DEV[0xa39] ioctl(fd=3, request=0x4001662a type=0x66('f') nr=42 dir=WRITE size=1, arg=0xbef20aac)
+[1758734302.475110]   arg hexdump (size=1):
+    0000: 2a
+[1758734302.475678] DEV[0xa39] ioctl -> 0 (errno=0)
+[1758734302.475962] DEV[0xa39] ioctl(fd=3, request=0x4001662a type=0x66('f') nr=42 dir=WRITE size=1, arg=0xbef20a8c)
+[1758734302.476384]   arg hexdump (size=1):
+    0000: 29
+[1758734302.476718] DEV[0xa39] ioctl -> 0 (errno=0)
+[1758734302.476978] DEV[0xa39] ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xbef20aa4)
+[1758734302.477402]   arg hexdump (size=1):
+    0000: 29
+[1758734302.477741] DEV[0xa39] ioctl -> 0 (errno=0)
+[1758734302.477997] DEV[0xa39] ioctl(fd=3, request=0x4001662a type=0x66('f') nr=42 dir=WRITE size=1, arg=0xbef20aa4)
+[1758734302.478422]   arg hexdump (size=1):
+    0000: 29
+[1758734302.478760] DEV[0xa39] ioctl -> 0 (errno=0)
+[1758734302.479081] ? mmap(fd=-1, len=131072, prot=0x3, flags=0x20022, off=0) = 0xb4ccb000
+[1758734302.509044] DEV[0xa82] ioctl(fd=4, request=0xc0045706 type=0x57('W') nr=6 dir=READ|WRITE size=4, arg=0x69b94c)
+[1758734302.510899]   arg hexdump (size=4):
+    0000: 08 00 00 00
+[1758734302.511373] DEV[0xa82] ioctl -> 0 (errno=0)
+[1758734302.557530] ISP ioctl(fd=10, request=0x80044952 type=0x49('I') nr=82 dir=READ size=4, arg=0xb4d62a10)
+[1758734302.558094]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734302.558579] ISP ioctl -> 0 (errno=0)
+[1758734302.586825] DEV[0xa39] ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734302.589273]   arg hexdump (size=1):
+    0000: 29
+[1758734302.589628] DEV[0xa39] ioctl -> 0 (errno=0)
+[1758734302.589877] DEV[0xa39] ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734302.590275]   arg hexdump (size=1):
+    0000: 29
+[1758734302.590596] DEV[0xa39] ioctl -> 0 (errno=0)
+[1758734302.648733] ? mmap(fd=-1, len=131072, prot=0x3, flags=0x20022, off=0) = 0xb4cab000
+[1758734302.654423] ? mmap(fd=-1, len=131072, prot=0x3, flags=0x20022, off=0) = 0xb4c8b000
+[1758734302.656484] DEV[0xa39] ioctl(fd=3, request=0x4001662a type=0x66('f') nr=42 dir=WRITE size=1, arg=0xbef20a6c)[1758734302.659200] ISP ioctl(fd=10, request=0x80044952 type=0x49('I') nr=82 dir=READ size=4, arg=0xb4d62a10)
+[1758734302.662527]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734302.663005] ISP ioctl -> 0 (errno=0)
+[1758734302.657310] ? mmap(fd=-1, len=131072, prot=0x3, flags=0x20022, off=0) = 0xb4c6b000
+
+[1758734302.665069]   arg hexdump (size=1):
+    0000: 00
+[1758734302.665629] DEV[0xa39] ioctl -> 0 (errno=0)
+[1758734302.665908] DEV[0xa39] ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xbef20a84)
+[1758734302.666326]   arg hexdump (size=1):
+    0000: 00
+[1758734302.666668] DEV[0xa39] ioctl -> 0 (errno=0)
+[1758734302.666967] DEV[0xa39] ioctl(fd=3, request=0x4001662a type=0x66('f') nr=42 dir=WRITE size=1, arg=0xbef20a84)
+[1758734302.667387]   arg hexdump (size=1):
+    0000: 00
+[1758734302.667739] DEV[0xa39] ioctl -> 0 (errno=0)
+[1758734302.668007] DEV[0xa39] ioctl(fd=3, request=0x4001662a type=0x66('f') nr=42 dir=WRITE size=1, arg=0xbef20a94)
+[1758734302.668431]   arg hexdump (size=1):
+    0000: 00
+[1758734302.668778] DEV[0xa39] ioctl -> 0 (errno=0)
+[1758734302.692252] DEV[0xa39] ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734302.692769]   arg hexdump (size=1):
+    0000: 29
+[1758734302.693101] DEV[0xa39] ioctl -> 0 (errno=0)
+[1758734302.693344] DEV[0xa39] ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734302.693751]   arg hexdump (size=1):
+    0000: 29
+[1758734302.694078] DEV[0xa39] ioctl -> 0 (errno=0)
+[1758734302.763489] ISP ioctl(fd=10, request=0x80044952 type=0x49('I') nr=82 dir=READ size=4, arg=0xb4d62a10)
+[1758734302.764044]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734302.764530] ISP ioctl -> 0 (errno=0)
+[1758734302.794494] DEV[0xa39] ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734302.795024]   arg hexdump (size=1):
+    0000: 29
+[1758734302.795525] DEV[0xa39] ioctl -> 0 (errno=0)
+[1758734302.795824] DEV[0xa39] ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734302.796228]   arg hexdump (size=1):
+    0000: 29
+[1758734302.796552] DEV[0xa39] ioctl -> 0 (errno=0)
+[1758734302.865030] ISP ioctl(fd=10, request=0x80044952 type=0x49('I') nr=82 dir=READ size=4, arg=0xb4d62a10)
+[1758734302.866066]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734302.866548] ISP ioctl -> 0 (errno=0)
+[1758734302.898137] DEV[0xa39] ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734302.898925]   arg hexdump (size=1):
+    0000: 29
+[1758734302.899323] DEV[0xa39] ioctl -> 0 (errno=0)
+[1758734302.899580] DEV[0xa39] ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734302.899994]   arg hexdump (size=1):
+    0000: 29
+[1758734302.900316] DEV[0xa39] ioctl -> 0 (errno=0)
+mount /dev/mmcblk0p1: Device or resource busy
+mount /dev/mmcblk0p1: Device or resource busy
+[1758734302.967004] ISP ioctl(fd=10, request=0x80044952 type=0x49('I') nr=82 dir=READ size=4, arg=0xb4d62a10)
+[1758734302.967548]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734302.968032] ISP ioctl -> 0 (errno=0)
+[1758734303.000760] DEV[0xa39] ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734303.004360]   arg hexdump (size=1):
+    0000: 29
+[1758734303.004776] DEV[0xa39] ioctl -> 0 (errno=0)
+[1758734303.005032] DEV[0xa39] ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734303.005582]   arg hexdump (size=1):
+    0000: 29
+[1758734303.005922] DEV[0xa39] ioctl -> 0 (errno=0)
+[1758734303.068499] ISP ioctl(fd=10, request=0x80044952 type=0x49('I') nr=82 dir=READ size=4, arg=0xb4d62a10)
+[1758734303.069042]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734303.069520] ISP ioctl -> 0 (errno=0)
+[1758734303.107508] DEV[0xa39] ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734303.112370]   arg hexdump (size=1):
+    0000: 29
+[1758734303.112727] DEV[0xa39] ioctl -> 0 (errno=0)
+[1758734303.112989] DEV[0xa39] ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734303.113454]   arg hexdump (size=1):
+    0000: 29
+[1758734303.113774] DEV[0xa39] ioctl -> 0 (errno=0)
+[1758734303.170016] ISP ioctl(fd=10, request=0x80044952 type=0x49('I') nr=82 dir=READ size=4, arg=0xb4d62a10)
+[1758734303.170561]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734303.171260] ISP ioctl -> 0 (errno=0)
+[1758734303.214226] DEV[0xa39] ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734303.218099]   arg hexdump (size=1):
+    0000: 29
+[1758734303.218458] DEV[0xa39] ioctl -> 0 (errno=0)
+[1758734303.218710] DEV[0xa39] ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734303.219128]   arg hexdump (size=1):
+    0000: 29
+[1758734303.219451] DEV[0xa39] ioctl -> 0 (errno=0)
+[1758734303.269956] open('/dev/akpcm_cdev0',0x1) = 15 tag=AKPCM rdev=0xfe00
+[1758734303.270397] AKPCM ioctl(fd=15, request=0x40045081 type=0x50('P') nr=129 dir=WRITE size=4, arg=0xbef20a04)
+[1758734303.270836]   arg hexdump (size=4):
+    0000: 01 00 00 00
+[1758734303.271721] ISP ioctl(fd=10, request=0x80044952 type=0x49('I') nr=82 dir=READ size=4, arg=0xb4d62a10)
+[1758734303.272220]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734303.272707] ISP ioctl -> 0 (errno=0)
+[1758734303.271605] AKPCM ioctl -> 0 (errno=0)
+[1758734303.273344] AKPCM ioctl(fd=15, request=0x50e3 type=0x50('P') nr=227 dir=NONE size=0, arg=(nil))
+[1758734303.273840] AKPCM ioctl -> 0 (errno=0)
+[0;32m[GW_APP] [2025-09-25 01:18:20:897358][SDCard_Mount():284]try to mounting...[0;37m [0m
+[0;36m[GW_APP] [2025-09-25 01:18:20:898688][dm_update_tfCardInfo():999]tfCardStatus: 7, freeSpace: 123639936, totalSpace: -124864512[0;37m [0m
+[0;32m[GW_APP] [2025-09-25 01:18:21:399332][SDCard_Mount():284]try to mounting...[0;37m [0m
+[0;36m[GW_APP] [2025-09-25 01:18:21:400650][dm_update_tfCardInfo():999]tfCardStatus: 7, freeSpace: 123639936, totalSpace: -124864512[0;37m [0m
+[0;32m[GW_APP] [2025-09-25 01:18:21:901329][SDCard_Mount():284]try to mounting...[0;37m [0m
+[0;36m[GW_APP] [2025-09-25 01:18:21:902645][dm_update_tfCardInfo():999]tfCardStatus: 7, freeSpace: 123639936, totalSpace: -124864512[0;37m [0m
+[0;32m[GW_APP] [2025-09-25 01:18:22:403301][SDCard_Mount():284]try to mounting...[0;37m [0m
+[0;36m[GW_APP] [2025-09-25 01:18:22:404631][dm_update_tfCardInfo():999]tfCardStatus: 7, freeSpace: 123639936, totalSpace: -124864512[0;37m [0m
+[0;36m[GW_APP] [2025-09-25 01:18:22:474391][vIrcutSwitchToFilter():133]fgCutEn = 1[0;37m [0m
+[0;36m[GW_APP] [2025-09-25 01:18:22:483646][vKey_DrvProc():376]100 -> 150[0;37m [0m
+[0;36m[GW_APP] [2025-09-25 01:18:22:484423][vKey_DrvProc():391]80 -> 100[0;37m [0m
+[0;32m[GW_APP] [2025-09-25 01:18:22:654065][startRtspClientThread():4533]create rtsp client thread![0;37m [0m
+[0;32m[GW_APP] [2025-09-25 01:18:22:655812][RtspClient_proc():4353][0;37m [0m
+[0;32m[GW_APP] [2025-09-25 01:18:22:656249][gw_adec_ao_init():367]samplerate: 16000, volume level: 10[0;37m [0m
+[0;32m[GW_APP] [2025-09-25 01:18:22:669595][vHandSelectProc():5056]=================begin=================[0;37m [0m
+[0;32m[GW_APP] [2025-09-25 01:18:22:905300][SDCard_Mount():284]try to mounting...[0;37m [0m
+[0;36m[GW_APP] [2025-09-25 01:18:22:906577][dm_update_tfCardInfo():999]tfCardStatus: 7, freeSpace: 123639936, totalSpace: -124864512[0;37m [0m
+[PlatformAudioOut_SetVol] vol = 10
+[AOVolSet] ak_ao_set_volume
+[ak_ao_set_dac_volume:1112] set volume 6
+[1;33m[pcm_dac_set_volume:766] set DEV volume 5
+[m[1758734303.280692] AKPCM ioctl(fd=15, request=0x40045030 type=0x50('P') nr=48 dir=WRITE size=4, arg=0xbef20a9c)
+[1758734303.282521]   arg hexdump (size=4):
+    0000: 05 00 00 00
+[1758734303.283055] AKPCM ioctl -> 0 (errno=0)
+##--AudioFilter Version V1.13.09, type:11--
+[1758734303.285158] open('/dev/mem',0x0) = 16 tag=DEV[0x101] rdev=0x101
+[1758734303.290014] DEV[0x101] mmap(fd=16, len=4, prot=0x1, flags=0x1, off=134217728) = 0xb4c6a000
+[1758734303.290421] DEV[0x101] close(16)
+[1758734303.290657] munmap(0xb4c6a000, 4)
+## aslc setMileStone:
+(0, 0), (20000, 20000), (32767, 32700),
+## times: 2, 1, 1300
+## aslc silence: level=0, smpcnt=800
+## sr:16000, ch:2, bitsPerSmp:16, maxLenin:0, jointCh:2
+## ASLC OPEN OK ena:1, lookAheadLen:32
+[dac_set_aslc:388] aslc volume = 6
+## aslc setMileStone:
+(0, 0), (104, 33), (328, 2603), (3277, 32768), (32768, 32768),
+## times: 6, 3, 300
+## ASLC SET OK, ena:1, lookAheadLen:96
+[ak_ao_set_aslc_volume:1159] set aslc volume 6
+[1758734303.321065] DEV[0xa39] ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734303.322531]   arg hexdump (size=1):
+    0000: 29
+[1758734303.322877] DEV[0xa39] ioctl -> 0 (errno=0)
+[1758734303.323126] DEV[0xa39] ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734303.323530]   arg hexdump (size=1):
+    0000: 29
+[1758734303.323917] DEV[0xa39] ioctl -> 0 (errno=0)
+[1758734303.373153] ISP ioctl(fd=10, request=0x80044952 type=0x49('I') nr=82 dir=READ size=4, arg=0xb4d62a10)
+[1758734303.373706]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734303.374247] ISP ioctl -> 0 (errno=0)
+mount /dev/mmcblk0p1: Device or resource busy
+mount /dev/mmcblk0p1: Device or resource busy
+[1758734303.424472] DEV[0xa39] ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734303.428595]   arg hexdump (size=1):
+    0000: 29
+[1758734303.428947] DEV[0xa39] ioctl -> 0 (errno=0)
+[1758734303.429201] DEV[0xa39] ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734303.429606]   arg hexdump (size=1):
+    0000: 29
+[1758734303.429930] DEV[0xa39] ioctl -> 0 (errno=0)
+[1758734303.439899] ? ioctl(fd=16, request=0x89f1 type=0x89('?') nr=241 dir=NONE size=0, arg=0xb4d29988)
+[1758734303.440475] ? ioctl -> 0 (errno=0)
+[1758734303.440735] ? close(16)
+[1758734303.441363] ? ioctl(fd=16, request=0x8914 type=0x89('?') nr=20 dir=NONE size=0, arg=0xb4d29990)
+[1758734303.444037] ? ioctl -> 0 (errno=0)
+[1758734303.444396] ? close(16)
+[1758734303.444749] ? ioctl(fd=16, request=0x8914 type=0x89('?') nr=20 dir=NONE size=0, arg=0xb4d29990)
+[1758734303.449116] ? ioctl -> 0 (errno=0)
+[1758734303.453516] ? close(16)
+[1758734303.474696] ISP ioctl(fd=10, request=0x80044952 type=0x49('I') nr=82 dir=READ size=4, arg=0xb4d62a10)
+[1758734303.475415]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734303.475924] ISP ioctl -> 0 (errno=0)
+[1758734303.484800] open('/rom/wpa_supplicant1.conf',0x0) = 16 tag=DEV[0] rdev=0
+[1758734303.490341] DEV[0] read(fd=16, buf=0xb4b6a008, count=1048576) = 239
+[1758734303.490797] ? write(fd=17, buf=0xb4b6a008, count=239) = 239
+[1758734303.491146] DEV[0] read(fd=16, buf=0xb4b6a008, count=1048576) = 0
+[1758734303.491451] DEV[0] close(16)
+[1758734303.491679] ? close(17)
+[1758734303.492672] ? ioctl(fd=16, request=0x8914 type=0x89('?') nr=20 dir=NONE size=0, arg=0xb4d299b0)
+[1758734303.493177] ? ioctl -> 0 (errno=0)
+[1758734303.493437] ? close(16)
+[1758734303.494617] DEV[0xa39] close(3)
+[1758734303.498465] DEV[0xa82] close(4)
+[1758734303.499745] ION close(5)
+[1758734303.499996] ? close(6)
+[1758734303.500287] ? close(7)
+[1758734303.500516] UIO close(8)
+[1758734303.500740] DEV[0x103] close(9)
+[1758734303.500969] ISP close(10)
+[1758734303.501193] V4L2 close(11)
+[1758734303.501417] AKPCM close(12)
+[1758734303.501643] ? close(13)
+[1758734303.501869] ? close(14)
+[1758734303.502091] AKPCM close(15)
+[1758734303.502319] ? close(16)
+[1758734303.502542] ? close(17)
+[1758734303.502764] ? close(18)
+[1758734303.503025] ? close(19)
+[1758734303.503254] ? close(20)
+[1758734303.503475] ? close(21)
+[1758734303.503693] ? close(22)
+[1758734303.503911] ? close(23)
+[1758734303.504124] ? close(24)
+[1758734303.504344] ? close(25)
+[1758734303.504562] ? close(26)
+[1758734303.504779] ? close(27)
+[1758734303.505003] ? close(28)
+[1758734303.505569] ? close(29)
+[1758734303.505976] ? close(30)
+[1758734303.506222] ? close(31)
+[1758734303.506444] ? close(32)
+[1758734303.506661] ? close(33)
+[1758734303.506873] ? close(34)
+[1758734303.507091] ? close(35)
+[1758734303.507306] ? close(36)
+[1758734303.507517] ? close(37)
+[1758734303.507729] ? close(38)
+[1758734303.507941] ? close(39)
+[1758734303.508160] ? close(40)
+[1758734303.508387] ? close(41)
+[1758734303.508643] ? close(42)
+[1758734303.508871] ? close(43)
+[1758734303.509092] ? close(44)
+[1758734303.509309] ? close(45)
+[1758734303.509520] ? close(46)
+[1758734303.509743] ? close(47)
+[1758734303.509951] ? close(48)
+[1758734303.510164] ? close(49)
+[1758734303.510377] ? close(50)
+[1758734303.510591] ? close(51)
+[1758734303.510807] ? close(52)
+[1758734303.511024] ? close(53)
+[1758734303.511271] ? close(54)
+[1758734303.511543] ? close(55)[1758734303.511848] ? ioctl(fd=4, request=0xc0045706 type=0x57('W') nr=6 dir=READ|WRITE size=4, arg=0x69b94c)
+[1758734303.512425]   arg hexdump (size=4):
+    0000: 08 00 00 00
+[1758734303.512895] ? ioctl -> 0 (errno=0)
+
+[1758734303.513268] ? close(56)
+[1758734303.513509] ? close(57)
+[1758734303.513728] ? close(58)
+[1758734303.513943] ? close(59)
+[1758734303.514192] ? close(60)
+[1758734303.514428] ? close(61)
+[1758734303.514646] ? close(62)
+[1758734303.514862] ? close(63)
+[1758734303.515074] ? close(64)
+[1758734303.515434] ? close(65)
+[1758734303.515677] ? close(66)
+[1758734303.515901] ? close(67)
+[1758734303.516124] ? close(68)
+[1758734303.516340] ? close(69)
+[1758734303.516566] ? close(70)
+[1758734303.516782] ? close(71)
+[1758734303.517038] ? close(72)
+[1758734303.517263] ? close(73)
+[1758734303.517482] ? close(74)
+[1758734303.517694] ? close(75)
+[1758734303.518550] ? close(76)
+[1758734303.518842] ? close(77)
+[1758734303.519083] ? close(78)
+[1758734303.519306] ? close(79)
+[1758734303.519517] ? close(80)
+[1758734303.519731] ? close(81)
+[1758734303.519998] ? close(82)
+[1758734303.520220] ? close(83)
+[1758734303.520448] ? close(84)
+[1758734303.520660] ? close(85)
+[1758734303.520885] ? close(86)
+[1758734303.521097] ? close(87)
+[1758734303.521314] ? close(88)
+[1758734303.521526] ? close(89)
+[1758734303.521745] ? close(90)
+[1758734303.521955] ? close(91)
+[1758734303.522167] ? close(92)
+[1758734303.522383] ? close(93)
+[1758734303.522647] ? close(94)
+[1758734303.522876] ? close(95)
+[1758734303.523096] ? close(96)
+[1758734303.523312] ? close(97)
+[1758734303.523524] ? close(98)
+[1758734303.523741] ? close(99)
+[1758734303.523987] ? close(100)
+[1758734303.524217] ? close(101)
+[1758734303.524435] ? close(102)
+[1758734303.524659] ? close(103)
+[1758734303.524878] ? close(104)
+[1758734303.525091] [1758734303.525400] ? close(3)
+[1758734303.525785] ? close(4)
+[1758734303.526029] ? close(5)
+[1758734303.526271] ? close(6)
+[1758734303.526512] ? close(7)
+[1758734303.526747] ? close(8)
+[1758734303.526975] ? close(9)
+[1758734303.527206] ? close(10)
+[1758734303.527446] ? close(11)
+[1758734303.527680] ? close(12)
+[1758734303.527927] ? close(13)
+[1758734303.528194] ? close(14)
+[1758734303.528443] ? close(15)
+[1758734303.528679] ? close(16)
+[1758734303.528915] ? close(17)
+[1758734303.529148] ? close(18)
+[1758734303.529378] ? close(19)
+[1758734303.529606] ? close(20)
+[1758734303.529832] ? close(21)
+[1758734303.530059] ? close(22)
+[1758734303.530287] [1758734303.531583] ? ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734303.532330]   arg hexdump (size=1):
+    0000: 29
+[1758734303.532672] ? ioctl -> 0 (errno=0)
+[1758734303.532917] ? ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734303.533315]   arg hexdump (size=1):
+    0000: 29
+[1758734303.533641] ? ioctl -> 0 (errno=0)
+? close(105)
+[1758734303.534068] ? close(106)
+[1758734303.534338] ? close(107)
+[1758734303.534576] ? close(108)
+[1758734303.534794] ? close(109)
+[1758734303.535015] ? close(110)
+[1758734303.535344] ? close(111)
+[1758734303.535602] ? close(112)
+[1758734303.535828] ? close(113)
+[1758734303.536053] ? close(114)
+[1758734303.536271] ? close(115)
+[1758734303.536503] ? close(116)
+[1758734303.536724] ? close(117)
+[1758734303.536948] ? close(118)
+[1758734303.537210] ? close(119)
+[1758734303.537440] ? close(120)
+[1758734303.537663] ? close(121)
+[1758734303.537886] ? close(122)
+[1758734303.538140] ? close(123)
+[1758734303.538383] ? close(124)
+[1758734303.538603] ? close(125)
+[1758734303.538827] ? close(126)
+[1758734303.539045] ? close(127)
+[1758734303.539255] ? close(128)
+[1758734303.539470] ? close(129)
+[1758734303.539692] ? close(130)
+[1758734303.539943] ? close(131)
+[1758734303.540177] ? close(132)
+[1758734303.540398] ? close(133)
+[1758734303.540621] ? close(134)
+[1758734303.540841] ? close(135)
+[1758734303.541058] ? close(136)
+[1758734303.541272] ? close(137)
+[1758734303.541493] ? close(138)
+[1758734303.541710] ? close(139)
+[1758734303.541929] ? close(140)
+[1758734303.542150] ? close(141)
+[1758734303.542373] ? close(142)
+[1758734303.542592] ? close(143)
+[1758734303.542851] ? close(144)
+[1758734303.543071] ? close(145)
+[1758734303.543294] ? close(146)
+[1758734303.543542] ? close(147)
+[1758734303.543774] ? close(148)
+[1758734303.543995] ? close(149)
+[1758734303.544213] ? close(150)
+[1758734303.544424] ? close(151)
+[1758734303.544637] ? close(152)
+[1758734303.544851] ? close(153)
+[1758734303.545071] ? close(154)? close(23)
+[1758734303.545674] ? close(24)
+[1758734303.545933] ? close(25)
+[1758734303.546167] ? close(26)
+[1758734303.546397] ? close(27)
+[1758734303.546626] ? close(28)
+[1758734303.546849] ? close(29)
+[1758734303.547080] ? close(30)
+[1758734303.547313] ? close(31)
+[1758734303.547537] ? close(32)
+[1758734303.547764] ? close(33)
+[1758734303.547989] ? close(34)
+[1758734303.548213] ? close(35)
+[1758734303.548493] ? close(36)
+[1758734303.548726] ? close(37)
+[1758734303.548956] ? close(38)
+[1758734303.549181] ? close(39)
+[1758734303.549408] ? close(40)
+[1758734303.549633] ? close(41)
+[1758734303.549860] ? close(42)
+[1758734303.550094] ? close(43)
+[1758734303.550324] ? close(44)
+[1758734303.550547] ? close(45)
+[1758734303.550771] ? close(46)
+[1758734303.550994] ? close(47)
+[1758734303.551268] ? close(48)
+[1758734303.551502] ? close(49)
+[1758734303.551732] ? close(50)
+[1758734303.551961] ? close(51)
+[1758734303.552190] ? close(52)
+[1758734303.552424] ? close(53)
+[1758734303.552653] ? close(54)
+[1758734303.552877] ? close(55)
+[1758734303.553103] ? close(56)
+[1758734303.553327] ? close(57)
+[1758734303.553548] ? close(58)
+[1758734303.553771] ? close(59)
+[1758734303.554036] ? close(60)
+[1758734303.554265] ? close(61)
+[1758734303.554492] ? close(62)
+[1758734303.554717] ? close(63)
+[1758734303.554942] ? close(64)
+[1758734303.555169]
+[1758734303.555594] ? close(155)
+[1758734303.555848] ? close(156)
+[1758734303.556070] ? close(157)
+[1758734303.556299] ? close(158)
+[1758734303.556514] ? close(159)
+[1758734303.556772] ? close(160)
+[1758734303.557003] ? close(161)
+[1758734303.557228] ? close(162)
+[1758734303.557441] ? close(163)
+[1758734303.557651] ? close(164)
+[1758734303.557866] ? close(165)
+[1758734303.558082] ? close(166)
+[1758734303.558295] ? close(167)
+[1758734303.558505] ? close(168)
+[1758734303.558721] ? close(169)
+[1758734303.558975] ? close(170)
+[1758734303.559209] ? close(171)
+[1758734303.559427] ? close(172)
+[1758734303.559687] ? close(173)
+[1758734303.559916] ? close(174)
+[1758734303.560130] ? close(175)
+[1758734303.560356] ? close(176)
+[1758734303.560569] ? close(177)
+[1758734303.560786] ? close(178)
+[1758734303.561006] ? close(179)
+[1758734303.561224] ? close(180)
+[1758734303.561437] ? close(181)
+[1758734303.561653] ? close(182)
+[1758734303.561869] ? close(183)
+[1758734303.562089] ? close(184)
+[1758734303.562333] ? close(185)
+[1758734303.562565] ? close(186)
+[1758734303.562786] ? close(187)
+[1758734303.563002] ? close(188)
+[1758734303.563216] ? close(189)
+[1758734303.563434] ? close(190)
+[1758734303.563649] ? close(191)
+[1758734303.563868] ? close(192)
+[1758734303.564115] ? close(193)
+[1758734303.564349] ? close(194)
+[1758734303.564572] ? close(195)
+[1758734303.564784] ? close(196)
+[1758734303.564999] ? close(197)? close(65)
+[1758734303.565589] ? close(66)
+[1758734303.565861] ? close(67)
+[1758734303.566109] ? close(68)
+[1758734303.566348] ? close(69)
+[1758734303.566575] ? close(70)
+[1758734303.566806] ? close(71)
+[1758734303.567036] ? close(72)
+[1758734303.567269] ? close(73)
+[1758734303.567498] ? close(74)
+[1758734303.567734] ? close(75)
+[1758734303.568014] ? close(76)
+[1758734303.568250] ? close(77)
+[1758734303.568492] ? close(78)
+[1758734303.568723] ? close(79)
+[1758734303.568955] ? close(80)
+[1758734303.569185] ? close(81)
+[1758734303.569410] ? close(82)
+[1758734303.569644] ? close(83)
+[1758734303.569869] ? close(84)
+[1758734303.570096] ? close(85)
+[1758734303.570328] ? close(86)
+[1758734303.570555] ? close(87)
+[1758734303.570831] ? close(88)
+[1758734303.571067] ? close(89)
+[1758734303.571301] ? close(90)
+[1758734303.571525] ? close(91)
+[1758734303.571751]
+[1758734303.572194] ? close(198)
+[1758734303.572450] ? close(199)
+[1758734303.572678] ? close(200)
+[1758734303.572892] ? close(201)
+[1758734303.573110] ? close(202)
+[1758734303.573328] ? close(203)
+[1758734303.573595] ? close(204)
+[1758734303.573821] ? close(205)
+[1758734303.574043] ? close(206)
+[1758734303.574262] ? close(207)
+[1758734303.574475] ? close(208)
+[1758734303.574688] ? close(209)
+[1758734303.574905] ? close(210)
+[1758734303.575121] ? close(211)
+[1758734303.575585] ? close(212)
+[1758734303.575819] ? close(213)
+[1758734303.576048] ? close(214)
+[1758734303.576380] ? ioctl(fd=10, request=0x80044952 type=0x49('I') nr=82 dir=READ size=4, arg=0xb4d62a10)
+[1758734303.576869]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734303.577347] ? ioctl -> 0 (errno=0)
+? close(92)
+[1758734303.577803] ? close(93)
+[1758734303.578051] ? close(94)
+[1758734303.578283] ? close(95)
+[1758734303.578515] ? close(96)
+[1758734303.578747] ? close(97)
+[1758734303.578978] ? close(98)
+[1758734303.579257] ? close(99)
+[1758734303.579496] ? close(100)
+[1758734303.579728] ? close(101)
+[1758734303.579955] ? close(102)
+[1758734303.580183] ? close(103)
+[1758734303.580411] ? close(104)
+[1758734303.580643] ? close(105)
+[1758734303.580870] ? close(106)
+[1758734303.581099] ? close(107)
+[1758734303.581325] ? close(108)
+[1758734303.581552] ? close(109)
+[1758734303.581776] ? close(110)
+[1758734303.582046] ? close(111)
+[1758734303.582279] ? close(112)
+[1758734303.582516] ? close(113)
+[1758734303.582745] ? close(114)
+[1758734303.582970] ? close(115)
+[1758734303.583204] ? close(116)
+[1758734303.583431] ? close(117)
+[1758734303.583657] ? close(118)
+[1758734303.583880] ? close(119)
+[1758734303.584111] ? close(120)
+[1758734303.584338] ? close(121)
+[1758734303.584567] ? close(122)
+[1758734303.584837] ? close(123)
+[1758734303.585065] ? close(124)[1758734303.585362] ? close(215)
+[1758734303.585831] ? close(216)
+[1758734303.586071] ? close(217)
+[1758734303.586290] ? close(218)
+[1758734303.586512] ? close(219)
+[1758734303.586736] ? close(220)
+[1758734303.586953] ? close(221)
+[1758734303.587169] ? close(222)
+[1758734303.587381] ? close(223)
+[1758734303.587651] ? close(224)
+[1758734303.587874] ? close(225)
+[1758734303.588092] ? close(226)
+[1758734303.588307] ? close(227)
+[1758734303.588527] ? close(228)
+[1758734303.588743] ? close(229)
+[1758734303.588962] ? close(230)
+[1758734303.589171] ? close(231)
+[1758734303.589392] ? close(232)
+[1758734303.589605] ? close(233)
+[1758734303.589820] ? close(234)
+[1758734303.590045] ? close(235)
+[1758734303.590294] ? close(236)
+[1758734303.590522] ? close(237)
+[1758734303.590737] ? close(238)
+[1758734303.590952] ? close(239)
+[1758734303.591204] ? close(240)
+[1758734303.591439] ? close(241)
+[1758734303.591665] ? close(242)
+[1758734303.591883] ? close(243)
+[1758734303.592107] ? close(244)
+[1758734303.592322] ? close(245)
+[1758734303.592543] ? close(246)
+[1758734303.592754] ? close(247)
+[1758734303.592971] ? close(248)
+[1758734303.593235] ? close(249)
+[1758734303.593463] ? close(250)
+[1758734303.593681] ? close(251)
+[1758734303.593898] ? close(252)
+[1758734303.594112] ? close(253)
+[1758734303.594328] ? close(254)
+[1758734303.594546] ? close(255)
+[1758734303.594764] ? close(256)
+[1758734303.594983] ? close(257)
+[1758734303.595194]
+[1758734303.595626] ? close(125)
+[1758734303.595922] ? close(126)
+[1758734303.596171] ? close(127)
+[1758734303.596406] ? close(128)
+[1758734303.596635] ? close(129)
+[1758734303.596862] ? close(130)
+[1758734303.597091] ? close(131)
+[1758734303.597319] ? close(132)
+[1758734303.597548] ? close(133)
+[1758734303.597772] ? close(134)
+[1758734303.598003] ? close(135)
+[1758734303.598234] ? close(136)
+[1758734303.598457] ? close(137)
+[1758734303.598725] ? close(138)
+[1758734303.598966] ? close(139)
+[1758734303.599195] ? close(140)
+[1758734303.599425] ? close(141)
+[1758734303.599648] ? close(142)
+[1758734303.599877] ? close(143)
+[1758734303.600103] ? close(144)
+[1758734303.600323] ? close(145)
+[1758734303.600550] ? close(146)
+[1758734303.600780] ? close(147)
+[1758734303.601009] ? close(148)
+[1758734303.601230] ? close(149)
+[1758734303.601496] ? close(150)
+[1758734303.601735] ? close(151)
+[1758734303.601961] ? close(152)
+[1758734303.602189] ? close(153)
+[1758734303.602413] ? close(154)
+[1758734303.602642] ? close(155)
+[1758734303.602868] ? close(156)
+[1758734303.603095] ? close(157)
+[1758734303.603322] ? close(158)
+[1758734303.603552] ? close(159)
+[1758734303.603781] ? close(160)
+[1758734303.604005] ? close(161)
+[1758734303.604254] ? close(162)
+[1758734303.604496] ? close(163)
+[1758734303.604732] ? close(164)
+[1758734303.604954] ? close(165)
+[1758734303.605175] ? close(258)
+[1758734303.605671] ? close(259)
+[1758734303.605910] ? close(260)
+[1758734303.606141] ? close(261)
+[1758734303.606359] ? close(262)
+[1758734303.606615] ? close(263)
+[1758734303.606847] ? close(264)
+[1758734303.607113] ? close(265)
+[1758734303.607340] ? close(266)
+[1758734303.607565] ? close(267)
+[1758734303.607781] ? close(268)
+[1758734303.607997] ? close(269)
+[1758734303.608212] ? close(270)
+[1758734303.608428] ? close(271)
+[1758734303.608648] ? close(272)
+[1758734303.608860] ? close(273)
+[1758734303.609084] ? close(274)
+[1758734303.609302] ? close(275)
+[1758734303.609519] ? close(276)
+[1758734303.609733] ? close(277)
+[1758734303.609989] ? close(278)
+[1758734303.610214] ? close(279)
+[1758734303.610435] ? close(280)
+[1758734303.610649] ? close(281)
+[1758734303.610865] ? close(282)
+[1758734303.611088] ? close(283)
+[1758734303.611306] ? close(284)
+[1758734303.611517] ? close(285)
+[1758734303.611767] ? close(286)
+[1758734303.611999] ? close(287)
+[1758734303.612220] ? close(288)
+[1758734303.612445] ? close(289)
+[1758734303.612701] ? close(290)
+[1758734303.612936] ? close(291)
+[1758734303.613153] ? close(292)
+[1758734303.613367] ? close(293)
+[1758734303.613583] ? close(294)
+[1758734303.613800] ? close(295)
+[1758734303.614026] ? close(296)
+[1758734303.614244] ? close(297)
+[1758734303.614462] ? close(298)
+[1758734303.614679] ? close(299)
+[1758734303.614900] ? close(300)
+[1758734303.615130] ? close(166)
+[1758734303.615685] ? close(167)
+[1758734303.615940] ? close(168)
+[1758734303.616180] ? close(169)
+[1758734303.616414] ? close(170)
+[1758734303.616642] ? close(171)
+[1758734303.616865] ? close(172)
+[1758734303.617091] ? close(173)
+[1758734303.617319] ? close(174)
+[1758734303.617542] ? close(175)
+[1758734303.617772] ? close(176)
+[1758734303.618000] ? close(177)
+[1758734303.618284] ? close(178)
+[1758734303.618520] ? close(179)
+[1758734303.618761] ? close(180)
+[1758734303.618987] ? close(181)
+[1758734303.619210] ? close(182)
+[1758734303.619440] ? close(183)
+[1758734303.619677] ? close(184)
+[1758734303.619901] ? close(185)
+[1758734303.620127] ? close(186)
+[1758734303.620352] ? close(187)
+[1758734303.620581] ? close(188)
+[1758734303.620809] ? close(189)
+[1758734303.621068] ? close(190)
+[1758734303.621305] ? close(191)
+[1758734303.621541] ? close(192)
+[1758734303.621770] ? close(193)
+[1758734303.621998] ? close(194)
+[1758734303.622218] ? close(195)
+[1758734303.622445] ? close(196)
+[1758734303.622666] ? close(197)
+[1758734303.622892] ? close(198)
+[1758734303.623117] ? close(199)
+[1758734303.623344] ? close(200)
+[1758734303.623568] ? close(201)
+[1758734303.623790] ? close(202)
+[1758734303.624063] ? close(203)
+[1758734303.624298] ? close(301)
+[1758734303.624770] ? close(302)
+[1758734303.625038] ? close(303)
+[1758734303.625404] ? close(304)
+[1758734303.625646] ? close(305)
+[1758734303.625870] ? close(306)
+[1758734303.626095] ? close(307)
+[1758734303.626307] ? close(308)
+[1758734303.626524] ? close(309)
+[1758734303.626825] ? close(310)
+[1758734303.627064] ? close(311)
+[1758734303.627289] ? close(312)
+[1758734303.627511] ? close(313)
+[1758734303.627728] ? close(314)
+[1758734303.627943] ? close(315)
+[1758734303.628156] ? close(316)
+[1758734303.628374] ? close(317)
+[1758734303.628594] ? close(318)
+[1758734303.628806] ? close(319)
+[1758734303.629020] ? close(320)
+[1758734303.629239] ? close(321)
+[1758734303.629501] ? close(322)
+[1758734303.629731] ? close(323)
+[1758734303.629954] ? close(324)
+[1758734303.630173] ? close(325)
+[1758734303.630391] ? close(326)
+[1758734303.630608] ? close(327)
+[1758734303.630819] ? close(328)
+[1758734303.631043] ? close(329)
+[1758734303.631262] ? close(330)
+[1758734303.631479] ? close(331)
+[1758734303.631695] ? close(332)
+[1758734303.631948] ? close(333)
+[1758734303.632179] ? close(334)
+[1758734303.632440] ? close(335)
+[1758734303.632665] ? close(336)
+[1758734303.632884] ? close(337)
+[1758734303.633104] ? close(338)
+[1758734303.633319] ? close(339)
+[1758734303.633535] ? close(340)
+[1758734303.633752] ? close(341)
+[1758734303.634055] ? ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734303.634638]   arg hexdump (size=1):
+    0000: 29
+[1758734303.634974] ? ioctl -> 0 (errno=0)
+[1758734303.635417] ? ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734303.635851]   arg hexdump (size=1):
+    0000: 29
+[1758734303.636175] ? ioctl -> 0 (errno=0)
+? close(204)
+[1758734303.636610] ? close(205)
+[1758734303.636861] ? close(206)
+[1758734303.637090] ? close(207)
+[1758734303.637325] ? close(208)
+[1758734303.637555] ? close(209)
+[1758734303.637776] ? close(210)
+[1758734303.638059] ? close(211)
+[1758734303.638292] ? close(212)
+[1758734303.638521] ? close(213)
+[1758734303.638743] ? close(214)
+[1758734303.638969] ? close(215)
+[1758734303.639195] ? close(216)
+[1758734303.639422] ? close(217)
+[1758734303.639649] ? close(218)
+[1758734303.639879] ? close(219)
+[1758734303.640102] ? close(220)
+[1758734303.640327] ? close(221)
+[1758734303.640549] ? close(222)
+[1758734303.640821] ? close(223)
+[1758734303.641052] ? close(224)
+[1758734303.641278] ? close(225)
+[1758734303.641503] ? close(226)
+[1758734303.641737] ? close(227)
+[1758734303.641965] ? close(228)
+[1758734303.642191] ? close(229)
+[1758734303.642418] ? close(230)
+[1758734303.642649] ? close(231)
+[1758734303.642876] ? close(232)
+[1758734303.643102] ? close(233)
+[1758734303.643327] ? close(234)
+[1758734303.643599] ? close(235)
+[1758734303.643831] ? close(236)
+[1758734303.644055] ? close(237)
+[1758734303.644280] ? close(238)
+[1758734303.644516] ? close(239)
+[1758734303.644743] ? close(240)
+[1758734303.644967] ? close(241)
+[1758734303.645191] [1758734303.645593] ? close(342)
+[1758734303.645852] ? close(343)
+[1758734303.646075] ? close(344)
+[1758734303.646351] ? close(345)
+[1758734303.646578] ? close(346)
+[1758734303.646800] ? close(347)
+[1758734303.647028] ? close(348)
+[1758734303.647245] ? close(349)
+[1758734303.647463] ? close(350)
+[1758734303.647679] ? close(351)
+[1758734303.647894] ? close(352)
+[1758734303.648105] ? close(353)
+[1758734303.648325] ? close(354)
+[1758734303.648542] ? close(355)
+[1758734303.648799] ? close(356)
+[1758734303.649070] ? close(357)
+[1758734303.649309] ? close(358)
+[1758734303.649533] ? close(359)
+[1758734303.649752] ? close(360)
+[1758734303.649966] ? close(361)
+[1758734303.650184] ? close(362)
+[1758734303.650401] ? close(363)
+[1758734303.650618] ? close(364)
+[1758734303.650832] ? close(365)
+[1758734303.651047] ? close(366)
+[1758734303.651266] ? close(367)
+[1758734303.651487] ? close(368)
+[1758734303.651702] ? close(369)
+[1758734303.651976] ? close(370)
+[1758734303.652203] ? close(371)
+[1758734303.652423] ? close(372)
+[1758734303.652639] ? close(373)
+[1758734303.652855] ? close(374)
+[1758734303.653074] ? close(375)
+[1758734303.653286] ? close(376)
+[1758734303.653531] ? close(377)
+[1758734303.653748] ? close(378)
+[1758734303.654003] ? close(379)
+[1758734303.654236] ? close(380)
+[1758734303.654454] ? close(381)
+[1758734303.654719] ? close(382)
+[1758734303.654949] ? close(383)
+[1758734303.655171] ? close(242)
+[1758734303.655671] ? close(243)
+[1758734303.655924] ? close(244)
+[1758734303.656160] ? close(245)
+[1758734303.656490] ? close(246)
+[1758734303.656743] ? close(247)
+[1758734303.656976] ? close(248)
+[1758734303.657211] ? close(249)
+[1758734303.657485] ? close(250)
+[1758734303.657722] ? close(251)
+[1758734303.657949] ? close(252)
+[1758734303.658180] ? close(253)
+[1758734303.658414] ? close(254)
+[1758734303.658641] ? close(255)
+[1758734303.658869] ? close(256)
+[1758734303.659094] ? close(257)
+[1758734303.659320] ? close(258)
+[1758734303.659549] ? close(259)
+[1758734303.659773] ? close(260)
+[1758734303.660004] ? close(261)
+[1758734303.660273] ? close(262)
+[1758734303.660508] ? close(263)
+[1758734303.660736] ? close(264)
+[1758734303.660965] ? close(265)
+[1758734303.661198] ? close(266)
+[1758734303.661422] ? close(267)
+[1758734303.661648] ? close(268)
+[1758734303.661880] ? close(269)
+[1758734303.662120] ? close(270)
+[1758734303.662347] ? close(271)
+[1758734303.662570] ? close(272)
+[1758734303.662806] ? close(273)
+[1758734303.663077] ? close(274)
+[1758734303.663310] ? close(275)
+[1758734303.663542] ? close(276)
+[1758734303.663772] ? close(277)
+[1758734303.663999] ? close(278)
+[1758734303.664225] ? close(279)
+[1758734303.664452] ? close(280)
+[1758734303.664677] ? close(281)
+[1758734303.664905] ? close(282)
+[1758734303.665133] ? close(384)
+[1758734303.665710] ? close(385)
+[1758734303.666016] ? close(386)
+[1758734303.666240] ? close(387)
+[1758734303.666464] ? close(388)
+[1758734303.666680] ? close(389)
+[1758734303.666908] ? close(390)
+[1758734303.667122] ? close(391)
+[1758734303.667335] ? close(392)
+[1758734303.667544] ? close(393)
+[1758734303.667760] ? close(394)
+[1758734303.667988] ? close(395)
+[1758734303.668200] ? close(396)
+[1758734303.668429] ? close(397)
+[1758734303.668695] ? close(398)
+[1758734303.668921] ? close(399)
+[1758734303.669139] ? close(400)
+[1758734303.669357] ? close(401)
+[1758734303.669575] ? close(402)
+[1758734303.669829] ? close(403)
+[1758734303.670067] ? close(404)
+[1758734303.670291] ? close(405)
+[1758734303.670514] ? close(406)
+[1758734303.670730] ? close(407)
+[1758734303.670954] ? close(408)
+[1758734303.671166] ? close(409)
+[1758734303.671429] ? close(410)
+[1758734303.671658] ? close(411)
+[1758734303.671876] ? close(283)
+[1758734303.672418] ? close(284)
+[1758734303.672675] ? close(285)
+[1758734303.672917] ? close(286)
+[1758734303.673147] ? close(287)
+[1758734303.673370] ? close(288)
+[1758734303.673609] ? close(289)
+[1758734303.673832] ? close(290)
+[1758734303.674059] ? close(291)
+[1758734303.674333] ? close(292)
+[1758734303.674569] ? close(293)
+[1758734303.674799] ? close(294)
+[1758734303.675022] ? close(295)? close(412)
+[1758734303.675513] ? close(413)
+[1758734303.675758] ? close(414)
+[1758734303.675980] ? close(415)
+[1758734303.676205] ? close(416)
+[1758734303.676419] ? close(417)
+[1758734303.676639] ? close(418)
+[1758734303.676855] ? close(419)
+[1758734303.677123] ? close(420)
+[1758734303.677348] ? close(421)
+[1758734303.677567] [1758734303.677782] ? ioctl(fd=10, request=0x80044952 type=0x49('I') nr=82 dir=READ size=4, arg=0xb4d62a10)
+[1758734303.678409]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734303.678889] ? ioctl -> 0 (errno=0)
+
+[1758734303.679264] ? close(296)
+[1758734303.679529] ? close(297)
+[1758734303.679796] ? close(298)
+[1758734303.680041] ? close(299)
+[1758734303.680272] ? close(300)
+[1758734303.680502] ? close(301)
+[1758734303.680732] ? close(302)
+[1758734303.680956] ? close(303)
+[1758734303.681188] ? close(304)
+[1758734303.681421] ? close(305)
+[1758734303.681647] ? close(306)
+[1758734303.681867] ? close(307)
+[1758734303.682088] ? close(308)
+[1758734303.682320] ? close(309)
+[1758734303.682590] ? close(310)
+[1758734303.682841] ? close(311)
+[1758734303.683068] ? close(312)
+[1758734303.683304] ? close(313)
+[1758734303.683554] ? close(314)
+[1758734303.683786] ? close(315)
+[1758734303.684022] ? close(316)
+[1758734303.684252] ? close(317)
+[1758734303.684481] ? close(318)
+[1758734303.684713] ? close(319)
+[1758734303.684938] ? close(320)
+[1758734303.685165] ? close(422)
+[1758734303.685706] ? close(423)
+[1758734303.685947] ? close(424)
+[1758734303.686174] ? close(425)
+[1758734303.686433] ? close(426)
+[1758734303.686667] ? close(427)
+[1758734303.686885] ? close(428)
+[1758734303.687109] ? close(429)
+[1758734303.687328] ? close(430)
+[1758734303.687544] ? close(431)
+[1758734303.687760] ? close(432)
+[1758734303.687985] ? close(433)
+[1758734303.688248] ? close(434)
+[1758734303.688476] ? close(435)
+[1758734303.688695] ? close(436)
+[1758734303.688913] ? close(437)
+[1758734303.689125] ? close(438)
+[1758734303.689341] ? close(439)
+[1758734303.689558] ? close(440)
+[1758734303.689778] ? close(441)
+[1758734303.689992] ? close(442)
+[1758734303.690209] ? close(443)
+[1758734303.690426] ? close(444)
+[1758734303.690644] ? close(445)
+[1758734303.690860] ? close(446)
+[1758734303.691131] ? close(447)
+[1758734303.691356] ? close(448)
+[1758734303.691611] ? close(449)
+[1758734303.691849] ? close(450)
+[1758734303.692071] ? close(451)
+[1758734303.692288] ? close(452)
+[1758734303.692510] ? close(453)
+[1758734303.692735] ? close(454)
+[1758734303.692946] ? close(455)
+[1758734303.693162] ? close(456)
+[1758734303.693379] ? close(457)
+[1758734303.693596] ? close(458)
+[1758734303.693857] ? close(459)
+[1758734303.694079] ? close(460)
+[1758734303.694299] ? close(461)
+[1758734303.694515] ? close(462)
+[1758734303.694732] ? close(463)
+[1758734303.694948] ? close(464)
+[1758734303.695169] ? close(321)
+[1758734303.695669] ? close(322)
+[1758734303.695924] ? close(323)
+[1758734303.696157] ? close(324)
+[1758734303.696390] ? close(325)
+[1758734303.696681] ? close(326)
+[1758734303.696916] ? close(327)
+[1758734303.697150] ? close(328)
+[1758734303.697391] ? close(329)
+[1758734303.697615] ? close(330)
+[1758734303.697842] ? close(331)
+[1758734303.698068] ? close(332)
+[1758734303.698296] ? close(333)
+[1758734303.698521] ? close(334)
+[1758734303.698747] ? close(335)
+[1758734303.698974] ? close(336)
+[1758734303.699202] ? close(337)
+[1758734303.699471] ? close(338)
+[1758734303.699706] ? close(339)
+[1758734303.699932] ? close(340)
+[1758734303.700163] ? close(341)
+[1758734303.700389] ? close(342)
+[1758734303.700618] ? close(343)
+[1758734303.700850] ? close(344)
+[1758734303.701083] ? close(345)
+[1758734303.701313] ? close(346)
+[1758734303.701541] ? close(347)
+[1758734303.701772] ? close(348)
+[1758734303.701999] ? close(349)
+[1758734303.702272] ? close(350)
+[1758734303.702507] ? close(351)
+[1758734303.702734] ? close(352)
+[1758734303.702968] ? close(353)
+[1758734303.703192] ? close(354)
+[1758734303.703418] ? close(355)
+[1758734303.703638] ? close(356)
+[1758734303.703868] ? close(357)
+[1758734303.704096] ? close(358)
+[1758734303.704323] ? close(359)
+[1758734303.704552] ? close(360)
+[1758734303.704785] ? close(361)
+[1758734303.705056] ? close(362)? close(465)
+[1758734303.705623] ? close(466)
+[1758734303.705865] ? close(467)
+[1758734303.706089] ? close(468)
+[1758734303.706304] ? close(469)
+[1758734303.706519] ? close(470)
+[1758734303.706737] ? close(471)
+[1758734303.706997] ? close(472)
+[1758734303.707230] ? close(473)
+[1758734303.707455] ? close(474)
+[1758734303.707672] ? close(475)
+[1758734303.707944] ? close(476)
+[1758734303.708169] ? close(477)
+[1758734303.708385] ? close(478)
+[1758734303.708603] ? close(479)
+[1758734303.708822] ? close(480)
+[1758734303.709038] ? close(481)
+[1758734303.709252] ? close(482)
+[1758734303.709472] ? close(483)
+[1758734303.709688] ? close(484)
+[1758734303.709905] ? close(485)
+[1758734303.710121] ? close(486)
+[1758734303.710334] ? close(487)
+[1758734303.710588] ? close(488)
+[1758734303.710815] ? close(489)
+[1758734303.711034] ? close(490)
+[1758734303.711247] ? close(491)
+[1758734303.711465] ? close(492)
+[1758734303.711678] ? close(493)
+[1758734303.711894] ? close(494)
+[1758734303.712111] ? close(495)
+[1758734303.712362] ? close(496)
+[1758734303.712592] ? close(497)
+[1758734303.712847] ? close(498)
+[1758734303.713072] ? close(499)
+[1758734303.713292] ? close(500)
+[1758734303.713557] ? close(501)
+[1758734303.713778] ? close(502)
+[1758734303.713998] ? close(503)
+[1758734303.714216] ? close(504)
+[1758734303.714430] ? close(505)
+[1758734303.714656] ? close(506)
+[1758734303.714873] ? close(507)
+[1758734303.715089] ? close(508)
+[1758734303.715566] ? close(363)
+[1758734303.715835] ? close(364)
+[1758734303.716070] ? close(365)
+[1758734303.716362] ? close(366)
+[1758734303.716591] ? close(367)
+[1758734303.716824] ? close(368)
+[1758734303.717049] ? close(369)
+[1758734303.717272] ? close(370)
+[1758734303.717496] ? close(371)
+[1758734303.717725] ? close(372)
+[1758734303.717952] ? close(373)
+[1758734303.718179] ? close(374)
+[1758734303.718406] ? close(375)
+[1758734303.718633] ? close(376)
+[1758734303.718862] ? close(377)
+[1758734303.719134] ? close(378)
+[1758734303.719360] ? close(379)
+[1758734303.719601] ? close(380)
+[1758734303.719822] ? close(381)
+[1758734303.720046] ? close(382)
+[1758734303.720270] ? close(383)
+[1758734303.720506] ? close(384)
+[1758734303.720733] ? close(385)
+[1758734303.720953] ? close(386)
+[1758734303.721179] ? close(387)
+[1758734303.721404] ? close(388)
+[1758734303.721634] ? close(389)
+[1758734303.721903] ? close(390)
+[1758734303.722135] ? close(391)
+[1758734303.722371] ? close(392)
+[1758734303.722598] ? close(393)
+[1758734303.722825] ? close(394)
+[1758734303.723051] ? close(395)
+[1758734303.723280] ? close(396)
+[1758734303.723512] ? close(397)
+[1758734303.723740] ? close(398)
+[1758734303.723966] ? close(399)
+[1758734303.724196] ? close(400)
+[1758734303.724420] ? close(401)
+[1758734303.724699] ? close(402)
+[1758734303.724932] ? close(403)
+[1758734303.725163]
+[1758734303.725563] ? close(509)
+[1758734303.725811] ? close(510)
+[1758734303.726034] ? close(511)
+[1758734303.726253] ? close(512)
+[1758734303.726472] ? close(513)
+[1758734303.726691] ? close(514)
+[1758734303.726907] ? close(515)
+[1758734303.727128] ? close(516)
+[1758734303.727388] ? close(517)
+[1758734303.727620] ? close(518)
+[1758734303.727881] ? close(519)
+[1758734303.728114] ? close(520)
+[1758734303.728332] ? close(521)
+[1758734303.728549] ? close(522)
+[1758734303.728772] ? close(523)
+[1758734303.728989] ? close(524)
+[1758734303.729202] ? close(525)
+[1758734303.729412] ? close(526)
+[1758734303.729625] ? close(527)
+[1758734303.729847] ? close(528)
+[1758734303.730070] ? close(529)
+[1758734303.730344] ? close(530)
+[1758734303.730564] ? close(531)
+[1758734303.730791] ? close(532)
+[1758734303.731006] ? close(533)
+[1758734303.731222] ? close(534)
+[1758734303.731436] ? close(535)
+[1758734303.731655] ? close(536)
+[1758734303.731868] ? close(537)
+[1758734303.732081] ? close(538)
+[1758734303.732292] ? close(539)
+[1758734303.732511] ? close(540)
+[1758734303.732731] ? close(541)
+[1758734303.733018] ? close(542)
+[1758734303.733255] ? close(543)
+[1758734303.733479] ? close(544)
+[1758734303.733698] ? close(545)
+[1758734303.733910] ? close(546)
+[1758734303.734128] ? close(547)
+[1758734303.734348] ? close(548)
+[1758734303.734564] ? close(549)
+[1758734303.734778] ? close(550)
+[1758734303.734993] ? close(551)
+? close(404)
+[1758734303.735524] ? close(405)
+[1758734303.735817] ? close(406)
+[1758734303.736057] ? close(407)
+[1758734303.736285] ? close(408)
+[1758734303.737744] ? ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734303.738320]   arg hexdump (size=1):
+    0000: 29
+[1758734303.738720] ? ioctl -> 0 (errno=0)
+[1758734303.738987] ? ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734303.739390]   arg hexdump (size=1):
+    0000: 29
+[1758734303.739717] ? ioctl -> 0 (errno=0)
+[1758734303.740034] ? close(409)
+[1758734303.740297] ? close(410)
+[1758734303.740529] ? close(411)
+[1758734303.740762] ? close(412)
+[1758734303.740992] ? close(413)
+[1758734303.741218] ? close(414)
+[1758734303.741496] ? close(415)
+[1758734303.741736] ? close(416)
+[1758734303.741965] ? close(417)
+[1758734303.742190] ? close(418)
+[1758734303.742424] ? close(419)
+[1758734303.742685] ? close(420)
+[1758734303.742921] ? close(421)
+[1758734303.743147] ? close(422)
+[1758734303.743376] ? close(423)
+[1758734303.743601] ? close(424)
+[1758734303.743829] ? close(425)
+[1758734303.744057] ? close(426)
+[1758734303.744323] ? close(427)
+[1758734303.744556] ? close(428)
+[1758734303.744783] ? close(429)
+[1758734303.745013] ? close(430)
+[1758734303.745389] ? close(431)
+[1758734303.745661] ? close(432)
+[1758734303.745902] ? close(433)
+[1758734303.746128] ? close(434)
+[1758734303.746355] ? close(435)
+[1758734303.746587] ? close(436)
+[1758734303.746816] ? close(437)
+[1758734303.747093] ? close(438)
+[1758734303.747328] ? close(439)
+[1758734303.747562] ? close(440)
+[1758734303.747790] ? close(441)
+[1758734303.748026] ? close(442)
+[1758734303.748251] ? close(443)
+[1758734303.748475] ? close(444)
+[1758734303.748700] ? close(445)
+[1758734303.748937] ? close(446)
+[1758734303.749159] ? close(447)
+[1758734303.749386] ? close(448)
+[1758734303.749615] ? close(449)
+[1758734303.749888] ? close(450)
+[1758734303.750120] ? close(451)
+[1758734303.750362] ? close(452)
+[1758734303.750592] ? close(453)
+[1758734303.750817] ? close(454)
+[1758734303.751041] ? close(455)
+[1758734303.751265] ? close(456)
+[1758734303.751493] ? close(457)
+[1758734303.751721] ? close(458)
+[1758734303.751947] ? close(459)
+[1758734303.752174] ? close(460)
+[1758734303.752404] ? close(461)
+[1758734303.752677] ? close(462)
+[1758734303.752906] ? close(463)
+[1758734303.753136] ? close(464)
+[1758734303.753364] ? close(465)
+[1758734303.753592] ? close(466)
+[1758734303.753816] ? close(467)
+[1758734303.754049] ? close(468)
+[1758734303.754281] ? close(469)
+[1758734303.754506] ? close(470)
+[1758734303.754735] ? close(471)
+[1758734303.754966] ? close(472)
+[1758734303.755190] [1758734303.735339] ? close(552)
+[1758734303.755839] ? close(553)
+[1758734303.756073] ? close(554)
+[1758734303.756298] ? close(555)
+[1758734303.756521] ? close(556)
+[1758734303.756739] ? close(557)
+[1758734303.756960] ? close(558)
+[1758734303.757185] ? close(559)
+[1758734303.757402] ? close(560)
+[1758734303.757618] ? close(561)
+[1758734303.757832] ? close(562)
+[1758734303.758054] ? close(563)
+[1758734303.758322] ? close(564)
+[1758734303.758545] ? close(565)
+[1758734303.758799] ? close(566)
+[1758734303.759033] ? close(567)
+[1758734303.759256] ? close(568)
+[1758734303.759470] ? close(569)
+[1758734303.759692] ? close(570)
+[1758734303.759911] ? close(571)
+[1758734303.760130] ? close(572)
+[1758734303.760350] ? close(573)
+[1758734303.760578] ? close(574)
+[1758734303.760798] ? close(575)
+[1758734303.761063] ? close(576)
+[1758734303.761286] ? close(577)
+[1758734303.761504] ? close(578)
+[1758734303.761723] ? close(579)
+[1758734303.761939] ? close(580)
+[1758734303.762156] ? close(581)
+[1758734303.762372] ? close(582)
+[1758734303.762587] ? close(583)
+[1758734303.762803] ? close(584)
+[1758734303.763020] ? close(585)
+[1758734303.763241] ? close(586)
+[1758734303.763456] ? close(587)
+[1758734303.763673] ? close(588)
+[1758734303.763969] ? close(589)
+[1758734303.764204] ? close(590)
+[1758734303.764430] ? close(591)
+[1758734303.764657] ? close(592)
+[1758734303.764875] ? close(593)
+[1758734303.765085] ? close(594)? close(473)
+[1758734303.765654] ? close(474)
+[1758734303.765903] ? close(475)
+[1758734303.766139] ? close(476)
+[1758734303.766368] ? close(477)
+[1758734303.766645] ? close(478)
+[1758734303.766875] ? close(479)
+[1758734303.767105] ? close(480)
+[1758734303.767331] ? close(481)
+[1758734303.767563] ? close(482)
+[1758734303.767792] ? close(483)
+[1758734303.768018] ? close(484)
+[1758734303.768242] ? close(485)
+[1758734303.768468] ? close(486)
+[1758734303.768698] ? close(487)
+[1758734303.768918] ? close(488)
+[1758734303.769139] ? close(489)
+[1758734303.769409] ? close(490)
+[1758734303.769650] ? close(491)
+[1758734303.769887] ? close(492)
+[1758734303.770111] ? close(493)
+[1758734303.770342] ? close(494)
+[1758734303.770566] ? close(495)
+[1758734303.770793] ? close(496)
+[1758734303.771015] ? close(497)
+[1758734303.771244] ? close(498)
+[1758734303.771474] ? close(499)
+[1758734303.771705] ? close(500)
+[1758734303.771965] ? close(501)
+
+[1758734303.772495] ? close(595)
+[1758734303.772752] ? close(596)
+[1758734303.772977] ? close(597)
+[1758734303.773195] ? close(598)
+[1758734303.773412] ? close(599)
+[1758734303.773626] ? close(600)
+[1758734303.773841] ? close(601)
+[1758734303.774056] ? close(602)
+[1758734303.774272] ? close(603)
+[1758734303.774490] ? close(604)
+[1758734303.774715] ? close(605)
+[1758734303.774969] ? close(606)
+[1758734303.775207] ? close(607)
+[1758734303.775574] ? close(608)
+[1758734303.775807] ? close(609)
+[1758734303.776034] ? close(610)
+[1758734303.776253] ? close(611)
+[1758734303.776506] ? close(612)
+[1758734303.776744] ? close(613)
+[1758734303.776964] ? close(614)
+[1758734303.777178] ? close(615)
+[1758734303.777390] ? close(616)
+[1758734303.777619] ? close(617)
+[1758734303.777885] ? close(618)
+[1758734303.778105] ? close(619)
+[1758734303.778321] ? close(620)
+[1758734303.778541] ? close(621)
+[1758734303.778759] ? close(622)
+[1758734303.778975] ? close(623)
+[1758734303.779186] [1758734303.779341] ? ioctl(fd=10, request=0x80044952 type=0x49('I') nr=82 dir=READ size=4, arg=0xb4d62a10)
+[1758734303.780066]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734303.780595] ? ioctl -> 0 (errno=0)
+[1758734303.780968] ? close(502)
+[1758734303.781234] ? close(503)
+[1758734303.781473] ? close(504)
+[1758734303.781697] ? close(505)
+[1758734303.781926] ? close(506)
+[1758734303.782151] ? close(507)
+[1758734303.782378] ? close(508)
+[1758734303.782608] ? close(509)
+[1758734303.782837] ? close(510)
+[1758734303.783062] ? close(511)
+[1758734303.783324] ? close(512)
+[1758734303.783572] ? close(513)
+[1758734303.783807] ? close(514)
+[1758734303.784036] ? close(515)
+[1758734303.784263] ? close(516)
+[1758734303.784490] ? close(517)
+[1758734303.784723] ? close(518)
+[1758734303.784948] ? close(519)
+[1758734303.785171] ? close(624)
+[1758734303.785675] ? close(625)
+[1758734303.785916] ? close(626)
+[1758734303.786193] ? close(627)
+[1758734303.786418] ? close(628)
+[1758734303.786643] ? close(629)
+[1758734303.786860] ? close(630)
+[1758734303.787084] ? close(631)
+[1758734303.787300] ? close(632)
+[1758734303.787530] ? close(633)
+[1758734303.787752] ? close(634)
+[1758734303.788002] ? close(635)
+[1758734303.788232] ? close(636)
+[1758734303.788455] ? close(637)
+[1758734303.788672] ? close(638)
+[1758734303.788921] ? close(639)
+[1758734303.789158] ? close(640)
+[1758734303.789386] ? close(641)
+[1758734303.789601] ? close(642)
+[1758734303.789815] ? close(643)
+[1758734303.790030] ? close(644)
+[1758734303.790250] ? close(645)
+[1758734303.790479] ? close(646)
+[1758734303.790695] ? close(647)
+[1758734303.790908] ? close(648)
+[1758734303.791125] ? close(649)
+[1758734303.791340] ? close(650)
+[1758734303.791563] ? close(651)
+[1758734303.791821] ? close(652)
+[1758734303.792045] ? close(653)
+[1758734303.792266] ? close(654)
+[1758734303.792483] ? close(655)
+[1758734303.792698] ? close(656)
+[1758734303.792917] ? close(657)
+[1758734303.793129] ? close(658)
+[1758734303.793378] ? close(659)
+[1758734303.793612] ? close(660)
+[1758734303.793832] ? close(661)
+[1758734303.794050] ? close(662)
+[1758734303.794273] ? close(663)
+[1758734303.794520] ? close(664)
+[1758734303.794762] ? close(665)
+[1758734303.794982] ? close(666)
+[1758734303.795201] ? close(520)
+[1758734303.795721] ? close(521)
+[1758734303.795969] ? close(522)
+[1758734303.796200] ? close(523)
+[1758734303.796439] ? close(524)
+[1758734303.796662] ? close(525)
+[1758734303.796895] ? close(526)
+[1758734303.797123] ? close(527)
+[1758734303.797396] ? close(528)
+[1758734303.797631] ? close(529)
+[1758734303.797868] ? close(530)
+[1758734303.798095] ? close(531)
+[1758734303.798320] ? close(532)
+[1758734303.798552] ? close(533)
+[1758734303.798783] ? close(534)
+[1758734303.799008] ? close(535)
+[1758734303.799234] ? close(536)
+[1758734303.799459] ? close(537)
+[1758734303.799687] ? close(538)
+[1758734303.799911] ? close(539)
+[1758734303.800181] ? close(540)
+[1758734303.800412] ? close(541)
+[1758734303.800648] ? close(542)
+[1758734303.800879] ? close(543)
+[1758734303.801104] ? close(544)
+[1758734303.801349] ? close(545)
+[1758734303.801593] ? close(546)
+[1758734303.801823] ? close(547)
+[1758734303.802050] ? close(548)
+[1758734303.802282] ? close(549)
+[1758734303.802509] ? close(550)
+[1758734303.802737] ? close(551)
+[1758734303.803011] ? close(552)
+[1758734303.803242] ? close(553)
+[1758734303.803473] ? close(554)
+[1758734303.803704] ? close(555)
+[1758734303.803929] ? close(556)
+[1758734303.804152] ? close(557)
+[1758734303.804382] ? close(558)
+[1758734303.804603] ? close(559)
+[1758734303.804827] ? close(560)
+[1758734303.805049] ? close(561)? close(667)
+[1758734303.805602] ? close(668)
+[1758734303.805888] ? close(669)
+[1758734303.806114] ? close(670)
+[1758734303.806330] ? close(671)
+[1758734303.806556] ? close(672)
+[1758734303.806775] ? close(673)
+[1758734303.806990] ? close(674)
+[1758734303.807209] ? close(675)
+[1758734303.807425] ? close(676)
+[1758734303.807645] ? close(677)
+[1758734303.807864] ? close(678)
+[1758734303.808077] ? close(679)
+[1758734303.808295] ? close(680)
+[1758734303.808547] ? close(681)
+[1758734303.808813] ? close(682)
+[1758734303.809045] ? close(683)
+[1758734303.809266] ? close(684)
+[1758734303.809484] ? close(685)
+[1758734303.809704] ? close(686)
+[1758734303.809919] ? close(687)
+[1758734303.810136] ? close(688)
+[1758734303.810350] ? close(689)
+[1758734303.810568] ? close(690)
+[1758734303.810786] ? close(691)
+[1758734303.811004] ? close(692)
+[1758734303.811640] ? close(562)
+[1758734303.811914] ? close(563)
+[1758734303.812146] ? close(564)
+[1758734303.812378] ? close(565)
+[1758734303.812607] ? close(566)
+[1758734303.812836] ? close(567)
+[1758734303.813066] ? close(568)
+[1758734303.813295] ? close(569)
+[1758734303.813525] ? close(570)
+[1758734303.813754] ? close(571)
+[1758734303.813980] ? close(572)
+[1758734303.814268] ? close(573)
+[1758734303.814501] ? close(574)
+[1758734303.814726] ? close(575)
+[1758734303.814952] ? close(576)
+[1758734303.815185]
+[1758734303.815611] ? close(693)
+[1758734303.815866] ? close(694)
+[1758734303.816083] ? close(695)
+[1758734303.816302] ? close(696)
+[1758734303.816518] ? close(697)
+[1758734303.816727] ? close(698)
+[1758734303.816991] ? close(699)
+[1758734303.817216] ? close(700)
+[1758734303.817434] ? close(701)
+[1758734303.817651] ? close(702)
+[1758734303.817864] ? close(703)
+[1758734303.818080] ? close(704)
+[1758734303.818341] ? close(705)
+[1758734303.818567] ? close(706)
+[1758734303.818785] ? close(707)
+[1758734303.819007] ? close(708)
+[1758734303.819221] ? close(709)
+[1758734303.819434] ? close(710)
+[1758734303.819684] ? close(711)
+[1758734303.819920] ? close(712)
+[1758734303.820143] ? close(713)
+[1758734303.820361] ? close(714)
+[1758734303.820575] ? close(715)
+[1758734303.820798] ? close(716)
+[1758734303.821020] ? close(717)
+[1758734303.821242] ? close(718)
+[1758734303.821458] ? close(719)
+[1758734303.821681] ? close(720)
+[1758734303.821898] ? close(721)
+[1758734303.822109] ? close(722)
+[1758734303.822320] ? close(723)
+[1758734303.822590] ? close(724)
+[1758734303.822822] ? close(725)
+[1758734303.823043] ? close(726)
+[1758734303.823256] ? close(727)
+[1758734303.823507] ? close(728)
+[1758734303.823740] ? close(729)
+[1758734303.823968] ? close(730)
+[1758734303.824186] ? close(731)
+[1758734303.824405] ? close(732)? close(577)
+[1758734303.824872] ? close(578)
+[1758734303.825127] ? close(579)
+[1758734303.825531] ? close(580)
+[1758734303.825781] ? close(581)
+[1758734303.826018] ? close(582)
+[1758734303.826247] ? close(583)
+[1758734303.826477] ? close(584)
+[1758734303.826705] ? close(585)
+[1758734303.826930] ? close(586)
+[1758734303.827168] ? close(587)
+[1758734303.827394] ? close(588)
+[1758734303.827626] ? close(589)
+[1758734303.827852] ? close(590)
+[1758734303.828080] ? close(591)
+[1758734303.828361] ? close(592)
+[1758734303.828595] ? close(593)
+[1758734303.828824] ? close(594)
+[1758734303.829049] ? close(595)
+[1758734303.829280] ? close(596)
+[1758734303.829519] ? close(597)
+[1758734303.829742] ? close(598)
+[1758734303.829968] ? close(599)
+[1758734303.830191] ? close(600)
+[1758734303.830418] ? close(601)
+[1758734303.830647] ? close(602)
+[1758734303.830871] ? close(603)
+[1758734303.831171] ? close(604)
+[1758734303.831409] ? close(605)
+[1758734303.831635] ? close(606)
+[1758734303.831867] ? close(607)
+[1758734303.832090] ? close(608)
+[1758734303.832324] ? close(609)
+[1758734303.832550] ? close(610)
+[1758734303.832786] ? close(611)
+[1758734303.833014] ? close(612)
+[1758734303.833241] ? close(613)
+[1758734303.833465] ? close(614)
+[1758734303.833694] ? close(615)
+[1758734303.833969] ? close(616)
+[1758734303.834199] ? close(617)
+[1758734303.834425] ? close(618)
+[1758734303.834654] ? close(619)
+[1758734303.834879] ? close(620)
+[1758734303.835105]
+[1758734303.835516] ? close(733)
+[1758734303.835779] ? close(734)
+[1758734303.836003] ? close(735)
+[1758734303.836224] ? close(736)
+[1758734303.836441] ? close(737)
+[1758734303.836713] ? close(738)
+[1758734303.836939] ? close(739)
+[1758734303.837158] ? close(740)
+[1758734303.837379] ? close(741)
+[1758734303.837599] ? close(742)
+[1758734303.837815] ? close(743)
+[1758734303.838033] ? close(744)
+[1758734303.838245] ? close(745)
+[1758734303.838462] ? close(746)
+[1758734303.838682] ? close(747)
+[1758734303.838900] ? close(748)
+[1758734303.839127] ? close(749)[1758734303.840502] ? ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734303.841204]   arg hexdump (size=1):
+    0000: 29
+[1758734303.841545] ? ioctl -> 0 (errno=0)
+[1758734303.841796] ? ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734303.842258]   arg hexdump (size=1):
+    0000: 29
+[1758734303.842589] ? ioctl -> 0 (errno=0)
+? close(621)
+[1758734303.843034] ? close(622)
+[1758734303.843291] ? close(623)
+[1758734303.843521] ? close(624)
+[1758734303.843748] ? close(625)
+[1758734303.843979] ? close(626)
+[1758734303.844206] ? close(627)
+[1758734303.844432] ? close(628)
+[1758734303.844657] ? close(629)
+[1758734303.844884] ? close(630)
+[1758734303.845163] ? close(631)
+[1758734303.845553] ? close(632)
+[1758734303.845791] ? close(633)
+[1758734303.846022] ? close(634)
+[1758734303.846246] ? close(635)
+[1758734303.846477] ? close(636)
+[1758734303.846706] ? close(637)
+[1758734303.846940] ? close(638)
+[1758734303.847175] ? close(639)
+[1758734303.847398] ? close(640)
+[1758734303.847624] ? close(641)
+[1758734303.847899] ? close(642)
+[1758734303.848127] ? close(643)
+[1758734303.848356] ? close(644)
+[1758734303.848577] ? close(645)
+[1758734303.848807] ? close(646)
+[1758734303.849036] ? close(647)
+[1758734303.849255] ? close(648)
+[1758734303.849474] ? close(649)
+[1758734303.849705] ? close(650)
+[1758734303.849932] ? close(651)
+[1758734303.850162] ? close(652)
+[1758734303.850384] ? close(653)
+[1758734303.850662] ? close(654)
+[1758734303.850896] ? close(655)
+[1758734303.851123] ? close(656)
+[1758734303.851350] ? close(657)
+[1758734303.851584] ? close(658)
+[1758734303.851805] ? close(659)
+[1758734303.852029] ? close(660)
+[1758734303.852258] ? close(661)
+[1758734303.852482] ? close(662)
+[1758734303.852709] ? close(663)
+[1758734303.852929] ? close(664)
+[1758734303.853151] ? close(665)
+[1758734303.853416] ? close(666)
+[1758734303.853647] ? close(667)
+[1758734303.853873] ? close(668)
+[1758734303.854101] ? close(669)
+[1758734303.854331] ? close(670)
+[1758734303.854559] ? close(671)
+[1758734303.854787] ? close(672)
+[1758734303.855012] ? close(673)
+
+[1758734303.855504] ? close(750)
+[1758734303.855766] ? close(751)
+[1758734303.856028] ? close(752)
+[1758734303.856316] ? close(753)
+[1758734303.856543] ? close(754)
+[1758734303.856756] ? close(755)
+[1758734303.856972] ? close(756)
+[1758734303.857189] ? close(757)
+[1758734303.857404] ? close(758)
+[1758734303.857619] ? close(759)
+[1758734303.857839] ? close(760)
+[1758734303.858060] ? close(761)
+[1758734303.858291] ? close(762)
+[1758734303.858504] ? close(763)
+[1758734303.858720] ? close(764)
+[1758734303.858988] ? close(765)
+[1758734303.859217] ? close(766)
+[1758734303.859433] ? close(767)
+[1758734303.859650] ? close(768)
+[1758734303.859873] ? close(769)
+[1758734303.860087] ? close(770)
+[1758734303.860299] ? close(771)
+[1758734303.860513] ? close(772)
+[1758734303.860729] ? close(773)
+[1758734303.860946] ? close(774)
+[1758734303.861201] ? close(775)
+[1758734303.861433] ? close(776)
+[1758734303.861657] ? close(777)
+[1758734303.861925] ? close(778)
+[1758734303.862143] ? close(779)
+[1758734303.862363] ? close(780)
+[1758734303.862582] ? close(781)
+[1758734303.862800] ? close(782)
+[1758734303.863034] ? close(783)
+[1758734303.863251] ? close(784)
+[1758734303.863468] ? close(785)
+[1758734303.863684] ? close(786)
+[1758734303.863899] ? close(787)
+[1758734303.864110] ? close(788)
+[1758734303.864337] ? close(789)
+[1758734303.864596] ? close(790)
+[1758734303.864818] ? close(791)
+[1758734303.865037] ? close(792)[1758734303.865470] ? close(674)
+[1758734303.865752] ? close(675)
+[1758734303.865988] ? close(676)
+[1758734303.866217] ? close(677)
+[1758734303.866439] ? close(678)
+[1758734303.866672] ? close(679)
+[1758734303.866899] ? close(680)
+[1758734303.867124] ? close(681)
+[1758734303.867393] ? close(682)
+[1758734303.867633] ? close(683)
+[1758734303.867863] ? close(684)
+[1758734303.868087] ? close(685)
+[1758734303.868310] ? close(686)
+[1758734303.868548] ? close(687)
+[1758734303.868776] ? close(688)
+[1758734303.869003] ? close(689)
+[1758734303.869226] ? close(690)
+[1758734303.869457] ? close(691)
+[1758734303.869680] ? close(692)
+[1758734303.869909] ? close(693)
+[1758734303.870176] ? close(694)
+[1758734303.870411] ? close(695)
+[1758734303.870637] ? close(696)
+[1758734303.870860] ? close(697)
+[1758734303.871087] ? close(698)
+[1758734303.871316] ? close(699)
+[1758734303.871544] ? close(700)
+[1758734303.871768] ? close(701)
+[1758734303.871991] ? close(702)
+[1758734303.872221] ? close(703)
+[1758734303.872720] ? close(793)
+[1758734303.873038] ? close(794)
+[1758734303.873268] ? close(795)
+[1758734303.873488] ? close(796)
+[1758734303.873706] ? close(797)
+[1758734303.873965] ? close(798)
+[1758734303.874200] ? close(799)
+[1758734303.874438] ? close(800)
+[1758734303.874652] ? close(801)
+[1758734303.874867] ? close(802)
+[1758734303.875087] ? close(803)
+[1758734303.875464] ? close(804)
+[1758734303.875741] ? close(805)
+[1758734303.875971] ? close(806)
+[1758734303.876191] ? close(807)
+[1758734303.876412] ? close(808)
+[1758734303.876629] ? close(809)
+[1758734303.876846] ? close(810)
+[1758734303.877061] ? close(811)
+[1758734303.877278] ? close(812)
+[1758734303.877493] ? close(813)
+[1758734303.877707] ? close(814)
+[1758734303.877923] ? close(815)
+[1758734303.878138] ? close(816)
+[1758734303.878353] ? close(817)
+[1758734303.878619] ? close(818)
+[1758734303.878842] ? close(819)
+[1758734303.879063] ? close(820)
+[1758734303.879283] ? close(821)
+[1758734303.879530] ? close(822)
+[1758734303.879764] ? close(823)
+[1758734303.879986] ? close(824)
+[1758734303.880206] ? close(825)
+[1758734303.880421] ? close(826)
+[1758734303.880637] ? close(827)
+[1758734303.880858] [1758734303.881065] ? ioctl(fd=10, request=0x80044952 type=0x49('I') nr=82 dir=READ size=4, arg=0xb4d62a10)
+[1758734303.881762]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734303.882249] ? ioctl -> 0 (errno=0)
+
+[1758734303.882633] ? close(704)
+[1758734303.882894] ? close(705)
+[1758734303.883127] ? close(706)
+[1758734303.883359] ? close(707)
+[1758734303.883583] ? close(708)
+[1758734303.883813] ? close(709)
+[1758734303.884042] ? close(710)
+[1758734303.884314] ? close(711)
+[1758734303.884544] ? close(712)
+[1758734303.884774] ? close(713)
+[1758734303.885002] ? close(714)
+[1758734303.885341] ? close(715)
+[1758734303.885605] ? close(716)
+[1758734303.885847] ? close(717)
+[1758734303.886073] ? close(718)
+[1758734303.886300] ? close(719)
+[1758734303.886539] ? close(720)
+[1758734303.886765] ? close(721)
+[1758734303.887039] ? close(722)
+[1758734303.887271] ? close(723)
+[1758734303.887500] ? close(724)
+[1758734303.887741] ? close(725)
+[1758734303.887965] ? close(726)
+[1758734303.888192] ? close(727)
+[1758734303.888422] ? close(728)
+[1758734303.888652] ? close(729)
+[1758734303.888877] ? close(730)
+[1758734303.889100] ? close(731)
+[1758734303.889337] ? close(732)
+[1758734303.889568] ? close(733)
+[1758734303.889834] ? close(734)
+[1758734303.890068] ? close(735)
+[1758734303.890295] ? close(736)
+[1758734303.890560] ? close(737)
+[1758734303.890801] ? close(738)
+[1758734303.891030] ? close(739)
+[1758734303.891270] ? close(740)
+[1758734303.891506] ? close(741)
+[1758734303.891736] ? close(742)
+[1758734303.891961] ? close(743)
+[1758734303.892192] ? close(744)
+[1758734303.892422] ? close(745)
+[1758734303.892694] ? close(746)
+[1758734303.892925] ? close(747)
+[1758734303.893154] ? close(748)
+[1758734303.893386] ? close(749)
+[1758734303.893615] ? close(750)
+[1758734303.893840] ? close(751)
+[1758734303.894070] ? close(752)
+[1758734303.894309] ? close(753)
+[1758734303.894538] ? close(754)
+[1758734303.894762] ? close(755)
+[1758734303.894984] ? close(756)
+? close(828)
+[1758734303.895513] ? close(829)
+[1758734303.895757] ? close(830)
+[1758734303.895983] ? close(831)
+[1758734303.896206] ? close(832)
+[1758734303.896422] ? close(833)
+[1758734303.896637] ? close(834)
+[1758734303.896850] ? close(835)
+[1758734303.897073] ? close(836)
+[1758734303.897289] ? close(837)
+[1758734303.897502] ? close(838)
+[1758734303.897710] ? close(839)
+[1758734303.897933] ? close(840)
+[1758734303.898183] ? close(841)
+[1758734303.898415] ? close(842)
+[1758734303.898633] ? close(843)
+[1758734303.898854] ? close(844)
+[1758734303.899112] ? close(845)
+[1758734303.899346] ? close(846)
+[1758734303.899567] ? close(847)
+[1758734303.899781] ? close(848)
+[1758734303.899994] ? close(849)
+[1758734303.900210] ? close(850)
+[1758734303.900433] ? close(851)
+[1758734303.900649] ? close(852)
+[1758734303.900864] ? close(853)
+[1758734303.901125] ? close(854)
+[1758734303.901343] ? close(855)
+[1758734303.901566] ? close(856)
+[1758734303.901787] ? close(857)
+[1758734303.902000] ? close(858)
+[1758734303.902236] ? close(859)
+[1758734303.902450] ? close(860)
+[1758734303.902674] ? close(861)
+[1758734303.902889] ? close(862)
+[1758734303.903103] ? close(863)
+[1758734303.903322] ? close(864)
+[1758734303.903537] ? close(865)
+[1758734303.903790] ? close(866)
+[1758734303.904021] ? close(867)
+[1758734303.904273] ? close(868)
+[1758734303.904504] ? close(869)
+[1758734303.904723] ? close(870)
+[1758734303.904936] ? close(871)
+[1758734303.905157] ? close(872)
+[1758734303.905634] ? close(873)
+[1758734303.905873] ? close(874)
+[1758734303.906093] ? close(875)
+[1758734303.906315] ? close(876)
+[1758734303.906593] ? close(877)
+[1758734303.906827] ? close(878)
+[1758734303.907050] ? close(879)
+[1758734303.907278] ? close(880)
+[1758734303.907492] ? close(881)
+[1758734303.907706] ? close(882)
+[1758734303.907923] ? close(883)
+[1758734303.908143] ? close(884)
+[1758734303.908358] ? close(885)
+[1758734303.908576] ? close(886)
+[1758734303.908792] ? close(887)
+[1758734303.909003] ? close(888)
+[1758734303.909223] ? close(889)
+[1758734303.909490] ? close(890)
+[1758734303.909750] ? close(891)
+[1758734303.909995] ? close(892)
+[1758734303.910216] ? close(893)
+[1758734303.910431] ? close(894)
+[1758734303.910647] ? close(895)
+[1758734303.910865] ? close(896)
+[1758734303.911082] ? close(897)
+[1758734303.911299] mount /dev/mmcblk0p1: Device or resource busy
+mount /dev/mmcblk0p1: Device or resource busy
+[1758734303.895335] ? close(757)
+[1758734303.913584] ? close(758)
+[1758734303.913832] ? close(759)
+[1758734303.914067] ? close(760)
+[1758734303.914291] ? close(761)
+[1758734303.914514] ? close(762)
+[1758734303.914744] ? close(763)
+[1758734303.915046] ? close(764)
+[1758734303.915512] ? close(765)
+[1758734303.915767] ? close(766)
+[1758734303.916000] ? close(767)
+[1758734303.916252] ? close(768)
+[1758734303.916479] ? close(769)
+[1758734303.916705] ? close(770)
+[1758734303.916934] ? close(771)
+[1758734303.917164] ? close(772)
+[1758734303.917385] ? close(773)
+[1758734303.917610] ? close(774)
+[1758734303.917894] ? close(775)
+[1758734303.918130] ? close(776)
+[1758734303.918369] ? close(777)
+[1758734303.918598] ? close(778)
+[1758734303.918830] ? close(779)
+[1758734303.919060] ? close(780)
+[1758734303.919292] ? close(781)
+[1758734303.919515] ? close(782)
+[1758734303.919744] ? close(783)
+[1758734303.919968] ? close(784)
+[1758734303.920195] ? close(785)
+[1758734303.920417] ? close(786)
+[1758734303.920689] ? close(787)
+[1758734303.920940] ? close(788)
+[1758734303.921186] ? close(789)
+[1758734303.921421] ? close(790)
+[1758734303.921645] ? close(791)
+[1758734303.921875] ? close(792)
+[1758734303.922102] ? close(793)
+[1758734303.922333] ? close(794)
+[1758734303.922560] ? close(795)
+[1758734303.922794] ? close(796)
+[1758734303.923019] ? close(797)
+[1758734303.923250] ? close(798)
+[1758734303.923526] ? close(799)
+[1758734303.923756] ? close(800)
+[1758734303.923979] ? close(801)
+[1758734303.924206] ? close(802)
+[1758734303.924436] ? close(803)
+[1758734303.924661] ? close(804)
+[1758734303.924884] ? close(805)
+[1758734303.925112] ? close(898)
+[1758734303.925622] ? close(899)
+[1758734303.925863] ? close(900)
+[1758734303.926116] ? close(901)
+[1758734303.926355] ? close(902)
+[1758734303.926576] ? close(903)
+[1758734303.926795] ? close(904)
+[1758734303.927008] ? close(905)
+[1758734303.927227] ? close(906)
+[1758734303.927445] ? close(907)
+[1758734303.927659] ? close(908)
+[1758734303.927870] ? close(909)
+[1758734303.928095] ? close(910)
+[1758734303.928314] ? close(911)
+[1758734303.928526] ? close(912)
+[1758734303.928742] ? close(913)
+[1758734303.929004] ? close(914)
+[1758734303.929268] ? close(915)
+[1758734303.929504] ? close(916)
+[1758734303.929721] ? close(917)
+[1758734303.929944] ? close(918)
+[1758734303.930165] ? close(919)
+[1758734303.930381] ? close(920)
+[1758734303.930594] ? close(921)
+[1758734303.930812] ? close(922)
+[1758734303.931029] ? close(923)
+[1758734303.931241] ? close(924)
+[1758734303.931455] ? close(925)
+[1758734303.931702] ? close(926)
+[1758734303.931935] ? close(927)
+[1758734303.932156] ? close(928)
+[1758734303.932371] ? close(929)
+[1758734303.932590] ? close(930)
+[1758734303.932817] ? close(931)
+[1758734303.933035] ? close(932)
+[1758734303.933246] ? close(933)
+[1758734303.933465] ? close(934)
+[1758734303.933679] ? close(935)
+[1758734303.933889] ? close(936)
+[1758734303.934100] ? close(937)
+[1758734303.934364] ? close(938)
+[1758734303.934641] ? close(939)
+[1758734303.934870] ? close(940)
+[1758734303.935096] ? close(806)
+[1758734303.935580] ? close(807)
+[1758734303.935837] ? close(808)
+[1758734303.936069] ? close(809)
+[1758734303.936297] ? close(810)
+[1758734303.936523] ? close(811)
+[1758734303.936753] ? close(812)
+[1758734303.936983] ? close(813)
+[1758734303.937207] ? close(814)
+[1758734303.937488] ? close(815)
+[1758734303.937723] ? close(816)
+[1758734303.937950] ? close(817)
+[1758734303.938183] ? close(818)
+[1758734303.938414] ? close(819)
+[1758734303.938642] ? close(820)
+[1758734303.938865] ? close(821)
+[1758734303.939090] ? close(822)
+[1758734303.939325] ? close(823)
+[1758734303.939546] ? close(824)
+[1758734303.939773] ? close(825)
+[1758734303.939999] ? close(826)
+[1758734303.940273] ? close(827)
+[1758734303.940508] ? close(828)
+[1758734303.940737] ? close(829)
+[1758734303.940961] ? close(830)
+[1758734303.941193] ? close(831)
+[1758734303.941418] ? close(832)
+[1758734303.941644] ? close(833)
+[1758734303.941867] ? close(834)
+[1758734303.942092] ? close(835)
+[1758734303.942314] ? close(836)
+[1758734303.942544] ? close(837)
+[1758734303.942770] [1758734303.944160] ? ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734303.944818]   arg hexdump (size=1):
+    0000: 29
+[1758734303.945153] ? ioctl -> 0 (errno=0)
+[1758734303.945557] ? ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734303.946022]   arg hexdump (size=1):
+    0000: 29
+[1758734303.946352] ? ioctl -> 0 (errno=0)
+? close(941)
+[1758734303.946781] ? close(942)
+[1758734303.947020] ? close(943)
+[1758734303.947244] ? close(944)
+[1758734303.947460] ? close(945)
+[1758734303.947684] ? close(946)
+[1758734303.947904] ? close(947)
+[1758734303.948117] ? close(948)
+[1758734303.948329] ? close(949)
+[1758734303.948602] ? close(950)
+[1758734303.948830] ? close(951)
+[1758734303.949057] ? close(952)
+[1758734303.949269] ? close(953)
+[1758734303.949487] ? close(954)
+[1758734303.949706] ? close(955)
+[1758734303.949921] ? close(956)
+[1758734303.950131] ? close(957)
+[1758734303.950349] ? close(958)
+[1758734303.950564] ? close(959)
+[1758734303.950805] ? close(960)
+[1758734303.951066] ? close(961)
+[1758734303.951343] ? close(962)
+[1758734303.951576] ? close(963)
+[1758734303.951795] ? close(964)
+[1758734303.952010] ? close(965)
+[1758734303.952230] ? close(966)
+[1758734303.952453] ? close(967)
+[1758734303.952666] ? close(968)
+[1758734303.952881] ? close(969)
+[1758734303.953100] ? close(970)
+[1758734303.953334] ? close(971)
+[1758734303.953545] ? close(972)
+[1758734303.953761] ? close(973)
+[1758734303.953978] ? close(974)
+[1758734303.954240] ? close(975)
+[1758734303.954463] ? close(976)
+[1758734303.954677] ? close(977)
+[1758734303.954895] ? close(978)
+[1758734303.955117] ? close(838)
+[1758734303.955620] ? close(839)
+[1758734303.955880] ? close(840)
+[1758734303.956117] ? close(841)
+[1758734303.956345] ? close(842)
+[1758734303.956572] ? close(843)
+[1758734303.956796] ? close(844)
+[1758734303.957078] ? close(845)
+[1758734303.957316] ? close(846)
+[1758734303.957543] ? close(847)
+[1758734303.957764] ? close(848)
+[1758734303.957992] ? close(849)
+[1758734303.958219] ? close(850)
+[1758734303.958441] ? close(851)
+[1758734303.958667] ? close(852)
+[1758734303.958898] ? close(853)
+[1758734303.959126] ? close(854)
+[1758734303.959348] ? close(855)
+[1758734303.959573] ? close(856)
+[1758734303.959843] ? close(857)
+[1758734303.960078] ? close(858)
+[1758734303.960302] ? close(859)
+[1758734303.960526] ? close(860)
+[1758734303.960748] ? close(861)
+[1758734303.960976] ? close(862)
+[1758734303.961203] ? close(863)
+[1758734303.961431] ? close(864)
+[1758734303.961655] ? close(865)
+[1758734303.961884] ? close(866)
+[1758734303.962104] ? close(867)
+[1758734303.962329] ? close(868)
+[1758734303.962602] ? close(869)
+[1758734303.962842] ? close(870)
+[1758734303.963073] ? close(871)
+[1758734303.963297] ? close(872)
+[1758734303.963524] ? close(873)
+[1758734303.963753] ? close(874)
+[1758734303.963978] ? close(875)
+[1758734303.964201] ? close(876)
+[1758734303.964429] ? close(877)
+[1758734303.964657] ? close(878)
+[1758734303.964882] ? close(879)
+[1758734303.965110] ? close(979)
+[1758734303.965642] ? close(980)
+[1758734303.965879] ? close(981)
+[1758734303.966098] ? close(982)
+[1758734303.966321] ? close(983)
+[1758734303.966575] ? close(984)
+[1758734303.966810] ? close(985)
+[1758734303.967036] ? close(986)
+[1758734303.967252] ? close(987)
+[1758734303.967470] ? close(988)
+[1758734303.967692] ? close(989)
+[1758734303.967907] ? close(990)
+[1758734303.968158] ? close(991)
+[1758734303.968399] ? close(992)
+[1758734303.968625] ? close(993)
+[1758734303.968842] ? close(994)
+[1758734303.969059] ? close(995)
+[1758734303.969272] ? close(996)
+[1758734303.969488] ? close(997)
+[1758734303.969710] ? close(998)
+[1758734303.969933] ? close(999)
+[1758734303.970150] ? close(1000)
+[1758734303.970377] ? close(1001)
+[1758734303.970593] ? close(1002)
+[1758734303.970812] ? close(1003)
+[1758734303.971075] ? close(1004)
+[1758734303.971297] ? close(1005)
+[1758734303.971512] ? close(1006)
+[1758734303.971727] ? close(1007)
+[1758734303.971973] ? close(1008)
+[1758734303.972210] ? close(1009)
+[1758734303.972438] ? close(1010)? close(880)
+[1758734303.973007] ? close(881)
+[1758734303.973259] ? close(882)
+[1758734303.973499] ? close(883)
+[1758734303.973772] ? close(884)
+[1758734303.974010] ? close(885)
+[1758734303.974243] ? close(886)
+[1758734303.974473] ? close(887)
+[1758734303.974697] ? close(888)
+[1758734303.974921] ? close(889)
+[1758734303.975150] ? close(890)
+[1758734303.975561] ? close(891)
+[1758734303.975807] ? close(892)
+[1758734303.976036] ? close(893)
+[1758734303.976266] ? close(894)
+[1758734303.976493] ? close(895)
+[1758734303.976766] ? close(896)
+[1758734303.976995] ? close(897)
+[1758734303.977218] ? close(898)
+[1758734303.977449] ? close(899)
+[1758734303.977676] ? close(900)
+[1758734303.977905] ? close(901)
+[1758734303.978129] ? close(902)
+[1758734303.978354] ? close(903)
+[1758734303.978576] ? close(904)
+[1758734303.978803] ? close(905)
+[1758734303.979031] ? close(906)
+[1758734303.979256] ? close(907)
+[1758734303.979530] ? close(908)
+[1758734303.979770] ? close(909)
+[1758734303.980005] ? close(910)
+[1758734303.980264] ? close(911)
+[1758734303.980493] ? close(912)
+[1758734303.980722] ? close(913)
+[1758734303.980952] ? close(914)
+[1758734303.981177] ? close(915)
+[1758734303.981402] ? close(916)
+[1758734303.981628] ? close(917)
+[1758734303.981853] ? close(918)
+[1758734303.982078] ? close(919)
+[1758734303.982349] ? close(920)
+[1758734303.982699] ? ioctl(fd=10, request=0x80044952 type=0x49('I') nr=82 dir=READ size=4, arg=0xb4d62a10)
+[1758734303.983181]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734303.983668] ? ioctl -> 0 (errno=0)
+
+[1758734303.984036] ? close(1011)
+[1758734303.984289] ? close(1012)
+[1758734303.984511] ? close(1013)
+[1758734303.984732] ? close(1014)
+[1758734303.984993] ? close(1015)
+[1758734303.985350] ? close(1016)
+[1758734303.985623] ? close(1017)
+[1758734303.985850] ? close(1018)
+[1758734303.986080] ? close(1019)
+[1758734303.986304] ? close(1020)
+[1758734303.986524] ? close(1021)
+[1758734303.986743] ? close(1022)
+[1758734303.986959] ? close(1023)
+[1758734303.982652] ? close(921)
+[1758734303.995760] ? close(922)
+[1758734303.996005] ? close(923)
+[1758734303.996295] ? close(924)
+[1758734303.996534] ? close(925)
+[1758734303.996760] ? close(926)
+[1758734303.996997] ? close(927)
+[1758734303.997225] ? close(928)
+[1758734303.997451] ? close(929)
+[1758734303.997675] ? close(930)
+[1758734303.997901] ? close(931)
+[1758734303.998131] ? close(932)
+[1758734303.998355] ? close(933)
+[1758734303.998582] ? close(934)
+[1758734303.998805] ? close(935)
+[1758734303.999079] ? close(936)
+[1758734303.999312] ? close(937)
+[1758734303.999541] ? close(938)
+[1758734303.999771] ? close(939)
+[1758734303.999998] ? close(940)
+[1758734304.000220] ? close(941)
+[1758734304.000456] ? close(942)
+[1758734304.000677] ? close(943)
+[1758734304.000904] ? close(944)
+[1758734304.001127] ? close(945)
+[1758734304.001348] ? close(946)
+[1758734304.001572] ? close(947)
+[1758734304.001843] ? close(948)
+[1758734304.002084] ? close(949)
+[1758734304.002313] ? close(950)
+[1758734304.002537] ? close(951)
+[1758734304.002768] ? close(952)
+[1758734304.002992] ? close(953)
+[1758734304.003219] ? close(954)
+[1758734304.003445] ? close(955)
+[1758734304.003677] ? close(956)
+[1758734304.003901] ? close(957)
+[1758734304.004126] ? close(958)
+[1758734304.004351] ? close(959)
+[1758734304.004621] ? close(960)
+[1758734304.004853] ? close(961)
+[1758734304.005084] ? close(962)
+[1758734304.015576] ? close(963)
+[1758734304.015888] ? close(964)
+[1758734304.016126] ? close(965)
+[1758734304.016353] ? close(966)
+[1758734304.016578] ? close(967)
+[1758734304.016809] ? close(968)
+[1758734304.017037] ? close(969)
+[1758734304.017267] ? close(970)
+[1758734304.017490] ? close(971)
+[1758734304.017725] ? close(972)
+[1758734304.017950] ? close(973)
+[1758734304.018185] ? close(974)
+[1758734304.018410] ? close(975)
+[1758734304.018689] ? close(976)
+[1758734304.018920] ? close(977)
+[1758734304.019153] ? close(978)
+[1758734304.019376] ? close(979)
+[1758734304.019604] ? close(980)
+[1758734304.019832] ? close(981)
+[1758734304.020054] ? close(982)
+[1758734304.020276] ? close(983)
+[1758734304.020505] ? close(984)
+[1758734304.020734] ? close(985)
+[1758734304.020959] ? close(986)
+[1758734304.021181] ? close(987)
+[1758734304.021457] ? close(988)
+[1758734304.021695] ? close(989)
+[1758734304.021923] ? close(990)
+[1758734304.022150] ? close(991)
+[1758734304.022387] ? close(992)
+[1758734304.022616] ? close(993)
+[1758734304.022844] ? close(994)
+[1758734304.023073] ? close(995)
+[1758734304.023302] ? close(996)
+[1758734304.023533] ? close(997)
+[1758734304.023761] ? close(998)
+[1758734304.023984] ? close(999)
+[1758734304.024258] ? close(1000)
+[1758734304.024489] ? close(1001)
+[[1758734304.032326] registered known device /dev/akpcm_cdev0 (rdev=0xfe00)
+[1758734304.032945] registered known device /dev/akpcm_cdev1 (rdev=0xfe01)
+[1758734304.033221] registered known device /dev/video0 (rdev=0x5100)
+[1758734304.033477] registered known device /dev/isp_char (rdev=0xa3d)
+[1758734304.033724] registered known device /dev/ion (rdev=0xa3e)
+[1758734304.033974] registered known device 1758734304.024715] ? close(1002)
+[1758734304.176702] ? close(1003)
+[1758734304.176965] ? close(1004)
+[1758734304.177204] ? close(1005)
+[1758734304.177436] ? close(1006)
+[1758734304.177670] ? close(1007)
+[1758734304.177959] ? close(1008)
+[1758734304.178194] ? close(1009)
+[1758734304.178423] ? close(1010)
+[1758734304.178652] ? close(1011)
+[1758734304.178877] ? close(1012)
+[1758734304.179113] ? close(1013)
+[1758734304.179343] ? close(1014)
+[1758734304.179572] ? close(1015)
+[1758734304.179799] ? close(1016)
+[1758734304.180032] ? close(1017)
+[1758734304.180259] ? close(1018)
+[1758734304.180490] ? close(1019)
+[1758734304.180767] ? close(1020)
+[1758734304.181008] ? close(1021)
+[1758734304.181239] ? close(1022)
+[1758734304.181468] ? close(1023)
+[1758734304.046789] ? ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734304.183082]   arg hexdump (size=1):
+    0000: 29
+[1758734304.183425] ? ioctl -> 0 (errno=0)
+[1758734304.183735] ? ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734304.184149]   arg hexdump (size=1):
+    0000: 29
+[1758734304.184471] ? ioctl -> 0 (errno=0)
+[1758734304.084108] ? ioctl(fd=10, request=0x80044952 type=0x49('I') nr=82 dir=READ size=4, arg=0xb4d62a10)
+[1758734304.185346]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734304.185863] ? ioctl -> 0 (errno=0)
+[1758734304.210530] registered known device /dev/akpcm_cdev0 (rdev=0xfe00)
+[1758734304.213276] registered known device /dev/akpcm_cdev1 (rdev=0xfe01)
+[1758734304.215658] registered known device /dev/video0 (rdev=0x5100)
+[1758734304.217900] registered known device /dev/isp_char (rdev=0xa3d)
+[1758734304.220437] registered known device /dev/ion (rdev=0xa3e)
+[1758734304.222636] registered known device /dev/uio0 (rdev=0xfd00)
+[1758734304.224804] camtrace_rdev init done
+[1758734304.286347] ? ioctl(fd=10, request=0x80044952 type=0x49('I') nr=82 dir=READ size=4, arg=0xb4d62a10)
+[1758734304.286887]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734304.287425] ? ioctl -> 0 (errno=0)
+[1758734304.287868] ? ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734304.297022]   arg hexdump (size=1):
+    0000: 29
+[1758734304.300427] ? ioctl -> 0 (errno=0)
+[1758734304.30279[0] ? ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734304.310508]   arg hexdump (size=11758734304):.
+306289    ] registered known device 0/dev/akpcm_cdev00 (rdev=00x0: fe0029)
+
+[[11758734304758734304..316463316693] ] registered known device ?/dev/akpcm_cdev1 ioctl ->  (rdev=00x (errno=fe010)
+)
+[1758734304.320974] registered known device /dev/video0 (rdev=0x5100)
+[1758734304.323168] registered known device /dev/isp_char (rdev=0xa3d)
+[1758734304.325525] registered known device /dev/ion (rdev=0xa3e)
+[1758734304.327759] registered known device /dev/uio0 (rdev=0xfd00)
+[1758734304.329931] camtrace_rdev init done
+[1758734304.389231] ? ioctl(fd=10, request=0x80044952 type=0x49('I') nr=82 dir=READ size=4, arg=0xb4d62a10)
+[1758734304.397698]   arg hexdump (size=4):
+    0000: 00 00 mount /dev/mmcblk0p1: Device or resource busy
+mount /dev/mmcblk0p1: Device or resource busy
+00 00
+[1758734304.419142] [1758734304.420972] ? ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734304.422749]   arg hexdump (size=1):
+    0000: 29
+[1758734304.423096] ? ioctl -> 0 (errno=0)
+[1758734304.423348] ? ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734304.423752]   arg hexdump (size=1):
+    0000: 29
+[1758734304.424073] ? ioctl -> 0 (errno=0)
+? ioctl -> 0 (errno=0)
+[1758734304.513391] ? ioctl(fd=4, request=0xc0045706 type=0x57('W') nr=6 dir=READ|WRITE size=4, arg=0x69b94c)
+[1758734304.513948]   arg hexdump (size=4):
+    0000: 08 00 00 00
+[1758734304.514477] ? ioctl -> 0 (errno=0)
+/dev/uio0 (rdev=0xfd00)
+[1758734304.515169] camtrace_rdev init done
+[1758734304.526842] ? ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734304.527329] [1758734304.527503] ? ioctl(fd=10, request=0x80044952 type=0x49('I') nr=82 dir=READ size=4, arg=0xb4d62a10)
+[1758734304.536174]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734304.536646] ? ioctl -> 0 (errno=0)
+  arg hexdump (size=1):
+    0000: 29
+[1758734304.537432] ? ioctl -> 0 (errno=0)
+[1758734304.537696] ? ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734304.538100]   arg hexdump (size=1):
+    0000: 29
+[1758734304.538436] ? ioctl -> 0 (errno=0)
+[1758734304.600092] registered known device /dev/akpcm_cdev0 (rdev=0xfe00)
+[1758734304.600666] registered known device /dev/akpcm_cdev1 (rdev=0xfe01)
+[1758734304.600939] registered known device /dev/video0 (rdev=0x5100)
+[1758734304.601223] registered known device /dev/isp_char (rdev=0xa3d)
+[1758734304.601490] registered known device /dev/ion (rdev=0xa3e)
+[1758734304.601753] registered known device /dev/uio0 (rdev=0xfd00)
+[1758734304.601962] camtrace_rdev init done
+[1758734304.602666] ? ioctl(fd=3, request=0x8913 type=0x89('?') nr=19 dir=NONE size=0, arg=0xbebd2bf8)
+[1758734304.603105] ? ioctl -> 0 (errno=0)
+[1758734304.603387] ? ioctl(fd=3, request=0x8914 type=0x89('?') nr=20 dir=NONE size=0, arg=0xbebd2bf8)
+[1758734304.604042] ? ioctl -> 0 (errno=0)
+[1758734304.604380] camtrace_rdev fini
+[1758734304.637237] ? ioctl(fd=10, request=0x80044952 type=0x49('I') nr=82 dir=READ size=4, arg=0xb4d62a10)
+[1758734304.637823]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734304.638312] ? ioctl -> 0 (errno=0)
+[1758734304.638864] ? ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734304.639335]   arg hexdump (size=1):
+    0000: 29
+[1758734304.639663] ? ioctl -> 0 (errno=0)
+[1758734304.639916] ? ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734304.640324]   arg hexdump (size=1):
+    0000: 29
+[1758734304.640700] ? ioctl -> 0 (errno=0)
+[1758734304.674289] registered known device /dev/akpcm_cdev0 (rdev=0xfe00)
+[1758734304.674848] registered known device /dev/akpcm_cdev1 (rdev=0xfe01)
+[1758734304.675131] registered known device /dev/video0 (rdev=0x5100)
+[1758734304.680572] registered known device /dev/isp_char (rdev=0xa3d)
+[1758734304.683872] registered known device /dev/ion (rdev=0xa3e)
+[1758734304.687032] registered known device /dev/uio0 (rdev=0xfd00)
+[1758734304.687262] camtrace_rdev init done
+[1758734304.738813] ? ioctl(fd=10, request=0x80044952 type=0x49('I') nr=82 dir=READ size=4, arg=0xb4d62a10)
+[1758734304.739335]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734304.739822] ? ioctl -> 0 (errno=0)
+[1758734304.742352] ? ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734304.742836]   arg hexdump (size=1):
+    0000: 29
+[1758734304.743167] ? ioctl -> 0 (errno=0)
+[1758734304.743415] ? ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734304.743808]   arg hexdump (size=1):
+    0000: 29
+[1758734304.744125] ? ioctl -> 0 (errno=0)
+[1758734304.751728] open64('/ipc/patch/ko/presetmotor.ko',0x0) = 3 tag=DEV[0] rdev=0
+[1758734304.837193] registered known device /dev/akpcm_cdev0 (rdev=0xfe00)
+[1758734304.837821] registered known device /dev/akpcm_cdev1 (rdev=0xfe01)
+[1758734304.838106] registered known device /dev/video0 (rdev=0x5100)
+[1758734304.838372] registered known device /dev/isp_char (rdev=0xa3d)
+[1758734304.838629] registered known device /dev/ion (rdev=0xa3e)
+[1758734304.838886] registered known device /dev/uio0 (rdev=0xfd00)
+[1758734304.839101] camtrace_rdev init done
+[1758734304.839903] open64('/proc/sys/kernel/tainted',0x0) = 4 tag=[1758734304.840350] ? ioctl(fd=10, request=0x80044952 type=0x49('I') nr=82 dir=READ size=4, arg=0xb4d62a10)
+[1758734304.840876]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734304.841353] ? ioctl -> 0 (errno=0)
+[1758734304.845452] ? ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734304.856414]   arg hexdump (size=1):
+    0000: 29
+[1758734304.856746] ? ioctl -> 0 (errno=0)
+[1758734304.856994] ? ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734304.857452]   arg hexdump (size=1):
+    0000: 29
+[1758734304.857775] ? ioctl -> 0 (errno=0)
+mount /dev/mmcblk0p1: Device or resource busy
+mount /dev/mmcblk0p1: Device or resource busy
+[1758734304.932319] DEV[0] close(3)
+[1758734304.946390] munmap(0xb6fbb000, 9340)
+[1758734304.946907] camtrace_rdev fini
+[1758734304.956118] ? ioctl(fd=10, request=0x80044952 type=0x49('I') nr=82 dir=READ size=4, arg=0xb4d62a10)
+[1758734304.956672]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734304.957156] ? ioctl -> 0 (errno=0)
+[1758734304.959403] ? ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734304.975856]   arg hexdump (size=1):
+    0000: 29
+[1758734304.988838] ? ioctl -> 0 (errno=0)
+[1758734304.994292] ? ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734305.034798]   arg hexdump (size=1):
+    0000: 29
+[1758734305.043043] ? ioctl -> 0 (errno=0)
+[1758734305.065382] ? ioctl(fd=10, request=0x80044952 type=0x49('I') nr=82 dir=READ size=4, arg=0xb4d62a10)
+[1758734305.065940]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734305.066427] ? ioctl -> 0 (errno=0)
+[1758734305.148814] ? ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734305.149347]   arg hexdump (size=1):
+    0000: 29
+[1758734305.149686] ? ioctl -> 0 (errno=0)
+[1758734305.149932] [1758734305.150358] open('/dev/preset_motor',0x2) = 17 tag=DEV[0xa38] rdev=0xa38
+[1758734305.151482] DEV[0xa38] ioctl(fd=17, request=0x3 type=0x00('?') nr=3 dir=NONE size=0, arg=0xbef20a8c)
+[1758734305.151991] DEV[0xa38] ioctl -> 0 (errno=0)
+[1758734305.152406] DEV[0xa38] ioctl(fd=17, request=0x7 type=0x00('?') nr=7 dir=NONE size=0, arg=0xbef20a8c)
+[1758734305.152857] DEV[0xa38] ioctl -> 0 (errno=0)
+[1758734305.153284] DEV[0xa38] ioctl(fd=17, request=0x5 type=0x00('?') nr=5 dir=NONE size=0, arg=0xbef20a4c)
+[1758734305.153731] DEV[0xa38] ioctl -> 0 (errno=0)
+[1758734305.154047] ? mmap(fd=-1, len=131072, prot=0x3, flags=0x20022, off=0) = 0xb4c4b000
+? ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734305.160396]   arg hexdump (size=1):
+    0000: 29 [1758734305.167055] ? ioctl(fd=10, request=0x80044952 type=0x49('I') nr=82 dir=READ size=4, arg=0xb4d62a10)
+[1758734305.168282]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734305.168809] ? ioctl -> 0 (errno=0)
+
+[1758734305.170342] ? ioctl -> 0 (errno=0)
+DEV[0] rdev=0
+[1758734305.195712] DEV[0] read(fd=4, buf=0x11008, count=1024) = 5
+[1758734305.196059] DEV[0] read(fd=4, buf=0x1100d, count=1019) = 0
+[1758734305.196351] DEV[0] close(4)
+[1758734305.199570] camtrace_rdev fini
+[1758734305.260374] registered known device /dev/akpcm_cdev0 (rdev=0xfe00)
+[1758734305.267073] registered known device /dev/akpcm_cdev1 (rdev=0xfe01)
+[1758734305.267375] registered known device /dev/video0 (rdev=0x5100)
+[1758734305.267644] registered known device /dev/isp_char (rdev=0xa3d)
+[1758734305.267910] registered known device /dev/ion (rdev=0xa3e)
+[1758734305.268185] registered known device /dev/uio0 (rdev=0xfd00)
+[1758734305.268406] camtrace_rdev init done
+[1758734305.269293] ? ioctl(fd=10, request=0x80044952 type=0x49('I') nr=82 dir=READ size=4, arg=0xb4d62a10)
+[1758734305.269872]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734305.270366] ? ioctl -> 0 (errno=0)
+[1758734305.279942] ? ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734305.280440]   arg hexdump (size=1):
+    0000: 29
+[1758734305.280845] ? ioctl -> 0 (errno=0)
+[1758734305.281096] ? ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734305.282213]   arg hexdump (size=1):
+    0000: 29
+[1758734305.282554] ? ioctl -> 0 (errno=0)
+[1758734305.371506] ? ioctl(fd=10, request=0x80044952 type=0x49('I') nr=82 dir=READ size=4, arg=0xb4d62a10)
+[1758734305.372032]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734305.372514] ? ioctl -> 0 (errno=0)
+[1758734305.382689] [1758734305.383103] ? ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734305.384133]   arg hexdump (size=1):
+    0000: 29
+[1758734305.384516] ? ioctl -> 0 (errno=0)
+[1758734305.384772] ? ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734305.385180]   arg hexdump (size=1):
+    0000: 29
+[1758734305.385698] ? ioctl -> 0 (errno=0)
+? mmap(fd=-1, len=8388608, prot=0x3, flags=0x20022, off=0) = 0xb444b000
+[1758734305.473000] ? ioctl(fd=10, request=0x80044952 type=0x49('I') nr=82 dir=READ size=4, arg=0xb4d62a10)
+[1758734305.473630]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734305.474179] ? ioctl -> 0 (errno=0)
+[1758734305.487311] ? ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734305.492485]   arg hexdump (size=[1):
+    0000: 29
+[1758734305.507658] ? ioctl -> 0 (errno=0)
+[1758734305.510493] ? ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)[1758734305.514937] ? ioctl(fd=4, request=0xc0045706 type=0x57('W') nr=6 dir=READ|WRITE size=4, arg=0x69b94c)
+[1758734305.516715]   arg hexdump (size=4):
+    0000: 08 00 00 00
+[1758734305.517173] ? ioctl -> 0 (errno=0)
+
+[1758734305.517599]   arg hexdump (size=11):
+    07587343050.04974340] : registered known device 29/dev/akpcm_cdev0  (rdev=
+0x[fe00)1
+758734305.[523790] ?1 ioctl -> 0758734305 (errno=.0525581)]
+registered known device /dev/akpcm_cdev1 (rdev=0x[0;32m[GW_APP] [2025-09-25 01:18:23:316782][gw_adec_control():435]fgEnable: 1, ADecChnEnable[1]: 0[0;37m [0m
+[0;32m[GW_APP] [2025-09-25 01:18:23:317336][gw_adec_control():453]create adec chn1 success[0;37m [0m
+[0;36m[GW_APP] [2025-09-25 01:18:23:317554][vMotorInit():230]SUPPOR Preset MOTOR DRIVE[0;37m [0m
+[0;32m[GW_APP] [2025-09-25 01:18:23:409490][SDCard_Mount():284]try to mounting...[0;37m [0m
+[0;36m[GW_APP] [2025-09-25 01:18:23:410856][dm_update_tfCardInfo():999]tfCardStatus: 7, freeSpace: 123639936, totalSpace: -124864512[0;37m [0m
+[0;36m[GW_APP] [2025-09-25 01:18:23:441053][bNetCardDevSupport():394]State: -1[0;37m [0m
+[0;36m[GW_APP] [2025-09-25 01:18:23:454546][vNewNetMgProc():1281]fgEthSupport: 0, fgWifiSupport: 1, fg4GSupport: 0[0;37m [0m
+[0;36m[GW_APP] [2025-09-25 01:18:23:454778][vWifiInit():435]=====>wifi init[0;37m [0m
+[0;36m[GW_APP] [2025-09-25 01:18:23:473924][vGetWifiPrmFromRomConfFile():346]Init SSID=MTNSL, EncType=2, Password=AJM.l1$Kr[0;37m [0m
+[0;36m[GW_APP] [2025-09-25 01:18:23:481695][vGetWifiPrmFromRomConfFile():346]Init SSID=MTNSL, EncType=2, Password=AJM.l1$Kr[0;37m [0m
+[0;36m[GW_APP] [2025-09-25 01:18:23:482809][vGetWifiPrmFromRomConfFile():346]Init SSID=Free-AP2, EncType=0, Password=[0;37m [0m
+[0;36m[GW_APP] [2025-09-25 01:18:23:483952][vGetWifiPrmFromRomConfFile():346]Init SSID=Free-AP3, EncType=0, Password=[0;37m [0m
+[0;36m[GW_APP] [2025-09-25 01:18:23:484196][copy_file():440]src: /rom/wpa_supplicant1.conf, dst: /mnt/ramdisk/wpa_supplicant0.conf[0;37m [0m
+[0;36m[GW_APP] [2025-09-25 01:18:23:492346][vGetWifiPrmFromRomConfFile():346]Init SSID=MTNSL, EncType=2, Password=AJM.l1$Kr[0;37m [0m
+[0;36m[GW_APP] [2025-09-25 01:18:23:493734][system_safe():176]cmdstring: [ifconfig wlan0 multicast][0;37m [0m
+[0;31m[GW_APP] [2025-09-25 01:18:23:517909][vPreSetMotorDevInit():258]insmod /ipc/patch/ko/presetmotor.ko[0;37m [0m
+[0;36m[GW_APP] [2025-09-25 01:18:23:518078][system_safe():176]cmdstring: [insmod /ipc/patch/ko/presetmotor.ko][0;37m [0m
+[0;32m[GW_APP] [2025-09-25 01:18:23:911490][SDCard_Mount():284]try to mounting...[0;37m [0m
+[0;36m[GW_APP] [2025-09-25 01:18:23:913014][dm_update_tfCardInfo():999]tfCardStatus: 7, freeSpace: 123639936, totalSpace: -124864512[0;37m [0m
+[0;32m[GW_APP] [2025-09-25 01:18:24:413745][SDCard_Mount():284]try to mounting...[0;37m [0m
+[0;36m[GW_APP] [2025-09-25 01:18:24:416403][dm_update_tfCardInfo():999]tfCardStatus: 7, freeSpace: 123639936, totalSpace: -124864512[0;37m [0m
+[0;32m[GW_APP] [2025-09-25 01:18:24:918997][SDCard_Mount():284]try to mounting...[0;37m [0m
+[0;36m[GW_APP] [2025-09-25 01:18:24:930304][dm_update_tfCardInfo():999]tfCardStatus: 7, freeSpace: 123639936, totalSpace: -124864512[0;37m [0m
+[0;36m[GW_APP] [2025-09-25 01:18:24:930615][dm_update_tfCardInfo():999]tfCardStatus: 7, freeSpace: 123639936, totalSpace: -124864512[0;37m [0m
+[0;36m[GW_APP] [2025-09-25 01:18:25:152250][vPreSetMotorDevInit():285]motor back to base point[0;37m [0m
+[0;36m[GW_APP] [2025-09-25 01:18:25:153116][fgMotorRunToLastPosition():212]u32HMotorPreset = 101, u32VMotorPreset = 29[0;37m [0m
+[0;36m[GW_APP] [2025-09-25 01:18:25:154975][iotvideo_sdk_init():26]Start ...[0;37m [0m
+[0;32m[GW_APP] [2025-09-25 01:18:25:162535][iv_common_init():180]begin
+[0;37m [0m
+[0;36m[GW_APP] [2025-09-25 01:18:25:198647][iParseWifiModuleType():94]wifi type: WIFI_TYPE_8188FU[0;37m [0m
+[0;36m[GW_APP] [2025-09-25 01:18:25:202804][fgWifiReconfig():691]cBuf: [wpa_cli -p /etc/Wireless -iwlan0 reconfigure][0;37m [0m
+[[0;35mIV_MID[0m] [0;36m[2025-09-24 17:18:25:380105]iv_cm_set_log_level()[2419]set iv sdk log level:5
+[0m[[0;35mIV_MID[0m] [0;32m[2025-09-24 17:18:25:381991]iv_cm_init()[2380][0mbegin
+[[0;35mIV_MID[0m] [0;32m[2025-09-24 17:18:25:388500]iv_cm_init()[2385][0mend
+[0;32m[GW_APP] [2025-09-25 01:18:25:389149][iv_common_init():195]end
+[0;37m [0m
+[0;36m[GW_APP] [2025-09-25 01:18:25:398536][dm_init():1579]begin.[0;37m [0m
+[[0;35mIV_MID[0m] [0;32m[2025-09-24 17:18:25:398669]iv_dm_init()[109][0mbegin.
+[0;32mfe01[1758734305.575611] ? ioctl(fd=10, request=0x80044952 type=0x49('I') nr=82 dir=READ size=4, arg=0xb4d62a10)
+[1758734305.867891]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734305.868374] ? ioctl -> 0 (errno=0)
+[1758734305.629768] ? ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734305.869393]   arg hexdump (size=1):
+    0000: 29
+[1758734305.869783] ? ioctl -> 0 (errno=0)
+[1758734305.870046] ? ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734305.870449]   arg hexdump (size=1):
+    0000: 29
+[1758734305.870771] ? ioctl -> 0 (errno=0)
+[1758734305.969247] ? ioctl(fd=10, request=0x80044952 type=0x49('I') nr=82 dir=READ size=4, arg=0xb4d62a10)
+[1758734305.969801]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734305.970338] ? ioctl -> 0 (errno=0)
+[1758734305.972458] ? ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734305.979116]   arg hexdump (size=1):
+    0000: 29
+[1758734305.988349] ? ioctl -> 0 (errno=0)
+[1758734305.999479] ? ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734306.010372]   arg hexdump (size=1):
+    0000: 29
+[1758734306.036668] ? ioctl -> 0 (errno=0)
+[1758734306.070796] ? ioctl(fd=10, request=0x80044952 type=0x49('I') nr=82 dir=READ size=4, arg=0xb4d62a10)
+[1758734306.071409]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734306.071889] ? ioctl -> 0 (errno=0)
+[1758734306.141736] ? ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734306.142268]   arg hexdump (size=1):
+    0000: 29
+[1758734306.142605] ? ioctl -> 0 (errno=0)
+[1758734306.142848] ? ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734306.143294]   arg hexdump (size=1):
+    0000: 29
+[1758734306.143630] ? ioctl -> 0 (errno=0)
+[1758734306.172329] ? ioctl(fd=10, request=0x80044952 type=0x49('I') nr=82 dir=READ size=4, arg=0xb4d62a10)
+[1758734306.177981]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734306.183926] ? ioctl -> 0 (errno=0)
+[GW_APP] [2025-09-25 01:18:25:433531][SDCard_Mount():284]try to mounting...mount /dev/mmcblk0p1: Device or resource busy
+mount /dev/mmcblk0p1: Device or resource busy
+[1758734306.216006] ? ioctl(fd=18, request=0x8927 type=0x89('?') nr=39 dir=NONE size=0, arg=0xbef20490)
+[1758734306.220654] ? ioctl -> 0 (errno=0)
+[1758734306.223288] ? close(18)
+[1758734306.246781] ? ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734306.266816]   arg hexdump (size=1):
+    0000: 29
+[1758734306.274309] ? ioctl -> 0 (errno=0)
+[1758734306.279165] ? ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)[1758734306.307783] ? ioctl(fd=10, request=0x80044952 type=0x49('I') nr=82 dir=READ size=4, arg=0xb4d62a10)
+[1758734306.313858]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734306.314401] ? ioctl -> 0 (errno=0)
+
+[1758734306.315205]   arg hexdump (size=1):
+    0000: 29
+[1758734306.329911] ? ioctl -> 0 (errno=0)
+[1758734306.397291] open64('/dev/srandom',0x80000) = -1 (errno=2)
+[1758734306.400455] open64('/dev/srandom',0x0) = -1 (errno=2)
+[1758734306.403696] open64('/dev/urandom',0x80000) = 22 tag=DEV[0x109] rdev=0x109
+[1758734306.407182] DEV[0x109] read(fd=22, buf=0xbef1fa50, count=32) = 32
+[1758734306.410393] DEV[0x109] close(22)
+[1758734306.412633] open64('/proc/sys/kernel/random/uuid',0x80000) = 22 tag=DEV[0] rdev=0[1758734306.414941] ? ioctl(fd=10, request=0x80044952 type=0x49('I') nr=82 dir=READ size=4, arg=0xb4d62a10)
+[1758734306.416497]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734306.416993] ? ioctl -> 0 (errno=0)
+
+[1758734306.417689] DEV[0] read(fd=22, buf=0xbef1fad8, count=128) = 37
+[1758734306.420729] DEV[0] close(22)
+[1758734306.423028] open64('/proc/sys/kernel/random/uuid',0x80000) = 22 tag=DEV[0] rdev=0
+[1758734306.426335] DEV[0] read(fd=22, buf=0xbef1fad8, count=128) = 37
+[1758734306.429387] DEV[0] close(22)
+[1758734306.435637] ? ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734306.436179]   arg hexdump (size=1):
+    0000: 29
+[1758734306.436514] ? ioctl -> 0 (errno=0)
+[1758734306.436764] ? ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734306.437171]   arg hexdump (size=1):
+    0000: 29
+[1758734306.437573] ? ioctl -> 0 (errno=0)
+[warn] Unable to add nameserver [240c::6666]:53: error 1
+[warn] Unable to add nameserver [2001:4860:4860::8888]:53: error 1
+[1758734306.491156] open('/dev/random',0x800) = 25 tag=DEV[0x108] rdev=0x108
+[1758734306.491725] DEV[0x108] read(fd=25, buf=0xbef1fba4, count=4) = 4
+[1758734306.492112] DEV[0x108] close(25)
+[1758734306.506663] ? close(-1)
+[1758734306.517460] ? ioctl(fd=10, request=0x80044952 type=0x49('I') nr=82 dir=READ size=4, arg=0xb4d62a10)
+[1758734306.518099]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734306.518643] ? ioctl -> 0 (errno=0)
+[1758734306.518984] ? ioctl(fd=4, request=0xc0045706 type=0x57('W') nr=6 dir=READ|WRITE size=4, arg=0x69b94c)
+[1758734306.519497]   arg hexdump (size=4):
+    0000: 08 00 00 00
+[1758734306.519953] ? ioctl -> 0 (errno=0)
+[1758734306.523983] ? close(-1)
+[1758734306.539648] ? ioctl(fd=3, request=0xc001662b type=0x66(')
+[1758734306.546931] registered known device /dev/video0 (rdev=0x5100)
+[1758734306.547230] registered known device /dev/isp_char (rdev=0xa3d)
+[1758734306.547493] registered known device /dev/ion (rdev=0xa3e)
+[1758734306.547801] registered known device /dev/uio0 (rdev=0xfd00)
+[1758734306.548016] camtrace_rdev init done
+[1758734306.549601] ? close(4)
+Failed to connect to wpa_supplicant - wpa_ctrl_open: No such file or directory
+[1758734306.550306] camtrace_rdev fini
+f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)[1758734306.546675] ? close(-1)
+
+[1758734306.552539]   arg hexdump (size=1):
+    0000: 29
+[1758734306.552911] ? ioctl -> 0 (errno=0)
+[1758734306.553161] ? ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734306.553628]   arg hexdump (size=1):
+    0000: 29
+[1758734306.553955] ? ioctl -> 0 (errno=0)
+[1758734306.565549] ? close(3)
+[1758734306.565869] ? close(4)
+[1758734306.566102] ? close(5)
+[1758734306.566337] ? close(6)
+[1758734306.566626] ? close(7)
+[1758734306.566859] ? close(8)
+[1758734306.567084] ? close(9)
+[1758734306.567366] ? close(10)
+[1758734306.567594] ? close(11)
+[1758734306.567823] ? close(12)
+[1758734306.568047] ? close(13)
+[1758734306.568272] ? close(14)
+[1758734306.568496] ? close(15)
+[1758734306.568720] ? close(16)
+[1758734306.568949] DEV[0xa38] close(17)
+[1758734306.569175] ? close(18)
+[1758734306.569400] ? close(19)
+[1758734306.569680] ? close(20)
+[1758734306.569916] ? close(21)
+[1758734306.570184] ? close(22)
+[1758734306.570414] ? close(23)
+[1758734306.570639] ? close(24)
+[1758734306.570863] ? close(25)
+[1758734306.571086] ? close(26)
+[1758734306.571310] ? close(27)
+[1758734306.571538] ? close(28)
+[1758734306.571760] ? close(29)
+[1758734306.572002] ? close(30)
+[1758734306.572220] ? close(31)
+[1758734306.572475] ? close(32)
+[1758734306.572715] ? close(33)
+[1758734306.572978] ? close(34)
+[1758734306.573206] ? close(35)
+[1758734306.573426] ? close(36)
+[1758734306.573644] ? close(37)
+[1758734306.573859] ? close(38)
+[1758734306.574072] ? close(39)
+[1758734306.574286] ? close(40)
+[1758734306.574504] ? close(41)
+[1758734306.574716] ? close(42)
+[1758734306.574927] ? close(43)
+[1758734306.575142] ? close(44)
+[1758734306.581596] ? close(45)
+[1758734306.582202] ? close(46)
+[1758734306.582775] ? close(47)
+[1758734306.583347] ? close(48)
+[1758734306.583929] ? close(49)
+[1758734306.584606] ? close(50)
+[1758734306.585189] ? close(51)
+[1758734306.585928] ? close(52)
+[1758734306.586511] ? close(53)
+[1758734306.587148] ? close(54)
+[1758734306.587782] ? close(55)
+[1758734306.588368] ? close(56)
+[1758734306.588949] ? close(57)
+[1758734306.589526] ? close(58)
+[1758734306.590154] ? close(59)
+[1758734306.590785] ? close(60)
+[1758734306.591380] ? close(61)
+[1758734306.592156] ? close(62)
+[1758734306.592811] ? close(63)
+[1758734306.593402] ? close(64)
+[1758734306.594031] ? close(65)
+[1758734306.594615] ? close(66)
+[1758734306.595316] ? close(67)
+[1758734306.595944] ? close(68)
+[1758734306.596570] ? close(69)
+[1758734306.597199] ? close(70)
+[1758734306.597777] ? close(71)
+[1758734306.598420] ? close(72)
+[1758734306.599042] ? close(73)
+[1758734306.599682] ? close(74)
+[1758734306.600267] ? close(75)
+[1758734306.600890] ? close(76)
+[1758734306.601515] ? close(77)
+[1758734306.602097] ? close(78)
+[1758734306.602746] ? close(79)
+[1758734306.603324] ? close(80)
+[1758734306.603954] ? close(81)
+[1758734306.604530] ? close(82)
+[1758734306.605144] ? close(83)
+[1758734306.605915] ? close(84)
+[1758734306.606556] ? close(85)
+[1758734306.607149] ? close(86)
+[1758734306.607738] ? close(87)
+[1758734306.608318] ? close(88)
+[1758734306.609097] ? close(89)
+[1758734306.609737] ? close(90)
+[1758734306.610329] ? close(91)
+[1758734306.611171] ? close(92)
+[1758734306.611837] ? close(93)
+[1758734306.612477] ? close(94)
+[1758734306.613066] ? close(95)
+[1758734306.613648] ? close(96)
+[1758734306.614233] ? close(97)
+[1758734306.614920] ? close(98)
+[1758734306.615737] ? close(99)
+[1758734306.616330] ? close(100)
+[1758734306.616943] ? close(101)
+[1758734306.617572] ? close(102)
+[1758734306.618227] ? close(103)
+[1758734306.881628] ? close(104)
+[1758734306.881948] ? close(105)
+[1758734306.882172] ? close(106)
+[1758734306.882395] ? close(107)
+[1758734306.882609] ? close(108)
+[1758734306.882828] ? close(109)
+[1758734306.883080] ? close(110)
+[1758734306.883325] ? close(111)
+[1758734306.883554] ? close(112)
+[1758734306.883770] ? close(113)
+[1758734306.883990] ? close(114)
+[1758734306.884212] ? close(115)
+[1758734306.884429] ? close(116)
+[1758734306.884643] ? close(117)
+[1758734306.884914] ? close(118)
+[1758734306.885139] [1758734306.654361] ? ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734306.886439]   arg hexdump (size=1):
+    0000: 29
+[1758734306.886776] ? ioctl -> 0 (errno=0)
+[1758734306.887028] ? ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734306.887427]   arg hexdump (size=1):
+    0000: 29
+[1758734306.887746] ? ioctl -> 0 (errno=0)
+[1758734306.619108] ? ioctl(fd=10, request=0x80044952 type=0x49('I') nr=82 dir=READ size=4, arg=0xb4d62a10)
+[1758734306.888542]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734306.889073] ? ioctl -> 0 (errno=0)
+? close(119)
+[1758734306.889715] ? close(120)
+[1758734306.890315] ? close(121)
+[1758734306.890958] ? close(122)
+[1758734306.891600] ? close(123)
+[1758734306.892253] ? close(124)
+[1758734306.892850] ? close(125)
+[1758734306.893470] ? close(126)
+[1758734306.894145] ? close(127)
+[1758734306.894773] ? close(128)
+[1758734306.895511] ? close(129)
+[1758734306.896108] ? close(130)
+[1758734306.896695] ? close(131)
+[1758734306.897369] ? close(132)
+[1758734306.897973] ? close(133)
+[1758734306.898551] ? close(134)
+[1758734306.899132] ? close(135)
+[1758734306.899716] ? close(136)
+[1758734306.900387] ? close(137)
+[1758734306.900972] ? close(138)
+[1758734306.901552] ? close(139)
+[1758734306.902131] ? close(140)
+[1758734306.902755] ? close(141)
+[1758734306.903390] ? close(142)
+[1758734306.904006] ? close(143)
+[1758734306.904590] ? close(144)
+[1758734306.905312] ? close(145)
+[1758734306.906028] ? close(146)
+[1758734306.906614] ? close(147)
+[1758734306.907204] ? close(148)
+[1758734306.907790] ? close(149)
+[1758734306.908458] ? close(150)
+[1758734306.909272] ? close(151)
+[1758734306.909871] ? close(152)
+[1758734306.910453] ? close(153)
+[1758734306.911067] ? close(154)
+[1758734306.912005] ? close(155)
+[1758734306.912599] ? close(156)
+[1758734306.913327] ? close(157)
+[1758734306.913967] ? close(158)
+[1758734306.914558] ? close(159)
+[1758734306.915198] ? close(160)
+[1758734306.915947] ? close(161)
+[1758734306.916537] ? close(162)
+[1758734306.917174] ? close(163)
+[1758734306.917759] ? close(164)
+[1758734306.918398] ? close(165)
+[1758734306.918979] ? close(166)
+[1758734306.919608] ? close(167)
+[1758734306.920194] ? close(168)
+[1758734306.920781] ? close(169)
+[1758734306.921412] ? close(170)
+[1758734306.921995] ? close(171)
+[1758734306.922635] ? close(172)
+[1758734306.923221] ? close(173)
+[1758734306.923797] ? close(174)
+[1758734306.924431] ? close(175)
+[1758734306.925017] ? close(176)
+[1758734306.925793] ? close(177)
+[1758734306.926385] ? close(178)
+[1758734306.927018] ? close(179)
+[1758734306.927599] ? close(180)
+[1758734306.928253] ? close(181)
+[1758734306.928837] ? close(182)
+[1758734306.929413] ? close(183)
+[1758734306.930047] ? close(184)
+[1758734306.930662] ? close(185)
+[1758734306.931267] ? close(186)
+[1758734306.931852] ? close(187)
+[1758734306.932437] ? close(188)
+[1758734306.933078] ? close(189)
+[1758734306.933716] ? close(190)
+[1758734306.934307] ? close(191)
+[1758734306.934891] ? close(192)
+[1758734306.935624] ? close(193)
+[1758734306.936306] ? close(194)
+[1758734306.936899] ? close(195)
+[1758734306.937476] ? close(196)
+[1758734306.938056] ? close(197)
+[1758734306.938640] ? close(198)
+[1758734306.939349] ? close(199)
+[1758734306.939932] ? close(200)
+[1758734306.940511] ? close(201)
+[1758734306.941102] ? close(202)
+[1758734306.941683] ? close(203)
+[1758734306.942333] ? close(204)
+[1758734306.942912] ? close(205)
+[1758734306.943491] ? close(206)
+[1758734306.944074] ? close(207)
+[1[0;37m [0m
+[0;36m[GW_APP] [2025-09-25 01:18:26:210489][dm_update_tfCardInfo():999]tfCardStatus: 7, freeSpace: 123639936, totalSpace: -124864512[0;37m [0m
+[[0;35mIV_MID[0m] [0;32m[2025-09-24 17:18:26:055633]iv_dm_init()[126][0mend.
+[0;32m[GW_APP] [2025-09-25 01:18:26:211249][dm_update_devFuncCfg():1327]devFuncCfg: 0
+[0;37m [0m
+[0;31m[GW_APP] [2025-09-25 01:18:26:211472][dm_update_ZoomFocusCrop():1497]iv_dm_send_prowriteable_object_msg err: -200[0;37m [0m
+[0;36m[GW_APP] [2025-09-25 01:18:26:211618][dm_update_ZoomFocusCrop():1504]zoomUp = 0.000000
+[0;37m [0m
+[0;36m[GW_APP] [2025-09-25 01:18:26:211776][dm_update_ZoomFocusCrop():1505]_multiple = 0.000000
+[0;37m [0m
+[0;36m[GW_APP] [2025-09-25 01:18:26:211922][dm_init():1623]end.[0;37m [0m
+[0;36m[GW_APP] [2025-09-25 01:18:26:212116][sys_init():788]begin..[0;37m [0m
+[0;32m[GW_APP] [2025-09-25 01:18:26:212260][sys_init():814]app version major:33, minor:0, revision:25,debug:0[0;37m [0m
+[[0;35mIV_MID[0m] [0;32m[2025-09-24 17:18:26:214547]iv_sys_init()[1398][0mbegin.
+[[0;35mIV_MID[0m] [0;36m[2025-09-24 17:18:26:214766]iv_sys_init()[1407]compile sdk version: V1.4.10596.4.debug,build@Jul 18 2023 13:50:40
+[0m[[0;35mIV_MID[0m] [0;33m[2025-09-24 17:18:26:214890]iv_sys_check_init_parm()[1341]net_chn_ring_buff_size maybe small:0,default:524288
+[0m[[0;35mIV_MID[0m] [0;32m[2025-09-24 17:18:26:215359]iv_share_init()[43][0mbegin:support max cap chn number:3
+[[0;35mIV_MID[0m] [0;32m[2025-09-24 17:18:26:215550]iv_share_init()[81][0mend.
+[[0;35mIV_MID[0m] [0;32m[2025-09-24 17:18:26:223015]iv_misc_get_device_mac()[56][0mmac: 4c:b0:08:9e:ec:d9
+[[0;35mIV_MID[0m] [0;32m[2025-09-24 17:18:26:225612]iv_sys_access_init()[1037][0mp2p chn buff size:524288
+[[0;35mIV_MID[0m] [0;36m[2025-09-24 17:18:26:225837]iv_sys_access_init()[1057]visible sdk version:16:20:10596.debug
+[0m[0;32m[GW_APP] [2025-09-25 01:18:26:226129][sys_read_certificate():552]begin.
+[0;37m [0m
+[0;32m[GW_APP] [2025-09-25 01:18:26:226280][sys_read_certificate():557]eCertificateType:0
+[0;37m [0m
+[0;32m[GW_APP] [2025-09-25 01:18:26:229924][sys_read_certificate():608]end CertificateLen:192.[0;37m [0m
+id=4763251443 cer_code=727747173 pid=0 utc=1659422934 unique_code=0
+
+[0;32m[GW_APP] [2025-09-25 01:18:26:230750][sys_read_certificate():552]begin.
+[0;37m [0m
+[0;32m[GW_APP] [2025-09-25 01:18:26:230895][sys_read_certificate():557]eCertificateType:1
+[0;37m [0m
+[0;32m[GW_APP] [2025-09-25 01:18:26:232767][sys_read_certificate():608]end CertificateLen:144.[0;37m [0m
+iv_access_init_param_cfg cer_code=727747173 dev_id=4763251443 pid=6442451392
+
+[0;32m[GW_APP] [2025-09-25 01:18:26:390876][sys_read_certificate():552]begin.
+[0;37m [0m
+[0;32m[GW_APP] [2025-09-25 01:18:26:391028][sys_read_certificate():557]eCertificateType:2
+[0;37m [0m
+[[0;35mIV_MID[0m] [0;36m[2025-09-24 17:18:26:391163]iv_sys_read_certificate()[162]so path[24]:[/rom/ivcert/libwbckey.so]
+[0m[[0;35mIV_MID[0m] [0;36m[2025-09-24 17:18:26:394173]iv_cm_get_local_data()[2975]type:1 empty
+[0m[[0;35mIV_MID[0m] [0;33m[2025-09-24 17:18:26:394350]iv_cm_get_local_data()[2993]fail:-8
+[0m[[0;35mIV_NET[0m] [2025-09-24 17:18:26.526]broadcast_init enter..
+[[0;35mIV_NET[0m] broadcast_fd_init pMgr->fdRead=29
+[0;36m[GW_APP] [2025-09-25 01:18:26:539256][vNewIrCutHanldeFun():304]2 -->> 1[0;37m [0m
+[0;36m[GW_APP] [2025-09-25 01:18:26:539489][vNewIrCutHanldeFun():305]0 -->> 0[0;37m [0m
+[[0;35mIV_NET[0m] [2025-09-24 17:18:26.546]broadcast_fd_init fdRead_ipv6 error!
+[0;36m[GW_APP] [2025-09-25 01:18:26:556805][fgWifiReconfig():700]result: [][0;37m [0m
+[0;36m[GW_APP] [2025-09-25 01:18:26:557155][fgWifiReconfig():706]cBuf: [wpa_supplicant -B -iwlan0 -c /mnt/ramdisk/wpa_supplicant0.conf -P /mnt/ramdisk/wpa_pid.txt][0;37m [0m
+[0;36m[GW_APP] [2025-09-25 01:18:26:557304][system_safe():176]cmdstring: [wpa_supplicant -B -iwlan0 -c /mnt/ramdisk/wpa_supplicant0.conf -P /mnt/ramdisk/wpa_pid.txt][0;37m [0m
+[[0;35mIV_NET[0m] [2025-09-24 17:18:26.580]broadcast_fd_init create broad cast send ipv6fd socket error!
+[[0;35m758734306.944682] [1758734306.989354] ? ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734308.226597]   arg hexdump (size=1):
+    0000: 29
+[1758734308.226939] ? ioctl -> 0 (errno=0)
+[1758734308.227234] ? ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734308.227690]   arg hexdump (size=1):
+    0000: 29
+[1758734308.228022] ? ioctl -> 0 (errno=0)
+[1758734306.989525] ? ioctl(fd=10, request=0x80044952 type=0x49('I') nr=82 dir=READ size=4, arg=0xb4d62a10)
+[1758734308.228811]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734308.229292] ? ioctl -> 0 (errno=0)
+[1758734307.520389] ? ioctl(fd=4, request=0xc0045706 type=0x57('W') nr=6 dir=READ|WRITE size=4, arg=0x69b94c)
+[1758734308.230087]   arg hexdump (size=4):
+    0000: 08 00 00 00
+[1758734308.230624] ? ioctl -> 0 (errno=0)
+[1758734307.889979] ? close(-1)
+[1758734308.231573] ? mmap(fd=-1, len=8388608, prot=0x3, flags=0x20022, off=0) = 0xb3c4b000
+[1758734308.232561] ? mmap(fd=-1, len=8388608, prot=0x3, flags=0x20022, off=0) = 0xb344b000
+[1758734308.233448] ? mmap(fd=-1, len=8388608, prot=0x3, flags=0x20022, off=0) = 0xb2c4b000
+[1758734308.234262] ? mmap(fd=-1, len=8388608, prot=0x3, flags=0x20022, off=0) = 0xb244b000
+[1758734308.235072] ? close(208)
+[1758734308.236052] ? close(209)
+[1758734308.236349] ? close(210)
+[1758734308.236581] ? close(211)
+[1758734308.236807] ? close(212)
+[1758734308.237021] ? close(213)
+[1758734308.237233] ? close(214)
+[1758734308.237453] ? close(215)
+[1758734308.237670] ? close(216)
+[1758734308.237894] ? close(217)
+[1758734308.238111] ? mmap(fd=-1, len=8388608, prot=0x3, flags=0x20022, off=0) = 0xb1c4b000
+[1758734308.240788] ? mmap(fd=-1, len=8388608, prot=0x3, flags=0x20022, off=0) = 0xb144b000
+[1758734308.244953] ? mmap(fd=-1, len=8388608, prot=0x3, flags=0x20022, off=0) = 0xb0c4b000? close(218)
+[1758734308.248799] ? close(219)
+[1758734308.249057] ? close(220)
+[1758734308.249283] ? close(221)
+[1758734308.249500] ? close(222)
+[1758734308.249732] ? close(223)
+[1758734308.250011] ? close(224)
+[1758734308.250241] ? close(225)
+[1758734308.250462] ? close(226)
+[1758734308.250679] ? close(227)
+[1758734308.250898] ? close(228)
+[1758734308.251117] ? close(229)
+[1758734308.251385] ? close(230)
+[1758734308.251610] ? close(231)
+[1758734308.251839] ? close(232)
+[1758734308.252054] ? close(233)
+[1758734308.252273] ? close(234)
+[1758734308.252485] ? close(235)
+[1758734308.252756] ? close(236)
+[1758734308.252986] ? close(237)
+[1758734308.253205] ? close(238)
+[1758734308.253422] ? close(239)
+[1758734308.253642] ? close(240)
+[1758734308.253862] ? close(241)
+[1758734308.254083] ? close(242)
+[1758734308.254347] ? close(243)
+[1758734308.254579] ? close(244)
+[1758734308.254802] ? close(245)
+[1758734308.255021] ? close(246)
+[1758734308.247819] open64('/dev/srandom',0x80000) = -1 (errno=2)
+[1758734308.255938] open64('/dev/srandom',0x0) = -1 (errno=2)
+[1758734308.256399] open64('/dev/urandom',0x80000) = 16 tag=DEV[0x109] rdev=0x109
+[1758734308.256869] DEV[0x109] read(fd=16, buf=0xb3c49628, count=32) = 32
+[1758734308.257233] DEV[0x109] close(16)
+[1758734308.257668] open64('/proc/sys/kernel/random/uuid',0x80000) = 16 tag=DEV[0] rdev=0
+[1758734308.258127] DEV[0] read(fd=16, buf=0xb3c496b0, count=128) = 37
+[1758734308.258505] DEV[0] close(16)
+[1758734308.258958] open64('/proc/sys/kernel/random/uuid',0x80000) = 16 tag=DEV[0] rdev=0
+[1758734308.259406] DEV[0] read(fd=16, buf=0xb3c496b0, count=128) = 37
+[1758734308.259735] DEV[0] close(16)
+[msg] Nameserver 8.8.8.8:53 has failed: Network is unreachable
+[msg] Nameserver 114.114.114.114:53 has failed: Network is unreachable
+
+[1758734308.263177] ? mmap(fd=-1, len=8388608, prot=0x3, flags=0x20022, off=0) = 0xb044b000
+[1758734308.265198] ? close(247)
+[1758734308.265632] ? close(248)
+[1758734308.265871] ? close(249)
+[1758734308.266093] ? close(250)
+[1758734308.266367] ? close(251)
+[1758734308.266634] ? close(252)
+[1758734308.266870] ? close(253)
+[1758734308.267094] ? close(254)
+[1758734308.267315] ? close(255)
+[1758734308.267538] ?IV_NET[0m] [2025-09-24 17:18:26.580]broadcast_fd_init bind to udp port: 8901 failed!
+[[0;35mIV_NET[0m] [2025-09-24 17:18:28.231]broadcast_init succeed!
+[[0;35mIV_NET[0m] start_recv_thread begin
+[[0;35mIV_NET[0m] start_recv_thread end
+[[0;35mIV_NET[0m] iv_access_init dm_reset_value=0
+[[0;35mIV_NET[0m] iv_dm_data_proc begin
+[[0;35mIV_NET[0m] iv_comm_run, threadID=100
+[[0;35mIV_NET[0m] iv_fast_connect_srv srv_num=3 fast_connect=1
+[[0;35mIV_NET[0m] iv_comm_start_thread end
+[[0;35mIV_NET[0m] Compile Date: Jul 18 2023 13:50:52
+[[0;35mIV_MID[0m] [0;32m[2025-09-24 17:18:28:240462]iv_sys_access_init()[1101][0mtencent id:4763251443
+[[0;35mIV_MID[0m] [0;32m[2025-09-24 17:18:28:240608]iv_cm_dealing_init()[258][0mbegin.
+[[0;35mIV_MID[0m] [0;32m[2025-09-24 17:18:28:241634]iv_cm_dealing_init()[272][0mend.
+[[0;35mIV_MID[0m] [0;32m[2025-09-24 17:18:28:241808]iv_sys_init()[1442][0mend.
+[0;32m[GW_APP] [2025-09-25 01:18:28:241934][sys_init():857]iv_sys_get_gwell_dev_cert_info :0[0;37m [0m
+[0;36m[GW_APP] [2025-09-25 01:18:28:242075][sys_init():859]opt: 0[0;37m [0m
+[0;36m[GW_APP] [2025-09-25 01:18:28:242251][sys_init():860]resolution: 1[0;37m [0m
+[0;36m[GW_APP] [2025-09-25 01:18:28:242379][sys_init():862]devFunc: 0x1[0;37m [0m
+[0;36m[GW_APP] [2025-09-25 01:18:28:242502][sys_init():864]manufacturer_id: 1000000437[0;37m [0m
+[0;36m[GW_APP] [2025-09-25 01:18:28:242625][sys_init():865]ip_camera: 0x1[0;37m [0m
+[0;36m[GW_APP] [2025-09-25 01:18:28:242743][sys_init():866]door_bell: 0x0[0;37m [0m
+[0;36m[GW_APP] [2025-09-25 01:18:28:242858][sys_init():867]panorama: 0x0[0;37m [0m
+[0;36m[GW_APP] [2025-09-25 01:18:28:242974][sys_init():868]keepalive_wifi: 0x0[0;37m [0m
+[0;36m[GW_APP] [2025-09-25 01:18:28:243090][sys_init():869]keepalive_ble: 0x0[0;37m [0m
+[0;36m[GW_APP] [2025-09-25 01:18:28:243204][sys_init():870]wifi_extender: 0x0[0;37m [0m
+[0;36m[GW_APP] [2025-09-25 01:18:28:243320][sys_init():871]support_gunball: 0[0;37m [0m
+[0;36m[GW_APP] [2025-09-25 01:18:28:243436][sys_init():872]support_lowpower: 0[0;37m [0m
+[0;36m[GW_APP] [2025-09-25 01:18:28:243553][sys_init():873]license_order_id: 2022072827820115[0;37m [0m
+[0;36m[GW_APP] [2025-09-25 01:18:28:243686][sys_init():874]resv: [0;37m [0m
+[0;36m[GW_APP] [2025-09-25 01:18:28:243801][sys_init():876]end.[0;37m [0m
+[0;32m[GW_APP] [2025-09-25 01:18:28:243961][av_talk_init():781]begin.[0;37m [0m
+[0;32m[GW_APP] [2025-09-25 01:18:28:244095][set_iv_head_version():769]=========>av_head_version: 0x8
+[0;37m [0m
+[0;32m[GW_APP] [2025-09-25 01:18:28:244298][av_talk_init():794]u32MaxFrameSize: 320[0;37m [0m
+[[0;35mIV_MID[0m] [0;32m[2025-09-25 01:18:28:244465]iv_avt_init()[1878][0mbegin.
+[[0;35mIV_MID[0m] [0;33m[2025-09-25 01:18:28:244621]iv_avt_check_init_parm()[107]avt recive cb function[0] NULL.
+[0m[[0;35mIV_MID[0m] [0;33m[2025-09-25 01:18:28:244744]iv_avt_check_init_parm()[154]avt multiple cb function[0] NULL.
+[0m[[0;35mIV_NET[0m] broadcast recv proc start!
+[[0;35mIV_NET[0m] iv_fast_connect_srv primary_srv
+[[0;35mIV_NET[0m] iv_comm_pingthread 1011
+[[0;35mIV_MID[0m] [0;32m[2025-09-25 01:18:28:262078]iv_avt_init()[1914][0mend.
+[0;32m[GW_APP] [2025-09-25 01:18:28:262254][av_talk_init():814]end.[0;37m [0m
+[0;32m[GW_APP] [2025-09-25 01:18:28:262393][record_init():751]begin..
+[0;37m [0m
+[[0;35mIV_MID[0m] [0;32m[2025-09-25 01:18:28:262567]iv_rd_init()[9355][0mbegin.
+[[0;35mIV_MID[0m] [0;36m[2025-09-25 01:18:28:262733]iv_rd_check_init_parm()[9311]will be not use iv_rd_get_recording_type_cb
+[0m[[0;35mIV_MID[0m] [0;36m[2025-09-25 01:18:28:262853]iv_rd_check_init_parm()[9317]will be not use iv_rd_capture_thumbnail_cb
+[0m[[0;35mIV_MID[0m] [0;36m[2025-09-25 01:18:28:262988]iv_rd_init()[9370]sd card path:/mnt/disc1
+[0m[[0;35mIV_MID[0m] [0;31m[2025-09-25 01:18:28:264539]iv_load_rd_thumbnail_func()[5554]not support function: 'rd_thumbnail', please compile with libiotvideo_rd_thumbnail
+[0m[[0;35mIV_MID[0m] [0;32m[2025-09-25 01:18:28:264744]iv_rd_init()[9395][0mend.
+[0;32m close(256)
+[1758734308.899044] ? close(257)
+[1758734308.899313] ? close(258)
+[1758734308.899537] ? close(259)
+[1758734308.899755] ? close(260)
+[1758734308.900034] ? close(261)
+[1758734308.900293] ? close(262)
+[1758734308.900531] ? close(263)
+[1758734308.900755] ? close(264)
+[1758734308.900976] ? close(265)
+[1758734308.901199] ? close(266)
+[1758734308.901417] ? close(267)
+[1758734308.901636] ? close(268)
+[1758734308.901860] ? close(269)
+[1758734308.902085] ? close(270)
+[1758734308.902305] ? close(271)
+[1758734308.902527] ? close(272)
+[1758734308.902745] ? close(273)
+[1758734308.903002] ? close(274)
+[1758734308.903266] ? close(275)
+[1758734308.903495] ? close(276)
+[1758734308.903719] ? close(277)
+[1758734308.903936] ? close(278)
+[1758734308.904151] ? close(279)
+[1758734308.904373] ? close(280)
+[1758734308.904591] ? close(281)
+[1758734308.904811] ? close(282)
+[1758734308.905028] ? close(283)[1758734308.329808] ? ioctl(fd=10, request=0x80044952 type=0x49('I') nr=82 dir=READ size=4, arg=0xb4d62a10)
+[1758734308.906376]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734308.906859] ? ioctl -> 0 (errno=0)
+[1758734308.328519] ? ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734308.907650]   arg hexdump (size=1):
+    0000: 29
+[1758734308.907994] ? ioctl -> 0 (errno=0)
+[1758734308.908249] ? ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734308.908661]   arg hexdump (size=1):
+    0000: 29
+[1758734308.909084] ? ioctl -> 0 (errno=0)
+
+[1758734308.909491] ? close(284)
+[1758734308.910102] ? close(285)
+[1758734308.910686] ? close(286)
+[1758734308.911421] ? close(287)
+[1758734308.912105] ? close(288)
+[1758734308.912698] ? close(289)
+[1758734308.913476] ? close(290)
+[1758734308.914064] ? close(291)
+[1758734308.914706] ? close(292)
+[1758734308.915493] ? close(293)
+[1758734308.916377] ? close(294)
+[1758734308.916981] ? close(295)
+[1758734308.917621] ? close(296)
+[1758734308.918269] ? close(297)
+[1758734308.918860] ? close(298)
+[1758734308.919473] ? close(299)
+[1758734308.920119] ? close(300)
+[1758734308.920700] ? close(301)
+[1758734308.921730] ? close(302)
+[1758734308.922359] ? close(303)
+[1758734308.922997] ? close(304)
+[1758734308.923586] ? close(305)
+[1758734308.924230] ? close(306)
+[1758734308.924845] ? close(307)
+[1758734308.925639] ? close(308)
+[1758734308.926531] ? close(309)
+[1758734308.927183] ? close(310)
+[1758734308.927760] ? close(311)
+[1758734308.928433] ? close(312)
+[1758734308.929023] ? close(313)
+[1758734308.929616] ? close(314)
+[1758734308.930253] ? close(315)
+[1758734308.930847] ? close(316)
+[1758734308.931608] ? close(317)
+[1758734308.932205] ? close(318)
+[1758734308.932796] ? close(319)
+[1758734308.933423] ? close(320)
+[1758734308.934060] ? close(321)
+[1758734308.934681] ? close(322)
+[1758734308.935392] ? close(323)
+[1758734308.936043] ? close(324)
+[1758734308.936948] ? close(325)
+[1758734308.937544] ? close(326)
+[1758734308.938138] ? close(327)
+[1758734308.938722] ? close(328)
+[1758734308.939360] ? close(329)
+[1758734308.940034] ? close(330)
+[1758734308.940624] ? close(331)
+[1758734308.941215] ? close(332)
+[1758734308.941796] ? close(333)
+[1758734308.942482] ? close(334)
+[1758734308.943076] ? close(335)
+[1758734308.943672] ? close(336)
+[1758734308.944252] ? close(337)
+[1758734308.945037] ? close(338)
+[1758734308.945810] ? close(339)
+[1758734308.946698] ? close(340)
+[1758734308.947306] ? close(341)
+[1758734308.947955] ? close(342)
+[1758734308.948567] ? close(343)
+[1758734308.949155] ? close(344)
+[1758734308.949735] ? close(345)
+[1758734308.950321] ? close(346)
+[1758734308.951008] ? close(347)
+[1758734308.951934] ? close(348)
+[1758734308.952535] ? close(349)
+[1758734308.953125] ? close(350)
+[1758734308.953762] ? close(351)
+[1758734308.954399] ? close(352)
+[1758734308.954977] ? close(353)
+[1758734308.955927] ? close(354)
+[1758734308.956571] ? close(355)
+[1758734308.957457] ? close(356)
+[1758734308.958046] ? close(357)
+[1758734308.958630] ? close(358)
+[1758734308.959293] ? close(359)
+[1758734308.959875] ? close(360)
+[1[GW_APP] [2025-09-25 01:18:28:264916][record_resolution_set():585]recordResolution: 10758734308.960511] ? close(361)
+[1758734309.570463] ? close(362)
+[1758734309.570710] ? close(363)
+[1758734309.570944] ? close(364)
+[1758734309.571162] ? close(365)
+[1758734309.571384] ? close(366)
+[1758734309.571601] ? close(367)
+[1758734309.571874] ? close(368)
+[1758734309.572099] ? close(369)
+[1758734309.572324] ? close(370)
+[1758734309.572579] ? close(371)
+[1758734309.572814] ? close(372)
+[1758734309.573033] ? close(373)
+[1758734309.573255] ? close(374)
+[1758734309.573480] ? close(375)
+[1758734309.573707] ? close(376)
+[1758734309.573926] ? close(377)
+[1758734309.574143] ? close(378)
+[1758734309.574362] ? close(379)
+[1758734309.574625] ? close(380)
+[1758734309.574850] ? close(381)
+[1758734309.575077] ? close(382)[1758734309.010660] ? ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734309.576063]   arg hexdump (size=1):
+    0000: 29
+[1758734309.576395] ? ioctl -> 0 (errno=0)
+[1758734309.576648] ? ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734309.577053] [1758734309.234961] ? mmap(fd=-1, len=131072, prot=0x3, flags=0x20022, off=0) = 0xb042b000
+[1758734309.578933] ? mmap(fd=-1, len=8388608, prot=0x3, flags=0x20022, off=0) = 0xafc2b000
+[1758734309.580396] ? mmap(fd=-1, len=8388608, prot=0x3, flags=0x20022, off=0) = 0xaf42b000
+[1758734309.007268] ? ioctl(fd=10, request=0x80044952 type=0x49('I') nr=82 dir=READ size=4, arg=0xb4d62a10)
+[1758734309.582357]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734309.582841] ? ioctl -> 0 (errno=0)
+[1758734309.231059] ? ioctl(fd=4, request=0xc0045706 type=0x57('W') nr=6 dir=READ|WRITE size=4, arg=0x69b94c)
+[1758734309.583664]   arg hexdump (size=4):
+    0000: 08 00 00 00
+[1758734309.584121] ? ioctl -> 0 (errno=0)
+  arg hexdump (size=1):
+    0000: 29
+[1758734309.584724] ? ioctl -> 0 (errno=0)
+
+[1758734309.585094] ? close(383)
+[1758734309.585510] ? close(384)
+[1758734309.585811] ? close(385)
+[1758734309.586047] ? close(386)
+[1758734309.586266] ? close(387)
+[1758734309.586480] ? close(388)
+[1758734309.586708] ? close(389)
+[1758734309.589670] ? close(390)
+[1758734309.589921] ? close(391)
+[1758734309.590141] ? close(392)
+[1758734309.590364] ? close(393)
+[1758734309.590632] ? close(394)
+[1758734309.590856] ? close(395)
+[1758734309.591075] ? close(396)
+[1758734309.591337] ? close(397)
+[1758734309.591575] ? close(398)
+[1758734309.591793] ? close(399)
+[1758734309.592012] ? close(400)
+[1758734309.592233] ? close(401)
+[1758734309.592453] ? close(402)
+[1758734309.592670] ? close(403)
+[1758734309.592894] ? close(404)
+[1758734309.593113] ? close(405)
+[1758734309.593335] ? close(406)
+[1758734309.593583] ? close(407)
+[1758734309.593818] ? close(408)
+[1758734309.594044] ? close(409)
+[1758734309.594312] ? close(410)
+[1758734309.594534] ? close(411)
+[1758734309.594751] ? close(412)
+[1758734309.594971] ? close(413)
+[1758734309.595188] [1758734309.588738] ? ioctl(fd=11, request=0xc0145608 type=0x56('V') nr=8 dir=READ|WRITE size=20, arg=0xbef20a34)
+[1758734309.596016]   => VIDIOC_REQBUFS
+[1758734309.596208]   arg hexdump (size=20):
+    0000: 04 00 00 00 01 00 00 00 02 00 00 00 00 00 00 00
+    0010: 00 00 00 00
+[1758734309.597919] ? ioctl -> 0 (errno=0)
+? close(414)
+[1758734309.599744] ? close(415)
+[1758734309.599998] ? close(416)
+[1758734309.600227] ? close(417)
+[1758734309.600450] ? close(418)
+[1758734309.600679] ? close(419)
+[1758734309.600898] ? close(420)
+[1758734309.601120] ? close(421)
+[1758734309.601346] ? close(422)
+[1758734309.601564] ? close(423)
+[1758734309.601784] ? close(424)
+[1758734309.602009] ? close(425)
+[1758734309.602227] ? close(426)
+[1758734309.602444] ? close(427)
+[1758734309.602738] ? close(428)
+[1758734309.602965] ? close(429)
+[1758734309.603183] ? close(430)
+[1758734309.603402] ? close(431)
+[1758734309.603619] ? close(432)
+[1758734309.603845] ? close(433)
+[1758734309.604372] ? close(434)
+[1758734309.604976] ? close(435)
+[1758734309.605822] ? close(436)
+[1758734309.606419] ? close(437)
+[1758734309.607008] ? close(438)
+[1758734309.607861] ? close(439)
+[1758734309.608732] ?[0;37m [0m
+[0;32m[GW_APP] [2025-09-25 01:18:29:234711][record_resolution_init():591]recordResolution: 10 pstSettingInfo->recordResolution :1[0;37m [0m
+[0;32m[GW_APP] [2025-09-25 01:18:29:578263][cloud_storage_init():301]begin..
+[0;37m [0m
+[[0;35mIV_MID[0m] [0;32m[2025-09-25 01:18:29:578447]iv_cs_init()[7953][0mbegin.
+[[0;35mIV_MID[0m] [0;32m[2025-09-25 01:18:29:578710]iv_sys_dev_lowpower()[1564][0mdebug sdk force set
+[[0;35mIV_MID[0m] [0;32m[2025-09-25 01:18:29:579701]iv_cs_init()[7975][0mend.
+[0;36m[GW_APP] [2025-09-25 01:18:29:579870][upgrade_init():262]iv_ota_firmware_update_cb: 0xf9af8[0;37m [0m
+[[0;35mIV_MID[0m] [0;32m[2025-09-25 01:18:29:580063]iv_ota_init()[979][0mbegin.
+[[0;35mIV_MID[0m] [0;32m[2025-09-25 01:18:29:581188]iv_ota_init()[1003][0mend.
+[0;36m[GW_APP] [2025-09-25 01:18:29:581388][SettingInfoLastestVersionIsChanged():387]sCurrentVersion: [33.0.25], sLastestVersion: [33.0.25][0;37m [0m
+[[0;35mIV_MID[0m] [0;32m[2025-09-25 01:18:29:587128]iv_uc_init()[129][0mbegin.
+[[0;35mIV_MID[0m] [0;32m[2025-09-25 01:18:29:587300]iv_uc_init()[140][0mend.
+[0;32m[GW_APP] [2025-09-25 01:18:29:587417][download_res_file_init():427]begin..
+[0;37m [0m
+[0;36m[GW_APP] [2025-09-25 01:18:29:587588][iotvideo_sdk_init():55]End ...[0;37m [0m
+[0;32m[GW_APP] [2025-09-25 01:18:29:587717][vStartMD():288]MD >>>[0;37m [0m
+[0;32m[GW_APP] [2025-09-25 01:18:29:587834][vVIControl():263]dwChID= 3,set:1[0;37m [0m
+[32m[00:00:12.181|  info|        ] [0menter PlatformViStart
+[1;33m[malloc_capture_buffers:115] ion_mem: 0xb50e8000, temp: 0x80384000
+[m close(440)
+[1758734310.242111] ? close(441)
+[1758734310.242519] ? close(442)
+[1758734310.242760] ? close(443)
+[1758734310.242991] ? close(444)
+[1758734310.243210] ? close(445)
+[1758734310.243474] ? close(446)
+[1758734310.243709] ? close(447)
+[1758734310.243932] ? close(448)
+[1758734310.244153] ? close(449)
+[1758734310.244369] ? close(450)
+[1758734310.244583] ? close(451)
+[1758734310.244802] ? close(452)
+[1758734310.245022] ? close(453)
+[1758734309.685155] ? ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734310.246381]   arg hexdump (size=1):
+    0000: 29
+[1758734310.246823] [1758734309.683321] ? ioctl(fd=10, request=0x80044952 type=0x49('I') nr=82 dir=READ size=4, arg=0xb4d62a10)
+[1758734310.247731]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1;33m[malloc_capture_buffers:122] n_buffers: 0, start: 0xb50e8000, length: 2306048
+[m[1;33m[malloc_capture_buffers:122] n_buffers: 1, start: 0xb531b000, length: 2306048
+[m[1;33m[malloc_capture_buffers:122] n_buffers: 2, start: 0xb554e000, length: 2306048
+[m[1;33m[malloc_capture_buffers:122] n_buffers: 3, start: 0xb5781000, length: 2306048
+[m[malloc_capture_buffers:128] set buffer size: 2306048 ok
+[1758734310.251852] ? ioctl(fd=11, request=0xc044560f type=0x56('V') nr=15 dir=READ|WRITE size=68, arg=0xbef209c4)
+[1758734310.252329]   => VIDIOC_QBUF
+[1758734310.252513]   arg hexdump (size=68):
+    0000: 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00
+    0010: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+    0020: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+    0030: 02 00 00 00 00 80 0e b5 00 30 23 00 [1758734310.256718] ? ioctl -> 0 (errno=0)
+? ioctl -> 0 (errno=0)
+[1758734310.257700] ? ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734310.258152]   arg hexdump (size=1):
+    0000: 29
+[1758734310.258477] ? ioctl -> 0 (errno=0)
+[1758734310.258810] ? close(454)
+[1758734310.259080] ? close(455)
+[1758734310.259317] ? close(456)
+[1758734310.259544] ? close(457)
+[1758734310.259767] ? close(458)
+[1758734310.259986] ? close(459)
+[1758734310.260202] ? close(460)
+[1758734310.260688] ? close(461)
+[1758734310.260922] ? close(462)
+[1758734310.261144] ? close(463)
+[1758734310.261359] ? close(464)
+[1758734310.261576] ? close(465)
+[1758734310.261797] ? close(466)
+[1758734310.262016] ? close(467)
+[1758734310.262232] ? close(468)
+[1758734310.262451] ? close(469)
+[1758734310.262669] ? close(470)
+[1758734310.262888] ? close(471)
+[1758734310.263155] ? close(472)
+[1758734310.263429] ? close(473)
+[1758734310.263655] ? close(474)
+[1758734310.263875] ? close(475)
+[1758734310.264098] ? close(476)
+[1758734310.264324] ? close(477)
+[1758734310.264540] ? close(478)
+[1758734310.264764] ? close(479)
+[1758734310.264981] ? close(480)
+[1758734310.265201] 00 00 00 00
+    0040: 00 00 00 00
+[1758734310.266379] ? ioctl -> 0 (errno=0)
+[1758734310.266684] ? ioctl(fd=11, request=0xc044560f type=0x56('V') nr=15 dir=READ|WRITE size=68, arg=0xbef209c4)
+[1758734310.267553]   => VIDIOC_QBUF
+[1758734310.267747]   arg hexdump (size=68):
+    0000: 01 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00
+    0010: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+    0020: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+    0030: 02 00 00 00 00 b0 31 b5 00 30 23 00 00 00 00 00
+    0040: 00 00 00 00
+[1758734310.270943] ? ioctl -> 0 (errno=0)
+[1758734310.271231] ? ioctl(fd=11, request=0xc044560f type=0x56('V') nr=15 dir=READ|WRITE size=68, arg=0xbef209c4)
+[1758734310.271698]   => VIDIOC_QBUF
+[1758734310.271881]   arg hexdump (size=68):
+    0000: 02 ? close(481)
+[1758734310.272632] ? close(482)
+[1758734310.272877] ? close(483)
+[1758734310.273098] ? close(484)
+[1758734310.273322] ? close(485)
+[1758734310.273540] ? close(486)
+[1758734310.273764] ? close(487)
+[1758734310.273980] ? close(488)
+[1758734310.274205] ? close(489)
+[1758734310.274489] ? close(490)
+[1758734310.274712] ? close(491)
+[1758734310.274931] ? close(492)
+[1758734310.275156] ? close(493)
+[1758734310.275586] ? close(494)
+[1758734310.275823] ? close(495)
+[1758734310.276048] ? close(496)
+[1758734310.577762] ? close(497)
+[1758734310.578008] ? close(498)
+[1758734310.578232] ? close(499)
+[1758734310.578455] ? close(500)
+[1758734310.578735] ? close(501)
+[1758734310.578961] ? close(502)
+[1758734310.579232] ? close(503)
+[1758734310.579474] ? close(504)
+[1758734310.579767] ? close(505)
+[1758734310.580023] ? close(506)
+[1758734310.580246] ? close(507)
+[1758734310.580466] ? close(508)
+[1758734310.580690] ? close(509)
+[1758734310.580912] ? close(510)
+[1758734310.581129] ? close(511)
+[1758734310.581345] ? close(512)[1758734310.357631] ? ioctl(fd=10, request=0x80044952 type=0x49('I') nr=82 dir=READ size=4, arg=0xb4d62a10)
+[1758734310.582512]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734310.582995] ? ioctl -> 0 (errno=0)
+[1758734310.360061] ? ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734310.583785]   arg hexdump (size=1):
+    0000: 29
+[1758734310.584121] ? ioctl -> 0 (errno=0)
+[1758734310.584368] [1758734310.584618] ? ioctl(fd=4, request=0xc0045706 type=0x57('W') nr=6 dir=READ|WRITE size=4, arg=0x69b94c)
+[1758734310.585479]   arg hexdump (size=4):
+    0000: 08 00 00 00
+[1758734310.585946] ? ioctl -> 0 (errno=0)
+00 00 00 01 00 00 00 00 00 00 00 00 00 00 00
+    0010: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+    0020: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+    0030: 02 00 00 00 00 e0 54 b5 00 30 23 00 00 00 00 00
+    0040: 00 00 00 00
+? ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734310.594539]   arg hexdump (size=1):
+    0000: 29
+[1758734310.598527] ? ioctl -> 0 (errno=0)
+
+[1758734310.599317] ? close(513)
+[1758734310.599984] ? ioctl -> 0 (errno=0)
+[1758734310.601688] ? ioctl(fd=11, request=0xc044560f type=0x56('V') nr=15 dir=READ|WRITE size=68, arg=0xbef209c4)
+[1758734310.603456]   => VIDIOC_QBUF
+[1758734310.614324]   arg hexdump (size=68):
+    0000: 03 00 00 00 01 00 00 00 00 00 00 00 00 00 00 [1758734310.602548] ? close(514)
+[1758734310.618635] ? close(515)
+[1758734310.618874] ? close(516)
+[1758734310.619096] ? close(517)
+[1758734310.619319] ? close(518)
+[1758734310.620351] ? close(519)
+[1758734310.620655] ? close(520)
+[1758734310.620900] ? close(521)
+[1758734310.621274] ? close(522)
+[1758734310.621515] ? close(523)
+[1758734310.621740] ? close(524)
+[1758734310.621967] ? close(525)
+[1758734310.622194] ? close(526)
+[1758734310.622410] ? close(527)
+[1758734310.622632] ? close(528)
+[1758734310.622844] ? close(529)
+[1758734310.623065] ? close(530)
+[1758734310.623279] ? close(531)
+[1758734310.623498] ? close(532)00
+    0010: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+    0020: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+    0030: 02 00 00 00 00 10 78 b5 00 30 23 00 00 00 00 00
+    0040: 00 00 00 00
+[1758734310.634764] ? ioctl -> 0 (errno=0)
+[1758734310.635059] ? ioctl(fd=11, request=0x40045612 type=0x56('V') nr=18 dir=WRITE size=4, arg=0xbef20a34)
+[1758734310.638719]   => VIDIOC_STREAMON
+[1758734310.638925]   arg hexdump (size=4):
+    0000: 01 00 00 00
+
+[1758734310.644262] ? close(533)
+[1758734310.644544] ? close(534)
+[1758734310.644827] ? close(535)
+[1758734310.645056] ? close(536)
+[1758734310.649074] ? close(537)
+[1758734310.649408] ? close(538)
+[1758734310.649692] ? close(539)
+[1758734310.649922] ? close(540)
+[1758734310.650142] ? close(541)
+[1758734310.650365] ? close(542)
+[1758734310.650587] ? close(543)
+[1758734310.650854] ? close(544)
+[1758734310.651073] ? close(545)
+[1758734310.654464] ? close(546)
+[1758734310.658122] ? close(547)
+[1758734310.658436] ? close(548)
+[1758734310.658659] ? close(549)
+[1758734310.658883] ? close(550)
+[1758734310.659103] ? close(551)
+[1758734310.659324] ? close(552)
+[1758734310.659543] ? close(553)
+[1758734310.659814] ? close(554)
+[1758734310.660041] ? close(555)
+[1758734310.660255] ? close(556)
+[1758734310.660470] ? close(557)
+[1758734310.660695] ? close(558)
+[1758734310.660958] ? close(559)
+[1758734310.661179] ? close(560)
+[1758734310.661396] [1758734310.664102] ? ioctl -> 0 (errno=0)
+? close(561)
+[1[0;36m[GW_APP] [2025-09-25 01:18:30:589710][record_start():238]begin.[0;37m [0m
+[[0;35mIV_MID[0m] [0;36m[2025-09-25 01:18:30:590479]iv_record_create_file()[8574]new file time:1758734310590
+[0m[[0;35mIV_MID[0m] [0;36m[2025-09-25 01:18:30:590873]iv_record_create_file()[8612]start create record [/mnt/disc1/iotVideo/record/2025-09-24/.1758734310590.mp4]
+[0m[1;33m[isp_vi_capture_on:719] stream on, drop first 4 frames
+[m758734310.679971] ? close(562)
+[1758734311.590374] ? close(563)
+[1758734311.590672] ? close(564)
+[1758734311.590912] ? close(565)
+[1758734311.591187] ? close(566)
+[1758734311.591418] ? close(567)
+[1758734311.591645] ? close(568)
+[1758734311.591859] ? close(569)
+[1758734311.592074] ? close(570)
+[1758734311.592292] ? close(571)
+[1758734311.592509] ? close(572)
+[1758734311.592720] ? close(573)
+[1758734311.592947] [1758734310.699076] ? ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)
+[1758734311.594356]   arg hexdump (size=1):
+    0000: 29
+[1758734311.594693] ? ioctl -> 0 (errno=0)
+[1758734311.594939] ? ioctl(fd=3, request=0xc001662b type=0x66('f') nr=43 dir=READ|WRITE size=1, arg=0xb4ce99d4)[1758734311.586434] ? ioctl(fd=4, request=0xc0045706 type=0x57('W') nr=6 dir=READ|WRITE size=4, arg=0x69b94c)
+[1758734311.596272]   arg hexdump (size=4):
+    0000: 08 00 00 00
+[1758734311.596823] ? ioctl -> 0 (errno=0)
+[1758734310.683465] ? ioctl(fd=10, request=0x80044952 type=0x49('I') nr=82 dir=READ size=4, arg=0xb4d62a10)
+[1758734311.597645]   arg hexdump (size=4):
+    0000: 00 00 00 00
+[1758734311.598154] ? ioctl -> 0 (errno=0)
+[1758734311.598607] ? ioctl(fd=11, request=0xc0445611 type=0x56('V') nr=17 dir=READ|WRITE size=68, arg=0x698970)
+[1758734311.599092]   => VIDIOC_DQBUF
+[1758734311.599289]   arg hexdump (size=68):
+    0000: 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00
+    0010: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+    0020: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+    0030: 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+    0040: 00 00 00 00
+[1758734311.602669] ? ioctl -> 0 (errno=0)
+
+[1758734311.604095]   arg hexdump (size=1):
+    0000: 29
+[1758734311.604511] ? ioctl -> 0 (errno=0)
+? close(574)
+[1758734311.607519] ? close(575)
+[1758734311.607791] ? close(576)
+[1758734311.608095] ? close(577)
+[1758734311.608342] ? close(578)
+[1758734311.608582] ? close(579)
+[1758734311.608879] ? close(580)
+[1758734311.609119] ? close(581)
+[1758734311.609354] ? close(582)
+[1758734311.609592] ? close(583)
+[1758734311.609831] ? close(584)
+[1758734311.610062] [1758734311.611013] ? ioctl(fd=11, request=0xc044560f type=0x56('V') nr=15 dir=READ|WRITE size=68, arg=0x754ac8)
+[1758734311.614805]   => VIDIOC_QBUF
+[1758734311.615021]   arg hexdump (size=68):
+    0000: 00 00 00 00 01 00 00 00 00 18 15 00 00 00 00 00
+    0010: 04 00 00 00 75 00 00 00 80 38 01 00 00 00 00 00
+    0020: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+    0030: 02 00 00 00 00 80 0e b5 00 18 15 00 00 00 00 00
+    0040: 00 00 00 00
+[1758734311.618476] ? ioctl -> 0 (errno=0)
+[1758734311.618879] ? ioctl(fd=11, request=0xc0445611 type=0x56('V') nr=17 dir=READ|WRITE size=68, arg=0x698970)
+[1758734311.619404]   => VIDIOC_DQBUF
+[1758734311.619594]   arg hexdump (size=68):
+    0000: 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00
+    0010: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+    0020: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+    0030: 02 00 00 00 00 00 00 00 ? close(585)
+[1758734311.625863] ? close(586)
+[1758734311.626238] ? close(587)
+[1758734311.626480] ? close(588)
+[1758734311.626793] ? close(589)
+[1758734311.627033] ? close(590)
+[1758734311.627271] ? close(591)
+[1758734311.630822] ? close(592)
+[1758734311.634117] ? close(593)
+[1758734311.635583] ? close(594)
+00 00 00 00 00 00 00 00
+    0040: 00 00 00 00
+[1758734311.642055] ? ioctl -> 0 (errno=0)
+[1758734311.642846] ? ioctl(fd=11, request=0xc044560f type=0x56('V') nr=15 dir=READ|WRITE size=68, arg=0x754ac8)
+[1758734311.643320]   => VIDIOC_QBUF
+[1758734311.643507]   arg hexdump (size=68):
+    0000: 01 00 00 00 01 00 00 00 00 18 15 00 00 00 00 00
+    0010: 04 00 00 00 75 00 00 00 e0 22 02 00 00 00 00 00
+    0020: 00 [1758734311.640814] ? close(595)
