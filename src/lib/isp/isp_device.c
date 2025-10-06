@@ -362,13 +362,26 @@ int isp_load_user_params(const char *path)
 
 int isp_configure_runtime(void)
 {
-    uint32_t awb_attr = 0;
-    ak_isp_get_awb_attr(&awb_attr);
-    printf("[get] awb_attr: 0x%x\n", awb_attr);
+    /*
+     * El driver escribe un bloque grande en el puntero que se le pasa;
+     * sin la estructura exacta del SDK corriamos el riesgo de pisar la
+     * pila (de hecho provocaba el SIGSEGV observado en el dump). Usamos
+     * un bufer amplio para inspeccionar el primer word y dejamos la
+     * escritura pendiente hasta reconstruir el layout real.
+     */
+    uint8_t awb_blob[256];
+    memset(awb_blob, 0, sizeof(awb_blob));
 
-    awb_attr = 0x0008000fU;
-    ak_isp_set_awb_attr(&awb_attr);
-    printf("[set] awb_attr: 0x%x\n", awb_attr);
+    if (ak_isp_get_awb_attr(awb_blob) == 0) {
+        uint32_t awb_first = rd_le32(awb_blob);
+        printf("[get] awb_attr.first_word=0x%08x\n", awb_first);
+    } else {
+        fprintf(stderr,
+                "[isp] ak_isp_get_awb_attr fallo: %s\n",
+                strerror(errno));
+    }
+    fprintf(stderr,
+            "[isp] TODO: ak_isp_set_awb_attr pendiente de recrear estructura vendor\n");
 
     uint32_t frame_rate_raw = 0;
     ak_isp_get_frame_rate(&frame_rate_raw);

@@ -1,4 +1,4 @@
-# AK3918EV200 Bring-Up Status (2025-10-06)
+# AK3918EV200 Bring-Up Status (2025-10-07)
 
 ## 1. Vendor pipeline: what we observe
 
@@ -61,6 +61,7 @@ From the vendor preloads (`data/logs/ipc/venc/uio_venc.log`):
 - Loads the `.conf` pack, 3D-NR blob, and user params.
 - Configures `/dev/akpcm_cdev0` and `/dev/akpcm_cdev1` with the same ioctl sequence as the vendor.
 - Forces encoder bases to `0x80c50000` / `0x80d4c800`, uses `units256` to compute the slot size, and writes only the `REG_PARAM_LEN` bytes.
+- Permite seleccionar el modo de espera de IRQ (`AK_UIO_FORCE_MODE={ak,driver,std,read}`) y volcar registros críticos (`AK_VENC_DEBUG=1`) para diagnosticar por qué no llegan interrupciones.
 
 ⚠️ Missing pieces:
 - The burst of ISP ioctls (`0x40044902 … 0x40044972`). Without replaying that block, `/dev/uio0` never raises the first IRQ (our logs show only the initial `UIO_SET_TRIPLE`).
@@ -72,7 +73,7 @@ From the vendor preloads (`data/logs/ipc/venc/uio_venc.log`):
 
 1. **Map every ISP ioctl payload.** Extract the byte sequences from the vendor (either from the `.conf` machinery or from auxiliary blobs) so we can replay them in our tool. Document the structure alongside the driver fields.
 2. **Implement an ISP replayer** inside `ak3918_video_dump` that mirrors the vendor sequence (`ak_isp_set_*` calls) before entering the IRQ loop.
-3. **Monitor `/dev/uio0`** with the preloader once the replayer is in place; we expect to see the same `[VENC] slot=235520 … len=…` lines and `.h264` should grow.
+3. **Monitor `/dev/uio0`** (tracer + `AK_VENC_DEBUG=1`) una vez que repliquemos el burst; deberíamos ver `[venc]` avanzando y el `.h264` creciendo.
 4. **Document each structure.** As we reverse the payloads, record the meaning of each field (consult `linux-3.4.35/drivers/media/` patches in this repo for authoritative definitions).
 
 This document will be updated as soon as we decode and replay the missing ISP calls.

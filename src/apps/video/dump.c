@@ -114,6 +114,8 @@ static void on_signal(int sig)
 static void venc_context_poll_flush(struct venc_context *ctx,
                                     struct dump_writer *writer,
                                     int force_log);
+static int venc_debug_enabled(void);
+static void venc_dump_regs(const struct venc_context *ctx, const char *tag);
 
 static int g_fd_spkr = -1;
 static int g_fd_mic  = -1;
@@ -328,6 +330,9 @@ static int venc_pump_irqs(struct venc_context *ctx, int fd,
             return -1;
         }
         if (rc == 0) {
+            if (venc_debug_enabled()) {
+                venc_dump_regs(ctx, "wait-noirq");
+            }
             return handled;
         }
 
@@ -955,6 +960,9 @@ static void venc_context_poll_flush(struct venc_context *ctx,
     }
     uint32_t wp_now = rd32(ctx->regs, REG_WP_A);
     uint32_t chunk = rd32(ctx->regs, REG_LEN_BYTES);
+    if (venc_debug_enabled() && force_log) {
+        venc_dump_regs(ctx, "poll");
+    }
     venc_drain(ctx, writer, wp_now, chunk, force_log);
 }
 
@@ -1425,6 +1433,26 @@ int main(int argc, char **argv)
     memset(&v4l2_ctx, 0, sizeof(v4l2_ctx));
     enum ak_uio_irq_mode irq_mode = AK_UIO_IRQ_MODE_AK;
 
+    const char *mode_env = getenv("AK_UIO_FORCE_MODE");
+    if (mode_env) {
+        if (strcmp(mode_env, "driver") == 0) {
+            irq_mode = AK_UIO_IRQ_MODE_DRIVER;
+        } else if (strcmp(mode_env, "std") == 0) {
+            irq_mode = AK_UIO_IRQ_MODE_STD;
+        } else if (strcmp(mode_env, "read") == 0) {
+            irq_mode = AK_UIO_IRQ_MODE_READ;
+        } else if (strcmp(mode_env, "ak") != 0) {
+            fprintf(stderr,
+                    "[venc] modo IRQ '%s' desconocido, usando modo 'ak' por defecto\n",
+                    mode_env);
+        } else {
+            irq_mode = AK_UIO_IRQ_MODE_AK;
+        }
+        fprintf(stderr,
+                "[venc] AK_UIO_FORCE_MODE=%s -> modo inicial %d\n",
+                mode_env, (int)irq_mode);
+    }
+
     struct sigaction sa;
     memset(&sa, 0, sizeof(sa));
     sa.sa_handler = on_signal;
@@ -1671,4 +1699,35 @@ cleanup:
     }
 
     return exit_code;
+}
+
+static int venc_debug_enabled(void)
+{
+    static int cached = -1;
+    if (cached < 0) {
+        const char *env = getenv("AK_VENC_DEBUG");
+        cached = (env && *env && strcmp(env, "0") != 0) ? 1 : 0;
+    }
+    return cached;
+}
+
+static void venc_dump_regs(const struct venc_context *ctx, const char *tag)
+{
+    if (!ctx || !ctx->regs) {
+        return;
+    }
+
+    uint32_t irq    = rd32(ctx->regs, REG_IRQ_STATUS);
+    uint32_t wp_a   = rd32(ctx->regs, REG_WP_A);
+    uint32_t wp_b   = rd32(ctx->regs, REG_WP_B);
+    uint32_t len    = rd32(ctx->regs, REG_LEN_BYTES);
+    uint32_t param  = rd32(ctx->regs, REG_PARAM_LEN);
+    uint32_t units  = rd32(ctx->regs, REG_UNITS256_A);
+    uint32_t base_a = rd32(ctx->regs, REG_BASE_A);
+    uint32_t base_b = rd32(ctx->regs, REG_BASE_B);
+
+    fprintf(stderr,
+            "[venc-debug] %s irq=0x%08x baseA=0x%08x baseB=0x%08x wpA=0x%08x wpB=0x%08x len=0x%08x param=0x%08x units256=0x%08x\n",
+            tag ? tag : "(null)", irq, base_a, base_b, wp_a, wp_b, len, param,
+            units);
 }
